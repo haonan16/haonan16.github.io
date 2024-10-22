@@ -26,22 +26,22 @@
                   I am a Ph.D. candidate in
                   <a href="https://ece.illinois.edu/"> ECE </a> at the University of Illinois Urbana-Champaign. 
                   My research interests focus on learning structured models for robotic manipulation. I am fortunate to be advised by 
-                  <a href="#">Katie Driggs-Campbell</a> and work closely with <a href="#">Yunzhu Li</a>.
+                  <a href="https://krdc.web.illinois.edu/">Katie Driggs-Campbell</a> and work closely with <a href="https://yunzhuli.github.io/">Yunzhu Li</a>.
                 </p>
                 <p>
                   I have conducted extensive research in pushing new capabilities for robotics using machine learning.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:haonan2@illinois.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="data/HaonanChen-CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=haonan16">Scholar</a> &nbsp;
+                  <a href="data/CV_HaonanChen.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=SomOgNIAAAAJ&hl=en">Google Scholar</a> &nbsp;
                   <!-- <a href="https://twitter.com/haonanchen">Twitter</a> &nbsp;/&nbsp;
                   <a href="https://github.com/haonan16/">Github</a> -->
                 </p>
               </td>
               <td style="padding:2.5%;width:20%;max-width:20%;">
-                <a href="images/HaonanChen.jpeg">
-                  <img style="width:80%;max-width:80%;object-fit:cover;border-radius:50%;" alt="profile photo" src="images/HaonanChen.jpeg" class="hoverZoomLink">
+                <a href="images/HaonanChen.jpg">
+                  <img style="width:80%;max-width:80%;object-fit:cover;border-radius:50%;" alt="profile photo" src="images/HaonanChen.jpg" class="hoverZoomLink">
                 </a>
               </td>
             </tr>
@@ -57,6 +57,110 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+            <tr onmouseout="bimanual24_stop()" onmouseover="bimanual24_start()">
+              <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
+                <div class="one">
+                  <div class="two" id='bimanual_image'>
+                    <video width="100%" muted autoplay loop>
+                      <source src="images/stow.png" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src="images/bimanual24.png" width="100%" style="margin-top:10px;">
+                </div>
+                <script type="text/javascript">
+                  function bimanual24_start() {
+                    document.getElementById('bimanual24_image').style.opacity = "1";
+                  }
+                  function bimanual24_stop() {
+                    document.getElementById('bimanual24_image').style.opacity = "0";
+                  }
+                  bimanual24_stop();
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
+                <a href="https://haonan16.github.io/">
+                  <span class="papertitle">
+                    Learning Coordinated Bimanual Manipulation Policies using State Diffusion and Inverse Dynamics Models
+                  </span>
+                </a>
+                <br>
+                <a href="https://haonan16.github.io/">H. Chen</a>, J. Xu*, L. Sheng*, 
+                <a href="https://tianchenji.github.io//">T. Ji</a>, 
+                <a href="https://shuijing725.github.io/">S. Liu</a>, 
+                <a href="https://yunzhuli.github.io/">Y. Li</a>, 
+                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                <br>
+                <em>Under Review</em>, 2024
+              </td>
+            </tr>
+            
+            <tr onmouseout="advisory23_stop()" onmouseover="advisory23_start()">
+              <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
+                <div class="one">
+                  <div class="two" id='safety_image'>
+                    <video width="100%" muted autoplay loop>
+                      <source src="images/advisory23.png" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src="images/advisory23.png" width="100%" style="margin-top:10px;">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
+                <span class="papertitle">Cooperative Advisory Residual Policies for Congestion Mitigation</span>
+                <br>
+                <a href="https://aamzhas.github.io/">A. Hasan</a>,
+                <a href="https://theneeloy.github.io/">N. Chakraborty</a>,
+                <a href="https://haonan16.github.io/">H. Chen</a>, 
+                <a href="https://www.junghooncho.com/">J.-H. Cho</a>,
+                <a href="http://www.wucathy.com/blog/">C. Wu</a>,
+                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                <br>
+                <em>ACM Journal on Autonomous Transportation Systems (JATS)</em>, 2024
+                <br>
+                <a href="https://arxiv.org/abs/2407.00553">[pdf]</a>
+              </td>
+            </tr>
+            
+            <tr onmouseout="driver_sentiments24_stop()" onmouseover="driver_sentiments24_start()">
+              <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
+                <div class="one">
+                  <div class="two" id='driver_sentiments24_image'>
+                    <video width="100%" muted autoplay loop>
+                      <source src="images/driver_sentiments.png" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src="images/driver_sentiments.png" width="100%" style="margin-top:10px;">
+                </div>
+                <script type="text/javascript">
+                  function driver_sentiments24_start() {
+                    document.getElementById('driver_sentiments24_image').style.opacity = "1";
+                  }
+                  function driver_sentiments24_stop() {
+                    document.getElementById('driver_sentiments24_image').style.opacity = "0";
+                  }
+                  driver_sentiments24_stop();
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
+                <span class="papertitle">Lessons in Cooperation: A Qualitative Analysis of Driver Sentiments towards real-time Advisory Systems through a Focus Group User Study	</span>
+                <br>
+                <a href="https://aamzhas.github.io/">A. Hasan</a>,
+                <a href="https://theneeloy.github.io/">N. Chakraborty</a>,
+                <a href="https://haonan16.github.io/">H. Chen</a>, 
+                <a href="https://www.junghooncho.com/">J.-H. Cho</a>,
+                <a href="http://www.wucathy.com/blog/">C. Wu</a>,
+                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                <br>
+                <em>Under Review</em>, 2024
+                <br>
+                <a href="https://arxiv.org/abs/2407.13775">[pdf]</a>
+              </td>
+            </tr>
 
 
             <tr onmouseout="corl23_stop()" onmouseover="corl23_start()">
