@@ -59,11 +59,46 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+            <tr onmouseout="human25_stop()" onmouseover="human25_start()">
+              <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
+                <div class="one">
+                  <div class="two" id="bimanual_image">
+                    <video id="egg_flip_video" width="106%" muted loop>
+                      <source src="images/rss25_egg_flip.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src="images/rss25_egg_flip.jpg" width="94%" style="margin-top:10px;">
+                </div>
+                <script type="text/javascript">
+                  function human25_start() {
+                    document.getElementById('egg_flip_video').play();
+                  }
+                  function human25_stop() {
+                    document.getElementById('egg_flip_video').pause();
+                    document.getElementById('egg_flip_video').currentTime = 0; // Reset to the first frame
+                  }
+                  human25_stop(); // Ensure the video is paused initially
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
+                <span class="papertitle">
+                  Tool-as-Interface: Learning Robot Tool Use from Human Play through Imitation Learning
+                </span>
+                <br>
+                <a href="https://haonan16.github.io/">H. Chen</a>, C. Zhu,
+                <a href="https://yunzhuli.github.io/">Y. Li</a>, 
+                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                <br>
+                <em>Under Review</em>, 2025
+              </td>
+            </tr>
+            
             <tr onmouseout="bimanual24_stop()" onmouseover="bimanual24_start()">
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <div class="two" id='bimanual_image'>
-                    <video width="106%" muted autoplay loop>
+                  <div class="two" id="bimanual_image">
+                    <video id="bimanual24_video" width="106%" muted loop>
                       <source src="images/bimanual24.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
@@ -72,12 +107,14 @@
                 </div>
                 <script type="text/javascript">
                   function bimanual24_start() {
-                    document.getElementById('bimanual24_image').style.opacity = "1";
+                    document.getElementById('bimanual24_video').play();
                   }
                   function bimanual24_stop() {
-                    document.getElementById('bimanual24_image').style.opacity = "0";
+                    const video = document.getElementById('bimanual24_video');
+                    video.pause();
+                    video.currentTime = 0; // Reset to the first frame
                   }
-                  bimanual24_stop();
+                  bimanual24_stop(); // Ensure the video is paused initially
                 </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
@@ -86,12 +123,12 @@
                 </span>
                 <br>
                 <a href="https://haonan16.github.io/">H. Chen</a>, J. Xu*, L. Sheng*, 
-                <a href="https://tianchenji.github.io//">T. Ji</a>, 
+                <a href="https://tianchenji.github.io/">T. Ji</a>, 
                 <a href="https://shuijing725.github.io/">S. Liu</a>, 
                 <a href="https://yunzhuli.github.io/">Y. Li</a>, 
                 <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
                 <br>
-                <em>Under Review</em>, 2024
+                <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2025
               </td>
             </tr>
             
@@ -304,7 +341,7 @@
                 <a href="https://shuijing725.github.io/">S. Liu</a>, 
                 <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
                 <br>
-                <em>IEEE International Conference on Intelligent Transportation Systems (ITSC 2022)</em>
+                <em>IEEE International Conference on Intelligent Transportation Systems (ITSC)</em>, 2022
                 <br>
                 <a href="https://ieeexplore.ieee.org/document/9922261">PDF</a>
               </td>
