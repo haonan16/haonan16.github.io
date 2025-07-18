@@ -13,7 +13,23 @@
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <!-- Navigation Bar -->
+  <div id="navbar" style="text-align:center; padding:12px 0 12px 400px; font-size:20px;">
+    <a href="#home">Home</a> 
+    <a href="#news">News</a> 
+    <a href="#research">Research</a> 
+    <a href="#honors">Honors</a> 
+  </div>
+  <!-- <div id="navbar-wrapper" style="max-width:800px; margin:auto;">
+    <div id="navbar" style="text-align:left; padding:12px 20px; font-size:20px;">
+      <a href="#home">Home</a> 
+      <a href="#news">News</a> 
+      <a href="#research">Research</a> 
+      <a href="#honors">Honors</a> 
+    </div>
+  </div> -->
+
+    <table id="home" style="padding-top: 80px; margin-top: -80px; width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           
@@ -22,14 +38,18 @@
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
                   Haonan Chen
-                <p>
-                  I am a Ph.D. candidate in
-                  <a href="https://ece.illinois.edu/"> ECE </a> at the University of Illinois Urbana-Champaign. 
-                  My research interests focus on learning structured models for robotic manipulation. I am fortunate to be advised by 
-                  <a href="https://krdc.web.illinois.edu/">Katie Driggs-Campbell</a> and work closely with <a href="https://yunzhuli.github.io/">Yunzhu Li</a>.
                 </p>
                 <p>
-                  I have conducted extensive research in pushing new capabilities for robotics using machine learning.
+                  I am a Ph.D. candidate in 
+                  <a href="https://ece.illinois.edu/">Electrical and Computer Engineering</a> at the University of Illinois Urbana-Champaign, 
+                  fortunate to be advised by 
+                  <a href="https://krdc.web.illinois.edu/"><b>Katie Driggs-Campbell</b></a> and to work closely with 
+                  <a href="https://yunzhuli.github.io/"><b>Yunzhu Li</b></a>. 
+                </p>
+                <p>
+                  My research focuses on <i>robotic manipulation</i>, where I develop structured models that help robots reason about the physical world, predict outcomes, and act robustly in unstructured environments. 
+                  I aim to equip robots with new capabilities by learning from <b>heterogeneous data sources</b>, including <i>simulation, teleoperation, human video, off-policy data, and synthetic content</i>. 
+                  My work has been recognized with a <b>Best Paper Finalist</b> at <i>CoRL 2023</i> and a <b>Best Paper Award</b> at the <i>ICRA 2025 Workshop on Foundation Models and NeSy AI</i>.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:haonan2@illinois.edu">Email</a> &nbsp;/&nbsp;
@@ -52,59 +72,30 @@
             <tbody>
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
-                  <h2>News</h2>
+                <div id="news" style="position: relative; top: -80px;"></div>
+                <h2>News</h2>
                   <ul>
-                    <li>
-                      I'm co-organizing the 
-                      <a href="https://contact-rich.github.io" target="_blank" rel="noopener noreferrer">
-                        Learning Meets Model-Based Methods for Contact-Rich Manipulation
-                      </a> 
-                      workshop at ICRA 2025.
-                    </li>
-                    <li>
-                      I will be giving a talk at 
-                      <a href="https://robertomartinmartin.com/" target="_blank" rel="noopener noreferrer">
-                        Professor Roberto Martín-Martín's Lab at UT Austin
-                      </a> in May 2025 on <em>"Toward Human-Robot Alignment through Human Behavior Priors"</em>.
-                    </li>
-                    <li>
-                      I will be giving a talk to Grade 5 students at St. Matthew Catholic School in May 2025 on
-                      <em>"Toward Human-Robot Alignment through Human Behavior Priors."</em>
-                    </li>                    
-                    <li>
-                      I will be giving a talk at 
-                      <a href="https://tensorlab.cms.caltech.edu/users/anima/" target="_blank" rel="noopener noreferrer">
-                        Professor Animashree Anandkumar's Lab at Caltech
-                      </a> in April 2025 on <em>"Deployable Robot Learning from Human Priors"</em>.
-                    </li>
-                    <li>
-                      I will be giving a talk at 
-                      <a href="https://www.cs.cmu.edu/~katef/" target="_blank" rel="noopener noreferrer">
-                        Professor Katerina Fragkiadaki's Lab at Carnegie Mellon University
-                      </a> in April 2025 on <em>"Deployable Robot Learning from Human Priors"</em>.
-                    </li>
-                    <li>
-                      I will be giving at 
-                      <a href="https://safeai-lab.github.io/" target="_blank" rel="noopener noreferrer">
-                        the Safe AI Lab at Carnegie Mellon University
-                      </a> in March 2025 on <em>"Building Deployable and Pragmatic Robots from Human Priors"</em>.
-                    </li>
-                    <li>
-                      I will be giving at 
-                      <a href="https://parasollab.web.illinois.edu/" target="_blank" rel="noopener noreferrer">
-                        the Parasol Lab at the University of Illinois Urbana-Champaign
-                      </a> in March 2025 on <em>"Tool-as-Interface: Learning Robot Policies from Human Tool Usage through Imitation Learning"</em>.
-                    </li>
+                    <li>[2025/06] Invited Talk at <a href="https://www.tactasystems.com/" target="_blank" rel="noopener noreferrer">Tacta Systems</a> on <em>"Learning What, How, and Where from Humans: Structured Inductive Biases for Robot Learning"</em></li>
+                    <li>[2025/06] Invited Talk at <a href="https://jiajunwu.com/" target="_blank" rel="noopener noreferrer">Professor Jiajun Wu's Lab at Stanford</a> on <em>"Learning What, How, and Where from Humans: Structured Inductive Biases for Robot Learning"</em></li>
+                    <li>[2025/05] Co-organizing the <a href="https://contact-rich.github.io" target="_blank" rel="noopener noreferrer">ICRA 2025 Workshop on Learning Meets Model-Based Methods for Contact-Rich Manipulation</a></li>
+                    <li>[2025/05] Invited Talk at <a href="https://robertomartinmartin.com/" target="_blank" rel="noopener noreferrer">Professor Roberto Martín-Martín's Lab at UT Austin</a> on <em>"Toward Human-Robot Alignment through Human Behavior Priors"</em></li>
+                    <li>[2025/05] Outreach Talk to Grade 5 Students at St. Matthew Catholic School on <em>"Toward Human-Robot Alignment through Human Behavior Priors"</em></li>
+                    <li>[2025/04] Invited Talk at <a href="https://tensorlab.cms.caltech.edu/users/anima/" target="_blank" rel="noopener noreferrer">Professor Animashree Anandkumar's Lab at Caltech</a> on <em>"Deployable Robot Learning from Human Priors"</em></li>
+                    <li>[2025/04] Invited Talk at <a href="https://www.cs.cmu.edu/~katef/" target="_blank" rel="noopener noreferrer">Professor Katerina Fragkiadaki's Lab at Carnegie Mellon University</a> on <em>"Deployable Robot Learning from Human Priors"</em></li>
+                    <li>[2025/03] Invited Talk at <a href="https://safeai-lab.github.io/" target="_blank" rel="noopener noreferrer">Safe AI Lab at Carnegie Mellon University</a> on <em>"Building Deployable and Pragmatic Robots from Human Priors"</em></li>
+                    <li>[2025/03] Invited Talk at <a href="https://parasollab.web.illinois.edu/" target="_blank" rel="noopener noreferrer">Parasol Lab at the University of Illinois Urbana-Champaign</a> on <em>"Tool-as-Interface: Learning Robot Policies from Human Tool Usage through Imitation Learning"</em></li>
                   </ul>
                 </td>
               </tr>
             </tbody>
           </table>
 
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
+              <div id="research" style="position: relative; top: -80px;"></div>
+              <h2>Research</h2>
                 <p>
                   My research focuses on robotic manipulation, imitation learning, and human-robot interaction. I develop algorithms that enable robots to learn from human demonstrations and improve their manipulation skills in complex environments.
                 </p>
@@ -558,7 +549,8 @@
               <tbody>
                 <tr>
                   <td style="padding:20px; width:100%; vertical-align:middle;">
-                    <h2>Awards and Honors</h2>
+                  <div id="honors" style="position: relative; top: -80px;"></div>
+                  <h2>Awards and Honors</h2>
                     <ul>
                       <li><strong>Conference Travel Award</strong>, Graduate College, University of Illinois Urbana-Champaign <span style="float:right;">2023</span></li>
                       <li><strong>Finalist</strong> - Best Paper/Best Student Paper Awards, Conference on Robot Learning <span style="float:right;">2023</span></li>
