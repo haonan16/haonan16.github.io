@@ -13,13 +13,29 @@
   </head>
 
   <body>
-  <!-- Navigation Bar -->
-  <div id="navbar" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 24px; padding: 12px 16px; font-size: 20px;">
-    <a href="#home">Home</a> 
-    <a href="#news">News</a> 
-    <a href="#research">Research</a> 
-    <a href="#honors">Honors</a> 
-  </div>
+    <!-- Navigation Bar -->
+    <div id="navbar" style="
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
+      padding: 12px 16px;
+      font-size: 20px;
+    "
+    >
+      <a href="#home">Home</a> 
+      <a href="#news">News</a> 
+      <a href="#research">Research</a> 
+      <a href="#honors">Honors</a> 
+    </div>
+
+    <style>
+      @media (max-width: 600px) {
+        #navbar {
+          display: none;
+        }
+      }
+    </style>
 
     <table id="home" style="padding-top: 80px; margin-top: -80px; width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
