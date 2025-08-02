@@ -37,7 +37,7 @@
       }
     </style>
 
-    <table id="home" style="padding-top: 80px; margin-top: -80px; width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table id="home" style="padding-top: 80px; margin-top: -80px; width:100%;max-width:min(90vw, 1200px);border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           
@@ -69,7 +69,7 @@
               </td>
               <td style="padding:2.5%;width:20%;max-width:20%;">
                 <a href="images/HaonanChen.jpg">
-                  <img style="width:80%;max-width:80%;object-fit:cover;border-radius:50%;" alt="profile photo" src="images/HaonanChen.jpg" class="hoverZoomLink">
+                  <img style="width:80%;max-width:80%;object-fit:cover;border-radius:0;" alt="profile photo" src="images/HaonanChen.jpg" class="hoverZoomLink">
                 </a>
               </td>
             </tr>
@@ -86,11 +86,11 @@
                     <li>[2025/06] Invited Talk at <a href="https://www.tactasystems.com/" target="_blank" rel="noopener noreferrer">Tacta Systems</a> on <em>"Learning What, How, and Where from Humans: Structured Inductive Biases for Robot Learning"</em></li>
                     <li>[2025/06] Invited Talk at <a href="https://jiajunwu.com/" target="_blank" rel="noopener noreferrer">Professor Jiajun Wu's Lab at Stanford</a> on <em>"Learning What, How, and Where from Humans: Structured Inductive Biases for Robot Learning"</em></li>
                     <li>[2025/05] Co-organizing the <a href="https://contact-rich.github.io" target="_blank" rel="noopener noreferrer">ICRA 2025 Workshop on Learning Meets Model-Based Methods for Contact-Rich Manipulation</a></li>
-                    <li>[2025/05] Invited Talk at <a href="https://robertomartinmartin.com/" target="_blank" rel="noopener noreferrer">Professor Roberto Martín-Martín's Lab at UT Austin</a> on <em>"Toward Human-Robot Alignment through Human Behavior Priors"</em></li>
-                    <li>[2025/05] Outreach Talk to Grade 5 Students at St. Matthew Catholic School on <em>"Toward Human-Robot Alignment through Human Behavior Priors"</em></li>
-                    <li>[2025/04] Invited Talk at <a href="https://tensorlab.cms.caltech.edu/users/anima/" target="_blank" rel="noopener noreferrer">Professor Animashree Anandkumar's Lab at Caltech</a> on <em>"Deployable Robot Learning from Human Priors"</em></li>
-                    <li>[2025/04] Invited Talk at <a href="https://www.cs.cmu.edu/~katef/" target="_blank" rel="noopener noreferrer">Professor Katerina Fragkiadaki's Lab at Carnegie Mellon University</a> on <em>"Deployable Robot Learning from Human Priors"</em></li>
-                    <li>[2025/03] Invited Talk at <a href="https://safeai-lab.github.io/" target="_blank" rel="noopener noreferrer">Safe AI Lab at Carnegie Mellon University</a> on <em>"Building Deployable and Pragmatic Robots from Human Priors"</em></li>
+                    <li>[2025/05] Invited Talk at <a href="https://robertomartinmartin.com/" target="_blank" rel="noopener noreferrer">Professor Roberto Martín-Martín's Lab at UT Austin</a> on <em>"Toward Human-Robot Alignment through Human Behavior&nbsp;Priors"</em></li>
+                    <li>[2025/05] Outreach Talk to Grade 5 Students at St. Matthew Catholic School on <em>"Toward Human-Robot Alignment through Human Behavior&nbsp;Priors"</em></li>
+                    <li>[2025/04] Invited Talk at <a href="https://tensorlab.cms.caltech.edu/users/anima/" target="_blank" rel="noopener noreferrer">Professor Animashree Anandkumar's Lab at Caltech</a> on <em>"Deployable Robot Learning from Human&nbsp;Priors"</em></li>
+                    <li>[2025/04] Invited Talk at <a href="https://www.cs.cmu.edu/~katef/" target="_blank" rel="noopener noreferrer">Professor Katerina Fragkiadaki's Lab at Carnegie Mellon University</a> on <em>"Deployable Robot Learning from Human&nbsp;Priors"</em></li>
+                    <li>[2025/03] Invited Talk at <a href="https://safeai-lab.github.io/" target="_blank" rel="noopener noreferrer">Safe AI Lab at Carnegie Mellon University</a> on <em>"Building Deployable and Pragmatic Robots from Human&nbsp;Priors"</em></li>
                     <li>[2025/03] Invited Talk at <a href="https://parasollab.web.illinois.edu/" target="_blank" rel="noopener noreferrer">Parasol Lab at the University of Illinois Urbana-Champaign</a> on <em>"Tool-as-Interface: Learning Robot Policies from Human Tool Usage through Imitation Learning"</em></li>
                   </ul>
                 </td>
@@ -113,27 +113,14 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-            <tr onmouseout="human25_stop()" onmouseover="human25_start()">
+            <tr>
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <div class="two" id="bimanual_image">
-                    <video id="egg_flip_video" width="106%" muted loop>
-                      <source src="images/rss25_egg_flip.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <img src="images/rss25_egg_flip.jpg" width="94%" style="margin-top:10px;">
+                  <video id="egg_flip_video" width="100%" muted autoplay loop style="display: block;">
+                    <source src="images/rss25_egg_flip.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
-                <script type="text/javascript">
-                  function human25_start() {
-                    document.getElementById('egg_flip_video').play();
-                  }
-                  function human25_stop() {
-                    document.getElementById('egg_flip_video').pause();
-                    document.getElementById('egg_flip_video').currentTime = 0; // Reset to the first frame
-                  }
-                  human25_stop(); // Ensure the video is paused initially
-                </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">
@@ -145,7 +132,7 @@
                 <a href="https://yunzhuli.github.io/">Y. Li</a>, 
                 <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
                 <br>
-                <em>Under Review</em>, 2025
+                <em>Conference on Robot Learning (CoRL)</em>, 2025
                 <br>
                 <a href="https://tool-as-interface.github.io/">Project & Video</a> / <a href="https://arxiv.org/abs/2504.04612">Paper</a> / <a href="https://spectrum.ieee.org/video-friday-flying-robot-spidar">IEEE Spectrum</a>
                 <p style="color: red;">
@@ -165,16 +152,10 @@
               </td>
             </tr>
 
-            <tr onmouseout="preference25_stop()" onmouseover="preference25_start()">
+            <tr>
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <div class="two" id="bimanual_image">
-                    <video id="egg_flip_video" width="106%" muted loop>
-                      <source src="images/preference25.png" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <img src="images/preference25.png" width="94%" style="margin-top:10px;">
+                  <img src="images/preference25.png" width="100%" style="display: block;">
                 </div>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
@@ -194,28 +175,14 @@
 
 
 
-            <tr onmouseout="bimanual24_stop()" onmouseover="bimanual24_start()">
+            <tr>
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <div class="two" id="bimanual_image">
-                    <video id="bimanual24_video" width="106%" muted loop>
-                      <source src="images/bimanual24.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <img src="images/bimanual24.png" width="94%" style="margin-top:10px;">
+                  <video id="bimanual24_video" width="100%" muted autoplay loop style="display: block;">
+                    <source src="images/bimanual24.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
-                <script type="text/javascript">
-                  function bimanual24_start() {
-                    document.getElementById('bimanual24_video').play();
-                  }
-                  function bimanual24_stop() {
-                    const video = document.getElementById('bimanual24_video');
-                    video.pause();
-                    video.currentTime = 0; // Reset to the first frame
-                  }
-                  bimanual24_stop(); // Ensure the video is paused initially
-                </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">
@@ -234,16 +201,10 @@
               </td>
             </tr>
             
-            <tr onmouseout="advisory23_stop()" onmouseover="advisory23_start()">
+            <tr>
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <div class="two" id='safety_image'>
-                    <video width="100%" muted autoplay loop>
-                      <source src="images/advisory23.png" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <img src="images/advisory23.png" width="100%" style="margin-top:10px;">
+                  <img src="images/advisory23.png" width="100%" style="display: block;">
                 </div>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
@@ -263,26 +224,11 @@
             </tr>
             
             
-            <tr onmouseout="driver_sentiments24_stop()" onmouseover="driver_sentiments24_start()">
+            <tr>
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <div class="two" id='driver_sentiments24_image'>
-                    <video width="100%" muted autoplay loop>
-                      <source src="images/driver_sentiments.png" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <img src="images/driver_sentiments.png" width="100%" style="margin-top:10px;">
+                  <img src="images/driver_sentiments.png" width="100%" style="display: block;">
                 </div>
-                <script type="text/javascript">
-                  function driver_sentiments24_start() {
-                    document.getElementById('driver_sentiments24_image').style.opacity = "1";
-                  }
-                  function driver_sentiments24_stop() {
-                    document.getElementById('driver_sentiments24_image').style.opacity = "0";
-                  }
-                  driver_sentiments24_stop();
-                </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">Lessons in Cooperation: A Qualitative Analysis of Driver Sentiments towards real-time Advisory Systems through a Focus Group User Study	</span>
@@ -301,26 +247,14 @@
             </tr>
 
 
-            <tr onmouseout="corl23_stop()" onmouseover="corl23_start()">
+            <tr>
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <div class="two" id='stow_image'>
-                    <video width="100%" muted autoplay loop>
-                      <source src="images/stow23.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <img src="images/stow.png" width="100%" style="margin-top:10px;">
+                  <video width="100%" muted autoplay loop style="display: block;">
+                    <source src="images/stow23.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
-                <script type="text/javascript">
-                  function corl23_start() {
-                    document.getElementById('corl23_image').style.opacity = "1";
-                  }
-                  function corl23_stop() {
-                    document.getElementById('corl23_image').style.opacity = "0";
-                  }
-                  corl23_stop();
-                </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">Predicting Object Interactions with Behavior Primitives: An Application in Stowing Tasks</span>
@@ -340,16 +274,10 @@
             </tr>
                         
 
-            <tr onmouseout="case23_stop()" onmouseover="case23_start()">
+            <tr>
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <div class="two" id='safety_image'>
-                    <video width="100%" muted autoplay loop>
-                      <source src="images/safety-modules_large.png" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <img src="images/safety-modules_large.png" width="100%" style="margin-top:10px;">
+                  <img src="images/safety-modules_large.png" width="100%" style="display: block;">
                 </div>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
@@ -367,16 +295,10 @@
             </tr>
             
 
-            <tr onmouseout="case23_2_stop()" onmouseover="case23_2_start()">
+            <tr>
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <div class="two" id='learn_skills_image'>
-                    <video width="100%" muted autoplay loop>
-                      <source src="images/learn_skills.jpg" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <img src="images/learn_skills.jpg" width="100%" style="margin-top:10px;">
+                  <img src="images/learn_skills.jpg" width="100%" style="display: block;">
                 </div>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
@@ -395,16 +317,10 @@
 
 
 
-            <tr onmouseout="itsc23_stop()" onmouseover="itsc23_start()">
+            <tr>
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <div class="two" id='human_driving_image'>
-                    <video width="100%" muted autoplay loop>
-                      <source src="images/human_driving.png" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <img src="images/human_driving.png" width="100%" style="margin-top:10px;">
+                  <img src="images/human_driving.png" width="100%" style="display: block;">
                 </div>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
@@ -430,16 +346,10 @@
               </td>
             </tr>
                         
-            <tr onmouseout="itsc22_stop()" onmouseover="itsc22_start()">
+            <tr>
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <div class="two" id='itsc_driving_image'>
-                    <video width="100%" muted autoplay loop>
-                      <source src="images/itsc_driving.png" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <img src="images/itsc_driving.png" width="100%" style="margin-top:10px;">
+                  <img src="images/itsc_driving.png" width="100%" style="display: block;">
                 </div>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
@@ -458,16 +368,10 @@
 
           
 
-            <tr onmouseout="icra22_stop()" onmouseover="icra22_start()">
+            <tr>
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <div class="two" id='trait_image'>
-                    <video width="100%" muted autoplay loop>
-                      <source src="images/trait_opening.png" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <img src="images/trait_opening.png" width="100%" style="margin-top:10px;">
+                  <img src="images/trait_opening.png" width="100%" style="display: block;">
                 </div>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
@@ -485,16 +389,10 @@
               </td>
             </tr>
             
-            <tr onmouseout="iros20_stop()" onmouseover="iros20_start()">
+            <tr>
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <div class="two" id='sound_image'>
-                    <video width="100%" muted autoplay loop>
-                      <source src="images/sound.png" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <img src="images/sound.png" width="100%" style="margin-top:10px;">
+                  <img src="images/sound.png" width="100%" style="display: block;">
                 </div>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">

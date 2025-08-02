@@ -82,6 +82,9 @@ p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 17px;
+  text-align: justify;
+  hyphens: auto;
+  word-wrap: break-word;
 }
 
 strong {
@@ -110,18 +113,30 @@ h2 {
 }
 
 .one {
-  width: 160px;
-  height: 160px;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  min-height: 180px;
   position: relative;
 }
 
 .two {
-  width: 160px;
-  height: 160px;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  min-height: 180px;
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
+}
+
+/* Make all images and videos responsive */
+.one img, .two img, .one video, .two video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .fade {
@@ -158,4 +173,208 @@ span.highlight {
 #navbar a:hover {
   color: #f09228;
   text-decoration: underline;
+}
+
+/* ===== Modern Responsive Layout ===== */
+/* Ensure body takes full width */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Container improvements for larger screens */
+@media (min-width: 1201px) {
+  table[id="home"] {
+    max-width: 1200px !important;
+    margin: 0 auto;
+    padding: 40px 60px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  table[id="home"] {
+    max-width: 95vw !important;
+    margin: 0 auto;
+    padding: 30px 40px;
+  }
+}
+
+/* Hide navbar on mobile devices */
+@media (max-width: 600px) {
+  #navbar {
+    display: none;
+  }
+}
+
+/* ===== Mobile Responsive Styles ===== */
+@media (max-width: 768px) {
+  body, td, th, tr, p, a {
+    font-size: 16px;
+  }
+  
+  strong {
+    font-size: 16px;
+  }
+  
+  h2 {
+    font-size: 22px;
+  }
+  
+  .name {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .papertitle {
+    font-size: 16px;
+  }
+  
+  /* Make tables responsive */
+  table {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Override the main container's max-width on mobile */
+  table[id="home"] {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 20px 15px !important;
+  }
+  
+  /* Adjust padding for mobile */
+  td {
+    padding: 15px 10px !important;
+  }
+  
+  /* Stack profile image and text vertically on mobile - only for main profile section */
+  table tbody tr:first-child td[style*="width:63%"] {
+    width: 100% !important;
+    display: block;
+    text-align: center;
+    order: 2;
+    padding: 20px 10px !important;
+  }
+  
+  table tbody tr:first-child td[style*="width:20%"] {
+    width: 100% !important;
+    display: block;
+    text-align: center;
+    order: 1;
+    padding: 20px 10px 10px 10px !important;
+  }
+  
+  /* For research papers - stack vertically */
+  table tbody tr td[style*="width:25%"] {
+    width: 100% !important;
+    display: block;
+    text-align: center;
+    padding: 15px 10px 10px 10px !important;
+  }
+  
+  table tbody tr td[style*="width:75%"] {
+    width: 100% !important;
+    display: block;
+    padding: 10px 10px 15px 10px !important;
+  }
+  
+  /* Profile image adjustments */
+  img[alt="profile photo"] {
+    width: 150px !important;
+    max-width: 150px !important;
+    height: 150px !important;
+    object-fit: cover;
+    border-radius: 0;
+  }
+  
+  /* Research paper layout adjustments */
+  .one {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto 15px auto;
+  }
+  
+  .two {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+  
+  /* Video adjustments */
+  video {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Links and text alignment */
+  p {
+    text-align: left !important;
+  }
+  
+  p[style*="text-align:center"] {
+    text-align: center !important;
+  }
+  
+  /* Lists on mobile */
+  ul {
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  body, td, th, tr, p, a {
+    font-size: 15px;
+  }
+  
+  .name {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  .papertitle {
+    font-size: 15px;
+  }
+  
+  td {
+    padding: 10px 5px !important;
+  }
+  
+  /* Even smaller profile image for very small screens */
+  img[alt="profile photo"] {
+    width: 120px !important;
+    max-width: 120px !important;
+    height: 120px !important;
+    border-radius: 0;
+  }
+  
+  .one {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+  
+  .two {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+  
+  /* Smaller navbar font */
+  #navbar {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+  
+  #navbar a {
+    padding: 6px 8px;
+  }
 }
