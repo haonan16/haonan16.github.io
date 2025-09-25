@@ -132,11 +132,17 @@ h2 {
 }
 
 /* Make all images and videos responsive */
-.one img, .two img, .one video, .two video {
+.one img, .two img {
   width: 100%;
   height: auto;
   max-width: 100%;
   object-fit: cover;
+}
+
+.one video, .two video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .fade {

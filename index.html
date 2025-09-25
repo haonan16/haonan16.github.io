@@ -13,6 +13,16 @@
   </head>
 
   <body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const videos = document.querySelectorAll('video[autoplay]');
+        videos.forEach(video => {
+          video.play().catch(e => {
+            console.log('Video autoplay failed:', e);
+          });
+        });
+      });
+    </script>
     <!-- Navigation Bar -->
     <div id="navbar" style="
       display: flex;
@@ -48,10 +58,12 @@
                   Haonan Chen
                 </p>
                 <p>
-                  I am a Ph.D. candidate in 
+                  I am a postdoc at Harvard, advised by 
+                  <a href="https://yilundu.github.io/"><b>Yilun Du</b></a>. 
+                  Previously, I was a Ph.D. candidate in 
                   <a href="https://ece.illinois.edu/">Electrical and Computer Engineering</a> at the University of Illinois Urbana-Champaign, 
-                  fortunate to be advised by 
-                  <a href="https://krdc.web.illinois.edu/"><b>Katie Driggs-Campbell</b></a> and to work closely with 
+                  advised by 
+                  <a href="https://krdc.web.illinois.edu/"><b>Katie Driggs-Campbell</b></a> and worked closely with 
                   <a href="https://yunzhuli.github.io/"><b>Yunzhu Li</b></a>. 
                 </p>
                 <p>
@@ -119,8 +131,8 @@
             <tr>
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <video id="egg_flip_video" width="100%" muted autoplay loop style="display: block;">
-                    <source src="images/rss25_egg_flip.mp4" type="video/mp4">
+                  <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
+                    <source src="images/corl25_egg_flip.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -130,28 +142,20 @@
                   Tool-as-Interface: Learning Robot Policies from Observing Human Tool Use
                 </span>
                 <br>
-                <a href="https://haonan16.github.io/">H. Chen</a>, C. Zhu,
-                <a href="https://shuijing725.github.io/">S. Liu</a>, 
-                <a href="https://yunzhuli.github.io/">Y. Li</a>, 
-                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                <a href="https://haonan16.github.io/">Haonan Chen</a>, Cheng Zhu,
+                <a href="https://shuijing725.github.io/">Shuijing Liu</a>, 
+                <a href="https://yunzhuli.github.io/">Yunzhu Li</a>, and
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <em>Conference on Robot Learning (CoRL)</em>, 2025
+                <strong>CoRL 2025</strong>, <a href="https://tool-as-interface.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2504.04612">[Paper]</a> <a href="#">[Code]</a>
                 <br>
-                <a href="https://tool-as-interface.github.io/">Project & Video</a> / <a href="https://arxiv.org/abs/2504.04612">Paper</a> / <a href="https://spectrum.ieee.org/video-friday-flying-robot-spidar">IEEE Spectrum</a>
-                <p style="color: red;">
-                  <strong>Best Paper Award at 
-                      <a href="https://sairlab.org/icra25/" style="color: red; text-decoration: none;">
-                          ICRA 2025 workshop on Foundation Models and Neural-Symbolic (NeSy) AI for Robotics
-                      </a>
-                  </strong>
-                </p>
-                <p style="color: red;">
-                  <strong>Best Presentation Award at  
-                      <a href="https://studentconference.csl.illinois.edu" style="color: red; text-decoration: none;">
-                          CSL Student Conference 2025
-                      </a>
-                  </strong>
-                </p>
+                <span style="color: red;"><strong>Best Paper Award</strong></span> at <strong>ICRA 2025</strong> Workshop on Foundation Models and Neuro-Symbolic AI for Robotics <a href="https://sairlab.org/icra25/">[Link]</a>
+                <br>
+                <span style="color: red;"><strong>Best Presentation Award</strong></span> at <strong>CSL Student Conference 2025</strong> <a href="https://studentconference.csl.illinois.edu">[Link]</a>
+                <br>
+                Featured in <span style="color: red;">Video Friday</span> on <a href="https://spectrum.ieee.org/video-friday-flying-robot-spidar">[IEEE Spectrum]</a>
+                <br>
+                <strong>Media Coverage:</strong> <a href="https://csl.illinois.edu/news-and-media/human-led-videos-enable-robot-tool-use">[The Grainger College of Engineering]</a>, <a href="https://techxplore.com/news/2025-08-robots-tools.html">[TechXplore]</a>, <a href="https://www.hackster.io/news/it-s-hammer-time-8510c07f951b">[Hackster.io]</a>
               </td>
             </tr>
 
@@ -166,13 +170,11 @@
                   Towards Uncertainty Unification: A Case Study for Preference Learning
                 </span>
                 <br>
-                <a href="https://shaotingpeng.github.io/">S. Peng</a>, 
-                <a href="https://haonan16.github.io/">H. Chen</a>,
-                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                <a href="https://shaotingpeng.github.io/">Shaoting Peng</a>, 
+                <a href="https://haonan16.github.io/">Haonan Chen</a>, and
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <em>Robotics: Science and Systems (RSS) </em>, 2025
-                <br>
-                <a href="https://arxiv.org/abs/2503.19317v1">Paper</a>
+                <strong>RSS 2025</strong>, <a href="https://arxiv.org/abs/2503.19317v1">[Paper]</a>
               </td>
             </tr>
 
@@ -181,7 +183,7 @@
             <tr>
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <video id="bimanual24_video" width="100%" muted autoplay loop style="display: block;">
+                  <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
                     <source src="images/bimanual24.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -192,15 +194,13 @@
                   Learning Coordinated Bimanual Manipulation Policies using State Diffusion and Inverse Dynamics Models
                 </span>
                 <br>
-                <a href="https://haonan16.github.io/">H. Chen</a>, J. Xu*, L. Sheng*, 
-                <a href="https://tianchenji.github.io/">T. Ji</a>, 
-                <a href="https://shuijing725.github.io/">S. Liu</a>, 
-                <a href="https://yunzhuli.github.io/">Y. Li</a>, 
-                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                <a href="https://haonan16.github.io/">Haonan Chen</a>, Jiaming Xu*, Lily Sheng*, 
+                <a href="https://tianchenji.github.io/">Tianchen Ji</a>, 
+                <a href="https://shuijing725.github.io/">Shuijing Liu</a>, 
+                <a href="https://yunzhuli.github.io/">Yunzhu Li</a>, and
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2025
-                <br>
-                <a href="http://haonan16.github.io/coord_bimanual_page/">Project & Video</a> / <a href="https://arxiv.org/abs/2503.23271">Paper</a>
+                <strong>ICRA 2025</strong>, <a href="http://haonan16.github.io/coord_bimanual_page/">[Project]</a> <a href="https://arxiv.org/abs/2503.23271">[Paper]</a>
               </td>
             </tr>
             
@@ -213,16 +213,14 @@
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">Cooperative Advisory Residual Policies for Congestion Mitigation</span>
                 <br>
-                <a href="https://aamzhas.github.io/">A. Hasan</a>,
-                <a href="https://theneeloy.github.io/">N. Chakraborty</a>,
-                <a href="https://haonan16.github.io/">H. Chen</a>, 
-                <a href="https://www.junghooncho.com/">J.-H. Cho</a>,
-                <a href="http://www.wucathy.com/blog/">C. Wu</a>,
-                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                <a href="https://aamzhas.github.io/">Aamir Hasan</a>,
+                <a href="https://theneeloy.github.io/">Neeloy Chakraborty</a>,
+                <a href="https://haonan16.github.io/">Haonan Chen</a>, 
+                <a href="https://www.junghooncho.com/">Jung-Hoon Cho</a>,
+                <a href="http://www.wucathy.com/blog/">Cathy Wu</a>, and
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <em>ACM Journal on Autonomous Transportation Systems (JATS)</em>, 2024
-                <br>
-                <a href="https://arxiv.org/abs/2407.00553">Paper</a>
+                <strong>JATS 2024</strong>, <a href="https://arxiv.org/abs/2407.00553">[Paper]</a>
               </td>
             </tr>
             
@@ -236,16 +234,14 @@
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">Lessons in Cooperation: A Qualitative Analysis of Driver Sentiments towards real-time Advisory Systems through a Focus Group User Study	</span>
                 <br>
-                <a href="https://aamzhas.github.io/">A. Hasan</a>,
-                <a href="https://theneeloy.github.io/">N. Chakraborty</a>,
-                <a href="https://haonan16.github.io/">H. Chen</a>, 
-                <a href="https://www.junghooncho.com/">J.-H. Cho</a>,
-                <a href="http://www.wucathy.com/blog/">C. Wu</a>,
-                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                <a href="https://aamzhas.github.io/">Aamir Hasan</a>,
+                <a href="https://theneeloy.github.io/">Neeloy Chakraborty</a>,
+                <a href="https://haonan16.github.io/">Haonan Chen</a>, 
+                <a href="https://www.junghooncho.com/">Jung-Hoon Cho</a>,
+                <a href="http://www.wucathy.com/blog/">Cathy Wu</a>, and
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <em>IEEE Intelligent Transportation Systems Magazine (ITSM)</em>, 2024
-                <br>
-                <a href="https://arxiv.org/abs/2407.13775">Paper</a>
+                <strong>ITSM 2024</strong>, <a href="https://arxiv.org/abs/2407.13775">[Paper]</a>
               </td>
             </tr>
 
@@ -253,7 +249,7 @@
             <tr>
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <video width="100%" muted autoplay loop style="display: block;">
+                  <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
                     <source src="images/stow23.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -262,16 +258,14 @@
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">Predicting Object Interactions with Behavior Primitives: An Application in Stowing Tasks</span>
                 <br>
-                <a href="https://haonan16.github.io/">H. Chen</a>, 
-                Y. Niu*, K. Hong*, 
-                <a href="https://shuijing725.github.io/">S. Liu</a>, 
-                <a href="https://wangyixuan12.github.io/">Y. Wang</a>, 
-                <a href="https://yunzhuli.github.io/">Y. Li</a>, 
-                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                <a href="https://haonan16.github.io/">Haonan Chen</a>, 
+                Yilong Niu*, Kaiwen Hong*, 
+                <a href="https://shuijing725.github.io/">Shuijing Liu</a>, 
+                <a href="https://wangYiqing12.github.io/">Yiqing Wang</a>, 
+                <a href="https://yunzhuli.github.io/">Yunzhu Li</a>, and
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <em>Conference on Robot Learning (CoRL)</em>, 2023
-                <br>
-                <a href="https://haonan16.github.io/stow_page/">Project & Video</a> / <a href="https://arxiv.org/abs/2309.16873">Paper</a>
+                <strong>CoRL 2023</strong>, <a href="https://haonan16.github.io/stow_page/">[Project]</a> <a href="https://arxiv.org/abs/2309.16873">[Paper]</a>
                 <p style="color: red;"><strong>Finalist - Best Paper/Best Student Paper Awards</strong></p>
               </td>
             </tr>
@@ -286,14 +280,14 @@
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">Towards Safety of Multi-Level Human-Robot Interaction in Industrial Tasks</span>
                 <br>
-                <a href="https://tedhuang96.github.io/">Z. Huang</a>, 
-                <a href="https://yejimun.github.io/">Y. Mun</a>, 
-                <a href="https://haonan16.github.io/">H. Chen</a>, 
-                Y. Xie, Y. Niu, X. Li, N. Zhong, H. You, 
-                <a href="https://scholar.google.com/citations?user=83a8tp0AAAAJ&hl=en">D.L. McPherson</a>, 
-                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                <a href="https://tedhuang96.github.io/">Zhe Huang</a>, 
+                <a href="https://yejimun.github.io/">Yeji Mun</a>, 
+                <a href="https://haonan16.github.io/">Haonan Chen</a>, 
+                Yiqing Xie, Yilong Niu, Xiang Li, Ninghan Zhong, Haoyuan You, 
+                <a href="https://scholar.google.com/citations?user=83a8tp0AAAAJ&hl=en">Daniel L. McPherson</a>, and
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <em>IEEE Conference on Automation Science and Engineering (CASE), Special Session on Cyberphysical Manufacturing Networks</em>, 2023
+                <strong>CASE 2023</strong> (Special Session)
               </td>
             </tr>
             
@@ -307,14 +301,14 @@
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">Learning Task Skills and Goals Simultaneously from Physical Interaction</span>
                 <br>
-                <a href="https://haonan16.github.io/">H. Chen*</a>, 
-                <a href="https://yejimun.github.io/">Y. Mun*</a>, 
-                <a href="https://tedhuang96.github.io/">Z. Huang</a>, 
-                Y. Niu, Y. Xie, 
-                <a href="https://scholar.google.com/citations?user=83a8tp0AAAAJ&hl=en">D.L. McPherson</a>, 
-                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                <a href="https://haonan16.github.io/">Haonan Chen*</a>, 
+                <a href="https://yejimun.github.io/">Yeji Mun*</a>, 
+                <a href="https://tedhuang96.github.io/">Zhe Huang</a>, 
+                Yilong Niu, Yiqing Xie, 
+                <a href="https://scholar.google.com/citations?user=83a8tp0AAAAJ&hl=en">D. Livingston McPherson</a>, and
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <em>IEEE Conference on Automation Science and Engineering (CASE), Special Session on Cyberphysical Manufacturing Networks</em>, 2023
+                <strong>CASE 2023</strong> (Special Session)
               </td>
             </tr>
 
@@ -329,16 +323,14 @@
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">PeRP: Personalized Residual Policies For Congestion Mitigation Through Co-operative Advisory Systems</span>
                 <br>
-                A. Hasan, 
-                <a href="https://theneeloy.github.io/">N. Chakraborty*</a>, 
-                <a href="https://haonan16.github.io/">H. Chen*</a>, 
-                <a href="https://www.junghooncho.com/">J-H. Cho</a>, 
-                <a href="http://www.wucathy.com/blog/">C. Wu</a>,
-                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                Aamir Hasan, 
+                <a href="https://theneeloy.github.io/">Neeloy Chakraborty*</a>, 
+                <a href="https://haonan16.github.io/">Haonan Chen*</a>, 
+                <a href="https://www.junghooncho.com/">Jung-Hoon Cho</a>, 
+                <a href="http://www.wucathy.com/blog/">Cathy Wu</a>, and
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <em>IEEE International Conference on Intelligent Transportation Systems (ITSC)</em>, 2023
-                <br>
-                <a href="https://arxiv.org/pdf/2308.00864.pdf">Paper</a> / <a href="https://sites.google.com/illinois.edu/perp">Website</a>
+                <strong>ITSC 2023</strong>, <a href="https://arxiv.org/pdf/2308.00864.pdf">[Paper]</a> <a href="https://sites.google.com/illinois.edu/perp">[Website]</a>
                 <p style="color: red;">
                   <strong>Best Presentation Award at  
                       <a href="https://publish.illinois.edu/csl-student-conference-2024/" style="color: red; text-decoration: none;">
@@ -358,14 +350,12 @@
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">Combining Model-Based Controllers and Generative Adversarial Imitation Learning for Traffic Simulation</span>
                 <br>
-                <a href="https://haonan16.github.io/">H. Chen</a>, 
-                <a href="https://tianchenji.github.io/">T. Ji</a>, 
-                <a href="https://shuijing725.github.io/">S. Liu</a>, 
-                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                <a href="https://haonan16.github.io/">Haonan Chen</a>, 
+                <a href="https://tianchenji.github.io/">Tianchen Ji</a>, 
+                <a href="https://shuijing725.github.io/">Shuijing Liu</a>, and
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <em>IEEE International Conference on Intelligent Transportation Systems (ITSC)</em>, 2022
-                <br>
-                <a href="https://ieeexplore.ieee.org/document/9922261">Paper</a>
+                <strong>ITSC 2022</strong>, <a href="https://ieeexplore.ieee.org/document/9922261">[Paper]</a>
               </td>
             </tr>
 
@@ -380,15 +370,13 @@
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">Learning to Navigate Intersections with Unsupervised Driver Trait Inference</span>
                 <br>
-                <a href="https://shuijing725.github.io/">S. Liu</a>, 
-                <a href="https://sites.google.com/site/changpeixin/home">P. Chang</a>, 
-                <a href="https://haonan16.github.io/">H. Chen</a>, 
-                <a href="https://theneeloy.github.io/">N. Chakraborty</a>, 
-                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                <a href="https://shuijing725.github.io/">Shuijing Liu</a>, 
+                <a href="https://sites.google.com/site/changpeixin/home">Peixin Chang</a>, 
+                <a href="https://haonan16.github.io/">Haonan Chen</a>, 
+                <a href="https://theneeloy.github.io/">Neeloy Chakraborty</a>, and
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2022
-                <br>
-                <a href="https://arxiv.org/abs/2109.06783">Paper</a> / <a href="https://sites.google.com/illinois.edu/vae-trait-inference/home">Website</a> / <a href="https://www.youtube.com/watch?v=wqbgsjSvkAo&feature=youtu.be&ab_channel=ShuijingLiu">Video</a>
+                <strong>ICRA 2022</strong>, <a href="https://arxiv.org/abs/2109.06783">[Paper]</a> <a href="https://sites.google.com/illinois.edu/vae-trait-inference/home">[Website]</a> <a href="https://www.youtube.com/watch?v=wqbgsjSvkAo&feature=youtu.be&ab_channel=ShuijingLiu">[Video]</a>
               </td>
             </tr>
             
@@ -401,14 +389,12 @@
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">Robot Sound Interpretation: Combining Sight and Sound in Learning-Based Control</span>
                 <br>
-                <a href="https://sites.google.com/site/changpeixin/home">P. Chang</a>, 
-                <a href="https://shuijing725.github.io/">S. Liu</a>, 
-                <a href="https://haonan16.github.io/">H. Chen</a>, 
-                <a href="https://krdc.web.illinois.edu/">K. Driggs-Campbell</a>
+                <a href="https://sites.google.com/site/changpeixin/home">Peixin Chang</a>, 
+                <a href="https://shuijing725.github.io/">Shuijing Liu</a>, 
+                <a href="https://haonan16.github.io/">Haonan Chen</a>, and
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2020
-                <br>
-                <a href="https://arxiv.org/abs/1909.09172">Paper</a> / <a href="https://www.youtube.com/watch?v=0ONGQwhGn_Y&ab_channel=PeixinChang">Video</a>
+                <strong>IROS 2020</strong>, <a href="https://arxiv.org/abs/1909.09172">[Paper]</a> <a href="https://www.youtube.com/watch?v=0ONGQwhGn_Y&ab_channel=PeixinChang">[Video]</a>
               </td>
             </tr>
 
