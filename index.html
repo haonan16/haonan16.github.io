@@ -21,29 +21,82 @@
             console.log('Video autoplay failed:', e);
           });
         });
+
+        // Initialize: show selected publications by default
+        showSelected();
       });
+
+      function showSelected() {
+        var allPubs = document.querySelectorAll('.pub-item');
+        for (var i = 0; i < allPubs.length; i++) {
+          if (allPubs[i].classList.contains('selected-pub')) {
+            allPubs[i].style.display = 'table-row';
+          } else {
+            allPubs[i].style.display = 'none';
+          }
+        }
+        document.getElementById('selected-link').style.fontWeight = 'bold';
+        document.getElementById('date-link').style.fontWeight = 'normal';
+      }
+
+      function showByDate() {
+        var allPubs = document.querySelectorAll('.pub-item');
+        for (var i = 0; i < allPubs.length; i++) {
+          allPubs[i].style.display = 'table-row';
+        }
+        document.getElementById('selected-link').style.fontWeight = 'normal';
+        document.getElementById('date-link').style.fontWeight = 'bold';
+      }
+
+      function toggleNews() {
+        var moreNews = document.querySelectorAll('.more-news');
+        var toggleLink = document.getElementById('news-toggle-link');
+        var isHidden = moreNews[0].style.display === 'none';
+
+        for (var i = 0; i < moreNews.length; i++) {
+          moreNews[i].style.display = isHidden ? 'list-item' : 'none';
+        }
+
+        toggleLink.innerHTML = isHidden ? '[Show less]' : '[Show more]';
+      }
     </script>
     <!-- Navigation Bar -->
     <div id="navbar" style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 24px;
       padding: 12px 16px;
-      font-size: 20px;
+      font-size: 18px;
+      background-color: #404040;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     "
     >
-      <a href="#home">Home</a> 
-      <a href="#news">News</a> 
-      <a href="#research">Research</a> 
-      <a href="#honors">Honors</a> 
+      <a href="#home" style="color: #ffffff; text-decoration: none; transition: color 0.2s;">Home</a>
+      <a href="#news" style="color: #ffffff; text-decoration: none; transition: color 0.2s;">News</a>
+      <a href="#research" style="color: #ffffff; text-decoration: none; transition: color 0.2s;">Research</a>
+      <a href="#honors" style="color: #ffffff; text-decoration: none; transition: color 0.2s;">Honors</a>
     </div>
 
     <style>
+      #navbar a:hover {
+        color: #4A9EFF !important;
+      }
+
       @media (max-width: 600px) {
         #navbar {
           display: none;
         }
+      }
+
+      /* Add padding to body to account for fixed navbar */
+      body {
+        padding-top: 50px;
       }
     </style>
 
@@ -58,28 +111,28 @@
                   Haonan Chen
                 </p>
                 <p>
-                  I am a postdoc at Harvard, advised by 
-                  <a href="https://yilundu.github.io/"><b>Yilun Du</b></a>. 
-                  Previously, I was a Ph.D. candidate in 
-                  <a href="https://ece.illinois.edu/">Electrical and Computer Engineering</a> at the University of Illinois Urbana-Champaign, 
-                  advised by 
-                  <a href="https://krdc.web.illinois.edu/"><b>Katie Driggs-Campbell</b></a> and worked closely with 
-                  <a href="https://yunzhuli.github.io/"><b>Yunzhu Li</b></a>. 
+                  I am a postdoc at Harvard, where I am fortunate to be advised by
+                  <a href="https://yilundu.github.io/"><b>Yilun Du</b></a>.
+                  Previously, I was a Ph.D. candidate in
+                  <a href="https://ece.illinois.edu/">Electrical and Computer Engineering</a> at the University of Illinois Urbana-Champaign,
+                  where I was fortunate to be advised by
+                  <a href="https://krdc.web.illinois.edu/"><b>Katie Driggs-Campbell</b></a> and was fortunate to work closely with
+                  <a href="https://yunzhuli.github.io/"><b>Yunzhu Li</b></a>.
                 </p>
                 <p>
-                  My research focuses on <i>robotic manipulation</i>, where I develop structured models that help robots reason about the physical world, predict outcomes, and act robustly in unstructured environments. 
-                  I aim to equip robots with new capabilities by learning from <b style="color: #B22222;">heterogeneous data sources</b>, including <i>simulation, teleoperation, human video, off-policy data, and synthetic content</i>. 
+                  My research focuses on <b style="color: #B22222;">composable multimodal robot learning</b> for <i>robotic manipulation</i>, where I develop structured models that help robots reason about the physical world, predict outcomes, and act robustly in unstructured environments.
+                  I aim to equip robots with new capabilities by learning from <b style="color: #B22222;">heterogeneous data sources</b>, including <i>simulation, teleoperation, human video, off-policy data, and synthetic content</i>.
                   My work has been recognized with a Best Paper Finalist at CoRL 2023 and a Best Paper Award at the ICRA 2025 Workshop on Foundation Models and NeSy AI.
                 </p>
                 <p>
-                  I'm open to potential collaborations. If you see any overlap in our research interests, please feel free to drop me an email.
+                  I'm actively seeking collaborations in composable robot learning, multi-modal manipulation, and learning from heterogeneous data sources. If you're interested in combining different modalities (vision, touch, audio) for robot learning, leveraging human demonstrations, or building generalizable manipulation policies, I'd love to chat with you!
                 </p>
                 <p style="text-align:center">
-                  <a href="mailto:haonan2@illinois.edu">Email</a> &nbsp;/&nbsp;
+                  <a href="mailto:haonan_chen@seas.harvard.edu">Email</a> &nbsp;/&nbsp;
                   <a href="data/CV_HaonanChen.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=SomOgNIAAAAJ&hl=en">Google Scholar</a> &nbsp;
-                  <!-- <a href="https://twitter.com/haonanchen">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/haonan16/">Github</a> -->
+                  <a href="https://scholar.google.com/citations?user=SomOgNIAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://x.com/HaonanChen_">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/haonan16/">Github</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:20%;max-width:20%;">
@@ -98,16 +151,20 @@
                 <div id="news" style="position: relative; top: -80px;"></div>
                 <h2>News</h2>
                   <ul>
-                    <li>[2025/06] Invited Talk at <a href="https://www.tactasystems.com/" target="_blank" rel="noopener noreferrer">Tacta Systems</a> on <em>"Learning What, How, and Where from Humans: Structured Inductive Biases for Robot Learning"</em></li>
-                    <li>[2025/06] Invited Talk at <a href="https://jiajunwu.com/" target="_blank" rel="noopener noreferrer">Professor Jiajun Wu's Lab at Stanford</a> on <em>"Learning What, How, and Where from Humans: Structured Inductive Biases for Robot Learning"</em></li>
+                    <li>[2025/10] I will give a talk at <a href="https://computationalrobotics.seas.harvard.edu" target="_blank" rel="noopener noreferrer">Computational Robotics Lab at Harvard</a></li>
+                    <li>[2025/06] I gave a talk at <a href="https://jiajunwu.com/" target="_blank" rel="noopener noreferrer">Professor Jiajun Wu's Lab at Stanford</a></li>
                     <li>[2025/05] Co-organizing the <a href="https://contact-rich.github.io" target="_blank" rel="noopener noreferrer">ICRA 2025 Workshop on Learning Meets Model-Based Methods for Contact-Rich Manipulation</a></li>
-                    <li>[2025/05] Invited Talk at <a href="https://robertomartinmartin.com/" target="_blank" rel="noopener noreferrer">Professor Roberto Martín-Martín's Lab at UT Austin</a> on <em>"Toward Human-Robot Alignment through Human Behavior&nbsp;Priors"</em></li>
-                    <li>[2025/05] Outreach Talk to Grade 5 Students at St. Matthew Catholic School on <em>"Toward Human-Robot Alignment through Human Behavior&nbsp;Priors"</em></li>
-                    <li>[2025/04] Invited Talk at <a href="https://tensorlab.cms.caltech.edu/users/anima/" target="_blank" rel="noopener noreferrer">Professor Animashree Anandkumar's Lab at Caltech</a> on <em>"Deployable Robot Learning from Human&nbsp;Priors"</em></li>
-                    <li>[2025/04] Invited Talk at <a href="https://www.cs.cmu.edu/~katef/" target="_blank" rel="noopener noreferrer">Professor Katerina Fragkiadaki's Lab at Carnegie Mellon University</a> on <em>"Deployable Robot Learning from Human&nbsp;Priors"</em></li>
-                    <li>[2025/03] Invited Talk at <a href="https://safeai-lab.github.io/" target="_blank" rel="noopener noreferrer">Safe AI Lab at Carnegie Mellon University</a> on <em>"Building Deployable and Pragmatic Robots from Human&nbsp;Priors"</em></li>
-                    <li>[2025/03] Invited Talk at <a href="https://parasollab.web.illinois.edu/" target="_blank" rel="noopener noreferrer">Parasol Lab at the University of Illinois Urbana-Champaign</a> on <em>"Tool-as-Interface: Learning Robot Policies from Human Tool Usage through Imitation Learning"</em></li>
+                    <li>[2025/04] I gave a talk at <a href="https://tensorlab.cms.caltech.edu/users/anima/" target="_blank" rel="noopener noreferrer">Professor Animashree Anandkumar's Lab at Caltech</a></li>
+                    <li>[2025/04] I gave a talk at <a href="https://www.cs.cmu.edu/~katef/" target="_blank" rel="noopener noreferrer">Professor Katerina Fragkiadaki's Lab at Carnegie Mellon University</a></li>
+                    <li class="more-news" style="display:none;">[2025/06] I gave a talk at <a href="https://www.tactasystems.com/" target="_blank" rel="noopener noreferrer">Tacta Systems</a></li>
+                    <li class="more-news" style="display:none;">[2025/05] I gave a talk at <a href="https://robertomartinmartin.com/" target="_blank" rel="noopener noreferrer">Professor Roberto Martín-Martín's Lab at UT Austin</a></li>
+                    <li class="more-news" style="display:none;">[2025/05] I gave an outreach talk to Grade 5 Students at St. Matthew Catholic School</li>
+                    <li class="more-news" style="display:none;">[2025/03] I gave a talk at <a href="https://safeai-lab.github.io/" target="_blank" rel="noopener noreferrer">Safe AI Lab at Carnegie Mellon University</a></li>
+                    <li class="more-news" style="display:none;">[2025/03] I gave a talk at <a href="https://parasollab.web.illinois.edu/" target="_blank" rel="noopener noreferrer">Parasol Lab at the University of Illinois Urbana-Champaign</a></li>
                   </ul>
+                  <p>
+                    <a href="javascript:toggleNews()" id="news-toggle-link" style="cursor:pointer; color:#4A9EFF;">[Show more]</a>
+                  </p>
                 </td>
               </tr>
             </tbody>
@@ -118,17 +175,48 @@
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
               <div id="research" style="position: relative; top: -80px;"></div>
-              <h2>Research</h2>
-                <!-- <p>
-                  My research focuses on robotic manipulation, imitation learning, and human-robot interaction. I develop algorithms that enable robots to learn from human demonstrations and improve their manipulation skills in complex environments.
-                </p> -->
+              <h2>Publications</h2>
+              <p>
+                <a href="javascript:showSelected()" id="selected-link" style="font-weight: bold;">show selected</a> /
+                <a href="javascript:showByDate()" id="date-link">show by date</a>
+              </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+            <tr class="pub-item selected-pub">
+              <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
+                <div class="one">
+                  <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
+                    <source src="images/policyconsensus.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
+                <span class="papertitle">
+                  Multi-Modal Manipulation via Multi-Modal Policy Consensus
+                </span>
+                <br>
+                <a href="https://haonan16.github.io/">Haonan Chen</a>,
+                <a href="https://www.linkedin.com/in/jiaming-xu-7b4857264/">Jiaming Xu*</a>,
+                <a href="https://www.linkedin.com/in/hongyu-chen-91996b22b">Hongyu Chen*</a>,
+                <a href="https://www.linkedin.com/in/kaiwen-hong-524520141/?locale=en_US">Kaiwen Hong</a>,
+                <a href="https://binghao-huang.github.io/">Binghao Huang</a>,
+                <a href="https://chaoqi-liu.com/">Chaoqi Liu</a>,
+                <a href="https://jiayuanm.com/">Jiayuan Mao</a>,
+                <a href="https://yunzhuli.github.io/">Yunzhu Li</a>,
+                <a href="https://yilundu.github.io/">Yilun Du<sup>+</sup></a>, and
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell<sup>+</sup></a>
+                <br>
+                <em>* Equal contribution, <sup>+</sup> Equal advising</em>
+                <br>
+                <a href="https://policyconsensus.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2509.23468">[Paper]</a> <a href="https://github.com/policyconsensus/policyconsensus">[Code]</a> <a href="https://huggingface.co/datasets/haonan-chen/policy-consensus/tree/main">[Dataset]</a>
+              </td>
+            </tr>
 
-            <tr>
+            <tr class="pub-item selected-pub">
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
@@ -159,7 +247,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr class="pub-item selected-pub">
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/preference25.png" width="100%" style="display: block;">
@@ -180,7 +268,7 @@
 
 
 
-            <tr>
+            <tr class="pub-item selected-pub">
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
@@ -204,7 +292,7 @@
               </td>
             </tr>
             
-            <tr>
+            <tr class="pub-item selected-pub">
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/advisory23.png" width="100%" style="display: block;">
@@ -225,7 +313,7 @@
             </tr>
             
             
-            <tr>
+            <tr class="pub-item selected-pub">
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/driver_sentiments.png" width="100%" style="display: block;">
@@ -246,7 +334,7 @@
             </tr>
 
 
-            <tr>
+            <tr class="pub-item selected-pub">
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
@@ -266,12 +354,12 @@
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
                 <strong>CoRL 2023</strong>, <a href="https://haonan16.github.io/stow_page/">[Project]</a> <a href="https://arxiv.org/abs/2309.16873">[Paper]</a>
-                <p style="color: red;"><strong>Finalist - Best Paper/Best Student Paper Awards</strong></p>
+                <br>
+                <span style="color: red;"><strong>Finalist - Best Paper/Best Student Paper Awards</strong></span>
               </td>
             </tr>
-                        
 
-            <tr>
+            <tr class="pub-item">
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/safety-modules_large.png" width="100%" style="display: block;">
@@ -292,7 +380,7 @@
             </tr>
             
 
-            <tr>
+            <tr class="pub-item">
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/learn_skills.jpg" width="100%" style="display: block;">
@@ -301,10 +389,10 @@
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">Learning Task Skills and Goals Simultaneously from Physical Interaction</span>
                 <br>
-                <a href="https://haonan16.github.io/">Haonan Chen*</a>, 
-                <a href="https://yejimun.github.io/">Yeji Mun*</a>, 
-                <a href="https://tedhuang96.github.io/">Zhe Huang</a>, 
-                Yilong Niu, Yiqing Xie, 
+                <a href="https://haonan16.github.io/">Haonan Chen*</a>,
+                <a href="https://yejimun.github.io/">Yeji Mun*</a>,
+                <a href="https://tedhuang96.github.io/">Zhe Huang</a>,
+                Yilong Niu, Yiqing Xie,
                 <a href="https://scholar.google.com/citations?user=83a8tp0AAAAJ&hl=en">D. Livingston McPherson</a>, and
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
@@ -314,7 +402,7 @@
 
 
 
-            <tr>
+            <tr class="pub-item selected-pub">
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/human_driving.png" width="100%" style="display: block;">
@@ -341,7 +429,7 @@
               </td>
             </tr>
                         
-            <tr>
+            <tr class="pub-item">
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/itsc_driving.png" width="100%" style="display: block;">
@@ -350,8 +438,8 @@
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">Combining Model-Based Controllers and Generative Adversarial Imitation Learning for Traffic Simulation</span>
                 <br>
-                <a href="https://haonan16.github.io/">Haonan Chen</a>, 
-                <a href="https://tianchenji.github.io/">Tianchen Ji</a>, 
+                <a href="https://haonan16.github.io/">Haonan Chen</a>,
+                <a href="https://tianchenji.github.io/">Tianchen Ji</a>,
                 <a href="https://shuijing725.github.io/">Shuijing Liu</a>, and
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
@@ -359,9 +447,9 @@
               </td>
             </tr>
 
-          
 
-            <tr>
+
+            <tr class="pub-item">
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/trait_opening.png" width="100%" style="display: block;">
@@ -370,9 +458,9 @@
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">Learning to Navigate Intersections with Unsupervised Driver Trait Inference</span>
                 <br>
-                <a href="https://shuijing725.github.io/">Shuijing Liu</a>, 
-                <a href="https://sites.google.com/site/changpeixin/home">Peixin Chang</a>, 
-                <a href="https://haonan16.github.io/">Haonan Chen</a>, 
+                <a href="https://shuijing725.github.io/">Shuijing Liu</a>,
+                <a href="https://sites.google.com/site/changpeixin/home">Peixin Chang</a>,
+                <a href="https://haonan16.github.io/">Haonan Chen</a>,
                 <a href="https://theneeloy.github.io/">Neeloy Chakraborty</a>, and
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
@@ -380,7 +468,7 @@
               </td>
             </tr>
             
-            <tr>
+            <tr class="pub-item">
               <td style="padding:20px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/sound.png" width="100%" style="display: block;">
@@ -389,8 +477,8 @@
               <td style="padding:20px;width:75%;vertical-align:top; padding-left: 20px;">
                 <span class="papertitle">Robot Sound Interpretation: Combining Sight and Sound in Learning-Based Control</span>
                 <br>
-                <a href="https://sites.google.com/site/changpeixin/home">Peixin Chang</a>, 
-                <a href="https://shuijing725.github.io/">Shuijing Liu</a>, 
+                <a href="https://sites.google.com/site/changpeixin/home">Peixin Chang</a>,
+                <a href="https://shuijing725.github.io/">Shuijing Liu</a>,
                 <a href="https://haonan16.github.io/">Haonan Chen</a>, and
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
@@ -473,7 +561,7 @@
                     <ul>
                       <li>
                         <a href="https://robotics.illinois.edu/robotics-seminar-series/" style="color:black;"><strong>Robotics Seminar @ Illinois</strong></a> <br>
-                        Organizer <span style="float:right;">August 2023 - Present</span>
+                        Organizer <span style="float:right;">August 2023 - May 2025</span>
                       </li>
                       <li>
                         <strong>Coordinated Science Laboratory Student Conference</strong> <br>
@@ -501,6 +589,8 @@
                         <ul>
                           <li>CoRL - Conference on Robot Learning</li>
                           <li>ICRA - IEEE International Conference on Robotics and Automation</li>
+                          <li>ICLR - International Conference on Learning Representations</li>
+                          <li>RA-L - IEEE Robotics and Automation Letters</li>
                           <li>ITSC - IEEE International Conference on Intelligent Transportation Systems</li>
                           <li>CASE - IEEE Conference on Automation Science and Engineering</li>
                         </ul>
