@@ -80,7 +80,7 @@ th,
 tr,
 p,
 a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 17px;
   text-align: justify;
   hyphens: auto;
@@ -88,43 +88,43 @@ a {
 }
 
 strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 17px;
 }
 
 h2 {
   margin: 0;
   font-weight: normal;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 24px;
 }
 
 .papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 17px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 19px;
   font-weight: 700;
 }
 
 .name {
   padding-top: 20px;
   margin: 0;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 36px;
 }
 
 .one {
   width: 100%;
-  max-width: 240px;
+  max-width: 360px;
   height: auto;
-  min-height: 180px;
+  min-height: 270px;
   position: relative;
 }
 
 .two {
   width: 100%;
-  max-width: 240px;
+  max-width: 360px;
   height: auto;
-  min-height: 180px;
+  min-height: 270px;
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
@@ -153,6 +153,18 @@ h2 {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+/* Publication spacing */
+.pub-item td {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+/* Tighter paragraph spacing in intro */
+#home p {
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
 
 /* ===== Navigation Bar Styling ===== */
