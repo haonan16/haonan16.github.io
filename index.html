@@ -59,6 +59,15 @@
 
         toggleLink.innerHTML = isHidden ? '[Show less]' : '[Show more]';
       }
+
+      function copyBibtex(id, el) {
+        var text = document.getElementById(id).textContent;
+        navigator.clipboard.writeText(text).then(function() {
+          var orig = el.textContent;
+          el.textContent = '[Copied!]';
+          setTimeout(function() { el.textContent = orig; }, 1500);
+        });
+      }
     </script>
     <!-- Navigation Bar -->
     <div id="navbar" style="
@@ -99,6 +108,11 @@
       body {
         padding-top: 50px;
       }
+
+      .pub-item td {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+      }
     </style>
 
     <table id="home" style="padding-top: 80px; margin-top: -80px; width:100%;max-width:min(90vw, 1200px);border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -112,20 +126,20 @@
                   Haonan Chen
                 </p>
                 <p>
-                  I am a postdoc at <a href="https://www.harvard.edu/">Harvard University</a> and a visiting postdoc at <a href="https://www.stanford.edu/">Stanford University</a>, where I work with
+                  I am a postdoc in the <a href="https://embodied-minds-lab.github.io/">Embodied Minds Lab</a> at <a href="https://www.harvard.edu/">Harvard</a> and the <a href="https://svl.stanford.edu/">Vision and Learning Lab</a> at <a href="https://www.stanford.edu/">Stanford</a>, working with
                   <a href="https://yilundu.github.io/">Yilun Du</a> and
-                  <a href="https://jiajunwu.com/">Jiajun Wu</a>. I am affiliated with the <a href="https://embodied-minds-lab.github.io/">Harvard Embodied Minds Lab</a> and the <a href="https://svl.stanford.edu/">Stanford Vision and Learning Lab</a>.
-                  Previously, I received my Ph.D. at <a href="https://ece.illinois.edu/">UIUC</a>, where I worked with
+                  <a href="https://jiajunwu.com/">Jiajun Wu</a>.
+                  Previously, I received my Ph.D. from <a href="https://ece.illinois.edu/">UIUC</a>, where I worked with
                   <a href="https://krdc.web.illinois.edu/">Katie Driggs-Campbell</a> and
                   <a href="https://yunzhuli.github.io/">Yunzhu Li</a>.
                 </p>
                 <p>
-                  My research focuses on <b style="color: #B22222;">Compositional Multisensory Intelligence</b> for robotic manipulation. I develop structured compositional models that draw knowledge from policies, world models, and foundation models to help robots reason about the physical world and learn from heterogeneous data sources, including simulation, teleoperation, human video, and off-policy data.
+                  My research focuses on building <b style="color: #B22222;">Heterogeneous Physical Intelligence</b> for robots by composing specialized models across modalities and time scales.
                 </p>
                 <ul style="margin-top: 8px;">
-                  <li><b>Composable Model Learning:</b> Developing hierarchical structures that compose policies, world models, and foundation models (LLMs/VLMs) to learn from diverse data.</li>
-                  <li><b>Multisensory Perception:</b> Harnessing vision, touch, audio, and language for fine-grained and effective manipulation.</li>
-                  <li><b>Structured World Models:</b> Learning physics-inspired predictive models from and for robotic manipulation of deformable objects.</li>
+                  <li><b>Multisensory Learning:</b> Integrating vision, touch, audio, and language for fine-grained and effective manipulation.</li>
+                  <li><b>Structured Action Representations:</b> Learning compositional action abstractions from diverse data including simulation, teleoperation, human video, and off-policy data.</li>
+                  <li><b>Predictive Manipulation:</b> Learning physics-inspired world models for contact-rich robotic manipulation.</li>
                 </ul>
                 <p>
                   I'm always excited to explore new collaborations in robotics and machine learning! If you're interested, please drop me an email. I'd love to chat!
@@ -179,7 +193,98 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
             <tr class="pub-item selected-pub">
-              <td style="padding:8px 20px;width:35%;vertical-align:top; text-align: center;">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
+                <div class="one">
+                  <img src="images/oat_teaser.png" width="100%" style="display: block;">
+                </div>
+              </td>
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
+                <span class="papertitle">
+                  OAT: Ordered Action Tokenization
+                </span>
+                <br>
+                <a href="https://chaoqi-liu.com/">Chaoqi Liu</a>,
+                <a href="https://xiaoshan-han.github.io/">Xiaoshen Han</a>,
+                <a href="">Jiawei Gao</a>,
+                <a href="">Yue Zhao</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
+                <a href="https://yilundu.github.io/">Yilun Du</a>
+                <br>
+                <strong>Preprint 2026</strong>, <a href="https://ordered-action-tokenization.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2602.04215">[Paper]</a> <a href="https://github.com/Chaoqi-LIU/oat">[Code]</a> <a href="https://x.com/liu730chaoqi/status/2020268786046390357?s=20">[Blog]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-oat', this)">[BibTeX]</a>
+                <br>
+                <strong>Media Coverage:</strong> <a href="https://www.marktechpost.com/2026/02/08/meet-oat-the-new-action-tokenizer-bringing-llm-style-scaling-and-flexible-anytime-inference-to-the-robotics-world/">[MarkTechPost]</a>
+                <span id="bib-oat" style="display:none;">@misc{liu2026orderedactiontokenization,
+    title={OAT: Ordered Action Tokenization},
+    author={Chaoqi Liu and Xiaoshen Han and Jiawei Gao and Yue Zhao and Haonan Chen and Yilun Du},
+    year={2026},
+    eprint={2602.04215},
+    archivePrefix={arXiv},
+    primaryClass={cs.RO},
+    url={https://arxiv.org/abs/2602.04215},
+}</span>
+              </td>
+            </tr>
+
+            <tr class="pub-item">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
+                <div class="one">
+                  <img src="images/impact_teaser.svg" width="100%" style="display: block;">
+                </div>
+              </td>
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
+                <span class="papertitle">
+                  IMPACT: Learning Internal-Model Predictive Control for Forceful Robotic Manipulation
+                </span>
+                <br>
+                <a href="https://gao-jiawei.com/">Jiawei Gao</a>,
+                <a href="https://chaoqi-liu.com/">Chaoqi Liu</a>,
+                <a href="">Peilin Wu</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
+                <a href="https://yilundu.github.io/">Yilun Du</a>
+                <br>
+                <strong>Preprint 2026</strong>, <a href="https://gao-jiawei.com/IMPACT/">[Project]</a> <a href="https://arxiv.org/abs/2406.14558v2">[Paper]</a> <a href="https://github.com/Winston-Gu/IMPACT">[Code]</a> <a href="https://www.youtube.com/watch?v=kboJsLPIrYI">[Video]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-impact', this)">[BibTeX]</a>
+                <span id="bib-impact" style="display:none;">@article{gao2024impact,
+    title={Learning Internal-Model Predictive Control for Forceful Robotic Manipulation},
+    author={Gao, Jiawei and Liu, Chaoqi and Wu, Peilin and Chen, Haonan and Du, Yilun},
+    journal={arXiv preprint arXiv:2406.14558},
+    year={2024}
+}</span>
+              </td>
+            </tr>
+
+            <tr class="pub-item">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
+                <div class="one">
+                  <img src="images/simpact_teaser.png" width="100%" style="display: block;">
+                </div>
+              </td>
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
+                <span class="papertitle">
+                  SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models
+                </span>
+                <br>
+                <a href="">Haowen Liu*</a>,
+                <a href="https://shaoxiongyao.github.io/">Shaoxiong Yao*</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
+                <a href="https://gao-jiawei.com/">Jiawei Gao</a>,
+                <a href="https://jiayuanm.com/">Jiayuan Mao</a>,
+                <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>,
+                <a href="https://yilundu.github.io/">Yilun Du</a>
+                <br>
+                <em>* Equal contribution</em>
+                <br>
+                <strong>CVPR 2026</strong>, <a href="https://simpact-bot.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2512.05955">[Paper]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-simpact', this)">[BibTeX]</a>
+                <span id="bib-simpact" style="display:none;">@article{simpact2025,
+    title={SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models},
+    author={Liu, Haowen and Yao, Shaoxiong and Chen, Haonan and Gao, Jiawei and Mao, Jiayuan and Huang, Jia-Bin and Du, Yilun},
+    journal={arXiv preprint arXiv:2512.05955},
+    year={2025}
+}</span>
+              </td>
+            </tr>
+
+            <tr class="pub-item selected-pub">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
                     <source src="images/policyconsensus.mp4" type="video/mp4">
@@ -187,12 +292,12 @@
                   </video>
                 </div>
               </td>
-              <td style="padding:8px 20px;width:65%;vertical-align:top; padding-left: 20px;">
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">
                   Multi-Modal Manipulation via Multi-Modal Policy Consensus
                 </span>
                 <br>
-                <a href="https://haonan16.github.io/">Haonan Chen</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
                 <a href="https://www.linkedin.com/in/jiaming-xu-7b4857264/">Jiaming Xu*</a>,
                 <a href="https://www.linkedin.com/in/hongyu-chen-91996b22b">Hongyu Chen*</a>,
                 <a href="https://www.linkedin.com/in/kaiwen-hong-524520141/?locale=en_US">Kaiwen Hong</a>,
@@ -207,12 +312,12 @@
                 <br>
                 <strong>ICRA 2026</strong>, <a href="https://policyconsensus.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2509.23468">[Paper]</a> <a href="https://github.com/policyconsensus/policyconsensus">[Code]</a> <a href="https://huggingface.co/datasets/haonan-chen/policy-consensus/tree/main">[Dataset]</a> <a href="https://www.youtube.com/watch?v=gT_zpOjZPxc">[Video]</a> <a href="https://policyconsensus.github.io/static/audio/audio.mp3">[Audio]</a> <a href="https://www.notion.so/Multi-Modal-Manipulation-via-Policy-Consensus-28645464339980d6a8a4ca588dec3905">[Blog]</a> <a href="https://deepwiki.com/policyconsensus/policyconsensus">[Deepwiki]</a>
                 <br>
-                Featured in <span style="color: red;">Video Friday</span> on <a href="https://spectrum.ieee.org/video-friday-multimode-drone">[IEEE Spectrum]</a>
+                <strong>Media Coverage:</strong> Featured in <span style="color: red;">Video Friday</span> on <a href="https://spectrum.ieee.org/video-friday-multimode-drone">[IEEE Spectrum]</a>
               </td>
             </tr>
 
             <tr class="pub-item">
-              <td style="padding:8px 20px;width:35%;vertical-align:top; text-align: center;">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
                     <source src="images/fdp_26.mp4" type="video/mp4">
@@ -220,13 +325,13 @@
                   </video>
                 </div>
               </td>
-              <td style="padding:8px 20px;width:65%;vertical-align:top; padding-left: 20px;">
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">
                   Flexible Multitask Learning with Factorized Diffusion Policy
                 </span>
                 <br>
                 <a href="https://chaoqi-liu.com/">Chaoqi Liu</a>,
-                <a href="https://haonan16.github.io/">Haonan Chen</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
                 <a href="https://sigmundhh.com/">Sigmund H. Høeg*</a>,
                 <a href="https://shaoxiongyao.github.io/">Shaoxiong Yao*</a>,
                 <a href="https://yunzhuli.github.io/">Yunzhu Li</a>,
@@ -240,7 +345,7 @@
             </tr>
 
             <tr class="pub-item selected-pub">
-              <td style="padding:8px 20px;width:35%;vertical-align:top; text-align: center;">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
                     <source src="images/corl25_egg_flip.mp4" type="video/mp4">
@@ -248,12 +353,12 @@
                   </video>
                 </div>
               </td>
-              <td style="padding:8px 20px;width:65%;vertical-align:top; padding-left: 20px;">
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">
                   Tool-as-Interface: Learning Robot Policies from Observing Human Tool Use
                 </span>
                 <br>
-                <a href="https://haonan16.github.io/">Haonan Chen</a>, Cheng Zhu,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, Cheng Zhu,
                 <a href="https://shuijing725.github.io/">Shuijing Liu</a>, 
                 <a href="https://yunzhuli.github.io/">Yunzhu Li</a>, and
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
@@ -264,25 +369,25 @@
                 <br>
                 <span style="color: red;"><strong>Best Presentation Award</strong></span> at <strong>CSL Student Conference 2025</strong> <a href="https://studentconference.csl.illinois.edu">[Link]</a>
                 <br>
-                Featured in <span style="color: red;">Video Friday</span> on <a href="https://spectrum.ieee.org/video-friday-flying-robot-spidar">[IEEE Spectrum]</a>
+                <strong>Media Coverage:</strong> Featured in <span style="color: red;">Video Friday</span> on <a href="https://spectrum.ieee.org/video-friday-flying-robot-spidar">[IEEE Spectrum]</a>
                 <br>
                 <strong>Media Coverage:</strong> <a href="https://csl.illinois.edu/news-and-media/human-led-videos-enable-robot-tool-use">[The Grainger College of Engineering]</a>, <a href="https://techxplore.com/news/2025-08-robots-tools.html">[TechXplore]</a>, <a href="https://www.hackster.io/news/it-s-hammer-time-8510c07f951b">[Hackster.io]</a>
               </td>
             </tr>
 
             <tr class="pub-item selected-pub">
-              <td style="padding:8px 20px;width:35%;vertical-align:top; text-align: center;">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/preference25.png" width="100%" style="display: block;">
                 </div>
               </td>
-              <td style="padding:8px 20px;width:65%;vertical-align:top; padding-left: 20px;">
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">
                   Towards Uncertainty Unification: A Case Study for Preference Learning
                 </span>
                 <br>
                 <a href="https://shaotingpeng.github.io/">Shaoting Peng</a>, 
-                <a href="https://haonan16.github.io/">Haonan Chen</a>, and
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, and
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
                 <strong>RSS 2025</strong>, <a href="https://arxiv.org/abs/2503.19317v1">[Paper]</a>
@@ -291,8 +396,8 @@
 
 
 
-            <tr class="pub-item selected-pub">
-              <td style="padding:8px 20px;width:35%;vertical-align:top; text-align: center;">
+            <tr class="pub-item">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
                     <source src="images/bimanual24.mp4" type="video/mp4">
@@ -300,12 +405,12 @@
                   </video>
                 </div>
               </td>
-              <td style="padding:8px 20px;width:65%;vertical-align:top; padding-left: 20px;">
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">
                   Learning Coordinated Bimanual Manipulation Policies using State Diffusion and Inverse Dynamics Models
                 </span>
                 <br>
-                <a href="https://haonan16.github.io/">Haonan Chen</a>, Jiaming Xu*, Lily Sheng*, 
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, Jiaming Xu*, Lily Sheng*, 
                 <a href="https://tianchenji.github.io/">Tianchen Ji</a>, 
                 <a href="https://shuijing725.github.io/">Shuijing Liu</a>, 
                 <a href="https://yunzhuli.github.io/">Yunzhu Li</a>, and
@@ -315,18 +420,18 @@
               </td>
             </tr>
             
-            <tr class="pub-item selected-pub">
-              <td style="padding:8px 20px;width:35%;vertical-align:top; text-align: center;">
+            <tr class="pub-item">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/advisory23.png" width="100%" style="display: block;">
                 </div>
               </td>
-              <td style="padding:8px 20px;width:65%;vertical-align:top; padding-left: 20px;">
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">Cooperative Advisory Residual Policies for Congestion Mitigation</span>
                 <br>
                 <a href="https://aamzhas.github.io/">Aamir Hasan</a>,
                 <a href="https://theneeloy.github.io/">Neeloy Chakraborty</a>,
-                <a href="https://haonan16.github.io/">Haonan Chen</a>, 
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, 
                 <a href="https://www.junghooncho.com/">Jung-Hoon Cho</a>,
                 <a href="http://www.wucathy.com/blog/">Cathy Wu</a>, and
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
@@ -336,18 +441,18 @@
             </tr>
             
             
-            <tr class="pub-item selected-pub">
-              <td style="padding:8px 20px;width:35%;vertical-align:top; text-align: center;">
+            <tr class="pub-item">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/driver_sentiments.png" width="100%" style="display: block;">
                 </div>
               </td>
-              <td style="padding:8px 20px;width:65%;vertical-align:top; padding-left: 20px;">
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">Lessons in Cooperation: A Qualitative Analysis of Driver Sentiments towards real-time Advisory Systems through a Focus Group User Study	</span>
                 <br>
                 <a href="https://aamzhas.github.io/">Aamir Hasan</a>,
                 <a href="https://theneeloy.github.io/">Neeloy Chakraborty</a>,
-                <a href="https://haonan16.github.io/">Haonan Chen</a>, 
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, 
                 <a href="https://www.junghooncho.com/">Jung-Hoon Cho</a>,
                 <a href="http://www.wucathy.com/blog/">Cathy Wu</a>, and
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
@@ -358,7 +463,7 @@
 
 
             <tr class="pub-item selected-pub">
-              <td style="padding:8px 20px;width:35%;vertical-align:top; text-align: center;">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
                     <source src="images/stow23.mp4" type="video/mp4">
@@ -366,10 +471,10 @@
                   </video>
                 </div>
               </td>
-              <td style="padding:8px 20px;width:65%;vertical-align:top; padding-left: 20px;">
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">Predicting Object Interactions with Behavior Primitives: An Application in Stowing Tasks</span>
                 <br>
-                <a href="https://haonan16.github.io/">Haonan Chen</a>, 
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, 
                 Yilong Niu*, Kaiwen Hong*, 
                 <a href="https://shuijing725.github.io/">Shuijing Liu</a>, 
                 <a href="https://wangYiqing12.github.io/">Yiqing Wang</a>, 
@@ -383,60 +488,60 @@
             </tr>
 
             <tr class="pub-item">
-              <td style="padding:8px 20px;width:35%;vertical-align:top; text-align: center;">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/safety-modules_large.png" width="100%" style="display: block;">
                 </div>
               </td>
-              <td style="padding:8px 20px;width:65%;vertical-align:top; padding-left: 20px;">
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">Towards Safety of Multi-Level Human-Robot Interaction in Industrial Tasks</span>
                 <br>
                 <a href="https://tedhuang96.github.io/">Zhe Huang</a>, 
                 <a href="https://yejimun.github.io/">Yeji Mun</a>, 
-                <a href="https://haonan16.github.io/">Haonan Chen</a>, 
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, 
                 Yiqing Xie, Yilong Niu, Xiang Li, Ninghan Zhong, Haoyuan You, 
                 <a href="https://scholar.google.com/citations?user=83a8tp0AAAAJ&hl=en">Daniel L. McPherson</a>, and
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <strong>CASE 2023</strong> (Special Session)
+                <strong>CASE 2023</strong> (Special Session), <a href="https://arxiv.org/abs/2308.03222">[Paper]</a>
               </td>
             </tr>
-            
+
 
             <tr class="pub-item">
-              <td style="padding:8px 20px;width:35%;vertical-align:top; text-align: center;">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/learn_skills.jpg" width="100%" style="display: block;">
                 </div>
               </td>
-              <td style="padding:8px 20px;width:65%;vertical-align:top; padding-left: 20px;">
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">Learning Task Skills and Goals Simultaneously from Physical Interaction</span>
                 <br>
-                <a href="https://haonan16.github.io/">Haonan Chen*</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen*</a></strong>,
                 <a href="https://yejimun.github.io/">Yeji Mun*</a>,
                 <a href="https://tedhuang96.github.io/">Zhe Huang</a>,
                 Yilong Niu, Yiqing Xie,
                 <a href="https://scholar.google.com/citations?user=83a8tp0AAAAJ&hl=en">D. Livingston McPherson</a>, and
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <strong>CASE 2023</strong> (Special Session)
+                <strong>CASE 2023</strong> (Special Session), <a href="https://arxiv.org/abs/2309.04596">[Paper]</a>
               </td>
             </tr>
 
 
 
             <tr class="pub-item selected-pub">
-              <td style="padding:8px 20px;width:35%;vertical-align:top; text-align: center;">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/human_driving.png" width="100%" style="display: block;">
                 </div>
               </td>
-              <td style="padding:8px 20px;width:65%;vertical-align:top; padding-left: 20px;">
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">PeRP: Personalized Residual Policies For Congestion Mitigation Through Co-operative Advisory Systems</span>
                 <br>
                 Aamir Hasan, 
                 <a href="https://theneeloy.github.io/">Neeloy Chakraborty*</a>, 
-                <a href="https://haonan16.github.io/">Haonan Chen*</a>, 
+                <strong><a href="https://haonan16.github.io/">Haonan Chen*</a></strong>, 
                 <a href="https://www.junghooncho.com/">Jung-Hoon Cho</a>, 
                 <a href="http://www.wucathy.com/blog/">Cathy Wu</a>, and
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
@@ -453,15 +558,15 @@
             </tr>
                         
             <tr class="pub-item">
-              <td style="padding:8px 20px;width:35%;vertical-align:top; text-align: center;">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/itsc_driving.png" width="100%" style="display: block;">
                 </div>
               </td>
-              <td style="padding:8px 20px;width:65%;vertical-align:top; padding-left: 20px;">
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">Combining Model-Based Controllers and Generative Adversarial Imitation Learning for Traffic Simulation</span>
                 <br>
-                <a href="https://haonan16.github.io/">Haonan Chen</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
                 <a href="https://tianchenji.github.io/">Tianchen Ji</a>,
                 <a href="https://shuijing725.github.io/">Shuijing Liu</a>, and
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
@@ -473,17 +578,17 @@
 
 
             <tr class="pub-item">
-              <td style="padding:8px 20px;width:35%;vertical-align:top; text-align: center;">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/trait_opening.png" width="100%" style="display: block;">
                 </div>
               </td>
-              <td style="padding:8px 20px;width:65%;vertical-align:top; padding-left: 20px;">
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">Learning to Navigate Intersections with Unsupervised Driver Trait Inference</span>
                 <br>
                 <a href="https://shuijing725.github.io/">Shuijing Liu</a>,
                 <a href="https://sites.google.com/site/changpeixin/home">Peixin Chang</a>,
-                <a href="https://haonan16.github.io/">Haonan Chen</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
                 <a href="https://theneeloy.github.io/">Neeloy Chakraborty</a>, and
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
@@ -492,17 +597,17 @@
             </tr>
             
             <tr class="pub-item">
-              <td style="padding:8px 20px;width:35%;vertical-align:top; text-align: center;">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
                   <img src="images/sound.png" width="100%" style="display: block;">
                 </div>
               </td>
-              <td style="padding:8px 20px;width:65%;vertical-align:top; padding-left: 20px;">
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">Robot Sound Interpretation: Combining Sight and Sound in Learning-Based Control</span>
                 <br>
                 <a href="https://sites.google.com/site/changpeixin/home">Peixin Chang</a>,
                 <a href="https://shuijing725.github.io/">Shuijing Liu</a>,
-                <a href="https://haonan16.github.io/">Haonan Chen</a>, and
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, and
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
                 <strong>IROS 2020</strong>, <a href="https://arxiv.org/abs/1909.09172">[Paper]</a> <a href="https://www.youtube.com/watch?v=0ONGQwhGn_Y&ab_channel=PeixinChang">[Video]</a>
