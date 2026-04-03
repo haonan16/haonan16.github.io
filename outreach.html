@@ -14,40 +14,15 @@
 
   <body>
     <!-- Navigation Bar -->
-    <div id="navbar" style="
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 24px;
-      padding: 12px 16px;
-      font-size: 18px;
-      background-color: #404040;
-      z-index: 1000;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    "
-    >
-      <a href="index.html" style="color: #ffffff; text-decoration: none; transition: color 0.2s;">Home</a>
-      <a href="index.html#news" style="color: #ffffff; text-decoration: none; transition: color 0.2s;">News</a>
-      <a href="index.html#research" style="color: #ffffff; text-decoration: none; transition: color 0.2s;">Research</a>
-      <a href="outreach.html" style="color: #ffffff; text-decoration: none; transition: color 0.2s;">Outreach</a>
-      <a href="index.html#honors" style="color: #ffffff; text-decoration: none; transition: color 0.2s;">Honors</a>
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="index.html#news">News</a>
+      <a href="index.html#research">Research</a>
+      <a href="outreach.html">Outreach</a>
+      <a href="index.html#honors">Honors</a>
     </div>
 
     <style>
-      #navbar a:hover {
-        color: #4A9EFF !important;
-      }
-
-      @media (max-width: 600px) {
-        #navbar {
-          display: none;
-        }
-      }
-
       /* Add padding to body to account for fixed navbar */
       body {
         padding-top: 50px;

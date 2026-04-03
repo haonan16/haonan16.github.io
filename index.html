@@ -70,48 +70,18 @@
       }
     </script>
     <!-- Navigation Bar -->
-    <div id="navbar" style="
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 24px;
-      padding: 12px 16px;
-      font-size: 18px;
-      background-color: #404040;
-      z-index: 1000;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    "
-    >
-      <a href="#home" style="color: #ffffff; text-decoration: none; transition: color 0.2s;">Home</a>
-      <a href="#news" style="color: #ffffff; text-decoration: none; transition: color 0.2s;">News</a>
-      <a href="#research" style="color: #ffffff; text-decoration: none; transition: color 0.2s;">Research</a>
-      <a href="outreach.html" style="color: #ffffff; text-decoration: none; transition: color 0.2s;">Outreach</a>
-      <a href="#honors" style="color: #ffffff; text-decoration: none; transition: color 0.2s;">Honors</a>
+    <div id="navbar">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#research">Research</a>
+      <a href="outreach.html">Outreach</a>
+      <a href="#honors">Honors</a>
     </div>
 
     <style>
-      #navbar a:hover {
-        color: #4A9EFF !important;
-      }
-
-      @media (max-width: 600px) {
-        #navbar {
-          display: none;
-        }
-      }
-
       /* Add padding to body to account for fixed navbar */
       body {
         padding-top: 50px;
-      }
-
-      .pub-item td {
-        padding-top: 8px !important;
-        padding-bottom: 8px !important;
       }
     </style>
 
@@ -171,7 +141,12 @@
                     <li>To junior PhD/master/undergraduate students: If you'd like to chat about life, career plans, or research ideas in ML/robotics, please feel free to email me to schedule a meeting. I dedicate 30 minutes each week for these conversations and encourage students from underrepresented groups or anyone in need to reach out.</li>
                     <li>[2025/10] I gave a talk at <a href="https://computationalrobotics.seas.harvard.edu" target="_blank" rel="noopener noreferrer">Computational Robotics Lab at Harvard</a></li>
                     <li>[2025/05] Co-organizing the <a href="https://contact-rich.github.io" target="_blank" rel="noopener noreferrer">ICRA 2025 Workshop on Learning Meets Model-Based Methods for Contact-Rich Manipulation</a></li>
+                    <li class="more-news" style="display:none;">[2025/06] I gave a talk at <a href="https://www.tactasystems.com/" target="_blank" rel="noopener noreferrer">Tacta Systems</a></li>
+                    <li class="more-news" style="display:none;">[2025/05] I gave an outreach talk to Grade 5 Students at St. Matthew Catholic School</li>
                   </ul>
+                  <p>
+                    <a href="javascript:toggleNews()" id="news-toggle-link" style="cursor:pointer; color:#4A9EFF;">[Show more]</a>
+                  </p>
                 </td>
               </tr>
             </tbody>
