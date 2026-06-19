@@ -224,12 +224,34 @@ span.highlight {
 }
 
 /* Roomier section lists (News, Awards, Service) */
-#home ul:not(.pub-item ul) li {
+.page ul:not(.pub-item ul) li {
   margin-bottom: 10px;
 }
 
-#home ul li::marker {
+.page ul li::marker {
   color: #9a3b2e;
+}
+
+/* Muted right-aligned year/date column in Awards & Service lists */
+.page li span[style*="float:right"] {
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* Consistent vertical rhythm between major sections */
+.page h2 {
+  margin-top: 28px;
+}
+
+/* Footer: centered, muted, with a thin top divider */
+.site-footer {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
 }
 
 /* Muted, consistent emphasis for awards & highlights (replaces bright red) */
@@ -299,23 +321,23 @@ table:has(.pub-item) {
 }
 
 /* Tighter paragraph spacing in intro */
-#home p {
+.page p {
   margin-bottom: 8px;
   margin-top: 8px;
 }
 
 /* Compress the intro bio: tighter line height, snug lists, snug contact block */
-#home td p,
-#home td li {
+.page td p,
+.page td li {
   line-height: 1.5;
 }
 
-#home ul {
+.page ul {
   margin-top: 4px !important;
   margin-bottom: 8px;
 }
 
-#home td li {
+.page td li {
   margin-bottom: 4px;
 }
 
@@ -381,7 +403,7 @@ body {
 
 /* Container improvements for larger screens */
 @media (min-width: 1201px) {
-  table[id="home"] {
+  table.page {
     max-width: 1200px !important;
     margin: 0 auto;
     padding: 40px 60px;
@@ -389,7 +411,7 @@ body {
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
-  table[id="home"] {
+  table.page {
     max-width: 95vw !important;
     margin: 0 auto;
     padding: 30px 40px;
@@ -433,7 +455,7 @@ body {
   }
   
   /* Override the main container's max-width on mobile */
-  table[id="home"] {
+  table.page {
     max-width: none !important;
     margin: 0 !important;
     padding: 20px 15px !important;
