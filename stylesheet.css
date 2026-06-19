@@ -129,7 +129,7 @@ h2 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 600;
-  color: #1f3a5f;
+  color: var(--ink);
 }
 
 /* Highlight your own name in author lists (self-link to your homepage) */
