@@ -94,14 +94,19 @@ body,
 td,
 th,
 tr,
-p,
-a {
+p {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 1.65;
   color: var(--ink);
   text-align: left;
   word-wrap: break-word;
+}
+
+a {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
 }
 
 strong {
@@ -136,12 +141,33 @@ h2 {
 }
 
 .name {
-  padding-top: 20px;
-  margin: 0;
+  padding-top: 0;
+  margin: 0 0 8px 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 700;
   letter-spacing: -0.01em;
+}
+
+/* Colored lead-in labels for research directions (Yunzhu-style) */
+.research-label {
+  color: #9a3b2e;
+}
+
+/* Icon social links */
+.social-icons {
+  font-size: 26px;
+}
+
+.social-icons a {
+  color: var(--muted);
+  margin-right: 18px;
+  transition: color 0.15s ease;
+}
+
+.social-icons a:hover {
+  color: var(--accent);
+  text-decoration: none;
 }
 
 .one {
@@ -262,8 +288,32 @@ table:has(.pub-item) {
 
 /* Tighter paragraph spacing in intro */
 #home p {
-  margin-bottom: 12px;
-  margin-top: 12px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+/* Compress the intro bio: tighter line height, snug lists, snug contact block */
+#home td p,
+#home td li {
+  line-height: 1.5;
+}
+
+#home ul {
+  margin-top: 4px !important;
+  margin-bottom: 8px;
+}
+
+#home td li {
+  margin-bottom: 4px;
+}
+
+.contact-line {
+  margin-top: 10px !important;
+  margin-bottom: 4px !important;
+}
+
+.social-icons {
+  margin-top: 2px !important;
 }
 
 /* ===== Navigation Bar Styling ===== */
@@ -383,20 +433,23 @@ body {
   }
   
   /* Stack profile image and text vertically on mobile - only for main profile section */
-  table tbody tr:first-child td[style*="width:63%"] {
+  table tbody tr:first-child td[style*="width:70%"] {
     width: 100% !important;
     display: block;
     text-align: center;
-    order: 2;
     padding: 20px 10px !important;
   }
-  
-  table tbody tr:first-child td[style*="width:20%"] {
+
+  table tbody tr:first-child td[style*="width:24%"] {
     width: 100% !important;
     display: block;
     text-align: center;
-    order: 1;
     padding: 20px 10px 10px 10px !important;
+  }
+
+  /* Center the name and bio on mobile for a clean stacked look */
+  .name {
+    text-align: center;
   }
   
   /* For research papers - stack vertically */
