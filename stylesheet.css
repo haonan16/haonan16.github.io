@@ -223,9 +223,10 @@ span.highlight {
   background-color: #f5f0e1;
 }
 
-/* Roomier section lists (News, Awards, Service) */
+/* Section lists (News, Awards, Service) */
 .page ul:not(.pub-item ul) li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  line-height: 1.5;
 }
 
 .page ul li::marker {
