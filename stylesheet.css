@@ -255,9 +255,9 @@ span.highlight {
   color: var(--muted);
 }
 
-/* Muted, consistent emphasis for awards & highlights (replaces bright red) */
+/* Award & highlight emphasis — firebrick, matching yunzhuli.github.io */
 .award {
-  color: #9a3b2e;
+  color: firebrick;
 }
 
 /* Profile photo: subtle rounding + soft shadow */
