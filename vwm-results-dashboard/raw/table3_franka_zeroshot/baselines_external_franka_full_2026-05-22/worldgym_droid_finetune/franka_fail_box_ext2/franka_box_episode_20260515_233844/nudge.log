@@ -1,0 +1,45 @@
+[load] instantiating WorldModel(default_cfg=3.0, use_pixel_rope=False)
+[run_eval] WorldGym model loaded in 13.5s (device=cuda:0)
+[setup] camera: 408322072302.mp4  (view=ext2)
+[setup] episode T=294 from episode_20260515_233844
+[setup] actions: deltas shape=(294, 7), worldgym shape=(294, 10), wv range=(-0.417, 0.592), gripper range=(-1.0, 1.0)
+[setup] will generate 19 frames (cap = max_frames-1 = 19)
+[setup] gt frames shape=(20, 256, 256, 3), dtype=uint8
+[nudge] +x: max |delta| on axis x (post-rescale units) = 1.0711
+[nudge:+x] step 5/19: frame mean=140.8, elapsed=3.0s (1.64 fps)
+[nudge:+x] step 10/19: frame mean=146.7, elapsed=6.5s (1.54 fps)
+[nudge:+x] step 15/19: frame mean=148.3, elapsed=11.0s (1.37 fps)
+[nudge:+x] step 19/19: frame mean=143.5, elapsed=15.5s (1.23 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/table3_franka_zeroshot/baselines_external_franka_full_2026-05-22/worldgym_droid_finetune/franka_fail_box_ext2/franka_box_episode_20260515_233844/+x.mp4 ((20, 256, 256, 3))
+[nudge] -x: max |delta| on axis x (post-rescale units) = 1.3277
+[nudge:-x] step 5/19: frame mean=24.7, elapsed=2.9s (1.72 fps)
+[nudge:-x] step 10/19: frame mean=16.2, elapsed=6.4s (1.57 fps)
+[nudge:-x] step 15/19: frame mean=11.1, elapsed=10.8s (1.38 fps)
+[nudge:-x] step 19/19: frame mean=11.9, elapsed=15.3s (1.24 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/table3_franka_zeroshot/baselines_external_franka_full_2026-05-22/worldgym_droid_finetune/franka_fail_box_ext2/franka_box_episode_20260515_233844/-x.mp4 ((20, 256, 256, 3))
+[nudge] +y: max |delta| on axis y (post-rescale units) = 1.0512
+[nudge:+y] step 5/19: frame mean=108.4, elapsed=3.0s (1.69 fps)
+[nudge:+y] step 10/19: frame mean=106.6, elapsed=6.4s (1.56 fps)
+[nudge:+y] step 15/19: frame mean=102.1, elapsed=10.9s (1.38 fps)
+[nudge:+y] step 19/19: frame mean=100.6, elapsed=15.4s (1.24 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/table3_franka_zeroshot/baselines_external_franka_full_2026-05-22/worldgym_droid_finetune/franka_fail_box_ext2/franka_box_episode_20260515_233844/+y.mp4 ((20, 256, 256, 3))
+[nudge] -y: max |delta| on axis y (post-rescale units) = 1.5119
+[nudge:-y] step 5/19: frame mean=85.8, elapsed=2.9s (1.70 fps)
+[nudge:-y] step 10/19: frame mean=50.9, elapsed=6.4s (1.56 fps)
+[nudge:-y] step 15/19: frame mean=35.5, elapsed=10.9s (1.38 fps)
+[nudge:-y] step 19/19: frame mean=28.8, elapsed=15.3s (1.24 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/table3_franka_zeroshot/baselines_external_franka_full_2026-05-22/worldgym_droid_finetune/franka_fail_box_ext2/franka_box_episode_20260515_233844/-y.mp4 ((20, 256, 256, 3))
+[nudge] +z: max |delta| on axis z (post-rescale units) = 1.3470
+[nudge:+z] step 5/19: frame mean=120.6, elapsed=3.0s (1.69 fps)
+[nudge:+z] step 10/19: frame mean=110.9, elapsed=6.4s (1.56 fps)
+[nudge:+z] step 15/19: frame mean=106.5, elapsed=10.9s (1.38 fps)
+[nudge:+z] step 19/19: frame mean=109.7, elapsed=15.3s (1.24 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/table3_franka_zeroshot/baselines_external_franka_full_2026-05-22/worldgym_droid_finetune/franka_fail_box_ext2/franka_box_episode_20260515_233844/+z.mp4 ((20, 256, 256, 3))
+[nudge] -z: max |delta| on axis z (post-rescale units) = 1.0556
+[nudge:-z] step 5/19: frame mean=86.7, elapsed=3.0s (1.69 fps)
+[nudge:-z] step 10/19: frame mean=65.6, elapsed=6.4s (1.56 fps)
+[nudge:-z] step 15/19: frame mean=48.5, elapsed=10.9s (1.38 fps)
+[nudge:-z] step 19/19: frame mean=50.1, elapsed=15.3s (1.24 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/table3_franka_zeroshot/baselines_external_franka_full_2026-05-22/worldgym_droid_finetune/franka_fail_box_ext2/franka_box_episode_20260515_233844/-z.mp4 ((20, 256, 256, 3))
+[nudge] wrote seed_uv.json = {'u': 128.0, 'v': 128.0, 'method': 'image_center_placeholder'}
+[run_eval] OK in 106.9s; meta keys=['mode', 'episode_id', 'camera_name', 'start_frame', 'n_gen', 'nudge_magnitude_m', 'directions', 'direction_mp4s', 'seed_uv', 'resolution_hw', 'ckpt_path', 'default_cfg', 'use_pixel_rope']

@@ -1,0 +1,4 @@
+task_description: pick_the_hot_dog_from_the_counter_a
+success: True
+num_steps: 265
+source_hdf5: 2026_05_15-00_35_08--episode_data--task=pick_the_hot_dog_from_the_counter_a--ep=7--success=True.hdf5

@@ -1,0 +1,81 @@
+{
+  "purpose": "annotation-free paper xyz external-baseline-matched four-direction sweep (3-episode side-view subset matched to external side_view_3ep baselines)",
+  "model": "baseline_raw_action_adaln_step10000",
+  "model_type": "raw_vector",
+  "checkpoint": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/22-23-34/checkpoints/epoch=0-step=10000.ckpt",
+  "action_injection": "additive",
+  "episodes": [
+    {
+      "name": "RPL__Mon_Jun__5_18_30_00_2023",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/RPL/success/2023-06-05/Mon_Jun__5_18_30_00_2023",
+      "view": "ext1",
+      "start_frame": 0,
+      "grid_video": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/direction_grid_RPL__Mon_Jun__5_18_30_00_2023__plusx_minusx_minusy_plusy.mp4",
+      "individual_videos": {
+        "+x": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_plusx_5step.mp4",
+        "-x": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_minusx_5step.mp4",
+        "-y": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_minusy_5step.mp4",
+        "+y": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_plusy_5step.mp4"
+      },
+      "frames": [
+        "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/frames/RPL__Mon_Jun__5_18_30_00_2023_six_direction_frame00.png",
+        "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/frames/RPL__Mon_Jun__5_18_30_00_2023_six_direction_frame10.png",
+        "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/frames/RPL__Mon_Jun__5_18_30_00_2023_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "IRIS__Thu_Mar__2_14_57_27_2023",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/IRIS/success/2023-03-02/Thu_Mar__2_14_57_27_2023",
+      "view": "ext1",
+      "start_frame": 0,
+      "grid_video": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/direction_grid_IRIS__Thu_Mar__2_14_57_27_2023__plusx_minusx_minusy_plusy.mp4",
+      "individual_videos": {
+        "+x": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_plusx_5step.mp4",
+        "-x": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_minusx_5step.mp4",
+        "-y": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_minusy_5step.mp4",
+        "+y": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_plusy_5step.mp4"
+      },
+      "frames": [
+        "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/frames/IRIS__Thu_Mar__2_14_57_27_2023_six_direction_frame00.png",
+        "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/frames/IRIS__Thu_Mar__2_14_57_27_2023_six_direction_frame10.png",
+        "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/frames/IRIS__Thu_Mar__2_14_57_27_2023_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "CLVR__Tue_May__9_01_17_11_2023",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/CLVR/success/2023-05-09/Tue_May__9_01_17_11_2023",
+      "view": "ext1",
+      "start_frame": 60,
+      "grid_video": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/direction_grid_CLVR__Tue_May__9_01_17_11_2023__plusx_minusx_minusy_plusy.mp4",
+      "individual_videos": {
+        "+x": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_plusx_5step.mp4",
+        "-x": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_minusx_5step.mp4",
+        "-y": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_minusy_5step.mp4",
+        "+y": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_plusy_5step.mp4"
+      },
+      "frames": [
+        "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/frames/CLVR__Tue_May__9_01_17_11_2023_six_direction_frame00.png",
+        "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/frames/CLVR__Tue_May__9_01_17_11_2023_six_direction_frame10.png",
+        "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/frames/CLVR__Tue_May__9_01_17_11_2023_six_direction_frame20.png"
+      ]
+    }
+  ],
+  "direction_order": [
+    "+x",
+    "-x",
+    "-y",
+    "+y"
+  ],
+  "horizon_steps": 5,
+  "future_frames_per_step": 4,
+  "generated_future_frames": 20,
+  "magnitude_m_per_step": 0.03,
+  "sample_steps": 40,
+  "n_frames": 5,
+  "fps": 4,
+  "labels_burned_in": false,
+  "rgb_export": "model [-1,1] converted with scripts.video_export_utils.video_tensor_to_uint8",
+  "source_full_manifest": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000/base/manifest.json",
+  "matched_reference_manifest": "results/paper_xyz_multiview_six_direction_20260511_024800/worldgym_droid_finetune_side_view_3ep/base/manifest.json",
+  "episodes_file": "configs/eval_episodes_qual_3ep.txt"
+}

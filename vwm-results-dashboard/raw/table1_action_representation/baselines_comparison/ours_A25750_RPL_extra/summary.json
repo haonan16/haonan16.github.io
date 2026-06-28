@@ -1,0 +1,87 @@
+{
+  "magnitudes_m": [
+    0.005,
+    0.03,
+    0.05,
+    0.06
+  ],
+  "per_magnitude": {
+    "0.005000": {
+      "magnitude_m": 0.005,
+      "n_trials": 4,
+      "n_correct": 4,
+      "dir_acc": 1.0,
+      "mean_response_px": 0.08329501433611283,
+      "median_response_px": 0.08200934066594456,
+      "mean_projected_action_px": 1.0,
+      "mean_zero_drift_px": 0.5067164001272878,
+      "mean_d_sep_px": 0.10564175993204117
+    },
+    "0.030000": {
+      "magnitude_m": 0.03,
+      "n_trials": 4,
+      "n_correct": 4,
+      "dir_acc": 1.0,
+      "mean_response_px": 11.683688502143777,
+      "median_response_px": 12.49414193926702,
+      "mean_projected_action_px": 4.061552812808831,
+      "mean_zero_drift_px": 0.5067164001272878,
+      "mean_d_sep_px": 23.19260883331299
+    },
+    "0.050000": {
+      "magnitude_m": 0.05,
+      "n_trials": 4,
+      "n_correct": 4,
+      "dir_acc": 1.0,
+      "mean_response_px": 26.212229596369916,
+      "median_response_px": 25.14989218535338,
+      "mean_projected_action_px": 7.0710678118654755,
+      "mean_zero_drift_px": 0.5067164001272878,
+      "mean_d_sep_px": 52.177080154418945
+    },
+    "0.060000": {
+      "magnitude_m": 0.06,
+      "n_trials": 4,
+      "n_correct": 4,
+      "dir_acc": 1.0,
+      "mean_response_px": 35.25376456144575,
+      "median_response_px": 34.81956149753138,
+      "mean_projected_action_px": 8.06225774829855,
+      "mean_zero_drift_px": 0.5067164001272878,
+      "mean_d_sep_px": 70.28285217285156
+    }
+  },
+  "monotonic_response": true,
+  "monotonic_tolerance_px": 1.0,
+  "n_episodes": 1,
+  "axes": [
+    "x",
+    "y"
+  ],
+  "per_episode": {
+    "0.005000": {
+      "RPL__Mon_Jun__5_18_30_00_2023": {
+        "dir_acc": 1.0,
+        "d_sep_px": 0.10564175993204117
+      }
+    },
+    "0.030000": {
+      "RPL__Mon_Jun__5_18_30_00_2023": {
+        "dir_acc": 1.0,
+        "d_sep_px": 23.19260883331299
+      }
+    },
+    "0.050000": {
+      "RPL__Mon_Jun__5_18_30_00_2023": {
+        "dir_acc": 1.0,
+        "d_sep_px": 52.177080154418945
+      }
+    },
+    "0.060000": {
+      "RPL__Mon_Jun__5_18_30_00_2023": {
+        "dir_acc": 1.0,
+        "d_sep_px": 70.28285217285156
+      }
+    }
+  }
+}

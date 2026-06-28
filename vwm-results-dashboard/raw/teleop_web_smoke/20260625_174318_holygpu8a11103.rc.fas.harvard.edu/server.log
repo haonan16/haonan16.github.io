@@ -1,0 +1,40 @@
+2026-06-25 17:43:22,537 INFO Loading model from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt...
+2026-06-25 17:45:08,413 INFO Building WanT2VActionProj model...
+2026-06-25 17:45:08,983 INFO Loading action_proj MoT backbone from T2V pretrained.
+2026-06-25 17:45:33,603 INFO Loading checkpoint from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt
+2026-06-25 17:45:36,889 INFO Checkpoint loaded. missing=0 unexpected=2
+2026-06-25 17:45:36,938 INFO Detected render params for epoch=0-step=25750.ckpt: version=v2 sigma=16.0 line_thickness=12 arrow_thickness=24 arrow_min_length=24.0
+2026-06-25 17:45:37,686 INFO Session bootstrapped. T_lat=2 use_real_history=True inference_precision=bf16 initial_ee=[0.4617857336997986, 0.004412942565977573, 0.2018601894378662]
+2026-06-25 17:45:37,686 INFO Speculation runner started. Anchor 0 speculation kicked off in background; first keypress should be instant once it completes (~0.3s at sample_steps=1, mp4_mode=lazy).
+2026-06-25 17:45:37,686 INFO Starting server on http://127.0.0.1:42059
+2026-06-25 17:45:37,686 INFO From your laptop: ssh -L 42059:$(hostname):42059 <cluster> then open http://localhost:42059
+INFO:     Started server process [2152235]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:42059 (Press CTRL+C to quit)
+INFO:     127.0.0.1:46326 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46342 - "GET /frame HTTP/1.1" 200 OK
+2026-06-25 17:45:43,241 ERROR Speculation failed for anchor_id=0; cache will not be populated. Synchronous fallback will handle the next /step.
+Traceback (most recent call last):
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/teleop/teleop_speculation.py", line 187, in _run
+    self._speculate(anchor_id)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/teleop/teleop_speculation.py", line 213, in _speculate
+    results = session.step_batch(deltas)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/inference_teleop_action_proj.py", line 406, in step_batch
+    result = self.lm.streaming_step(
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/algorithms/wan/wan_t2v_action_proj.py", line 1549, in streaming_step
+    assert T_hist == T_lat - 1, (
+AssertionError: history_lat must have T_lat-1 = 4 frames, got 1. Check n_frames config.
+2026-06-25 17:45:43,919 INFO step 1: +x (sync, 2.55s) timing_ms={'total': 2554.4792970176786, 'parse_action': 0.022829975932836533, 'spec_lookup': 0.004119938239455223, 'session_step': 2303.983272984624, 'commit': 0.15545007772743702, 'spec_kickoff': 0.03679993096739054, 'media': 250.27293397579342, 'mp4_encode': 0.0} ee=[0.4817857336997986, 0.004412942565977573, 0.2018601894378662]
+INFO:     127.0.0.1:46350 - "POST /step HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49684 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49692 - "GET /clip HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49708 - "GET /rollout HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2152235]

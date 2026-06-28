@@ -1,0 +1,4 @@
+task_description: pick_the_carrot_from_the_counter_an
+success: True
+num_steps: 264
+source_hdf5: 2026_05_15-00_35_08--episode_data--task=pick_the_carrot_from_the_counter_an--ep=38--success=True.hdf5

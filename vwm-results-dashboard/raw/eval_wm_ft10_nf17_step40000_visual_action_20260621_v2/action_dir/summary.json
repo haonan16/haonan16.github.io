@@ -1,0 +1,278 @@
+{
+  "overall": {
+    "dir_acc": 0.6944444444444444,
+    "d_sep_mean_px": 0.7605952004539884,
+    "n_episodes": 18,
+    "n_trials": 72,
+    "n_correct": 50,
+    "n_testable_trials": 72,
+    "dir_acc_trial_bootstrap_ci95": [
+      0.5968750000000003,
+      0.7916666666666666
+    ],
+    "d_sep_episode_bootstrap_ci95": [
+      0.16011284521729188,
+      1.600761227221099
+    ],
+    "signed_proj_mean_px": 0.3038820815183785,
+    "signed_proj_trial_bootstrap_ci95": [
+      0.0864133655782284,
+      0.5941634887483651
+    ],
+    "perp_proj_mean_px": 0.1273981932556196,
+    "cosine_align_mean": 0.36206585700267657,
+    "cosine_align_trial_bootstrap_ci95": [
+      0.2317676772844186,
+      0.49906872205724706
+    ],
+    "signed_separation_mean_px": 0.607764163036757,
+    "signed_separation_trial_bootstrap_ci95": [
+      0.048626081562444884,
+      1.3870497820652414
+    ],
+    "d_sep_correct_only_mean_px": 1.383547275685347,
+    "d_sep_correct_only_episode_bootstrap_ci95": [
+      0.25735449940682614,
+      2.9181263171351297
+    ],
+    "n_axes_correct_only": 13
+  },
+  "per_axis": {
+    "x": {
+      "dir_acc": 0.6111111111111112,
+      "d_sep_mean_px": 0.2253212673175666,
+      "signed_proj_mean_px": -0.011013426208158589,
+      "cosine_align_mean": 0.2497921106000907,
+      "signed_separation_mean_px": -0.022026852416317185,
+      "n_trials": 36,
+      "n_correct": 22,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.4444444444444444,
+        0.7506944444444438
+      ],
+      "d_sep_episode_bootstrap_ci95": [
+        0.052943209788969,
+        0.46570014723628345
+      ]
+    },
+    "y": {
+      "dir_acc": 0.7777777777777778,
+      "d_sep_mean_px": 1.2958691335904102,
+      "signed_proj_mean_px": 0.6187775892449154,
+      "cosine_align_mean": 0.4743396034052624,
+      "signed_separation_mean_px": 1.2375551784898313,
+      "n_trials": 36,
+      "n_correct": 28,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.6388888888888888,
+        0.9166666666666666
+      ],
+      "d_sep_episode_bootstrap_ci95": [
+        0.2434744114521891,
+        2.72584470109238
+      ]
+    }
+  },
+  "per_direction": {
+    "+x": {
+      "dir_acc": 0.6111111111111112,
+      "n_trials": 18,
+      "n_correct": 11,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.3888888888888889,
+        0.8333333333333334
+      ]
+    },
+    "-x": {
+      "dir_acc": 0.6111111111111112,
+      "n_trials": 18,
+      "n_correct": 11,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.3888888888888889,
+        0.8333333333333334
+      ]
+    },
+    "+y": {
+      "dir_acc": 0.7222222222222222,
+      "n_trials": 18,
+      "n_correct": 13,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.5,
+        0.9444444444444444
+      ]
+    },
+    "-y": {
+      "dir_acc": 0.8333333333333334,
+      "n_trials": 18,
+      "n_correct": 15,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.6666666666666666,
+        1.0
+      ]
+    }
+  },
+  "per_episode": {
+    "franka_box_droid_layout__franka_box__episode_20260515_223329": {
+      "dir_acc": 0.25,
+      "d_sep_px": 0.04349236562848091,
+      "signed_proj_mean_px": -0.01576995849609375,
+      "perp_proj_mean_px": 0.01491546630859375,
+      "cosine_align_mean": -0.44025264343562454,
+      "signed_separation_mean_px": -0.0315399169921875,
+      "d_sep_correct_only_mean_px": 0.0
+    },
+    "franka_box_droid_layout__franka_box__episode_20260515_224959": {
+      "dir_acc": 0.75,
+      "d_sep_px": 0.0765933245420456,
+      "signed_proj_mean_px": 0.02627837964590891,
+      "perp_proj_mean_px": 0.0337998272912427,
+      "cosine_align_mean": 0.3712255967373165,
+      "signed_separation_mean_px": 0.05255675929181782,
+      "d_sep_correct_only_mean_px": 0.12577641010284424
+    },
+    "franka_box_droid_layout__franka_box__episode_20260515_225049": {
+      "dir_acc": 0.75,
+      "d_sep_px": 0.0412039402872324,
+      "signed_proj_mean_px": 0.015671422783780968,
+      "perp_proj_mean_px": 0.011468029868854904,
+      "cosine_align_mean": 0.6006584723927667,
+      "signed_separation_mean_px": 0.03134284556756193,
+      "d_sep_correct_only_mean_px": 0.05889056250452995
+    },
+    "franka_box_droid_layout__franka_box__episode_20260515_225144": {
+      "dir_acc": 0.5,
+      "d_sep_px": 5.276051700115204,
+      "signed_proj_mean_px": 1.7983932495117188,
+      "perp_proj_mean_px": 0.9612350463867188,
+      "cosine_align_mean": 0.24039759918204912,
+      "signed_separation_mean_px": 3.5967864990234375,
+      "d_sep_correct_only_mean_px": 8.897210121154785
+    },
+    "franka_box_droid_layout__franka_box__episode_20260515_225340": {
+      "dir_acc": 0.25,
+      "d_sep_px": 0.14572323858737946,
+      "signed_proj_mean_px": -0.06497595361262534,
+      "perp_proj_mean_px": 0.03591494392117925,
+      "cosine_align_mean": -0.3994400332148371,
+      "signed_separation_mean_px": -0.12995190722525068,
+      "d_sep_correct_only_mean_px": 0.0
+    },
+    "franka_box_droid_layout__franka_box__episode_20260515_225441": {
+      "dir_acc": 0.5,
+      "d_sep_px": 0.19541653990745544,
+      "signed_proj_mean_px": 0.014373779296875,
+      "perp_proj_mean_px": 0.1061553955078125,
+      "cosine_align_mean": 0.08582888403213643,
+      "signed_separation_mean_px": 0.02874755859375,
+      "d_sep_correct_only_mean_px": 0.0
+    },
+    "franka_success_mustard_droid_layout__franka_box__episode_20260516_001615": {
+      "dir_acc": 1.0,
+      "d_sep_px": 0.0481277909129858,
+      "signed_proj_mean_px": 0.017702819879704644,
+      "perp_proj_mean_px": 0.012713379021779606,
+      "cosine_align_mean": 0.6392235825444934,
+      "signed_separation_mean_px": 0.03540563975940929,
+      "d_sep_correct_only_mean_px": 0.0481277909129858
+    },
+    "franka_success_mustard_droid_layout__franka_box__episode_20260516_001826": {
+      "dir_acc": 1.0,
+      "d_sep_px": 0.7834976688027382,
+      "signed_proj_mean_px": 0.3890573349387133,
+      "perp_proj_mean_px": 0.1529097652262184,
+      "cosine_align_mean": 0.5744245113740942,
+      "signed_separation_mean_px": 0.7781146698774266,
+      "d_sep_correct_only_mean_px": 0.7834976688027382
+    },
+    "franka_success_mustard_droid_layout__franka_box__episode_20260516_003717": {
+      "dir_acc": 1.0,
+      "d_sep_px": 5.366056263446808,
+      "signed_proj_mean_px": 2.5331844940191592,
+      "perp_proj_mean_px": 0.6019815597140175,
+      "cosine_align_mean": 0.8134876225110552,
+      "signed_separation_mean_px": 5.0663689880383185,
+      "d_sep_correct_only_mean_px": 5.366056263446808
+    },
+    "franka_success_mustard_droid_layout__franka_box__episode_20260516_003802": {
+      "dir_acc": 0.75,
+      "d_sep_px": 0.48596426099538803,
+      "signed_proj_mean_px": 0.22857941014684882,
+      "perp_proj_mean_px": 0.10867443745877914,
+      "cosine_align_mean": 0.7724470583660956,
+      "signed_separation_mean_px": 0.45715882029369764,
+      "d_sep_correct_only_mean_px": 0.8111354112625122
+    },
+    "franka_success_mustard_droid_layout__franka_box__episode_20260516_004051": {
+      "dir_acc": 0.75,
+      "d_sep_px": 0.49038027599453926,
+      "signed_proj_mean_px": 0.22797438994581926,
+      "perp_proj_mean_px": 0.055847502046796615,
+      "cosine_align_mean": 0.5240113260745676,
+      "signed_separation_mean_px": 0.4559487798916385,
+      "d_sep_correct_only_mean_px": 0.888401448726654
+    },
+    "franka_success_mustard_droid_layout__franka_box__episode_20260516_004137": {
+      "dir_acc": 1.0,
+      "d_sep_px": 0.19255105778574944,
+      "signed_proj_mean_px": 0.09328756295485685,
+      "perp_proj_mean_px": 0.04585984264016359,
+      "cosine_align_mean": 0.8719200524416657,
+      "signed_separation_mean_px": 0.1865751259097137,
+      "d_sep_correct_only_mean_px": 0.19255105778574944
+    },
+    "franka_success_rope_droid_layout__franka_box__episode_20260516_012540": {
+      "dir_acc": 0.75,
+      "d_sep_px": 0.025204205885529518,
+      "signed_proj_mean_px": -0.00128936767578125,
+      "perp_proj_mean_px": 0.02132415771484375,
+      "cosine_align_mean": 0.14271315764461676,
+      "signed_separation_mean_px": -0.0025787353515625,
+      "d_sep_correct_only_mean_px": 0.028617044910788536
+    },
+    "franka_success_rope_droid_layout__franka_box__episode_20260516_012650": {
+      "dir_acc": 0.75,
+      "d_sep_px": 0.23265046626329422,
+      "signed_proj_mean_px": 0.10163555247228406,
+      "perp_proj_mean_px": 0.04897980265224323,
+      "cosine_align_mean": 0.5906311185238631,
+      "signed_separation_mean_px": 0.20327110494456813,
+      "d_sep_correct_only_mean_px": 0.4194696545600891
+    },
+    "franka_success_rope_droid_layout__franka_box__episode_20260516_012808": {
+      "dir_acc": 0.75,
+      "d_sep_px": 0.027506742160767317,
+      "signed_proj_mean_px": 0.00765228271484375,
+      "perp_proj_mean_px": 0.018463134765625,
+      "cosine_align_mean": 0.21029963226340256,
+      "signed_separation_mean_px": 0.0153045654296875,
+      "d_sep_correct_only_mean_px": 0.04305226728320122
+    },
+    "franka_success_rope_droid_layout__franka_box__episode_20260516_012913": {
+      "dir_acc": 0.5,
+      "d_sep_px": 0.04136670380830765,
+      "signed_proj_mean_px": 0.01628741350045724,
+      "perp_proj_mean_px": 0.012717840260515714,
+      "cosine_align_mean": 0.49523126479065904,
+      "signed_separation_mean_px": 0.03257482700091448,
+      "d_sep_correct_only_mean_px": 0.0
+    },
+    "franka_success_rope_droid_layout__franka_box__episode_20260516_013130": {
+      "dir_acc": 0.5,
+      "d_sep_px": 0.036507925018668175,
+      "signed_proj_mean_px": 0.0048006587223107106,
+      "perp_proj_mean_px": 0.017469615882174713,
+      "cosine_align_mean": 0.0646898648199118,
+      "signed_separation_mean_px": 0.00960131744462142,
+      "d_sep_correct_only_mean_px": 0.0
+    },
+    "franka_success_rope_droid_layout__franka_box__episode_20260516_013401": {
+      "dir_acc": 0.75,
+      "d_sep_px": 0.18241913802921772,
+      "signed_proj_mean_px": 0.07703399658203125,
+      "perp_proj_mean_px": 0.03273773193359375,
+      "cosine_align_mean": 0.35968835899994617,
+      "signed_separation_mean_px": 0.1540679931640625,
+      "d_sep_correct_only_mean_px": 0.3233288824558258
+    }
+  }
+}

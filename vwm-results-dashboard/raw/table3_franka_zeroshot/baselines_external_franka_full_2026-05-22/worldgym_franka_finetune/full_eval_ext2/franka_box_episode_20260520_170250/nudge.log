@@ -1,0 +1,45 @@
+[load] instantiating WorldModel(default_cfg=3.0, use_pixel_rope=False)
+[run_eval] WorldGym model loaded in 11.4s (device=cuda:0)
+[setup] camera: 408322072302.mp4  (view=ext2)
+[setup] episode T=563 from episode_20260520_170250
+[setup] actions: deltas shape=(563, 7), worldgym shape=(563, 10), wv range=(-0.808, 0.775), gripper range=(-1.0, 1.0)
+[setup] will generate 19 frames (cap = max_frames-1 = 19)
+[setup] gt frames shape=(20, 256, 256, 3), dtype=uint8
+[nudge] +x: max |delta| on axis x (post-rescale units) = 1.0694
+[nudge:+x] step 5/19: frame mean=102.1, elapsed=2.4s (2.10 fps)
+[nudge:+x] step 10/19: frame mean=98.7, elapsed=4.7s (2.14 fps)
+[nudge:+x] step 15/19: frame mean=94.3, elapsed=7.3s (2.06 fps)
+[nudge:+x] step 19/19: frame mean=89.9, elapsed=9.8s (1.93 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_full_2026-05-22/worldgym_franka_finetune/full_eval_ext2/franka_box_episode_20260520_170250/+x.mp4 ((20, 256, 256, 3))
+[nudge] -x: max |delta| on axis x (post-rescale units) = 1.0990
+[nudge:-x] step 5/19: frame mean=102.5, elapsed=2.2s (2.23 fps)
+[nudge:-x] step 10/19: frame mean=102.1, elapsed=4.5s (2.21 fps)
+[nudge:-x] step 15/19: frame mean=102.4, elapsed=7.1s (2.10 fps)
+[nudge:-x] step 19/19: frame mean=102.7, elapsed=9.7s (1.97 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_full_2026-05-22/worldgym_franka_finetune/full_eval_ext2/franka_box_episode_20260520_170250/-x.mp4 ((20, 256, 256, 3))
+[nudge] +y: max |delta| on axis y (post-rescale units) = 0.9323
+[nudge:+y] step 5/19: frame mean=102.7, elapsed=2.2s (2.24 fps)
+[nudge:+y] step 10/19: frame mean=98.2, elapsed=4.5s (2.21 fps)
+[nudge:+y] step 15/19: frame mean=95.0, elapsed=7.1s (2.10 fps)
+[nudge:+y] step 19/19: frame mean=89.8, elapsed=9.7s (1.97 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_full_2026-05-22/worldgym_franka_finetune/full_eval_ext2/franka_box_episode_20260520_170250/+y.mp4 ((20, 256, 256, 3))
+[nudge] -y: max |delta| on axis y (post-rescale units) = 1.2695
+[nudge:-y] step 5/19: frame mean=104.0, elapsed=2.2s (2.23 fps)
+[nudge:-y] step 10/19: frame mean=105.4, elapsed=4.5s (2.21 fps)
+[nudge:-y] step 15/19: frame mean=106.2, elapsed=7.1s (2.10 fps)
+[nudge:-y] step 19/19: frame mean=106.1, elapsed=9.7s (1.97 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_full_2026-05-22/worldgym_franka_finetune/full_eval_ext2/franka_box_episode_20260520_170250/-y.mp4 ((20, 256, 256, 3))
+[nudge] +z: max |delta| on axis z (post-rescale units) = 1.3720
+[nudge:+z] step 5/19: frame mean=104.6, elapsed=2.2s (2.23 fps)
+[nudge:+z] step 10/19: frame mean=104.2, elapsed=4.5s (2.21 fps)
+[nudge:+z] step 15/19: frame mean=103.3, elapsed=7.1s (2.10 fps)
+[nudge:+z] step 19/19: frame mean=103.0, elapsed=9.7s (1.97 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_full_2026-05-22/worldgym_franka_finetune/full_eval_ext2/franka_box_episode_20260520_170250/+z.mp4 ((20, 256, 256, 3))
+[nudge] -z: max |delta| on axis z (post-rescale units) = 0.8510
+[nudge:-z] step 5/19: frame mean=97.9, elapsed=2.2s (2.24 fps)
+[nudge:-z] step 10/19: frame mean=88.0, elapsed=4.5s (2.21 fps)
+[nudge:-z] step 15/19: frame mean=74.1, elapsed=7.1s (2.10 fps)
+[nudge:-z] step 19/19: frame mean=67.7, elapsed=9.7s (1.97 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_full_2026-05-22/worldgym_franka_finetune/full_eval_ext2/franka_box_episode_20260520_170250/-z.mp4 ((20, 256, 256, 3))
+[nudge] wrote seed_uv.json = {'u': 128.0, 'v': 128.0, 'method': 'image_center_placeholder'}
+[run_eval] OK in 70.7s; meta keys=['mode', 'episode_id', 'camera_name', 'start_frame', 'n_gen', 'nudge_magnitude_m', 'directions', 'direction_mp4s', 'seed_uv', 'resolution_hw', 'ckpt_path', 'default_cfg', 'use_pixel_rope']

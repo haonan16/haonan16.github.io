@@ -1,0 +1,32 @@
+{
+  "ext1_dir": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/ext1",
+  "ext2_dir": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/ext2",
+  "paired_direction_grids": [
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/direction_grids_ext1_ext2/direction_grid_data__episode_20260515_223329__plusx_minusx_minusy_plusy_plusz_minusz__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/direction_grids_ext1_ext2/direction_grid_data__episode_20260516_145620__plusx_minusx_minusy_plusy_plusz_minusz__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/direction_grids_ext1_ext2/direction_grid_data__episode_20260516_155653__plusx_minusx_minusy_plusy_plusz_minusz__ext1_ext2.mp4"
+  ],
+  "paired_individual_videos": [
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260515_223329_minusx_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260515_223329_minusy_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260515_223329_minusz_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260515_223329_plusx_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260515_223329_plusy_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260515_223329_plusz_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260516_145620_minusx_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260516_145620_minusy_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260516_145620_minusz_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260516_145620_plusx_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260516_145620_plusy_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260516_145620_plusz_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260516_155653_minusx_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260516_155653_minusy_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260516_155653_minusz_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260516_155653_plusx_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260516_155653_plusy_20step__ext1_ext2.mp4",
+    "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A_nf17_step12000/multiview_ext1_ext2/individual_ext1_ext2/data__episode_20260516_155653_plusz_20step__ext1_ext2.mp4"
+  ],
+  "labels_burned_in": false,
+  "overlays": false,
+  "panel_order": "ext1 | ext2 for paired videos; six-direction grid order is +x | -x | -y | +y | +z | -z"
+}

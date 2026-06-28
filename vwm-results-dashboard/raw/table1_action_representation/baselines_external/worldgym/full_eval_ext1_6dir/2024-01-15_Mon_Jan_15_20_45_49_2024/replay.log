@@ -1,0 +1,13 @@
+[load] instantiating WorldModel(default_cfg=3.0, use_pixel_rope=False)
+[run_eval] WorldGym model loaded in 10.9s (device=cuda:0)
+[setup] camera: 23804457.mp4  (view=ext1)
+[setup] episode T=1941 from Mon_Jan_15_20_45_49_2024
+[setup] actions: deltas shape=(1941, 7), worldgym shape=(1941, 10), wv range=(-1.104, 0.989), gripper range=(-1.0, 1.0)
+[setup] will generate 19 frames (cap = max_frames-1 = 19)
+[setup] gt frames shape=(20, 256, 256, 3), dtype=uint8
+[replay] step 5/19: frame mean=102.6, elapsed=2.1s (2.36 fps)
+[replay] step 10/19: frame mean=105.9, elapsed=4.2s (2.38 fps)
+[replay] step 15/19: frame mean=86.8, elapsed=6.7s (2.25 fps)
+[replay] step 19/19: frame mean=92.8, elapsed=9.0s (2.10 fps)
+[replay] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external/worldgym/full_eval_ext1_6dir/2024-01-15_Mon_Jan_15_20_45_49_2024/replay.mp4 ((20, 256, 256, 3)), /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external/worldgym/full_eval_ext1_6dir/2024-01-15_Mon_Jan_15_20_45_49_2024/gt.mp4 ((20, 256, 256, 3))
+[run_eval] OK in 21.0s; meta keys=['mode', 'episode_id', 'camera_name', 'start_frame', 'n_gen', 'n_frames_pred', 'n_frames_gt', 'resolution_hw', 'ckpt_path', 'default_cfg', 'use_pixel_rope']

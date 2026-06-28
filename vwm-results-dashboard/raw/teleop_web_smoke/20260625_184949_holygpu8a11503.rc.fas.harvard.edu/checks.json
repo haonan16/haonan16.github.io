@@ -1,0 +1,112 @@
+{
+  "ready": {
+    "status": 200,
+    "payload": {
+      "step": 0,
+      "ee": [
+        0.4617857336997986,
+        0.004412942565977573,
+        0.2018601894378662
+      ],
+      "ckpt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt",
+      "speculation": {
+        "anchor_id": 0,
+        "alive": true,
+        "idle": false,
+        "ready_count": 0,
+        "candidate_count": 7,
+        "ready_actions": [],
+        "last_error": "",
+        "last_error_anchor_id": null
+      }
+    },
+    "elapsed_ms": 2.2945660166442394
+  },
+  "requests": [
+    {
+      "name": "frame",
+      "method": "GET",
+      "path": "/frame",
+      "status": 200,
+      "bytes": 429624,
+      "elapsed_ms": 1640.2277470333502,
+      "artifact": "frame.png"
+    },
+    {
+      "name": "step",
+      "method": "POST",
+      "path": "/step",
+      "status": 200,
+      "bytes": 386,
+      "elapsed_ms": 3020.6725279567763,
+      "artifact": "step.json",
+      "json": {
+        "step": 1,
+        "action": "+x",
+        "latency_s": 3.018685910035856,
+        "cache_hit": false,
+        "ee": [
+          0.4817857336997986,
+          0.004412942565977573,
+          0.2018601894378662
+        ],
+        "timing_ms": {
+          "total": 3018.685910035856,
+          "parse_action": 0.02459995448589325,
+          "spec_lookup": 0.004849978722631931,
+          "session_step": 2842.494766926393,
+          "commit": 0.2051789779216051,
+          "spec_kickoff": 0.0287200091406703,
+          "media": 175.9221649263054,
+          "mp4_encode": 0.0
+        }
+      }
+    },
+    {
+      "name": "status_after_step",
+      "method": "GET",
+      "path": "/status",
+      "status": 200,
+      "bytes": 362,
+      "elapsed_ms": 0.8931340416893363,
+      "artifact": "status_after_step.json",
+      "json": {
+        "step": 1,
+        "ee": [
+          0.4817857336997986,
+          0.004412942565977573,
+          0.2018601894378662
+        ],
+        "ckpt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt",
+        "speculation": {
+          "anchor_id": 1,
+          "alive": true,
+          "idle": false,
+          "ready_count": 0,
+          "candidate_count": 7,
+          "ready_actions": [],
+          "last_error": "",
+          "last_error_anchor_id": null
+        }
+      }
+    },
+    {
+      "name": "clip",
+      "method": "GET",
+      "path": "/clip",
+      "status": 200,
+      "bytes": 57705,
+      "elapsed_ms": 738.0704319803044,
+      "artifact": "clip.mp4"
+    },
+    {
+      "name": "rollout",
+      "method": "GET",
+      "path": "/rollout",
+      "status": 200,
+      "bytes": 57705,
+      "elapsed_ms": 442.48123199213296,
+      "artifact": "rollout.mp4"
+    }
+  ]
+}

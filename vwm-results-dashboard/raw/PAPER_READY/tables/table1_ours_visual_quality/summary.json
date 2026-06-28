@@ -1,0 +1,244 @@
+{
+  "visual_quality_action_replay": {
+    "lpips_mean": 0.042158857511822134,
+    "lpips_std": 0.02672350390579337,
+    "lpips_sem": 0.005975557133033511,
+    "lpips_episode_bootstrap_ci95": [
+      0.0320630975975655,
+      0.054867268678790417
+    ],
+    "psnr_mean": 27.960490694424454,
+    "psnr_std": 5.734448329965248,
+    "psnr_sem": 1.2822616279262438,
+    "psnr_episode_bootstrap_ci95": [
+      25.389815843329657,
+      30.266066439327776
+    ],
+    "ssim_mean": 0.9237199679017067,
+    "ssim_std": 0.041999795784341154,
+    "ssim_sem": 0.009391439841489591,
+    "ssim_episode_bootstrap_ci95": [
+      0.904011545740068,
+      0.9394868977367877
+    ]
+  },
+  "visual_quality_moving_only": {
+    "n_episodes": 16,
+    "model": {
+      "mean": 0.046999579630210064,
+      "sem": 0.006950625268536219
+    },
+    "copy_last": {
+      "mean": 0.035701007434909116,
+      "sem": 0.007717897127522872
+    },
+    "vae_oracle": {
+      "mean": 0.008450493558484595,
+      "sem": 0.0005282037237887831
+    },
+    "model_psnr": {
+      "mean": 26.50845383893074,
+      "sem": 1.3642351323079998
+    },
+    "copy_last_psnr": {
+      "mean": 26.951826825866192,
+      "sem": 1.7502956897992372
+    },
+    "model_ssim": {
+      "mean": 0.914343741722405,
+      "sem": 0.010458589193442709
+    },
+    "copy_last_ssim": {
+      "mean": 0.9332504281774163,
+      "sem": 0.010639763647002634
+    }
+  },
+  "baselines": {
+    "copy_last_frame": {
+      "lpips_mean": 0.03183442365698284,
+      "psnr_mean": 29.201502040626554,
+      "ssim_mean": 0.9413876891136169
+    },
+    "vae_oracle": {
+      "lpips_mean": 0.008138319017598405,
+      "psnr_mean": 38.369076248768394,
+      "ssim_mean": 0.9810739167034626
+    }
+  },
+  "controllability_diagnostics": {
+    "action_sensitivity_mean": 0.012132690463902663,
+    "action_sensitivity_moving_only": 0.015161871044177211,
+    "negated_action_sensitivity_mean": 0.018489810550119758,
+    "negated_action_sensitivity_moving_only": 0.023110829670788924,
+    "n_moving_episodes": 16,
+    "motion_direction_diagnostic_mean": 0.08458214018028229
+  },
+  "per_episode": {
+    "RPL": {
+      "real_delta_norm_m": 0.00030494350988798097,
+      "lpips": 0.01890710089355707,
+      "psnr": 35.01223738982907,
+      "ssim": 0.9689366221427917,
+      "copy_last_lpips": 0.013163979863747954,
+      "vae_oracle_lpips": 0.005369154969230294,
+      "action_sensitivity": 1.9562354509616853e-05,
+      "negated_action_sensitivity": 5.005475657071656e-06,
+      "motion_diag": -0.061590828001499176
+    },
+    "IRIS": {
+      "real_delta_norm_m": 2.965956544953045e-06,
+      "lpips": 0.028401162941008806,
+      "psnr": 32.94986412656003,
+      "ssim": 0.9563927203416824,
+      "copy_last_lpips": 0.022451352793723345,
+      "vae_oracle_lpips": 0.009385041310451925,
+      "action_sensitivity": 1.9209686570320628e-05,
+      "negated_action_sensitivity": 6.331010467874876e-06,
+      "motion_diag": 0.0027926205657422543
+    },
+    "CLVR": {
+      "real_delta_norm_m": 0.03696309690987892,
+      "lpips": 0.10693946294486523,
+      "psnr": 16.77025678760676,
+      "ssim": 0.8448138982057571,
+      "copy_last_lpips": 0.11156199965626001,
+      "vae_oracle_lpips": 0.00919779867399484,
+      "action_sensitivity": 0.11049496568739414,
+      "negated_action_sensitivity": 0.14157541655004025,
+      "motion_diag": 0.08796264976263046
+    },
+    "RAIL": {
+      "real_delta_norm_m": 0.010255638180454984,
+      "lpips": 0.04898321721702814,
+      "psnr": 21.648596533980637,
+      "ssim": 0.8681583255529404,
+      "copy_last_lpips": 0.035482597071677446,
+      "vae_oracle_lpips": 0.009226598893292248,
+      "action_sensitivity": 0.005027269187849015,
+      "negated_action_sensitivity": 0.01991785829886794,
+      "motion_diag": -0.014908399432897568
+    },
+    "AUTOLab": {
+      "real_delta_norm_m": 0.014067401395307908,
+      "lpips": 0.030518294777721167,
+      "psnr": 26.831298254056065,
+      "ssim": 0.9133491665124893,
+      "copy_last_lpips": 0.019105266546830535,
+      "vae_oracle_lpips": 0.009644391713663936,
+      "action_sensitivity": 0.011649867286905646,
+      "negated_action_sensitivity": 0.016062485170550644,
+      "motion_diag": 0.3240758776664734
+    },
+    "GuptaLab": {
+      "real_delta_norm_m": 0.02802935860768367,
+      "lpips": 0.04191459808498621,
+      "psnr": 26.89649517128339,
+      "ssim": 0.9382714778184891,
+      "copy_last_lpips": 0.04058648692443967,
+      "vae_oracle_lpips": 0.008690179791301489,
+      "action_sensitivity": 0.02036241302266717,
+      "negated_action_sensitivity": 0.02805053163319826,
+      "motion_diag": 0.20766612887382507
+    },
+    "ILIAD": {
+      "real_delta_norm_m": 0.005749182253196803,
+      "lpips": 0.052850255742669106,
+      "psnr": 27.105741408098915,
+      "ssim": 0.9289818406105042,
+      "copy_last_lpips": 0.03468650113791227,
+      "vae_oracle_lpips": 0.012195377610623837,
+      "action_sensitivity": 0.0054668590892106295,
+      "negated_action_sensitivity": 0.010126597946509719,
+      "motion_diag": 0.04098508507013321
+    },
+    "IPRL": {
+      "real_delta_norm_m": 0.014197849939209703,
+      "lpips": 0.07452557142823935,
+      "psnr": 21.80676736167957,
+      "ssim": 0.858468309044838,
+      "copy_last_lpips": 0.06240891758352518,
+      "vae_oracle_lpips": 0.010621924186125398,
+      "action_sensitivity": 0.0,
+      "negated_action_sensitivity": 0.0,
+      "motion_diag": -0.016880512237548828
+    },
+    "PennPAL": {
+      "real_delta_norm_m": 0.026846696737060437,
+      "lpips": 0.016111980425193906,
+      "psnr": 35.34565680152809,
+      "ssim": 0.970866858959198,
+      "copy_last_lpips": 0.0036548445641528815,
+      "vae_oracle_lpips": 0.004336528945714235,
+      "action_sensitivity": 6.345641025973237e-07,
+      "negated_action_sensitivity": 6.361054403214439e-07,
+      "motion_diag": 0.03527194634079933
+    },
+    "RAD": {
+      "real_delta_norm_m": 0.02058285364675532,
+      "lpips": 0.028729728423058987,
+      "psnr": 29.962785623336266,
+      "ssim": 0.9325259327888489,
+      "copy_last_lpips": 0.013277718564495444,
+      "vae_oracle_lpips": 0.008105477318167686,
+      "action_sensitivity": 0.007516540004871786,
+      "negated_action_sensitivity": 0.011699940776452422,
+      "motion_diag": 0.28854843974113464
+    },
+    "REAL": {
+      "real_delta_norm_m": 0.029476670233242894,
+      "lpips": 0.04035927355289459,
+      "psnr": 23.110367672679324,
+      "ssim": 0.9164456129074097,
+      "copy_last_lpips": 0.05077343387529254,
+      "vae_oracle_lpips": 0.005019049276597798,
+      "action_sensitivity": 0.023430520901456475,
+      "negated_action_sensitivity": 0.0639721262268722,
+      "motion_diag": -0.02127295918762684
+    },
+    "TRI": {
+      "real_delta_norm_m": 0.0035711285184464453,
+      "lpips": 0.031135430093854666,
+      "psnr": 32.14570335211459,
+      "ssim": 0.9317870140075684,
+      "copy_last_lpips": 0.010385510278865695,
+      "vae_oracle_lpips": 0.007895499700680375,
+      "action_sensitivity": 0.0026393647422082722,
+      "negated_action_sensitivity": 0.0013378224975895137,
+      "motion_diag": 0.04390383139252663
+    },
+    "WEIRD": {
+      "real_delta_norm_m": 0.04392712830524094,
+      "lpips": 0.1114409938454628,
+      "psnr": 19.301240086482277,
+      "ssim": 0.8374249637126923,
+      "copy_last_lpips": 0.09573185257613659,
+      "vae_oracle_lpips": 0.009019090794026852,
+      "action_sensitivity": 0.016876765992492437,
+      "negated_action_sensitivity": 0.02101474581286311,
+      "motion_diag": 0.04808616638183594
+    }
+  },
+  "n_episodes": 20,
+  "per_horizon": {
+    "t+1": {
+      "lpips": 0.027420200128108262,
+      "psnr": 30.19564662113903,
+      "ssim": 0.9440132975578308
+    },
+    "t+2": {
+      "lpips": 0.03879239452071488,
+      "psnr": 28.288225250146137,
+      "ssim": 0.9280237406492233
+    },
+    "t+3": {
+      "lpips": 0.04862727141007781,
+      "psnr": 26.941470301932632,
+      "ssim": 0.9140987455844879
+    },
+    "t+4": {
+      "lpips": 0.053795563988387585,
+      "psnr": 26.416620604480016,
+      "ssim": 0.9087440878152847
+    }
+  }
+}

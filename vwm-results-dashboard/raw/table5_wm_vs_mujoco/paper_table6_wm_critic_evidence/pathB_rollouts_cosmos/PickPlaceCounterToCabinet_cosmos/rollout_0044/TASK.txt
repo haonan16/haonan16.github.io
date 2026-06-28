@@ -1,0 +1,4 @@
+task_description: pick_the_tangerine_from_the_counter
+success: True
+num_steps: 219
+source_hdf5: 2026_05_15-00_35_08--episode_data--task=pick_the_tangerine_from_the_counter--ep=44--success=True.hdf5

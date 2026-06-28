@@ -1,0 +1,1347 @@
+{
+  "mode": "dataset",
+  "models": [
+    {
+      "name": "ours_A25750_robot_only",
+      "ckpt_path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt"
+    }
+  ],
+  "episodes": [
+    {
+      "name": "data__episode_20260515_223329",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260515_223329",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260515_223329__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260515_223329__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260515_224959",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260515_224959",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260515_224959__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260515_224959__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260515_225049",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260515_225049",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260515_225049__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260515_225049__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260515_225144",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260515_225144",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260515_225144__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260515_225144__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260515_225340",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260515_225340",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260515_225340__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260515_225340__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260515_225441",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260515_225441",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260515_225441__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260515_225441__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_001615",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_mustard_droid_layout/franka_box/episode_20260516_001615",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_001615__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_001615__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_001826",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_mustard_droid_layout/franka_box/episode_20260516_001826",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_001826__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_001826__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_003717",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_mustard_droid_layout/franka_box/episode_20260516_003717",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_003717__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_003717__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_003802",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_mustard_droid_layout/franka_box/episode_20260516_003802",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_003802__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_003802__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_004051",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_mustard_droid_layout/franka_box/episode_20260516_004051",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_004051__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_004051__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_004137",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_mustard_droid_layout/franka_box/episode_20260516_004137",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_004137__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_004137__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_012540",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_rope_droid_layout/franka_box/episode_20260516_012540",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_012540__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_012540__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_012650",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_rope_droid_layout/franka_box/episode_20260516_012650",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_012650__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_012650__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_012808",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_rope_droid_layout/franka_box/episode_20260516_012808",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_012808__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_012808__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_012913",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_rope_droid_layout/franka_box/episode_20260516_012913",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_012913__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_012913__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_013130",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_rope_droid_layout/franka_box/episode_20260516_013130",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_013130__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_013130__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_013401",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_rope_droid_layout/franka_box/episode_20260516_013401",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_013401__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_013401__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_182633",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_rice_cooker_droid_layout/franka_box/episode_20260520_182633",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_182633__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_182633__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_182724",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_rice_cooker_droid_layout/franka_box/episode_20260520_182724",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_182724__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_182724__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_182833",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_rice_cooker_droid_layout/franka_box/episode_20260520_182833",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_182833__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_182833__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_182921",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_rice_cooker_droid_layout/franka_box/episode_20260520_182921",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_182921__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_182921__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_182958",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_rice_cooker_droid_layout/franka_box/episode_20260520_182958",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_182958__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_182958__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_183033",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_rice_cooker_droid_layout/franka_box/episode_20260520_183033",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_183033__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_183033__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_163712",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_whiteboard_droid_layout/franka_box/episode_20260520_163712",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_163712__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_163712__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_163909",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_whiteboard_droid_layout/franka_box/episode_20260520_163909",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_163909__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_163909__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_164248",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_whiteboard_droid_layout/franka_box/episode_20260520_164248",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_164248__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_164248__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_164348",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_whiteboard_droid_layout/franka_box/episode_20260520_164348",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_164348__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_164348__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_164523",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_whiteboard_droid_layout/franka_box/episode_20260520_164523",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_164523__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_164523__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_164646",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_whiteboard_droid_layout/franka_box/episode_20260520_164646",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_164646__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_164646__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260515_225303",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_box_droid_layout/franka_box/episode_20260515_225303",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260515_225303__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260515_225303__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260515_230651",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_box_droid_layout/franka_box/episode_20260515_230651",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260515_230651__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260515_230651__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260515_231115",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_box_droid_layout/franka_box/episode_20260515_231115",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260515_231115__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260515_231115__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260515_233525",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_box_droid_layout/franka_box/episode_20260515_233525",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260515_233525__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260515_233525__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260515_233614",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_box_droid_layout/franka_box/episode_20260515_233614",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260515_233614__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260515_233614__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260515_233844",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_box_droid_layout/franka_box/episode_20260515_233844",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260515_233844__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260515_233844__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_001505",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_mustard_droid_layout/franka_box/episode_20260516_001505",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_001505__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_001505__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_001532",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_mustard_droid_layout/franka_box/episode_20260516_001532",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_001532__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_001532__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_004008",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_mustard_droid_layout/franka_box/episode_20260516_004008",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_004008__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_004008__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_005641",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_mustard_droid_layout/franka_box/episode_20260516_005641",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_005641__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_005641__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_162734",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_mustard_droid_layout/franka_box/episode_20260516_162734",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_162734__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_162734__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_163214",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_mustard_droid_layout/franka_box/episode_20260516_163214",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_163214__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_163214__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_013028",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rope_droid_layout/franka_box/episode_20260516_013028",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_013028__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_013028__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_013259",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rope_droid_layout/franka_box/episode_20260516_013259",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_013259__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_013259__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_014306",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rope_droid_layout/franka_box/episode_20260516_014306",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_014306__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_014306__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260517_205549",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rope_droid_layout/franka_box/episode_20260517_205549",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260517_205549__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260517_205549__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260517_210450",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rope_droid_layout/franka_box/episode_20260517_210450",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260517_210450__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260517_210450__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260517_210544",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rope_droid_layout/franka_box/episode_20260517_210544",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260517_210544__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260517_210544__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_183514",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rice_cooker_droid_layout/franka_box/episode_20260520_183514",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_183514__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_183514__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_183609",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rice_cooker_droid_layout/franka_box/episode_20260520_183609",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_183609__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_183609__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_183754",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rice_cooker_droid_layout/franka_box/episode_20260520_183754",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_183754__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_183754__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_184157",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rice_cooker_droid_layout/franka_box/episode_20260520_184157",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_184157__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_184157__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_185113",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rice_cooker_droid_layout/franka_box/episode_20260520_185113",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_185113__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_185113__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_185233",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rice_cooker_droid_layout/franka_box/episode_20260520_185233",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_185233__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_185233__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260516_000915",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_whiteboard_droid_layout/franka_box/episode_20260516_000915",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260516_000915__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260516_000915__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_164039",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_whiteboard_droid_layout/franka_box/episode_20260520_164039",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_164039__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_164039__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_170250",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_whiteboard_droid_layout/franka_box/episode_20260520_170250",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_170250__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_170250__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_173026",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_whiteboard_droid_layout/franka_box/episode_20260520_173026",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_173026__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_173026__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_174132",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_whiteboard_droid_layout/franka_box/episode_20260520_174132",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_174132__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_174132__dataset__comparison.mp4"
+    },
+    {
+      "name": "data__episode_20260520_174256",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_whiteboard_droid_layout/franka_box/episode_20260520_174256",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "ours_A25750_robot_only": {
+          "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/individual/data__episode_20260520_174256__ours_A25750_robot_only__dataset.mp4",
+          "render_params": {
+            "render_version": "v2",
+            "render_sigma": 16.0,
+            "render_line_thickness": 12,
+            "render_arrow_thickness": 24,
+            "render_arrow_min_length": 24.0,
+            "action_scale": 1.0
+          },
+          "num_frames": 81,
+          "action_records": null
+        }
+      },
+      "comparison_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_clean_20260522_200952/ours_A25750_robot_only/dataset_raw_xyz/ext1/comparison/data__episode_20260520_174256__dataset__comparison.mp4"
+    }
+  ],
+  "settings": {
+    "actions": null,
+    "horizon_steps": 20,
+    "n_frames": 5,
+    "sample_steps": 40,
+    "target_h": 480,
+    "target_w": 832,
+    "step_m": 0.01,
+    "action_scale": 1.0,
+    "long_rollout_mode": "compress_repeats",
+    "use_real_history": true,
+    "tcp_offset_m": 0.08,
+    "dataset_action_mode": "ee_xyz",
+    "burn_action_text": false,
+    "fps": 8
+  }
+}

@@ -1,0 +1,360 @@
+2026-05-18 10:38:00,833 INFO Spawning worker: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/bin/python /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/lerobot_policy_worker.py --policy_kind act --ckpt_path /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pathB_act_lerobot/opendrawer/run0/ckpt_step_010000.pt
+2026-05-18 10:38:14,060 INFO Worker READY.
+2026-05-18 10:38:14,339 INFO No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:30)
+2026-05-18 10:38:15,635 WARNING Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install.
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly (e.g. pip install mink==0.0.5), otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:40)
+2026-05-18 10:38:15,637 WARNING Could not load the mink-based whole-body IK. Make sure you install related import properly (e.g. pip install mink==0.0.5), otherwise you will not be able to use the default IK controller setting for GR1 robot.
+[robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/default/composite/hybrid_mobile_base.json (composite_controller_factory.py:121)
+2026-05-18 10:38:17,066 INFO Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/default/composite/hybrid_mobile_base.json
+2026-05-18 10:38:17,066 INFO Composite controller=HYBRID_MOBILE_BASE; body parts: ['base', 'head', 'left', 'legs', 'right', 'torso']
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:38:22,300 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:38:22,300 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:38:22,300 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+2026-05-18 10:38:22,931 INFO Env action_spec: dim=12; ee_body=robot0_right_hand; grip_qadr=11
+2026-05-18 10:38:22,931 INFO ============================================================
+2026-05-18 10:38:22,931 INFO seed 0 (range 0..29) policy=act
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:38:26,956 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:38:26,956 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:38:26,956 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:38:28,423 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:38:28,423 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:38:28,424 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+2026-05-18 10:38:29,012 INFO seed 0: init from demo 100
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:38:40,932 INFO seed 0 done: success=False steps=300 reward=0.000 mean_step=0.037s
+2026-05-18 10:38:40,947 INFO ============================================================
+2026-05-18 10:38:40,947 INFO seed 1 (range 0..29) policy=act
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:38:45,687 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:38:45,687 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:38:45,687 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:38:48,864 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:38:48,864 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:38:48,864 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+2026-05-18 10:38:49,798 INFO seed 1: init from demo 101
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:39:01,468 INFO seed 1 done: success=False steps=300 reward=0.000 mean_step=0.035s
+2026-05-18 10:39:01,489 INFO ============================================================
+2026-05-18 10:39:01,489 INFO seed 2 (range 0..29) policy=act
+2026-05-18 10:39:01,489 WARNING seed 2: demo-init failed (Demo state files missing for OpenDrawer/episode_000102 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000102); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:39:05,940 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:39:05,941 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:39:05,941 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:39:18,303 INFO seed 2 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:39:18,329 INFO ============================================================
+2026-05-18 10:39:18,329 INFO seed 3 (range 0..29) policy=act
+2026-05-18 10:39:18,329 WARNING seed 3: demo-init failed (Demo state files missing for OpenDrawer/episode_000103 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000103); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:39:22,821 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:39:22,821 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:39:22,821 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:39:34,725 INFO seed 3 done: success=False steps=300 reward=0.000 mean_step=0.035s
+2026-05-18 10:39:34,755 INFO ============================================================
+2026-05-18 10:39:34,755 INFO seed 4 (range 0..29) policy=act
+2026-05-18 10:39:34,757 WARNING seed 4: demo-init failed (Demo state files missing for OpenDrawer/episode_000104 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000104); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:39:39,280 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:39:39,280 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:39:39,280 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:39:51,626 INFO seed 4 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:39:51,661 INFO ============================================================
+2026-05-18 10:39:51,661 INFO seed 5 (range 0..29) policy=act
+2026-05-18 10:39:51,662 WARNING seed 5: demo-init failed (Demo state files missing for OpenDrawer/episode_000105 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000105); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:39:56,152 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:39:56,153 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:39:56,153 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:40:08,358 INFO seed 5 done: success=False steps=300 reward=0.000 mean_step=0.035s
+2026-05-18 10:40:08,398 INFO ============================================================
+2026-05-18 10:40:08,398 INFO seed 6 (range 0..29) policy=act
+2026-05-18 10:40:08,398 WARNING seed 6: demo-init failed (Demo state files missing for OpenDrawer/episode_000106 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000106); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:40:12,865 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:40:12,865 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:40:12,865 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:40:25,163 INFO seed 6 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:40:25,208 INFO ============================================================
+2026-05-18 10:40:25,208 INFO seed 7 (range 0..29) policy=act
+2026-05-18 10:40:25,208 WARNING seed 7: demo-init failed (Demo state files missing for OpenDrawer/episode_000107 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000107); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:40:29,683 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:40:29,684 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:40:29,684 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:40:41,700 INFO seed 7 done: success=False steps=300 reward=0.000 mean_step=0.035s
+2026-05-18 10:40:41,750 INFO ============================================================
+2026-05-18 10:40:41,750 INFO seed 8 (range 0..29) policy=act
+2026-05-18 10:40:41,752 WARNING seed 8: demo-init failed (Demo state files missing for OpenDrawer/episode_000108 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000108); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:40:46,341 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:40:46,342 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:40:46,342 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:40:58,544 INFO seed 8 done: success=False steps=300 reward=0.000 mean_step=0.035s
+2026-05-18 10:40:58,599 INFO ============================================================
+2026-05-18 10:40:58,599 INFO seed 9 (range 0..29) policy=act
+2026-05-18 10:40:58,599 WARNING seed 9: demo-init failed (Demo state files missing for OpenDrawer/episode_000109 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000109); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:41:03,144 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:41:03,144 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:41:03,144 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:41:15,457 INFO seed 9 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:41:15,516 INFO ============================================================
+2026-05-18 10:41:15,516 INFO seed 10 (range 0..29) policy=act
+2026-05-18 10:41:15,516 WARNING seed 10: demo-init failed (Demo state files missing for OpenDrawer/episode_000110 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000110); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:41:20,096 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:41:20,096 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:41:20,096 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:41:32,357 INFO seed 10 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:41:32,420 INFO ============================================================
+2026-05-18 10:41:32,421 INFO seed 11 (range 0..29) policy=act
+2026-05-18 10:41:32,421 WARNING seed 11: demo-init failed (Demo state files missing for OpenDrawer/episode_000111 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000111); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:41:36,892 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:41:36,892 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:41:36,892 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:41:49,136 INFO seed 11 done: success=False steps=300 reward=0.000 mean_step=0.035s
+2026-05-18 10:41:49,205 INFO ============================================================
+2026-05-18 10:41:49,205 INFO seed 12 (range 0..29) policy=act
+2026-05-18 10:41:49,207 WARNING seed 12: demo-init failed (Demo state files missing for OpenDrawer/episode_000112 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000112); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:41:53,821 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:41:53,821 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:41:53,821 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:42:06,326 INFO seed 12 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:42:06,400 INFO ============================================================
+2026-05-18 10:42:06,400 INFO seed 13 (range 0..29) policy=act
+2026-05-18 10:42:06,400 WARNING seed 13: demo-init failed (Demo state files missing for OpenDrawer/episode_000113 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000113); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:42:10,992 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:42:10,992 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:42:10,992 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:42:23,351 INFO seed 13 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:42:23,429 INFO ============================================================
+2026-05-18 10:42:23,429 INFO seed 14 (range 0..29) policy=act
+2026-05-18 10:42:23,429 WARNING seed 14: demo-init failed (Demo state files missing for OpenDrawer/episode_000114 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000114); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:42:27,879 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:42:27,879 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:42:27,880 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:42:40,010 INFO seed 14 done: success=False steps=300 reward=0.000 mean_step=0.035s
+2026-05-18 10:42:40,093 INFO ============================================================
+2026-05-18 10:42:40,093 INFO seed 15 (range 0..29) policy=act
+2026-05-18 10:42:40,094 WARNING seed 15: demo-init failed (Demo state files missing for OpenDrawer/episode_000115 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000115); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:42:44,595 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:42:44,595 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:42:44,595 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:42:56,641 INFO seed 15 done: success=True steps=300 reward=1.000 mean_step=0.035s
+2026-05-18 10:42:56,730 INFO ============================================================
+2026-05-18 10:42:56,730 INFO seed 16 (range 0..29) policy=act
+2026-05-18 10:42:56,732 WARNING seed 16: demo-init failed (Demo state files missing for OpenDrawer/episode_000116 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000116); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:43:01,319 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:43:01,319 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:43:01,319 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:43:13,577 INFO seed 16 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:43:13,669 INFO ============================================================
+2026-05-18 10:43:13,669 INFO seed 17 (range 0..29) policy=act
+2026-05-18 10:43:13,670 WARNING seed 17: demo-init failed (Demo state files missing for OpenDrawer/episode_000117 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000117); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:43:18,135 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:43:18,135 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:43:18,135 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:43:30,367 INFO seed 17 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:43:30,464 INFO ============================================================
+2026-05-18 10:43:30,464 INFO seed 18 (range 0..29) policy=act
+2026-05-18 10:43:30,464 WARNING seed 18: demo-init failed (Demo state files missing for OpenDrawer/episode_000118 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000118); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:43:34,969 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:43:34,969 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:43:34,969 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:43:47,137 INFO seed 18 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:43:47,237 INFO ============================================================
+2026-05-18 10:43:47,237 INFO seed 19 (range 0..29) policy=act
+2026-05-18 10:43:47,237 WARNING seed 19: demo-init failed (Demo state files missing for OpenDrawer/episode_000119 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000119); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:43:51,846 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:43:51,846 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:43:51,846 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:44:03,931 INFO seed 19 done: success=False steps=300 reward=0.000 mean_step=0.035s
+2026-05-18 10:44:04,035 INFO ============================================================
+2026-05-18 10:44:04,035 INFO seed 20 (range 0..29) policy=act
+2026-05-18 10:44:04,037 WARNING seed 20: demo-init failed (Demo state files missing for OpenDrawer/episode_000120 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000120); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:44:08,586 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:44:08,587 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:44:08,587 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:44:20,873 INFO seed 20 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:44:20,983 INFO ============================================================
+2026-05-18 10:44:20,983 INFO seed 21 (range 0..29) policy=act
+2026-05-18 10:44:20,983 WARNING seed 21: demo-init failed (Demo state files missing for OpenDrawer/episode_000121 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000121); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:44:25,494 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:44:25,494 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:44:25,494 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:44:37,744 INFO seed 21 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:44:37,860 INFO ============================================================
+2026-05-18 10:44:37,860 INFO seed 22 (range 0..29) policy=act
+2026-05-18 10:44:37,860 WARNING seed 22: demo-init failed (Demo state files missing for OpenDrawer/episode_000122 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000122); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:44:42,333 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:44:42,333 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:44:42,333 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:44:54,763 INFO seed 22 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:44:54,883 INFO ============================================================
+2026-05-18 10:44:54,883 INFO seed 23 (range 0..29) policy=act
+2026-05-18 10:44:54,883 WARNING seed 23: demo-init failed (Demo state files missing for OpenDrawer/episode_000123 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000123); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:44:59,412 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:44:59,412 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:44:59,412 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:45:11,702 INFO seed 23 done: success=False steps=300 reward=0.000 mean_step=0.035s
+2026-05-18 10:45:11,833 INFO ============================================================
+2026-05-18 10:45:11,833 INFO seed 24 (range 0..29) policy=act
+2026-05-18 10:45:11,835 WARNING seed 24: demo-init failed (Demo state files missing for OpenDrawer/episode_000124 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000124); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:45:16,466 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:45:16,466 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:45:16,466 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:45:28,742 INFO seed 24 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:45:28,869 INFO ============================================================
+2026-05-18 10:45:28,869 INFO seed 25 (range 0..29) policy=act
+2026-05-18 10:45:28,869 WARNING seed 25: demo-init failed (Demo state files missing for OpenDrawer/episode_000125 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000125); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:45:33,446 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:45:33,446 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:45:33,446 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:45:45,374 INFO seed 25 done: success=False steps=300 reward=0.000 mean_step=0.035s
+2026-05-18 10:45:45,506 INFO ============================================================
+2026-05-18 10:45:45,506 INFO seed 26 (range 0..29) policy=act
+2026-05-18 10:45:45,506 WARNING seed 26: demo-init failed (Demo state files missing for OpenDrawer/episode_000126 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000126); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:45:50,029 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:45:50,029 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:45:50,029 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:46:02,335 INFO seed 26 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:46:02,473 INFO ============================================================
+2026-05-18 10:46:02,473 INFO seed 27 (range 0..29) policy=act
+2026-05-18 10:46:02,473 WARNING seed 27: demo-init failed (Demo state files missing for OpenDrawer/episode_000127 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000127); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:46:06,964 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:46:06,964 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:46:06,964 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:46:19,311 INFO seed 27 done: success=False steps=300 reward=0.000 mean_step=0.036s
+2026-05-18 10:46:19,455 INFO ============================================================
+2026-05-18 10:46:19,455 INFO seed 28 (range 0..29) policy=act
+2026-05-18 10:46:19,457 WARNING seed 28: demo-init failed (Demo state files missing for OpenDrawer/episode_000128 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000128); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:46:24,097 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:46:24,097 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:46:24,097 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:46:36,234 INFO seed 28 done: success=True steps=300 reward=1.000 mean_step=0.035s
+2026-05-18 10:46:36,382 INFO ============================================================
+2026-05-18 10:46:36,382 INFO seed 29 (range 0..29) policy=act
+2026-05-18 10:46:36,382 WARNING seed 29: demo-init failed (Demo state files missing for OpenDrawer/episode_000129 under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_demos/v1.0/pretrain/atomic/OpenDrawer/20250819/lerobot/extras/episode_000129); falling back to env.reset()
+[robosuite WARNING] The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config. (robot.py:151)
+2026-05-18 10:46:40,852 WARNING The config has defined for the controller "left", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for left from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config. (robot.py:151)
+2026-05-18 10:46:40,852 WARNING The config has defined for the controller "head", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for head from self.part_controller_config.
+[robosuite WARNING] The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config. (robot.py:151)
+2026-05-18 10:46:40,852 WARNING The config has defined for the controller "legs", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for legs from self.part_controller_config.
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+2026-05-18 10:46:52,910 INFO seed 29 done: success=False steps=300 reward=0.000 mean_step=0.035s
+2026-05-18 10:46:53,061 INFO All seeds done in 8.6 min.

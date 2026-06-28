@@ -1,0 +1,6 @@
+start=Tue May 19 10:11:59 EDT 2026
+model_id=lerobot/smolvla_robocasa
+run_root=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/smolvla_robocasa
+venv=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/smolvla_robocasa/venv
+tasks=OpenCabinet,OpenDrawer,PickPlaceCounterToCabinet,TurnOnMicrowave
+GPU 0: NVIDIA H100 80GB HBM3 (UUID: GPU-27b0613b-4c2e-8e5a-2930-d8db6bfa743d)

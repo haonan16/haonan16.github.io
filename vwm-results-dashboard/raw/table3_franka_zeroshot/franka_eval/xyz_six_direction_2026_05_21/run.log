@@ -1,0 +1,21 @@
+[22:14:04] === Franka xyz on-compute-node runner ===
+[22:14:04] out_parent     = /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute
+[22:14:04] external out   = /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka
+[22:14:04] episodes       = /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/configs/eval_episodes_franka_box_xyz_3ep.txt (3 eps)
+[22:14:04] horizon_steps  = 20 (-> 80 frames per direction)
+[22:14:04] magnitude      = 0.03 m / chunk
+[22:14:04] sample_steps   = 40
+[22:14:04] GPU            = NVIDIA H100 80GB HBM3
+[22:14:04] SLURM_JOB_ID   = 13857961
+[22:14:04] 
+[22:14:04] ================================================================
+[22:14:04] PHASE 1: External baselines (CW, WGZ, WGF) on ext1, 3 eps x 6 dirs
+[22:14:04] ================================================================
+[22:53:34] PHASE 1 done (rc=0, see /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/external.log)
+[22:53:34] 
+[22:53:34] ================================================================
+[22:53:34] PHASE 2: Internal models on ext1 (5 ckpts, fastest first)
+[22:53:34] ================================================================
+[22:53:34]   START baseline_raw_action_adaln_step10000/ext1
+[02:53:50]   OK baseline_raw_action_adaln_step10000/ext1 (18 mp4s)
+[02:53:50]   START baseline_raw_action_cross_attention_step26000/ext1

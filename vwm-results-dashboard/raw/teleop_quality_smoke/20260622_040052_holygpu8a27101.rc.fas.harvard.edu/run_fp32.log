@@ -1,0 +1,11 @@
+2026-06-22 04:02:56,432 INFO Building WanT2VActionProj model...
+2026-06-22 04:02:57,771 INFO Loading action_proj MoT backbone from T2V pretrained.
+2026-06-22 04:03:27,568 INFO Loading checkpoint from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt
+2026-06-22 04:03:32,226 INFO Checkpoint loaded. missing=0 unexpected=2
+2026-06-22 04:03:32,282 INFO Detected render params for epoch=0-step=25750.ckpt: version=v2 sigma=16.0 line_thickness=12 arrow_thickness=24 arrow_min_length=24.0
+2026-06-22 04:03:33,938 INFO Session bootstrapped. T_lat=2 hist_rgb_frames=1 future_rgb_frames=4 action_scale=1.0 initial_ee=[0.4617857336997986, 0.004412942565977573, 0.2018601894378662]
+2026-06-22 04:03:33,938 INFO step 0: action=+x delta=[0.01, 0.0, 0.0] current_ee=[0.4617857336997986, 0.004412942565977573, 0.2018601894378662]
+2026-06-22 04:03:36,780 INFO step 1: action=+y delta=[0.0, 0.01, 0.0] current_ee=[0.4717857336997986, 0.004412942565977573, 0.2018601894378662]
+2026-06-22 04:03:39,154 INFO step 2: action=-z delta=[0.0, 0.0, -0.01] current_ee=[0.4717857336997986, 0.014412942565977574, 0.2018601894378662]
+2026-06-22 04:03:41,522 INFO step 3: action=nop delta=[0.0, 0.0, 0.0] current_ee=[0.4717857336997986, 0.014412942565977574, 0.1918601894378662]
+2026-06-22 04:03:43,224 INFO Saving 16 frames to /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/teleop_quality_smoke/20260622_040052_holygpu8a27101.rc.fas.harvard.edu/rollout_fp32_steps1.mp4

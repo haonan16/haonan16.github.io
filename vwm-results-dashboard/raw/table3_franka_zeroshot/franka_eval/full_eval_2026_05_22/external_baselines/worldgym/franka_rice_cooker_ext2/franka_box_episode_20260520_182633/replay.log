@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/external_baselines/worldgym/run_eval.py", line 566, in main
+    meta = run_replay(args, wm)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/external_baselines/worldgym/run_eval.py", line 335, in run_replay
+    ctx = _prepare_inference(args)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/external_baselines/worldgym/run_eval.py", line 257, in _prepare_inference
+    cam = _pick_droid_camera(episode_dir, view=args.view)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/external_baselines/worldgym/run_eval.py", line 144, in _pick_droid_camera
+    meta = _read_droid_metadata(episode_dir)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/external_baselines/_droid_io.py", line 41, in read_droid_metadata
+    raise FileNotFoundError(f"No metadata_*.json in {episode_dir}")
+FileNotFoundError: No metadata_*.json in /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_rice_cooker_droid_layout/franka_box/episode_20260520_182633
+[load] instantiating WorldModel(default_cfg=3.0, use_pixel_rope=False)
+[run_eval] WorldGym model loaded in 27.5s (device=cuda:0)
+[run_eval] replay FAILED (FileNotFoundError('No metadata_*.json in /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_rice_cooker_droid_layout/franka_box/episode_20260520_182633')); falling back to smoke.
+[smoke] generated frame shape=(256, 256, 3), dtype=uint8, mean=16.0
+[run_eval] smoke fallback OK; meta={'mode': 'smoke', 'frame_shape': [256, 256, 3], 'ckpt_path': '/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/external_wm_ckpts/worldgym/mixed_openx_9robots_20frames_0p1actiondropout_580ksteps.pt'}

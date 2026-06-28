@@ -1,0 +1,31 @@
+{
+  "source": "human_ssv2",
+  "dataset": "Something-Something V2 action projection",
+  "clip_id": "77488",
+  "selection_reason": "More obvious replacement: wooden scale pulled left-to-right on a plain table.",
+  "prompt": "pulling wooden scale from left to right",
+  "record": {
+    "video_path": "20bn-something-something-v2/77488.mp4",
+    "caption": "pulling wooden scale from left to right",
+    "height": 240,
+    "width": 360,
+    "fps": 12,
+    "n_frames": 67,
+    "split": "training",
+    "prompt_embed_path": "prompt_embeds/001/20bn-something-something-v2/77488_1.pt",
+    "shard": 1,
+    "gemini_caption": ""
+  },
+  "outputs": [
+    "raw.mp4",
+    "action_conditioning.mp4",
+    "overlay.mp4",
+    "raw_action_overlay.mp4"
+  ],
+  "layout_raw_action_overlay": "left=raw video, middle=3-channel action conditioning, right=alpha overlay",
+  "target_resolution": [
+    480,
+    832
+  ],
+  "fps": 6
+}

@@ -1,0 +1,4 @@
+task_description: open_the_cabinet_door
+success: True
+num_steps: 314
+source_hdf5: 2026_05_14-23_30_49--episode_data--task=open_the_cabinet_door--ep=30--success=True.hdf5

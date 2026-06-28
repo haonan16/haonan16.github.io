@@ -1,0 +1,573 @@
+{
+  "task_names": [
+    "OpenDrawer"
+  ],
+  "policy_names": [
+    "cosmos"
+  ],
+  "n_total": 1,
+  "n_success": 1,
+  "per_policy_counts": {
+    "cosmos": {
+      "n": 1,
+      "n_success": 1
+    }
+  },
+  "feature_sets": {
+    "scalars": {
+      "X_shape": [
+        1,
+        7
+      ],
+      "feature_names_head": [
+        "wm_frame_progress",
+        "wm_proprio_path_length",
+        "wm_lpips_mean_seq",
+        "wm_lpips_std_seq",
+        "wm_uv_residual_px_mean",
+        "wm_pred_motion_px_mean",
+        "wm_pred_pixel_var_mean"
+      ],
+      "pooled_cv": {
+        "note": "single-class \u2014 no CV"
+      },
+      "leave_one_task_out": {
+        "OpenDrawer": {
+          "n_test": 1,
+          "note": "single-class test set"
+        }
+      },
+      "leave_one_policy_out": {
+        "cosmos": {
+          "n_test": 1,
+          "note": "single-class test set"
+        }
+      }
+    },
+    "scalars_lpips": {
+      "X_shape": [
+        1,
+        11
+      ],
+      "feature_names_head": [
+        "wm_frame_progress",
+        "wm_proprio_path_length",
+        "wm_lpips_mean_seq",
+        "wm_lpips_std_seq",
+        "wm_uv_residual_px_mean",
+        "wm_pred_motion_px_mean",
+        "wm_pred_pixel_var_mean",
+        "lpips_mean",
+        "lpips_std",
+        "lpips_max",
+        "lpips_last"
+      ],
+      "pooled_cv": {
+        "note": "single-class \u2014 no CV"
+      },
+      "leave_one_task_out": {
+        "OpenDrawer": {
+          "n_test": 1,
+          "note": "single-class test set"
+        }
+      },
+      "leave_one_policy_out": {
+        "cosmos": {
+          "n_test": 1,
+          "note": "single-class test set"
+        }
+      }
+    },
+    "hidden_action": {
+      "error": "n_components=8 must be between 0 and min(n_samples, n_features)=1 with svd_solver='full'"
+    },
+    "hidden_rgb": {
+      "error": "n_components=8 must be between 0 and min(n_samples, n_features)=1 with svd_solver='full'"
+    },
+    "hidden_both": {
+      "error": "n_components=8 must be between 0 and min(n_samples, n_features)=1 with svd_solver='full'"
+    },
+    "combined": {
+      "error": "n_components=8 must be between 0 and min(n_samples, n_features)=1 with svd_solver='full'"
+    }
+  },
+  "kinematic_baseline_summary": {
+    "n_total": 187,
+    "task_names": [
+      "OpenCabinet",
+      "OpenDrawer",
+      "PickPlaceCounterToCabinet",
+      "TurnOnMicrowave"
+    ],
+    "kin_feature_names": [
+      "ee_path_len",
+      "ee_disp",
+      "ee_std_x",
+      "ee_std_y",
+      "ee_std_z",
+      "ee_z_range",
+      "action_max_norm",
+      "action_mean_norm",
+      "action_std",
+      "gripper_changes",
+      "gripper_mean",
+      "mean_step_size",
+      "step_size_std"
+    ],
+    "wm_feature_names": [
+      "wm_frame_progress",
+      "wm_proprio_path_length"
+    ],
+    "max_steps_prefix": 100,
+    "per_task_cv_kin": {
+      "OpenCabinet": {
+        "n": 48,
+        "n_success": 37,
+        "results": {
+          "logreg": {
+            "mean": 0.8303571428571429,
+            "std": 0.22545305860123757,
+            "folds": [
+              0.4375,
+              1.0,
+              1.0,
+              0.7142857142857143,
+              1.0
+            ]
+          },
+          "rf": {
+            "mean": 0.7875,
+            "std": 0.23638972490532734,
+            "folds": [
+              0.4375,
+              1.0,
+              1.0,
+              0.5714285714285714,
+              0.9285714285714286
+            ]
+          }
+        }
+      },
+      "OpenDrawer": {
+        "n": 39,
+        "n_success": 37,
+        "results": {
+          "logreg": {
+            "mean": 0.8947368421052632,
+            "std": 0.10526315789473684,
+            "folds": [
+              0.7894736842105263,
+              1.0
+            ]
+          },
+          "rf": {
+            "mean": 0.4722222222222222,
+            "std": 0.4722222222222222,
+            "folds": [
+              0.0,
+              0.9444444444444444
+            ]
+          }
+        }
+      },
+      "PickPlaceCounterToCabinet": {
+        "n": 50,
+        "n_success": 32,
+        "results": {
+          "logreg": {
+            "mean": 0.680952380952381,
+            "std": 0.12703000163423106,
+            "folds": [
+              0.7916666666666666,
+              0.8333333333333334,
+              0.5416666666666666,
+              0.5238095238095238,
+              0.7142857142857143
+            ]
+          },
+          "rf": {
+            "mean": 0.7095238095238094,
+            "std": 0.07909278686606232,
+            "folds": [
+              0.5833333333333334,
+              0.7916666666666666,
+              0.7916666666666666,
+              0.6666666666666666,
+              0.7142857142857143
+            ]
+          }
+        }
+      },
+      "TurnOnMicrowave": {
+        "n": 50,
+        "n_success": 38,
+        "results": {
+          "logreg": {
+            "mean": 0.8964285714285716,
+            "std": 0.14655917520487993,
+            "folds": [
+              0.625,
+              1.0,
+              1.0,
+              0.8571428571428571,
+              1.0
+            ]
+          },
+          "rf": {
+            "mean": 0.9684523809523811,
+            "std": 0.04000070861050343,
+            "folds": [
+              0.9375,
+              1.0,
+              1.0,
+              0.9047619047619048,
+              1.0
+            ]
+          }
+        }
+      }
+    },
+    "per_task_cv_kin_plus_wm": {
+      "OpenCabinet": {
+        "n": 48,
+        "n_success": 37,
+        "results": {
+          "logreg": {
+            "mean": 0.8178571428571428,
+            "std": 0.24753890644519222,
+            "folds": [
+              0.375,
+              1.0,
+              1.0,
+              0.7142857142857143,
+              1.0
+            ]
+          },
+          "rf": {
+            "mean": 0.8589285714285715,
+            "std": 0.21785714285714286,
+            "folds": [
+              0.4375,
+              1.0,
+              1.0,
+              0.8571428571428571,
+              1.0
+            ]
+          }
+        }
+      },
+      "OpenDrawer": {
+        "n": 39,
+        "n_success": 37,
+        "results": {
+          "logreg": {
+            "mean": 0.868421052631579,
+            "std": 0.13157894736842107,
+            "folds": [
+              0.7368421052631579,
+              1.0
+            ]
+          },
+          "rf": {
+            "mean": 0.4444444444444444,
+            "std": 0.4444444444444444,
+            "folds": [
+              0.0,
+              0.8888888888888888
+            ]
+          }
+        }
+      },
+      "PickPlaceCounterToCabinet": {
+        "n": 50,
+        "n_success": 32,
+        "results": {
+          "logreg": {
+            "mean": 0.6964285714285714,
+            "std": 0.11517511068997928,
+            "folds": [
+              0.75,
+              0.875,
+              0.6666666666666666,
+              0.5238095238095238,
+              0.6666666666666666
+            ]
+          },
+          "rf": {
+            "mean": 0.7202380952380952,
+            "std": 0.07280421357819361,
+            "folds": [
+              0.625,
+              0.8333333333333334,
+              0.6666666666666666,
+              0.7619047619047619,
+              0.7142857142857143
+            ]
+          }
+        }
+      },
+      "TurnOnMicrowave": {
+        "n": 50,
+        "n_success": 38,
+        "results": {
+          "logreg": {
+            "mean": 0.8773809523809524,
+            "std": 0.15629279459310771,
+            "folds": [
+              0.625,
+              1.0,
+              1.0,
+              0.7619047619047619,
+              1.0
+            ]
+          },
+          "rf": {
+            "mean": 0.9494047619047619,
+            "std": 0.07401086210652168,
+            "folds": [
+              0.9375,
+              1.0,
+              1.0,
+              0.8095238095238095,
+              1.0
+            ]
+          }
+        }
+      }
+    },
+    "top_single_features": {
+      "OpenCabinet": {
+        "n": 48,
+        "n_success": 37,
+        "top5_features": [
+          {
+            "feature": "ee_std_z",
+            "auroc": 0.8648648648648649,
+            "polarity": "lower=success"
+          },
+          {
+            "feature": "ee_z_range",
+            "auroc": 0.6953316953316954,
+            "polarity": "lower=success"
+          },
+          {
+            "feature": "ee_disp",
+            "auroc": 0.6781326781326781,
+            "polarity": "lower=success"
+          },
+          {
+            "feature": "step_size_std",
+            "auroc": 0.6584766584766585,
+            "polarity": "lower=success"
+          },
+          {
+            "feature": "action_mean_norm",
+            "auroc": 0.6535626535626535,
+            "polarity": "lower=success"
+          }
+        ]
+      },
+      "OpenDrawer": {
+        "n": 39,
+        "n_success": 37,
+        "top5_features": [
+          {
+            "feature": "ee_std_z",
+            "auroc": 0.972972972972973,
+            "polarity": "higher=success"
+          },
+          {
+            "feature": "ee_z_range",
+            "auroc": 0.918918918918919,
+            "polarity": "higher=success"
+          },
+          {
+            "feature": "ee_path_len",
+            "auroc": 0.8783783783783784,
+            "polarity": "higher=success"
+          },
+          {
+            "feature": "mean_step_size",
+            "auroc": 0.8783783783783784,
+            "polarity": "higher=success"
+          },
+          {
+            "feature": "action_mean_norm",
+            "auroc": 0.8108108108108109,
+            "polarity": "lower=success"
+          }
+        ]
+      },
+      "PickPlaceCounterToCabinet": {
+        "n": 50,
+        "n_success": 32,
+        "top5_features": [
+          {
+            "feature": "ee_z_range",
+            "auroc": 0.7725694444444444,
+            "polarity": "higher=success"
+          },
+          {
+            "feature": "ee_std_z",
+            "auroc": 0.7065972222222222,
+            "polarity": "higher=success"
+          },
+          {
+            "feature": "ee_disp",
+            "auroc": 0.6527777777777778,
+            "polarity": "higher=success"
+          },
+          {
+            "feature": "step_size_std",
+            "auroc": 0.6319444444444444,
+            "polarity": "lower=success"
+          },
+          {
+            "feature": "ee_std_y",
+            "auroc": 0.6215277777777778,
+            "polarity": "higher=success"
+          }
+        ]
+      },
+      "TurnOnMicrowave": {
+        "n": 50,
+        "n_success": 38,
+        "top5_features": [
+          {
+            "feature": "ee_path_len",
+            "auroc": 0.8157894736842105,
+            "polarity": "higher=success"
+          },
+          {
+            "feature": "mean_step_size",
+            "auroc": 0.8157894736842105,
+            "polarity": "higher=success"
+          },
+          {
+            "feature": "ee_disp",
+            "auroc": 0.7346491228070176,
+            "polarity": "higher=success"
+          },
+          {
+            "feature": "step_size_std",
+            "auroc": 0.7302631578947368,
+            "polarity": "higher=success"
+          },
+          {
+            "feature": "action_std",
+            "auroc": 0.7258771929824561,
+            "polarity": "lower=success"
+          }
+        ]
+      }
+    },
+    "pooled_kin": {
+      "n_folds": 5,
+      "n_total": 187,
+      "n_success": 144,
+      "logreg": {
+        "auroc_mean": 0.7259304871373836,
+        "auroc_std": 0.08462179440746959,
+        "folds": [
+          0.7701149425287356,
+          0.7203065134099617,
+          0.8620689655172413,
+          0.6422413793103449,
+          0.6349206349206349
+        ]
+      },
+      "rf": {
+        "auroc_mean": 0.8226464148877941,
+        "auroc_std": 0.10934851050979062,
+        "folds": [
+          0.8467432950191571,
+          0.7432950191570882,
+          0.978448275862069,
+          0.6637931034482759,
+          0.8809523809523809
+        ]
+      }
+    },
+    "pooled_wm": {
+      "n_folds": 5,
+      "n_total": 187,
+      "n_success": 144,
+      "logreg": {
+        "auroc_mean": 0.6289819376026273,
+        "auroc_std": 0.09193548508957625,
+        "folds": [
+          0.5900383141762452,
+          0.4904214559386973,
+          0.7543103448275862,
+          0.6077586206896551,
+          0.7023809523809523
+        ]
+      },
+      "rf": {
+        "auroc_mean": 0.6812807881773398,
+        "auroc_std": 0.09462865484280679,
+        "folds": [
+          0.7624521072796935,
+          0.6973180076628352,
+          0.7931034482758621,
+          0.5344827586206896,
+          0.6190476190476191
+        ]
+      }
+    },
+    "pooled_kin_plus_wm": {
+      "n_folds": 5,
+      "n_total": 187,
+      "n_success": 144,
+      "logreg": {
+        "auroc_mean": 0.7266009852216749,
+        "auroc_std": 0.07997084000614879,
+        "folds": [
+          0.7547892720306514,
+          0.7432950191570882,
+          0.853448275862069,
+          0.646551724137931,
+          0.6349206349206349
+        ]
+      },
+      "rf": {
+        "auroc_mean": 0.8220853858784893,
+        "auroc_std": 0.10521426108108577,
+        "folds": [
+          0.8850574712643678,
+          0.7203065134099617,
+          0.9741379310344828,
+          0.6896551724137931,
+          0.8412698412698413
+        ]
+      }
+    },
+    "pooled_task_onehot_only": {
+      "n_folds": 5,
+      "n_total": 187,
+      "n_success": 144,
+      "logreg": {
+        "auroc_mean": 0.5577859879584017,
+        "auroc_std": 0.08163981952207247,
+        "folds": [
+          0.5019157088122606,
+          0.4482758620689655,
+          0.6293103448275862,
+          0.5387931034482759,
+          0.6706349206349206
+        ]
+      },
+      "rf": {
+        "auroc_mean": 0.5577859879584017,
+        "auroc_std": 0.08163981952207247,
+        "folds": [
+          0.5019157088122606,
+          0.4482758620689655,
+          0.6293103448275862,
+          0.5387931034482759,
+          0.6706349206349206
+        ]
+      }
+    }
+  }
+}

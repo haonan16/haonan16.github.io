@@ -1,0 +1,91 @@
+{
+  "purpose": "Franka xyz six-direction (ext2 SLURM, sample_steps=40, q=10)",
+  "model": "baseline_raw_action_cross_attention_step26000",
+  "model_type": "raw_vector",
+  "checkpoint": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-30/14-04-25/checkpoints/epoch=0-step=26000.ckpt",
+  "action_injection": "cross_attention",
+  "episodes": [
+    {
+      "name": "data__episode_20260515_223329",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260515_223329",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260515_223329_plusx_20step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260515_223329_minusx_20step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260515_223329_minusy_20step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260515_223329_plusy_20step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260515_223329_plusz_20step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260515_223329_minusz_20step.mp4"
+      },
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/direction_grid_data__episode_20260515_223329__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/frames/data__episode_20260515_223329_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/frames/data__episode_20260515_223329_six_direction_frame40.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/frames/data__episode_20260515_223329_six_direction_frame80.png"
+      ]
+    },
+    {
+      "name": "data__episode_20260516_145620",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260516_145620",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260516_145620_plusx_20step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260516_145620_minusx_20step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260516_145620_minusy_20step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260516_145620_plusy_20step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260516_145620_plusz_20step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260516_145620_minusz_20step.mp4"
+      },
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/direction_grid_data__episode_20260516_145620__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/frames/data__episode_20260516_145620_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/frames/data__episode_20260516_145620_six_direction_frame40.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/frames/data__episode_20260516_145620_six_direction_frame80.png"
+      ]
+    },
+    {
+      "name": "data__episode_20260516_155653",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260516_155653",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260516_155653_plusx_20step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260516_155653_minusx_20step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260516_155653_minusy_20step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260516_155653_plusy_20step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260516_155653_plusz_20step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/individual_videos/data__episode_20260516_155653_minusz_20step.mp4"
+      },
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/direction_grid_data__episode_20260516_155653__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/frames/data__episode_20260516_155653_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/frames/data__episode_20260516_155653_six_direction_frame40.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/baseline_raw_action_cross_attention_step26000/ext2/frames/data__episode_20260516_155653_six_direction_frame80.png"
+      ]
+    }
+  ],
+  "direction_order": [
+    "+x",
+    "-x",
+    "-y",
+    "+y",
+    "+z",
+    "-z"
+  ],
+  "horizon_steps": 20,
+  "long_rollout_mode": "exact",
+  "rollout_command_count": 20,
+  "future_frames_per_step": 4,
+  "generated_future_frames": 80,
+  "magnitude_m_per_step": 0.03,
+  "sample_steps": 40,
+  "n_frames": 5,
+  "fps": 8,
+  "labels_burned_in": false,
+  "rgb_export": "model [-1,1] converted with scripts.video_export_utils.video_tensor_to_uint8",
+  "mode": "nudge",
+  "do_nudge": true,
+  "do_replay": false
+}

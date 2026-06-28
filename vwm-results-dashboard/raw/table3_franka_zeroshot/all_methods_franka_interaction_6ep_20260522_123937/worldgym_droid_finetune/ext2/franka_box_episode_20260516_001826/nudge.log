@@ -1,0 +1,45 @@
+[load] instantiating WorldModel(default_cfg=3.0, use_pixel_rope=False)
+[run_eval] WorldGym model loaded in 11.8s (device=cuda:0)
+[setup] camera: 408322072302.mp4  (view=ext2)
+[setup] episode T=241 from episode_20260516_001826
+[setup] actions: deltas shape=(241, 7), worldgym shape=(241, 10), wv range=(-0.654, 0.739), gripper range=(-1.0, -1.0)
+[setup] will generate 19 frames (cap = max_frames-1 = 19)
+[setup] gt frames shape=(20, 256, 256, 3), dtype=uint8
+[nudge] +x: max |delta| on axis x (post-rescale units) = 1.5242
+[nudge:+x] step 5/19: frame mean=136.5, elapsed=2.4s (2.09 fps)
+[nudge:+x] step 10/19: frame mean=144.3, elapsed=4.7s (2.13 fps)
+[nudge:+x] step 15/19: frame mean=153.4, elapsed=7.3s (2.06 fps)
+[nudge:+x] step 19/19: frame mean=157.2, elapsed=9.8s (1.94 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_interaction_6ep_20260522_123937/worldgym_droid_finetune/ext2/franka_box_episode_20260516_001826/+x.mp4 ((20, 256, 256, 3))
+[nudge] -x: max |delta| on axis x (post-rescale units) = 1.1953
+[nudge:-x] step 5/19: frame mean=22.8, elapsed=2.2s (2.23 fps)
+[nudge:-x] step 10/19: frame mean=8.2, elapsed=4.5s (2.21 fps)
+[nudge:-x] step 15/19: frame mean=7.6, elapsed=7.1s (2.11 fps)
+[nudge:-x] step 19/19: frame mean=14.4, elapsed=9.6s (1.97 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_interaction_6ep_20260522_123937/worldgym_droid_finetune/ext2/franka_box_episode_20260516_001826/-x.mp4 ((20, 256, 256, 3))
+[nudge] +y: max |delta| on axis y (post-rescale units) = 1.7039
+[nudge:+y] step 5/19: frame mean=90.3, elapsed=2.2s (2.23 fps)
+[nudge:+y] step 10/19: frame mean=63.4, elapsed=4.5s (2.20 fps)
+[nudge:+y] step 15/19: frame mean=46.1, elapsed=7.1s (2.10 fps)
+[nudge:+y] step 19/19: frame mean=46.2, elapsed=9.6s (1.97 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_interaction_6ep_20260522_123937/worldgym_droid_finetune/ext2/franka_box_episode_20260516_001826/+y.mp4 ((20, 256, 256, 3))
+[nudge] -y: max |delta| on axis y (post-rescale units) = 1.4602
+[nudge:-y] step 5/19: frame mean=91.6, elapsed=2.2s (2.23 fps)
+[nudge:-y] step 10/19: frame mean=24.6, elapsed=4.5s (2.21 fps)
+[nudge:-y] step 15/19: frame mean=18.4, elapsed=7.1s (2.11 fps)
+[nudge:-y] step 19/19: frame mean=13.3, elapsed=9.6s (1.97 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_interaction_6ep_20260522_123937/worldgym_droid_finetune/ext2/franka_box_episode_20260516_001826/-y.mp4 ((20, 256, 256, 3))
+[nudge] +z: max |delta| on axis z (post-rescale units) = 1.2813
+[nudge:+z] step 5/19: frame mean=105.2, elapsed=2.2s (2.23 fps)
+[nudge:+z] step 10/19: frame mean=99.1, elapsed=4.5s (2.20 fps)
+[nudge:+z] step 15/19: frame mean=104.6, elapsed=7.1s (2.10 fps)
+[nudge:+z] step 19/19: frame mean=108.6, elapsed=9.6s (1.97 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_interaction_6ep_20260522_123937/worldgym_droid_finetune/ext2/franka_box_episode_20260516_001826/+z.mp4 ((20, 256, 256, 3))
+[nudge] -z: max |delta| on axis z (post-rescale units) = 1.6206
+[nudge:-z] step 5/19: frame mean=10.8, elapsed=2.2s (2.24 fps)
+[nudge:-z] step 10/19: frame mean=0.8, elapsed=4.5s (2.21 fps)
+[nudge:-z] step 15/19: frame mean=0.7, elapsed=7.1s (2.11 fps)
+[nudge:-z] step 19/19: frame mean=1.0, elapsed=9.6s (1.98 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_interaction_6ep_20260522_123937/worldgym_droid_finetune/ext2/franka_box_episode_20260516_001826/-z.mp4 ((20, 256, 256, 3))
+[nudge] wrote seed_uv.json = {'u': 128.0, 'v': 128.0, 'method': 'image_center_placeholder'}
+[run_eval] OK in 71.2s; meta keys=['mode', 'episode_id', 'camera_name', 'start_frame', 'n_gen', 'nudge_magnitude_m', 'directions', 'direction_mp4s', 'seed_uv', 'resolution_hw', 'ckpt_path', 'default_cfg', 'use_pixel_rope']

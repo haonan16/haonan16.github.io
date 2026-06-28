@@ -1,0 +1,4 @@
+task_description: pick_the_corn_from_the_counter_and_
+success: True
+num_steps: 244
+source_hdf5: 2026_05_15-00_35_08--episode_data--task=pick_the_corn_from_the_counter_and_--ep=40--success=True.hdf5

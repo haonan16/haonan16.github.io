@@ -1,0 +1,43 @@
+2026-05-18 03:56:23.392963: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-18 03:56:23.427538: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-05-18 03:56:23.427597: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-05-18 03:56:23.428794: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2026-05-18 03:56:23.434103: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-18 03:56:24.582647: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+petrel_client is not installed. If you read data locally instead of from ceph, ignore it.
+--- Random seed set to 42 for reproducibility ---
+Running policy on device: cuda
+--- 2. Initializing BeingHPolicy ---
+
+=== Loading model from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/checkpoints/beingh/Being-H05-2B_libero_robocasa ===
+Detected LLM version: qwen3
+Using Qwen3ForCausalLM
+Loading state dict...
+Found 1 .safetensors files, loading...
+Weights loaded from .safetensors files.
+MPG enabled: lambda=0.1, projections=32, refinement_iters=1
+RTC disabled
+[Metadata] Loading from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/checkpoints/beingh/Being-H05-2B_libero_robocasa/uni_posttrain_metadata.json
+Warning: Nested metadata detected, Keys: ['libero_spatial', 'libero_object', 'libero_goal', 'libero_10', 'CloseDoubleDoor', 'CloseDrawer', 'CloseSingleDoor', 'CoffeePressButton', 'CoffeeServeMug', 'CoffeeSetupMug', 'OpenDoubleDoor', 'OpenDrawer', 'OpenSingleDoor', 'PnPCabToCounter', 'PnPCounterToCab', 'PnPCounterToMicrowave', 'PnPCounterToSink', 'PnPCounterToStove', 'PnPMicrowaveToCounter', 'PnPSinkToCounter', 'PnPStoveToCounter', 'TurnOffMicrowave', 'TurnOffSinkFaucet', 'TurnOffStove', 'TurnOnMicrowave', 'TurnOnSinkFaucet', 'TurnOnStove', 'TurnSinkSpout']
+Unalcking key: libero_spatial
+[Metadata] Embodiment tag: libero
+[Metadata] Stats level: unknown, Source: legacy:libero_spatial
+Traceback (most recent call last):
+  File "/n/home01/haonan/miniforge3/envs/ei_world_model/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/n/home01/haonan/miniforge3/envs/ei_world_model/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/Being-H/Being-H05/BeingH/inference/run_server_vla.py", line 149, in <module>
+    main(args)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/Being-H/Being-H05/BeingH/inference/run_server_vla.py", line 110, in main
+    policy = BeingHPolicy(
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/Being-H/Being-H05/BeingH/inference/beingh_policy.py", line 308, in __init__
+    self._load_metadata(Path(self.model_path))
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/Being-H/Being-H05/BeingH/inference/beingh_policy.py", line 538, in _load_metadata
+    self._modality_transform.set_metadata(metadata)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/Being-H/Being-H05/BeingH/dataset/transform/base.py", line 97, in set_metadata
+    transform.set_metadata(dataset_metadata)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/Being-H/Being-H05/BeingH/dataset/transform/state_action.py", line 388, in set_metadata
+    assert state_key in getattr(
+AssertionError: gripper_qpos config not found

@@ -1,0 +1,24 @@
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  20%|██        | 1/5 [00:00<00:01,  3.68it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00,  7.98it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 10.84it/s]
+Expected types for unet: (<class 'models.unet_spatio_temporal_condition.UNetSpatioTemporalConditionModel'>,), got <class 'diffusers.models.unets.unet_spatio_temporal_condition.UNetSpatioTemporalConditionModel'>.
+Traceback (most recent call last):
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/external_baselines/ctrl_world/run_eval.py", line 747, in main
+    meta = run_replay(args, model, cfg, dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/external_baselines/ctrl_world/run_eval.py", line 499, in run_replay
+    ctx = _prepare_inference(args, model, cfg, dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/external_baselines/ctrl_world/run_eval.py", line 374, in _prepare_inference
+    rgb = rgb[indices]
+          ~~~^^^^^^^^^
+IndexError: index 97 is out of bounds for axis 0 with size 97
+replace the unet to support action condition and frame_level pose!
+[load] missing=0 unexpected=0
+[run_eval] model on cuda, dtype=torch.bfloat16, load+to took 18.2s
+[setup] primary view = ext1 (serial 20521388); 3-view input order = [20521388, 13062452, 24259877]
+[setup] cameras: ['20521388.mp4', '13062452.mp4', '24259877.mp4'] (primary view = ext1)
+[setup] episode T=98 -> using 68 frames (skip=1, start=50, interact_num=12)
+[run_eval] replay FAILED (IndexError('index 97 is out of bounds for axis 0 with size 97')); falling back to smoke.
+[smoke] action_hidden shape: (1, 11, 1024)
+[smoke] image-cond latent shape: (1, 4, 72, 40)
+[smoke] checkpoint loaded; action_encoder + text path forward-OK.
+[run_eval] smoke fallback OK; meta={'mode': 'smoke', 'action_hidden_shape': [1, 11, 1024], 'image_latent_shape': [1, 4, 72, 40], 'ckpt_path': '/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/external_wm_ckpts/ctrl_world/ctrl_world/checkpoint-10000.pt'}

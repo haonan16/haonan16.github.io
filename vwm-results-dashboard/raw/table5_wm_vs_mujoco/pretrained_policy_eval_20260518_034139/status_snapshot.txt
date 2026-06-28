@@ -1,0 +1,24 @@
+timestamp=2026-05-18 15:53:07
+out_root=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139
+
+[queue]
+JOBID                     NAME    STATE       TIME TIME_LIMIT     NODELIST(REASON)
+13632998    CP30K_50ep_actmetrics  PENDING       0:00    6:00:00           (Priority)
+13650782 wm_act_canonical_PickPla  PENDING       0:00    6:00:00           (Priority)
+13650784 wm_act_canonical_OpenDra  PENDING       0:00    6:00:00           (Priority)
+13650789 wm_act_step10k_PickPlace  PENDING       0:00    6:00:00           (Priority)
+13650794 wm_act_step10k_OpenDrawe  PENDING       0:00    6:00:00           (Priority)
+13627456       corl_sample_ablate  RUNNING    4:16:07   12:00:00       holygpu8a17203
+13627455         corl_horizon_gap  RUNNING    4:38:07   12:00:00       holygpu8a17402
+13632951   horizon_3way_step18750  RUNNING    4:02:07    6:00:00       holygpu8a15201
+13632995    horizon_CP30K_recheck  RUNNING    2:08:04    6:00:00       holygpu8a17402
+13397660                     bash  RUNNING 1-15:43:23 3-00:00:00       holygpu8a15503
+13627347         corl_horizon_gap  RUNNING   11:45:33   12:00:00       holygpu8a16204
+
+[rollout summaries]
+/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/rollouts/act_canonical_OpenDrawer/summary.json
+/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/rollouts/act_canonical_PickPlaceCounterToCabinet/summary.json
+/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/rollouts/act_step10k_OpenDrawer/summary.json
+/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/rollouts/act_step10k_PickPlaceCounterToCabinet/summary.json
+
+[wm score counts]

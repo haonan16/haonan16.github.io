@@ -1,0 +1,4 @@
+task_description: pick_the_coffee_cup_from_the_counte
+success: False
+num_steps: 500
+source_hdf5: 2026_05_15-00_35_08--episode_data--task=pick_the_coffee_cup_from_the_counte--ep=17--success=False.hdf5

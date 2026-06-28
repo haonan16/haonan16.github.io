@@ -1,0 +1,684 @@
+{
+  "purpose": "matched side-view 3-episode comparison videos, external baselines generated from side_view_3ep_matched_initials",
+  "source_root": "results/paper_xyz_multiview_six_direction_20260511_024800",
+  "model_order": [
+    "ours",
+    "adaln",
+    "cross_attention",
+    "ctrl_world",
+    "worldgym"
+  ],
+  "model_folders": {
+    "ours": "ours_A25750_robot_only_side_view_3ep",
+    "adaln": "baseline_raw_action_adaln_step10000_side_view_3ep",
+    "cross_attention": "baseline_raw_action_cross_attention_step26000_side_view_3ep",
+    "ctrl_world": "ctrl_world_side_view_3ep",
+    "worldgym": "worldgym_droid_finetune_side_view_3ep"
+  },
+  "directions": [
+    "+x",
+    "-x",
+    "-y",
+    "+y"
+  ],
+  "episodes": [
+    "RPL_2023-06-05_Mon_Jun__5_18_30_00_2023",
+    "IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023",
+    "CLVR_2023-05-09_Tue_May__9_01_17_11_2023"
+  ],
+  "by_direction_count": 12,
+  "by_episode_count": 3,
+  "labels_burned_in": false,
+  "overlays": false,
+  "frame_policy": "Each matched clip is clipped to the shortest source video before stacking.",
+  "records": [
+    {
+      "episode": "RPL_2023-06-05_Mon_Jun__5_18_30_00_2023",
+      "episode_path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/RPL/success/2023-06-05/Mon_Jun__5_18_30_00_2023",
+      "direction": "+x",
+      "output": "results/paper_xyz_multiview_six_direction_20260511_024800/matched_side_view_3ep/by_direction/RPL_2023-06-05_Mon_Jun__5_18_30_00_2023_plusx__ours_adaln_cross_ctrl_world_worldgym.mp4",
+      "model_order": [
+        "ours",
+        "adaln",
+        "cross_attention",
+        "ctrl_world",
+        "worldgym"
+      ],
+      "source_videos": [
+        {
+          "model": "ours",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_plusx_5step.mp4",
+          "frames": 5,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "adaln",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_plusx_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "cross_attention",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_cross_attention_step26000_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_plusx_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "ctrl_world",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ctrl_world_side_view_3ep/base/individual_videos/RPL_2023-06-05_Mon_Jun__5_18_30_00_2023_plusx_ctrl_world.mp4",
+          "frames": 21,
+          "height": 192,
+          "width": 320
+        },
+        {
+          "model": "worldgym",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/worldgym_droid_finetune_side_view_3ep/base/individual_videos/RPL_2023-06-05_Mon_Jun__5_18_30_00_2023_plusx_worldgym_droid_finetune.mp4",
+          "frames": 20,
+          "height": 256,
+          "width": 256
+        }
+      ],
+      "output_frames": 5,
+      "output_height": 480,
+      "output_width": 3072,
+      "frame_policy": "clipped_to_shortest_source_clip"
+    },
+    {
+      "episode": "RPL_2023-06-05_Mon_Jun__5_18_30_00_2023",
+      "episode_path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/RPL/success/2023-06-05/Mon_Jun__5_18_30_00_2023",
+      "direction": "-x",
+      "output": "results/paper_xyz_multiview_six_direction_20260511_024800/matched_side_view_3ep/by_direction/RPL_2023-06-05_Mon_Jun__5_18_30_00_2023_minusx__ours_adaln_cross_ctrl_world_worldgym.mp4",
+      "model_order": [
+        "ours",
+        "adaln",
+        "cross_attention",
+        "ctrl_world",
+        "worldgym"
+      ],
+      "source_videos": [
+        {
+          "model": "ours",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_minusx_5step.mp4",
+          "frames": 5,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "adaln",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_minusx_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "cross_attention",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_cross_attention_step26000_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_minusx_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "ctrl_world",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ctrl_world_side_view_3ep/base/individual_videos/RPL_2023-06-05_Mon_Jun__5_18_30_00_2023_minusx_ctrl_world.mp4",
+          "frames": 21,
+          "height": 192,
+          "width": 320
+        },
+        {
+          "model": "worldgym",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/worldgym_droid_finetune_side_view_3ep/base/individual_videos/RPL_2023-06-05_Mon_Jun__5_18_30_00_2023_minusx_worldgym_droid_finetune.mp4",
+          "frames": 20,
+          "height": 256,
+          "width": 256
+        }
+      ],
+      "output_frames": 5,
+      "output_height": 480,
+      "output_width": 3072,
+      "frame_policy": "clipped_to_shortest_source_clip"
+    },
+    {
+      "episode": "RPL_2023-06-05_Mon_Jun__5_18_30_00_2023",
+      "episode_path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/RPL/success/2023-06-05/Mon_Jun__5_18_30_00_2023",
+      "direction": "-y",
+      "output": "results/paper_xyz_multiview_six_direction_20260511_024800/matched_side_view_3ep/by_direction/RPL_2023-06-05_Mon_Jun__5_18_30_00_2023_minusy__ours_adaln_cross_ctrl_world_worldgym.mp4",
+      "model_order": [
+        "ours",
+        "adaln",
+        "cross_attention",
+        "ctrl_world",
+        "worldgym"
+      ],
+      "source_videos": [
+        {
+          "model": "ours",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_minusy_5step.mp4",
+          "frames": 5,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "adaln",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_minusy_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "cross_attention",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_cross_attention_step26000_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_minusy_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "ctrl_world",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ctrl_world_side_view_3ep/base/individual_videos/RPL_2023-06-05_Mon_Jun__5_18_30_00_2023_minusy_ctrl_world.mp4",
+          "frames": 21,
+          "height": 192,
+          "width": 320
+        },
+        {
+          "model": "worldgym",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/worldgym_droid_finetune_side_view_3ep/base/individual_videos/RPL_2023-06-05_Mon_Jun__5_18_30_00_2023_minusy_worldgym_droid_finetune.mp4",
+          "frames": 20,
+          "height": 256,
+          "width": 256
+        }
+      ],
+      "output_frames": 5,
+      "output_height": 480,
+      "output_width": 3072,
+      "frame_policy": "clipped_to_shortest_source_clip"
+    },
+    {
+      "episode": "RPL_2023-06-05_Mon_Jun__5_18_30_00_2023",
+      "episode_path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/RPL/success/2023-06-05/Mon_Jun__5_18_30_00_2023",
+      "direction": "+y",
+      "output": "results/paper_xyz_multiview_six_direction_20260511_024800/matched_side_view_3ep/by_direction/RPL_2023-06-05_Mon_Jun__5_18_30_00_2023_plusy__ours_adaln_cross_ctrl_world_worldgym.mp4",
+      "model_order": [
+        "ours",
+        "adaln",
+        "cross_attention",
+        "ctrl_world",
+        "worldgym"
+      ],
+      "source_videos": [
+        {
+          "model": "ours",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_plusy_5step.mp4",
+          "frames": 5,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "adaln",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_plusy_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "cross_attention",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_cross_attention_step26000_side_view_3ep/base/individual_videos/RPL__Mon_Jun__5_18_30_00_2023_plusy_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "ctrl_world",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ctrl_world_side_view_3ep/base/individual_videos/RPL_2023-06-05_Mon_Jun__5_18_30_00_2023_plusy_ctrl_world.mp4",
+          "frames": 21,
+          "height": 192,
+          "width": 320
+        },
+        {
+          "model": "worldgym",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/worldgym_droid_finetune_side_view_3ep/base/individual_videos/RPL_2023-06-05_Mon_Jun__5_18_30_00_2023_plusy_worldgym_droid_finetune.mp4",
+          "frames": 20,
+          "height": 256,
+          "width": 256
+        }
+      ],
+      "output_frames": 5,
+      "output_height": 480,
+      "output_width": 3072,
+      "frame_policy": "clipped_to_shortest_source_clip"
+    },
+    {
+      "episode": "IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023",
+      "episode_path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/IRIS/success/2023-03-02/Thu_Mar__2_14_57_27_2023",
+      "direction": "+x",
+      "output": "results/paper_xyz_multiview_six_direction_20260511_024800/matched_side_view_3ep/by_direction/IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023_plusx__ours_adaln_cross_ctrl_world_worldgym.mp4",
+      "model_order": [
+        "ours",
+        "adaln",
+        "cross_attention",
+        "ctrl_world",
+        "worldgym"
+      ],
+      "source_videos": [
+        {
+          "model": "ours",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_plusx_5step.mp4",
+          "frames": 5,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "adaln",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_plusx_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "cross_attention",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_cross_attention_step26000_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_plusx_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "ctrl_world",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ctrl_world_side_view_3ep/base/individual_videos/IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023_plusx_ctrl_world.mp4",
+          "frames": 21,
+          "height": 192,
+          "width": 320
+        },
+        {
+          "model": "worldgym",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/worldgym_droid_finetune_side_view_3ep/base/individual_videos/IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023_plusx_worldgym_droid_finetune.mp4",
+          "frames": 20,
+          "height": 256,
+          "width": 256
+        }
+      ],
+      "output_frames": 5,
+      "output_height": 480,
+      "output_width": 3072,
+      "frame_policy": "clipped_to_shortest_source_clip"
+    },
+    {
+      "episode": "IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023",
+      "episode_path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/IRIS/success/2023-03-02/Thu_Mar__2_14_57_27_2023",
+      "direction": "-x",
+      "output": "results/paper_xyz_multiview_six_direction_20260511_024800/matched_side_view_3ep/by_direction/IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023_minusx__ours_adaln_cross_ctrl_world_worldgym.mp4",
+      "model_order": [
+        "ours",
+        "adaln",
+        "cross_attention",
+        "ctrl_world",
+        "worldgym"
+      ],
+      "source_videos": [
+        {
+          "model": "ours",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_minusx_5step.mp4",
+          "frames": 5,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "adaln",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_minusx_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "cross_attention",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_cross_attention_step26000_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_minusx_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "ctrl_world",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ctrl_world_side_view_3ep/base/individual_videos/IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023_minusx_ctrl_world.mp4",
+          "frames": 21,
+          "height": 192,
+          "width": 320
+        },
+        {
+          "model": "worldgym",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/worldgym_droid_finetune_side_view_3ep/base/individual_videos/IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023_minusx_worldgym_droid_finetune.mp4",
+          "frames": 20,
+          "height": 256,
+          "width": 256
+        }
+      ],
+      "output_frames": 5,
+      "output_height": 480,
+      "output_width": 3072,
+      "frame_policy": "clipped_to_shortest_source_clip"
+    },
+    {
+      "episode": "IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023",
+      "episode_path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/IRIS/success/2023-03-02/Thu_Mar__2_14_57_27_2023",
+      "direction": "-y",
+      "output": "results/paper_xyz_multiview_six_direction_20260511_024800/matched_side_view_3ep/by_direction/IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023_minusy__ours_adaln_cross_ctrl_world_worldgym.mp4",
+      "model_order": [
+        "ours",
+        "adaln",
+        "cross_attention",
+        "ctrl_world",
+        "worldgym"
+      ],
+      "source_videos": [
+        {
+          "model": "ours",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_minusy_5step.mp4",
+          "frames": 5,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "adaln",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_minusy_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "cross_attention",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_cross_attention_step26000_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_minusy_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "ctrl_world",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ctrl_world_side_view_3ep/base/individual_videos/IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023_minusy_ctrl_world.mp4",
+          "frames": 21,
+          "height": 192,
+          "width": 320
+        },
+        {
+          "model": "worldgym",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/worldgym_droid_finetune_side_view_3ep/base/individual_videos/IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023_minusy_worldgym_droid_finetune.mp4",
+          "frames": 20,
+          "height": 256,
+          "width": 256
+        }
+      ],
+      "output_frames": 5,
+      "output_height": 480,
+      "output_width": 3072,
+      "frame_policy": "clipped_to_shortest_source_clip"
+    },
+    {
+      "episode": "IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023",
+      "episode_path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/IRIS/success/2023-03-02/Thu_Mar__2_14_57_27_2023",
+      "direction": "+y",
+      "output": "results/paper_xyz_multiview_six_direction_20260511_024800/matched_side_view_3ep/by_direction/IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023_plusy__ours_adaln_cross_ctrl_world_worldgym.mp4",
+      "model_order": [
+        "ours",
+        "adaln",
+        "cross_attention",
+        "ctrl_world",
+        "worldgym"
+      ],
+      "source_videos": [
+        {
+          "model": "ours",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_plusy_5step.mp4",
+          "frames": 5,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "adaln",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_plusy_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "cross_attention",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_cross_attention_step26000_side_view_3ep/base/individual_videos/IRIS__Thu_Mar__2_14_57_27_2023_plusy_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "ctrl_world",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ctrl_world_side_view_3ep/base/individual_videos/IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023_plusy_ctrl_world.mp4",
+          "frames": 21,
+          "height": 192,
+          "width": 320
+        },
+        {
+          "model": "worldgym",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/worldgym_droid_finetune_side_view_3ep/base/individual_videos/IRIS_2023-03-02_Thu_Mar__2_14_57_27_2023_plusy_worldgym_droid_finetune.mp4",
+          "frames": 20,
+          "height": 256,
+          "width": 256
+        }
+      ],
+      "output_frames": 5,
+      "output_height": 480,
+      "output_width": 3072,
+      "frame_policy": "clipped_to_shortest_source_clip"
+    },
+    {
+      "episode": "CLVR_2023-05-09_Tue_May__9_01_17_11_2023",
+      "episode_path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/CLVR/success/2023-05-09/Tue_May__9_01_17_11_2023",
+      "direction": "+x",
+      "output": "results/paper_xyz_multiview_six_direction_20260511_024800/matched_side_view_3ep/by_direction/CLVR_2023-05-09_Tue_May__9_01_17_11_2023_plusx__ours_adaln_cross_ctrl_world_worldgym.mp4",
+      "model_order": [
+        "ours",
+        "adaln",
+        "cross_attention",
+        "ctrl_world",
+        "worldgym"
+      ],
+      "source_videos": [
+        {
+          "model": "ours",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_plusx_5step.mp4",
+          "frames": 5,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "adaln",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_plusx_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "cross_attention",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_cross_attention_step26000_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_plusx_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "ctrl_world",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ctrl_world_side_view_3ep/base/individual_videos/CLVR_2023-05-09_Tue_May__9_01_17_11_2023_plusx_ctrl_world.mp4",
+          "frames": 21,
+          "height": 192,
+          "width": 320
+        },
+        {
+          "model": "worldgym",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/worldgym_droid_finetune_side_view_3ep/base/individual_videos/CLVR_2023-05-09_Tue_May__9_01_17_11_2023_plusx_worldgym_droid_finetune.mp4",
+          "frames": 20,
+          "height": 256,
+          "width": 256
+        }
+      ],
+      "output_frames": 5,
+      "output_height": 480,
+      "output_width": 3072,
+      "frame_policy": "clipped_to_shortest_source_clip"
+    },
+    {
+      "episode": "CLVR_2023-05-09_Tue_May__9_01_17_11_2023",
+      "episode_path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/CLVR/success/2023-05-09/Tue_May__9_01_17_11_2023",
+      "direction": "-x",
+      "output": "results/paper_xyz_multiview_six_direction_20260511_024800/matched_side_view_3ep/by_direction/CLVR_2023-05-09_Tue_May__9_01_17_11_2023_minusx__ours_adaln_cross_ctrl_world_worldgym.mp4",
+      "model_order": [
+        "ours",
+        "adaln",
+        "cross_attention",
+        "ctrl_world",
+        "worldgym"
+      ],
+      "source_videos": [
+        {
+          "model": "ours",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_minusx_5step.mp4",
+          "frames": 5,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "adaln",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_minusx_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "cross_attention",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_cross_attention_step26000_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_minusx_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "ctrl_world",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ctrl_world_side_view_3ep/base/individual_videos/CLVR_2023-05-09_Tue_May__9_01_17_11_2023_minusx_ctrl_world.mp4",
+          "frames": 21,
+          "height": 192,
+          "width": 320
+        },
+        {
+          "model": "worldgym",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/worldgym_droid_finetune_side_view_3ep/base/individual_videos/CLVR_2023-05-09_Tue_May__9_01_17_11_2023_minusx_worldgym_droid_finetune.mp4",
+          "frames": 20,
+          "height": 256,
+          "width": 256
+        }
+      ],
+      "output_frames": 5,
+      "output_height": 480,
+      "output_width": 3072,
+      "frame_policy": "clipped_to_shortest_source_clip"
+    },
+    {
+      "episode": "CLVR_2023-05-09_Tue_May__9_01_17_11_2023",
+      "episode_path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/CLVR/success/2023-05-09/Tue_May__9_01_17_11_2023",
+      "direction": "-y",
+      "output": "results/paper_xyz_multiview_six_direction_20260511_024800/matched_side_view_3ep/by_direction/CLVR_2023-05-09_Tue_May__9_01_17_11_2023_minusy__ours_adaln_cross_ctrl_world_worldgym.mp4",
+      "model_order": [
+        "ours",
+        "adaln",
+        "cross_attention",
+        "ctrl_world",
+        "worldgym"
+      ],
+      "source_videos": [
+        {
+          "model": "ours",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_minusy_5step.mp4",
+          "frames": 5,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "adaln",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_minusy_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "cross_attention",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_cross_attention_step26000_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_minusy_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "ctrl_world",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ctrl_world_side_view_3ep/base/individual_videos/CLVR_2023-05-09_Tue_May__9_01_17_11_2023_minusy_ctrl_world.mp4",
+          "frames": 21,
+          "height": 192,
+          "width": 320
+        },
+        {
+          "model": "worldgym",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/worldgym_droid_finetune_side_view_3ep/base/individual_videos/CLVR_2023-05-09_Tue_May__9_01_17_11_2023_minusy_worldgym_droid_finetune.mp4",
+          "frames": 20,
+          "height": 256,
+          "width": 256
+        }
+      ],
+      "output_frames": 5,
+      "output_height": 480,
+      "output_width": 3072,
+      "frame_policy": "clipped_to_shortest_source_clip"
+    },
+    {
+      "episode": "CLVR_2023-05-09_Tue_May__9_01_17_11_2023",
+      "episode_path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/CLVR/success/2023-05-09/Tue_May__9_01_17_11_2023",
+      "direction": "+y",
+      "output": "results/paper_xyz_multiview_six_direction_20260511_024800/matched_side_view_3ep/by_direction/CLVR_2023-05-09_Tue_May__9_01_17_11_2023_plusy__ours_adaln_cross_ctrl_world_worldgym.mp4",
+      "model_order": [
+        "ours",
+        "adaln",
+        "cross_attention",
+        "ctrl_world",
+        "worldgym"
+      ],
+      "source_videos": [
+        {
+          "model": "ours",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_plusy_5step.mp4",
+          "frames": 5,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "adaln",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_adaln_step10000_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_plusy_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "cross_attention",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/baseline_raw_action_cross_attention_step26000_side_view_3ep/base/individual_videos/CLVR__Tue_May__9_01_17_11_2023_plusy_5step.mp4",
+          "frames": 21,
+          "height": 480,
+          "width": 832
+        },
+        {
+          "model": "ctrl_world",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/ctrl_world_side_view_3ep/base/individual_videos/CLVR_2023-05-09_Tue_May__9_01_17_11_2023_plusy_ctrl_world.mp4",
+          "frames": 21,
+          "height": 192,
+          "width": 320
+        },
+        {
+          "model": "worldgym",
+          "path": "results/paper_xyz_multiview_six_direction_20260511_024800/worldgym_droid_finetune_side_view_3ep/base/individual_videos/CLVR_2023-05-09_Tue_May__9_01_17_11_2023_plusy_worldgym_droid_finetune.mp4",
+          "frames": 20,
+          "height": 256,
+          "width": 256
+        }
+      ],
+      "output_frames": 5,
+      "output_height": 480,
+      "output_width": 3072,
+      "frame_policy": "clipped_to_shortest_source_clip"
+    }
+  ]
+}

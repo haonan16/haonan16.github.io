@@ -1,0 +1,23 @@
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00, 13.42it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 11.17it/s]
+Expected types for unet: (<class 'models.unet_spatio_temporal_condition.UNetSpatioTemporalConditionModel'>,), got <class 'diffusers.models.unets.unet_spatio_temporal_condition.UNetSpatioTemporalConditionModel'>.
+Traceback (most recent call last):
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/external_baselines/ctrl_world/run_eval.py", line 731, in main
+    meta = run_replay(args, model, cfg, dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/external_baselines/ctrl_world/run_eval.py", line 478, in run_replay
+    ctx = _prepare_inference(args, model, cfg, dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/external_baselines/ctrl_world/run_eval.py", line 306, in _prepare_inference
+    cams = _list_droid_cameras(episode_dir, primary_view=args.view)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/external_baselines/ctrl_world/run_eval.py", line 170, in _list_droid_cameras
+    raise FileNotFoundError(f"No recordings/MP4 dir under {episode_dir}")
+FileNotFoundError: No recordings/MP4 dir under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rice_cooker_droid_layout/franka_box/episode_20260520_183754
+replace the unet to support action condition and frame_level pose!
+[load] missing=0 unexpected=0
+[run_eval] model on cuda, dtype=torch.bfloat16, load+to took 16.8s
+[run_eval] replay FAILED (FileNotFoundError('No recordings/MP4 dir under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rice_cooker_droid_layout/franka_box/episode_20260520_183754')); falling back to smoke.
+[smoke] action_hidden shape: (1, 11, 1024)
+[smoke] image-cond latent shape: (1, 4, 72, 40)
+[smoke] checkpoint loaded; action_encoder + text path forward-OK.
+[run_eval] smoke fallback OK; meta={'mode': 'smoke', 'action_hidden_shape': [1, 11, 1024], 'image_latent_shape': [1, 4, 72, 40], 'ckpt_path': '/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/external_wm_ckpts/ctrl_world/ctrl_world/checkpoint-10000.pt'}

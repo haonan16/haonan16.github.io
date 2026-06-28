@@ -1,0 +1,886 @@
+{
+  "n_total_rows": 804,
+  "n_finite_rows": 804,
+  "policies": [
+    "beingh05_libero_robocasa",
+    "beingh05_robocasa",
+    "cosmos",
+    "dp_canonical",
+    "dp_step10k",
+    "pi0_robocasa",
+    "random",
+    "scripted-noisy",
+    "scripted-toward-goal"
+  ],
+  "tasks": [
+    "OpenCabinet",
+    "OpenDrawer",
+    "PickPlaceCounterToCabinet",
+    "TurnOnMicrowave"
+  ],
+  "per_policy": {
+    "beingh05_libero_robocasa": {
+      "n": 106,
+      "n_success": 11,
+      "success_rate": 0.10377358490566038,
+      "wm_path_mean": 5.929754963460958,
+      "wm_path_median": 6.00693416595459,
+      "wm_path_std": 2.103424117195368,
+      "sim_path_mean": 2.0862228864768766,
+      "sim_path_median": 1.6003009676933289,
+      "n_with_sim_path": 106,
+      "within_policy_rho_vs_success": -0.08486787414666096,
+      "within_policy_p_success": 0.3850551829033616,
+      "within_policy_rho_ci95_success": [
+        -0.14931430586694208,
+        0.22288107413658453
+      ],
+      "within_policy_rho_vs_sim_motion": 0.7636597223971585,
+      "within_policy_p_sim_motion": 1.6648007615224262e-33,
+      "within_policy_rho_ci95_sim_motion": [
+        0.6695480766808574,
+        0.8302050532785853
+      ]
+    },
+    "beingh05_robocasa": {
+      "n": 105,
+      "n_success": 11,
+      "success_rate": 0.10476190476190476,
+      "wm_path_mean": 6.186623916171846,
+      "wm_path_median": 6.556078910827637,
+      "wm_path_std": 2.0330329372214653,
+      "sim_path_mean": 1.9711006192933946,
+      "sim_path_median": 1.5305676460266113,
+      "n_with_sim_path": 105,
+      "within_policy_rho_vs_success": 0.06678415923698942,
+      "within_policy_p_success": 0.4969466762413211,
+      "within_policy_rho_ci95_success": [
+        -0.17388580758863778,
+        0.17004509641302057
+      ],
+      "within_policy_rho_vs_sim_motion": 0.8540120257101389,
+      "within_policy_p_sim_motion": 2.572116375284803e-62,
+      "within_policy_rho_ci95_sim_motion": [
+        0.7890270578478125,
+        0.890454592577234
+      ]
+    },
+    "cosmos": {
+      "n": 218,
+      "n_success": 167,
+      "success_rate": 0.7660550458715596,
+      "wm_path_mean": 1.3544222928515268,
+      "wm_path_median": 0.8293976187705994,
+      "wm_path_std": 1.473845193905488,
+      "sim_path_mean": 1.6099485703017733,
+      "sim_path_median": 1.407898724079132,
+      "n_with_sim_path": 218,
+      "within_policy_rho_vs_success": -0.048364220357231175,
+      "within_policy_p_success": 0.47668850272523455,
+      "within_policy_rho_ci95_success": [
+        -0.08793853946529416,
+        0.18270496545661036
+      ],
+      "within_policy_rho_vs_sim_motion": 0.0535452944368608,
+      "within_policy_p_sim_motion": 0.43064847239662163,
+      "within_policy_rho_ci95_sim_motion": [
+        -0.11916826560272986,
+        0.21612599172163274
+      ]
+    },
+    "dp_canonical": {
+      "n": 60,
+      "n_success": 0,
+      "success_rate": 0.0,
+      "wm_path_mean": 0.5099173876146476,
+      "wm_path_median": 0.44486527144908905,
+      "wm_path_std": 0.25168621645268857,
+      "sim_path_mean": 1.0588861748576164,
+      "sim_path_median": 0.8855395913124084,
+      "n_with_sim_path": 60,
+      "within_policy_rho_vs_success": 0.2094470686301751,
+      "within_policy_p_success": 0.102830568781829,
+      "within_policy_rho_ci95_success": [
+        NaN,
+        NaN
+      ],
+      "within_policy_rho_vs_sim_motion": -0.02634065018060573,
+      "within_policy_p_sim_motion": 0.8409534566223789,
+      "within_policy_rho_ci95_sim_motion": [
+        -0.2867518755209781,
+        0.23661433731592085
+      ]
+    },
+    "dp_step10k": {
+      "n": 60,
+      "n_success": 0,
+      "success_rate": 0.0,
+      "wm_path_mean": 0.5555656597018241,
+      "wm_path_median": 0.44156360626220703,
+      "wm_path_std": 0.30456375959974513,
+      "sim_path_mean": 2.219214653968811,
+      "sim_path_median": 1.4742836356163025,
+      "n_with_sim_path": 60,
+      "within_policy_rho_vs_success": 0.12031119755487636,
+      "within_policy_p_success": 0.35602439976017297,
+      "within_policy_rho_ci95_success": [
+        NaN,
+        NaN
+      ],
+      "within_policy_rho_vs_sim_motion": 0.08396776882467352,
+      "within_policy_p_sim_motion": 0.5210382337196645,
+      "within_policy_rho_ci95_sim_motion": [
+        -0.15053348152264523,
+        0.3033731592108919
+      ]
+    },
+    "pi0_robocasa": {
+      "n": 40,
+      "n_success": 0,
+      "success_rate": 0.0,
+      "wm_path_mean": 5.917980891466141,
+      "wm_path_median": 5.938308954238892,
+      "wm_path_std": 1.6310747090945317,
+      "sim_path_mean": 3.358139131963253,
+      "sim_path_median": 2.6167757511138916,
+      "n_with_sim_path": 40,
+      "within_policy_rho_vs_success": 0.2452157598499062,
+      "within_policy_p_success": 0.11894511385653844,
+      "within_policy_rho_ci95_success": [
+        NaN,
+        NaN
+      ],
+      "within_policy_rho_vs_sim_motion": 0.5619136960600376,
+      "within_policy_p_sim_motion": 2.820650863872816e-05,
+      "within_policy_rho_ci95_sim_motion": [
+        0.3027439024390244,
+        0.7294793621013134
+      ]
+    },
+    "random": {
+      "n": 65,
+      "n_success": 0,
+      "success_rate": 0.0,
+      "wm_path_mean": 8.94916152220506,
+      "wm_path_median": 8.835907936096191,
+      "wm_path_std": 0.8690323457833714,
+      "sim_path_mean": 4.212243215854351,
+      "sim_path_median": 4.199103832244873,
+      "n_with_sim_path": 65,
+      "within_policy_rho_vs_success": 0.015384615384615385,
+      "within_policy_p_success": 0.9027991893078308,
+      "within_policy_rho_ci95_success": [
+        NaN,
+        NaN
+      ],
+      "within_policy_rho_vs_sim_motion": 0.38094405594405595,
+      "within_policy_p_sim_motion": 0.001074595392048683,
+      "within_policy_rho_ci95_sim_motion": [
+        0.1469340034965035,
+        0.5676737325174824
+      ]
+    },
+    "scripted-noisy": {
+      "n": 85,
+      "n_success": 0,
+      "success_rate": 0.0,
+      "wm_path_mean": 6.833954704509062,
+      "wm_path_median": 4.865719318389893,
+      "wm_path_std": 3.8214480330071665,
+      "sim_path_mean": 2.36845903116114,
+      "sim_path_median": 2.3456525802612305,
+      "n_with_sim_path": 85,
+      "within_policy_rho_vs_success": 0.13367207348055504,
+      "within_policy_p_success": 0.21913232102253327,
+      "within_policy_rho_ci95_success": [
+        NaN,
+        NaN
+      ],
+      "within_policy_rho_vs_sim_motion": 0.2351768614422513,
+      "within_policy_p_sim_motion": 0.02749688509719917,
+      "within_policy_rho_ci95_sim_motion": [
+        0.03142905999609146,
+        0.4243892905999608
+      ]
+    },
+    "scripted-toward-goal": {
+      "n": 65,
+      "n_success": 0,
+      "success_rate": 0.0,
+      "wm_path_mean": 0.8980096679467421,
+      "wm_path_median": 0.9382152557373047,
+      "wm_path_std": 0.1414111947697287,
+      "sim_path_mean": 0.15454033383956323,
+      "sim_path_median": 0.17175820469856262,
+      "n_with_sim_path": 65,
+      "within_policy_rho_vs_success": 0.055113636363636365,
+      "within_policy_p_success": 0.6613015978695883,
+      "within_policy_rho_ci95_success": [
+        NaN,
+        NaN
+      ],
+      "within_policy_rho_vs_sim_motion": 0.3865821678321678,
+      "within_policy_p_sim_motion": 0.0008776637536984371,
+      "within_policy_rho_ci95_sim_motion": [
+        0.1601486013986014,
+        0.5830015297202796
+      ]
+    }
+  },
+  "per_task_policy": {
+    "OpenCabinet": {
+      "beingh05_libero_robocasa": {
+        "n": 30,
+        "n_success": 0,
+        "wm_path_mean": 4.460985422134399,
+        "sim_path_mean": 1.2782910625139872,
+        "n_with_sim_path": 30,
+        "within_rho": -0.11234705228031144,
+        "within_p": 0.5496582118314622
+      },
+      "beingh05_robocasa": {
+        "n": 30,
+        "n_success": 2,
+        "wm_path_mean": 4.083230551083883,
+        "sim_path_mean": 1.0471141417821248,
+        "n_with_sim_path": 30,
+        "within_rho": 0.16618464961067853,
+        "within_p": 0.37251792015987795
+      },
+      "cosmos": {
+        "n": 53,
+        "n_success": 37,
+        "wm_path_mean": 1.70724766603056,
+        "sim_path_mean": 1.6818525318829518,
+        "n_with_sim_path": 53,
+        "within_rho": -0.6025641025641026,
+        "within_p": 6.969120906220441e-08
+      },
+      "pi0_robocasa": {
+        "n": 10,
+        "n_success": 0,
+        "wm_path_mean": 4.499959421157837,
+        "sim_path_mean": 1.8860791504383088,
+        "n_with_sim_path": 10,
+        "within_rho": 0.04242424242424241,
+        "within_p": 0.9044023421706702
+      },
+      "random": {
+        "n": 20,
+        "n_success": 0,
+        "wm_path_mean": 8.930230569839477,
+        "sim_path_mean": 4.215395224094391,
+        "n_with_sim_path": 20,
+        "within_rho": 0.32481203007518794,
+        "within_p": 0.1450984822750136
+      },
+      "scripted-noisy": {
+        "n": 25,
+        "n_success": 0,
+        "wm_path_mean": 6.477295684814453,
+        "sim_path_mean": 2.351852045059204,
+        "n_with_sim_path": 25,
+        "within_rho": -0.3876923076923077,
+        "within_p": 0.04368884666296584
+      },
+      "scripted-toward-goal": {
+        "n": 20,
+        "n_success": 0,
+        "wm_path_mean": 0.911624863743782,
+        "sim_path_mean": 0.15831337897107006,
+        "n_with_sim_path": 20,
+        "within_rho": 0.06466165413533834,
+        "within_p": 0.783384241709298
+      }
+    },
+    "OpenDrawer": {
+      "beingh05_libero_robocasa": {
+        "n": 30,
+        "n_success": 3,
+        "wm_path_mean": 7.072866487503052,
+        "sim_path_mean": 3.6531785567601522,
+        "n_with_sim_path": 30,
+        "within_rho": -0.1835372636262514,
+        "within_p": 0.32316694128944734
+      },
+      "beingh05_robocasa": {
+        "n": 30,
+        "n_success": 3,
+        "wm_path_mean": 7.661139631271363,
+        "sim_path_mean": 3.465240514278412,
+        "n_with_sim_path": 30,
+        "within_rho": -0.18620689655172412,
+        "within_p": 0.3159314863469571
+      },
+      "cosmos": {
+        "n": 55,
+        "n_success": 52,
+        "wm_path_mean": 1.6433646841482683,
+        "sim_path_mean": 1.4929260860789906,
+        "n_with_sim_path": 55,
+        "within_rho": -0.2233766233766234,
+        "within_p": 0.09524384970553
+      },
+      "dp_canonical": {
+        "n": 30,
+        "n_success": 0,
+        "wm_path_mean": 0.5516992370287578,
+        "sim_path_mean": 1.1691826740900675,
+        "n_with_sim_path": 30,
+        "within_rho": 0.2164627363737486,
+        "within_p": 0.2407038362983815
+      },
+      "dp_step10k": {
+        "n": 30,
+        "n_success": 0,
+        "wm_path_mean": 0.5505154391129812,
+        "sim_path_mean": 3.387352748711904,
+        "n_with_sim_path": 30,
+        "within_rho": 0.23292547274749723,
+        "within_p": 0.2050174048140078
+      },
+      "pi0_robocasa": {
+        "n": 10,
+        "n_success": 0,
+        "wm_path_mean": 6.704237699508667,
+        "sim_path_mean": 3.735400152206421,
+        "n_with_sim_path": 10,
+        "within_rho": -0.4424242424242424,
+        "within_p": 0.16290808932626033
+      },
+      "random": {
+        "n": 5,
+        "n_success": 0,
+        "wm_path_mean": 8.732081508636474,
+        "sim_path_mean": 4.287106132507324,
+        "n_with_sim_path": 5,
+        "within_rho": 0.8999999999999998,
+        "within_p": 0.0003485751742130596
+      },
+      "scripted-noisy": {
+        "n": 10,
+        "n_success": 0,
+        "wm_path_mean": 9.368773317337036,
+        "sim_path_mean": 2.381914663314819,
+        "n_with_sim_path": 10,
+        "within_rho": -0.5757575757575757,
+        "within_p": 0.046399461870904705
+      },
+      "scripted-toward-goal": {
+        "n": 5,
+        "n_success": 0,
+        "wm_path_mean": 0.988347053527832,
+        "sim_path_mean": 0.20614574551582338,
+        "n_with_sim_path": 5,
+        "within_rho": 0.8999999999999998,
+        "within_p": 0.0003485751742130596
+      }
+    },
+    "PickPlaceCounterToCabinet": {
+      "beingh05_libero_robocasa": {
+        "n": 30,
+        "n_success": 8,
+        "wm_path_mean": 6.750985145568848,
+        "sim_path_mean": 1.7613939066727957,
+        "n_with_sim_path": 30,
+        "within_rho": -0.06562847608453837,
+        "within_p": 0.7278224991902548
+      },
+      "beingh05_robocasa": {
+        "n": 30,
+        "n_success": 6,
+        "wm_path_mean": 7.051401027043661,
+        "sim_path_mean": 1.7716346164544423,
+        "n_with_sim_path": 30,
+        "within_rho": 0.27697441601779754,
+        "within_p": 0.1271882541779336
+      },
+      "cosmos": {
+        "n": 55,
+        "n_success": 35,
+        "wm_path_mean": 1.364737291769548,
+        "sim_path_mean": 2.1389159852808173,
+        "n_with_sim_path": 55,
+        "within_rho": -0.08845598845598848,
+        "within_p": 0.5179532958782932
+      },
+      "dp_canonical": {
+        "n": 30,
+        "n_success": 0,
+        "wm_path_mean": 0.4681355382005374,
+        "sim_path_mean": 0.9485896756251653,
+        "n_with_sim_path": 30,
+        "within_rho": -0.2805339265850945,
+        "within_p": 0.12197202085950029
+      },
+      "dp_step10k": {
+        "n": 30,
+        "n_success": 0,
+        "wm_path_mean": 0.5606158802906672,
+        "sim_path_mean": 1.051076559225718,
+        "n_with_sim_path": 30,
+        "within_rho": 0.0389321468298109,
+        "within_p": 0.8366613544813004
+      },
+      "pi0_robocasa": {
+        "n": 10,
+        "n_success": 0,
+        "wm_path_mean": 6.406146049499512,
+        "sim_path_mean": 2.7032900214195252,
+        "n_with_sim_path": 10,
+        "within_rho": -0.34545454545454546,
+        "within_p": 0.2977857118007289
+      },
+      "random": {
+        "n": 20,
+        "n_success": 0,
+        "wm_path_mean": 8.879489541053772,
+        "sim_path_mean": 4.236488032341003,
+        "n_with_sim_path": 20,
+        "within_rho": 0.33383458646616543,
+        "within_p": 0.13295814175014273
+      },
+      "scripted-noisy": {
+        "n": 25,
+        "n_success": 0,
+        "wm_path_mean": 6.707247619628906,
+        "sim_path_mean": 2.4327007007598875,
+        "n_with_sim_path": 25,
+        "within_rho": -0.31384615384615383,
+        "within_p": 0.11290957843611549
+      },
+      "scripted-toward-goal": {
+        "n": 20,
+        "n_success": 0,
+        "wm_path_mean": 0.9567762732505798,
+        "sim_path_mean": 0.18800115287303926,
+        "n_with_sim_path": 20,
+        "within_rho": -0.03458646616541353,
+        "within_p": 0.8832695253688871
+      }
+    },
+    "TurnOnMicrowave": {
+      "beingh05_libero_robocasa": {
+        "n": 16,
+        "n_success": 0,
+        "wm_path_mean": 5.000557154417038,
+        "sim_path_mean": 1.2721075117588043,
+        "n_with_sim_path": 16,
+        "within_rho": -0.12941176470588234,
+        "within_p": 0.625322628189251
+      },
+      "beingh05_robocasa": {
+        "n": 15,
+        "n_success": 0,
+        "wm_path_mean": 5.71482499440511,
+        "sim_path_mean": 1.2297257900238037,
+        "n_with_sim_path": 15,
+        "within_rho": 0.12142857142857141,
+        "within_p": 0.6591544572168729
+      },
+      "cosmos": {
+        "n": 55,
+        "n_success": 43,
+        "wm_path_mean": 0.7151695430278778,
+        "sim_path_mean": 1.1287143674763767,
+        "n_with_sim_path": 55,
+        "within_rho": -0.1311688311688312,
+        "within_p": 0.335424132259911
+      },
+      "pi0_robocasa": {
+        "n": 10,
+        "n_success": 0,
+        "wm_path_mean": 6.061580395698547,
+        "sim_path_mean": 5.1077872037887575,
+        "n_with_sim_path": 10,
+        "within_rho": -0.2606060606060606,
+        "within_p": 0.44517278222063267
+      },
+      "random": {
+        "n": 20,
+        "n_success": 0,
+        "wm_path_mean": 9.092034459114075,
+        "sim_path_mean": 4.1661306619644165,
+        "n_with_sim_path": 20,
+        "within_rho": 0.3744360902255639,
+        "within_p": 0.08667011423401218
+      },
+      "scripted-noisy": {
+        "n": 25,
+        "n_success": 0,
+        "wm_path_mean": 6.303393363952637,
+        "sim_path_mean": 2.3154420948028562,
+        "n_with_sim_path": 25,
+        "within_rho": -0.4076923076923077,
+        "within_p": 0.03225328513861578
+      },
+      "scripted-toward-goal": {
+        "n": 20,
+        "n_success": 0,
+        "wm_path_mean": 0.803043520450592,
+        "sim_path_mean": 0.10440511675551534,
+        "n_with_sim_path": 20,
+        "within_rho": 0.019548872180451125,
+        "within_p": 0.9338875651897064
+      }
+    }
+  },
+  "pooled_rho_vs_success": {
+    "rho": -0.15212225037725288,
+    "p": 1.307950575983623e-05,
+    "ci95": [
+      -0.2530471523711547,
+      -0.1240482611270129
+    ],
+    "n": 804
+  },
+  "pooled_rho_vs_sim_motion": {
+    "rho": 0.5314303077559458,
+    "p": 1.2884376946884406e-70,
+    "ci95": [
+      0.4752507636550199,
+      0.5832849651481921
+    ],
+    "n": 804
+  },
+  "vla_only_rho_vs_success": {
+    "rho": -0.39729852025819007,
+    "p": 8.299089923702427e-21,
+    "ci95": [
+      -0.5201197193829776,
+      -0.37745601254889927
+    ],
+    "n": 469
+  },
+  "cross_policy_ordering": {
+    "rho": 0.15,
+    "p": 0.6881225687422088,
+    "ci95": [
+      -0.5499999999999999,
+      0.8166666666666667
+    ],
+    "policies": [
+      "beingh05_libero_robocasa",
+      "beingh05_robocasa",
+      "cosmos",
+      "dp_canonical",
+      "dp_step10k",
+      "pi0_robocasa",
+      "random",
+      "scripted-noisy",
+      "scripted-toward-goal"
+    ],
+    "wm_path_means": [
+      5.929754963460958,
+      6.186623916171846,
+      1.3544222928515268,
+      0.5099173876146476,
+      0.5555656597018241,
+      5.917980891466141,
+      8.94916152220506,
+      6.833954704509062,
+      0.8980096679467421
+    ],
+    "success_rates": [
+      0.10377358490566038,
+      0.10476190476190476,
+      0.7660550458715596,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "per_task_pair_agreement": {
+    "OpenCabinet": {
+      "n_policies": 7,
+      "n_pairs": 21,
+      "n_agree": 19,
+      "sim_ranking": [
+        "scripted-toward-goal",
+        "beingh05_robocasa",
+        "beingh05_libero_robocasa",
+        "cosmos",
+        "pi0_robocasa",
+        "scripted-noisy",
+        "random"
+      ],
+      "wm_ranking": [
+        "scripted-toward-goal",
+        "cosmos",
+        "beingh05_robocasa",
+        "beingh05_libero_robocasa",
+        "pi0_robocasa",
+        "scripted-noisy",
+        "random"
+      ],
+      "policies": [
+        "cosmos",
+        "beingh05_robocasa",
+        "beingh05_libero_robocasa",
+        "pi0_robocasa",
+        "random",
+        "scripted-noisy",
+        "scripted-toward-goal"
+      ],
+      "disagreements": [
+        [
+          "cosmos",
+          "beingh05_robocasa"
+        ],
+        [
+          "cosmos",
+          "beingh05_libero_robocasa"
+        ]
+      ],
+      "sim_path_means": {
+        "cosmos": 1.6818525318829518,
+        "beingh05_robocasa": 1.0471141417821248,
+        "beingh05_libero_robocasa": 1.2782910625139872,
+        "pi0_robocasa": 1.8860791504383088,
+        "random": 4.215395224094391,
+        "scripted-noisy": 2.351852045059204,
+        "scripted-toward-goal": 0.15831337897107006
+      },
+      "wm_path_means": {
+        "cosmos": 1.70724766603056,
+        "beingh05_robocasa": 4.083230551083883,
+        "beingh05_libero_robocasa": 4.460985422134399,
+        "pi0_robocasa": 4.499959421157837,
+        "random": 8.930230569839477,
+        "scripted-noisy": 6.477295684814453,
+        "scripted-toward-goal": 0.911624863743782
+      }
+    },
+    "OpenDrawer": {
+      "n_policies": 7,
+      "n_pairs": 21,
+      "n_agree": 14,
+      "sim_ranking": [
+        "scripted-toward-goal",
+        "cosmos",
+        "scripted-noisy",
+        "beingh05_robocasa",
+        "beingh05_libero_robocasa",
+        "pi0_robocasa",
+        "random"
+      ],
+      "wm_ranking": [
+        "scripted-toward-goal",
+        "cosmos",
+        "pi0_robocasa",
+        "beingh05_libero_robocasa",
+        "beingh05_robocasa",
+        "random",
+        "scripted-noisy"
+      ],
+      "policies": [
+        "cosmos",
+        "beingh05_robocasa",
+        "beingh05_libero_robocasa",
+        "pi0_robocasa",
+        "random",
+        "scripted-noisy",
+        "scripted-toward-goal"
+      ],
+      "disagreements": [
+        [
+          "beingh05_robocasa",
+          "beingh05_libero_robocasa"
+        ],
+        [
+          "beingh05_robocasa",
+          "pi0_robocasa"
+        ],
+        [
+          "beingh05_robocasa",
+          "scripted-noisy"
+        ],
+        [
+          "beingh05_libero_robocasa",
+          "pi0_robocasa"
+        ],
+        [
+          "beingh05_libero_robocasa",
+          "scripted-noisy"
+        ],
+        [
+          "pi0_robocasa",
+          "scripted-noisy"
+        ],
+        [
+          "random",
+          "scripted-noisy"
+        ]
+      ],
+      "sim_path_means": {
+        "cosmos": 1.4929260860789906,
+        "beingh05_robocasa": 3.465240514278412,
+        "beingh05_libero_robocasa": 3.6531785567601522,
+        "pi0_robocasa": 3.735400152206421,
+        "random": 4.287106132507324,
+        "scripted-noisy": 2.381914663314819,
+        "scripted-toward-goal": 0.20614574551582338
+      },
+      "wm_path_means": {
+        "cosmos": 1.6433646841482683,
+        "beingh05_robocasa": 7.661139631271363,
+        "beingh05_libero_robocasa": 7.072866487503052,
+        "pi0_robocasa": 6.704237699508667,
+        "random": 8.732081508636474,
+        "scripted-noisy": 9.368773317337036,
+        "scripted-toward-goal": 0.988347053527832
+      }
+    },
+    "PickPlaceCounterToCabinet": {
+      "n_policies": 7,
+      "n_pairs": 21,
+      "n_agree": 14,
+      "sim_ranking": [
+        "scripted-toward-goal",
+        "beingh05_libero_robocasa",
+        "beingh05_robocasa",
+        "cosmos",
+        "scripted-noisy",
+        "pi0_robocasa",
+        "random"
+      ],
+      "wm_ranking": [
+        "scripted-toward-goal",
+        "cosmos",
+        "pi0_robocasa",
+        "scripted-noisy",
+        "beingh05_libero_robocasa",
+        "beingh05_robocasa",
+        "random"
+      ],
+      "policies": [
+        "cosmos",
+        "beingh05_robocasa",
+        "beingh05_libero_robocasa",
+        "pi0_robocasa",
+        "random",
+        "scripted-noisy",
+        "scripted-toward-goal"
+      ],
+      "disagreements": [
+        [
+          "cosmos",
+          "beingh05_robocasa"
+        ],
+        [
+          "cosmos",
+          "beingh05_libero_robocasa"
+        ],
+        [
+          "beingh05_robocasa",
+          "pi0_robocasa"
+        ],
+        [
+          "beingh05_robocasa",
+          "scripted-noisy"
+        ],
+        [
+          "beingh05_libero_robocasa",
+          "pi0_robocasa"
+        ],
+        [
+          "beingh05_libero_robocasa",
+          "scripted-noisy"
+        ],
+        [
+          "pi0_robocasa",
+          "scripted-noisy"
+        ]
+      ],
+      "sim_path_means": {
+        "cosmos": 2.1389159852808173,
+        "beingh05_robocasa": 1.7716346164544423,
+        "beingh05_libero_robocasa": 1.7613939066727957,
+        "pi0_robocasa": 2.7032900214195252,
+        "random": 4.236488032341003,
+        "scripted-noisy": 2.4327007007598875,
+        "scripted-toward-goal": 0.18800115287303926
+      },
+      "wm_path_means": {
+        "cosmos": 1.364737291769548,
+        "beingh05_robocasa": 7.051401027043661,
+        "beingh05_libero_robocasa": 6.750985145568848,
+        "pi0_robocasa": 6.406146049499512,
+        "random": 8.879489541053772,
+        "scripted-noisy": 6.707247619628906,
+        "scripted-toward-goal": 0.9567762732505798
+      }
+    },
+    "TurnOnMicrowave": {
+      "n_policies": 7,
+      "n_pairs": 21,
+      "n_agree": 17,
+      "sim_ranking": [
+        "scripted-toward-goal",
+        "cosmos",
+        "beingh05_robocasa",
+        "beingh05_libero_robocasa",
+        "scripted-noisy",
+        "random",
+        "pi0_robocasa"
+      ],
+      "wm_ranking": [
+        "cosmos",
+        "scripted-toward-goal",
+        "beingh05_libero_robocasa",
+        "beingh05_robocasa",
+        "pi0_robocasa",
+        "scripted-noisy",
+        "random"
+      ],
+      "policies": [
+        "cosmos",
+        "beingh05_robocasa",
+        "beingh05_libero_robocasa",
+        "pi0_robocasa",
+        "random",
+        "scripted-noisy",
+        "scripted-toward-goal"
+      ],
+      "disagreements": [
+        [
+          "cosmos",
+          "scripted-toward-goal"
+        ],
+        [
+          "beingh05_robocasa",
+          "beingh05_libero_robocasa"
+        ],
+        [
+          "pi0_robocasa",
+          "random"
+        ],
+        [
+          "pi0_robocasa",
+          "scripted-noisy"
+        ]
+      ],
+      "sim_path_means": {
+        "cosmos": 1.1287143674763767,
+        "beingh05_robocasa": 1.2297257900238037,
+        "beingh05_libero_robocasa": 1.2721075117588043,
+        "pi0_robocasa": 5.1077872037887575,
+        "random": 4.1661306619644165,
+        "scripted-noisy": 2.3154420948028562,
+        "scripted-toward-goal": 0.10440511675551534
+      },
+      "wm_path_means": {
+        "cosmos": 0.7151695430278778,
+        "beingh05_robocasa": 5.71482499440511,
+        "beingh05_libero_robocasa": 5.000557154417038,
+        "pi0_robocasa": 6.061580395698547,
+        "random": 9.092034459114075,
+        "scripted-noisy": 6.303393363952637,
+        "scripted-toward-goal": 0.803043520450592
+      }
+    }
+  }
+}

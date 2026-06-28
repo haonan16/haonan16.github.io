@@ -1,0 +1,13 @@
+[load] instantiating WorldModel(default_cfg=3.0, use_pixel_rope=False)
+[run_eval] WorldGym model loaded in 20.8s (device=cuda:0)
+[setup] camera: 408322072302.mp4  (view=ext2)
+[setup] episode T=629 from episode_20260516_005641
+[setup] actions: deltas shape=(629, 7), worldgym shape=(629, 10), wv range=(-1.138, 0.821), gripper range=(-1.0, -1.0)
+[setup] will generate 19 frames (cap = max_frames-1 = 19)
+[setup] gt frames shape=(20, 256, 256, 3), dtype=uint8
+[replay] step 5/19: frame mean=82.3, elapsed=2.1s (2.37 fps)
+[replay] step 10/19: frame mean=134.3, elapsed=4.2s (2.39 fps)
+[replay] step 15/19: frame mean=99.0, elapsed=6.6s (2.26 fps)
+[replay] step 19/19: frame mean=48.9, elapsed=9.0s (2.11 fps)
+[replay] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/table3_franka_zeroshot/baselines_external_franka_full_2026-05-22/worldgym/franka_fail_mustard_ext2/franka_box_episode_20260516_005641/replay.mp4 ((20, 256, 256, 3)), /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/table3_franka_zeroshot/baselines_external_franka_full_2026-05-22/worldgym/franka_fail_mustard_ext2/franka_box_episode_20260516_005641/gt.mp4 ((20, 256, 256, 3))
+[run_eval] OK in 30.8s; meta keys=['mode', 'episode_id', 'camera_name', 'start_frame', 'n_gen', 'n_frames_pred', 'n_frames_gt', 'resolution_hw', 'ckpt_path', 'default_cfg', 'use_pixel_rope']

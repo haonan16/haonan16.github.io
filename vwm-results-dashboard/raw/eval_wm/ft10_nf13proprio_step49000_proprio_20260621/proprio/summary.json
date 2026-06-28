@@ -1,0 +1,75 @@
+{
+  "overall": {
+    "cos_sim_mean": 0.9265628457069397,
+    "cos_sim_std": 0.0,
+    "mse_mean": 0.0004945920663885772,
+    "l2_mm_mean": 36.11212596297264,
+    "l2_mm_std": 0.0,
+    "n_episodes": 1,
+    "n_failed": 17
+  },
+  "per_episode": {
+    "data": {
+      "cos_sim": 0.9265628457069397,
+      "mse": 0.0004945920663885772,
+      "l2_mm": 36.11212596297264,
+      "pred": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.08925256133079529,
+          0.07845460623502731,
+          0.014649644494056702
+        ],
+        [
+          0.06694731116294861,
+          0.018290435895323753,
+          0.01603260077536106
+        ],
+        [
+          0.039078280329704285,
+          0.01671680063009262,
+          0.015511584468185902
+        ]
+      ],
+      "gt": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.05301135033369064,
+          0.051728229969739914,
+          0.04622728005051613
+        ],
+        [
+          0.039347413927316666,
+          0.013464749790728092,
+          0.014105522073805332
+        ],
+        [
+          0.024341991171240807,
+          0.009703134186565876,
+          -0.0037589112762361765
+        ]
+      ]
+    }
+  },
+  "eval_config": {
+    "ckpt_path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-06-10/16-10-34/checkpoints/last.ckpt",
+    "episodes": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/configs/eval_episodes_franka_all.txt",
+    "sample_steps": 40,
+    "n_frames": 13,
+    "use_real_history": true,
+    "render_version": null,
+    "seed": 0,
+    "teacher_forced": false,
+    "proprio_state": "None (NOT teacher-forced)",
+    "include_baselines": false,
+    "save_videos": true
+  }
+}

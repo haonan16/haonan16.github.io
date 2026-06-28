@@ -1,0 +1,4 @@
+task_description: press_the_start_button_on_the_micro
+success: True
+num_steps: 216
+source_hdf5: 2026_05_15-00_05_45--episode_data--task=press_the_start_button_on_the_micro--ep=37--success=True.hdf5

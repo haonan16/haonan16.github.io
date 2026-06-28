@@ -1,0 +1,4 @@
+task_description: pick_the_mango_from_the_counter_and
+success: True
+num_steps: 222
+source_hdf5: 2026_05_15-00_35_08--episode_data--task=pick_the_mango_from_the_counter_and--ep=36--success=True.hdf5

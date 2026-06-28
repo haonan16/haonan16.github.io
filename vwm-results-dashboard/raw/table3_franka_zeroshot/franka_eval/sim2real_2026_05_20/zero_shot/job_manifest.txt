@@ -1,0 +1,82 @@
+# Submitted at Wed May 20 18:04:50 EDT 2026
+14083312
+14083313
+14083314
+14083315
+14083316
+14083317
+14083318
+14083319
+14083320
+14083321
+14083322
+14083323
+14083853 ft_3way_franka6
+14083854 ft_A_franka6
+14084020 hor_franka_box
+14084022 hor_franka_fail_box
+14084034 hor_franka_success_mustard
+14084045 hor_franka_fail_mustard
+14084046 hor_franka_success_rope
+14084047 hor_franka_fail_rope
+14102666 ft_3way_franka6_v2
+14102667 ft_A_franka6_v2
+14103622 hor_franka_box_v2
+
+# FT v2 output dirs (for re-eval ckpt lookup):
+# 14102666 3way → /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-05-20/20-09-56/checkpoints/step_2000.ckpt
+# 14102667 A    → /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-05-20/20-10-57/checkpoints/step_2000.ckpt
+# FT re-evals submitted at Wed May 20 23:35:21 EDT 2026
+14141886
+14141897
+14141898
+14141899
+14141900
+14141901
+14141902
+14141903
+14141904
+14141905
+# FT step_2000 re-evals submitted at Thu May 21 02:55:05 EDT 2026
+14168809
+14168810
+14168811
+14168812
+14168813
+14168814
+14168815
+14168816
+14168817
+14168818
+14168819
+14168830
+# New tasks zero-shot submitted at Thu May 21 03:49:04 EDT 2026
+14178776
+14178777
+14178778
+14178779
+14178780
+14178781
+14178782
+14178794
+# New-task zero-shot submitted at Thu May 21 03:53:57 EDT 2026
+14179366
+14179367
+14179368
+14179369
+14179370
+14179371
+14179372
+14179373
+# Multi-view (ext2) submitted at Thu May 21 16:59:22 EDT 2026
+14320873
+14320876
+14320877
+14320879
+14320880
+14320881
+# Stitching submitted at Thu May 21 17:00:27 EDT 2026
+14321159
+14321160
+14321161
+14321163

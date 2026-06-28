@@ -1,0 +1,7 @@
+=== WM eval PickPlaceCounterToCabinet_act_canonical ===
+manifest: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/pathB_rollouts/PickPlaceCounterToCabinet_act_canonical/manifest.jsonl
+out_dir: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_canonical
+Tue May 19 01:27:12 EDT 2026
+GPU 0: NVIDIA H100 80GB HBM3 (UUID: GPU-0b956c25-e81e-f98e-8044-2a8346063dcc)
+Tue May 19 03:12:16 EDT 2026
+30 /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_canonical/world_model_scores.jsonl

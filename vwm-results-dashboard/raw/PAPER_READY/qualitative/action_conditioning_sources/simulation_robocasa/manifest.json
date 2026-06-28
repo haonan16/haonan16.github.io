@@ -1,0 +1,26 @@
+{
+  "source": "simulation_robocasa",
+  "dataset": "RoboCasa pilot action projection",
+  "demo_dir": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/robocasa_action_proj_pilot/CloseCabinet/demo_0000",
+  "meta": {
+    "ep_idx": 0,
+    "n_frames": 155,
+    "fps": 20,
+    "camera": "robot0_agentview_left",
+    "ee_body": "robot0_right_hand",
+    "lang": "Close the cabinet door."
+  },
+  "render_version": "v2",
+  "outputs": [
+    "raw.mp4",
+    "action_conditioning.mp4",
+    "overlay.mp4",
+    "raw_action_overlay.mp4"
+  ],
+  "layout_raw_action_overlay": "left=raw video, middle=3-channel action conditioning, right=alpha overlay",
+  "target_resolution": [
+    480,
+    832
+  ],
+  "fps": 6
+}

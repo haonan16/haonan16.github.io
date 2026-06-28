@@ -1,0 +1,93 @@
+{
+  "overall": {
+    "dir_acc": 0.9027777777777778,
+    "d_sep_mean_px": 8.45979901840393,
+    "n_episodes": 18,
+    "n_trials": 72,
+    "n_correct": 65,
+    "dir_acc_trial_bootstrap_ci95": [
+      0.8333333333333334,
+      0.9583333333333334
+    ],
+    "d_sep_episode_bootstrap_ci95": [
+      5.213766068579734,
+      12.068318131975442
+    ]
+  },
+  "per_axis": {
+    "x": {
+      "dir_acc": 0.9444444444444444,
+      "d_sep_mean_px": 10.96746262193968,
+      "n_trials": 36,
+      "n_correct": 34,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.8611111111111112,
+        1.0
+      ],
+      "d_sep_episode_bootstrap_ci95": [
+        6.505377622592883,
+        15.749324463908042
+      ]
+    },
+    "y": {
+      "dir_acc": 0.8611111111111112,
+      "d_sep_mean_px": 5.952135414868179,
+      "n_trials": 36,
+      "n_correct": 31,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.75,
+        0.9722222222222222
+      ],
+      "d_sep_episode_bootstrap_ci95": [
+        3.2263871335282217,
+        9.015845814005777
+      ]
+    }
+  },
+  "per_episode": {
+    "RPL": {
+      "dir_acc": 1.0,
+      "d_sep_px": 18.22467041015625
+    },
+    "IRIS": {
+      "dir_acc": 0.5,
+      "d_sep_px": 7.4088135357014835
+    },
+    "CLVR": {
+      "dir_acc": 1.0,
+      "d_sep_px": 5.862054705619812
+    },
+    "RAIL": {
+      "dir_acc": 1.0,
+      "d_sep_px": 13.677703857421875
+    },
+    "AUTOLab": {
+      "dir_acc": 1.0,
+      "d_sep_px": 0.89881232380867
+    },
+    "GuptaLab": {
+      "dir_acc": 1.0,
+      "d_sep_px": 4.901256322860718
+    },
+    "ILIAD": {
+      "dir_acc": 1.0,
+      "d_sep_px": 21.187690258026123
+    },
+    "RAD": {
+      "dir_acc": 1.0,
+      "d_sep_px": 12.26084566116333
+    },
+    "REAL": {
+      "dir_acc": 1.0,
+      "d_sep_px": 4.171874523162842
+    },
+    "TRI": {
+      "dir_acc": 1.0,
+      "d_sep_px": 6.058758020401001
+    },
+    "WEIRD": {
+      "dir_acc": 0.5,
+      "d_sep_px": 0.3293272480368614
+    }
+  }
+}

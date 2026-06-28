@@ -1,0 +1,13 @@
+2026-05-14 19:38:29,550 INFO Detected n_frames=13 from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/.hydra/config.yaml
+2026-05-14 19:38:29,550 INFO Loading checkpoint outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt with n_frames=13
+2026-05-14 19:38:34,795 INFO Detected proprio_head.* keys in outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt — enabling proprio_head and wiring source_ckpt_path so configure_model strict-loads the head.
+2026-05-14 19:38:39,877 INFO Building WanT2VActionProj model...
+2026-05-14 19:38:40,629 INFO Loading action_proj MoT backbone from T2V pretrained.
+2026-05-14 19:39:07,530 INFO Loaded proprio_head weights from outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt (8 keys)
+2026-05-14 19:39:11,382 INFO Loading checkpoint from outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt
+2026-05-14 19:39:17,269 INFO Checkpoint loaded. missing=0 unexpected=10
+2026-05-14 19:39:17,753 INFO Detected render params for epoch=0-step=15000.ckpt: version=v2 sigma=16.0 line_thickness=12 arrow_thickness=24 arrow_min_length=24.0
+2026-05-14 19:39:17,754 INFO Render kwargs: {'render_version': 'v2', 'render_sigma': 16.0, 'render_line_thickness': 12, 'render_arrow_thickness': 24, 'render_arrow_min_length': 24.0}
+2026-05-14 19:39:17,760 INFO [1/50] env=OpenDrawer policy=cosmos seed=195 steps=216
+2026-05-14 19:41:05,571 INFO   scores: frame_progress=0.2340 proprio_path=1.1357 action_iou=0.0000  inf_secs=105.8  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pathB_wm_scores_cosmos/OpenDrawer_cosmos/wm_videos/rollout_0000.mp4
+2026-05-14 19:41:05,572 INFO [2/50] env=OpenDrawer policy=cosmos seed=195 steps=181

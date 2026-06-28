@@ -1,0 +1,11 @@
+variant,source,task,demo,env_success,reach_success,n_steps,final_wp,min_reach_m,final_reach_m
+argmin+full,archive,OpenDrawer,demo_0094,False,False,200,3/8,0.09648065484646555,0.11616276584419227
+mean+early-term,archive,OpenDrawer,demo_0094,False,True,81,8/8,0.07913379974322887,0.08455951412158295
+mean+early-term,archive,OpenDrawer,demo_0095,False,True,83,9/9,0.08058715705636843,0.09661304194806362
+mean+early-term,archive,OpenDrawer,demo_0096,False,True,92,8/8,0.07946676954601681,0.08820386218149014
+mean+early-term,archive,OpenDrawer,demo_0097,False,True,200,10/10,0.0012172730407441997,0.00981010047046594
+mean+early-term,archive,OpenDrawer,demo_0098,False,True,200,8/8,0.0010842569809714655,0.015109965355993193
+mean+early-term,archive,PickPlaceCounterToCabinet,demo_0100,False,True,200,9/9,0.005329531594265256,0.055618606469561786
+priming+full,active,OpenDrawer,demo_0094,False,True,300,8/8,0.0005474826882554752,0.018216761375193048
+priming+full,archive,OpenDrawer,demo_0094,False,True,300,8/8,0.018861676321888125,0.03460791374988861
+priming+full,active,OpenDrawer,demo_0095,False,True,300,9/9,0.0008433583022668613,0.023556612844582315

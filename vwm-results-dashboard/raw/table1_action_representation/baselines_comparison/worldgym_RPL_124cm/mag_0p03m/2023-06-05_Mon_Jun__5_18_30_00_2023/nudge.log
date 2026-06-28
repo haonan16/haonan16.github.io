@@ -1,0 +1,58 @@
+[load] instantiating WorldModel(default_cfg=3.0, use_pixel_rope=False)
+[run_eval] WorldGym model loaded in 17.7s (device=cuda:0)
+[setup] camera: 24013089.mp4  (view=ext1)
+[setup] episode T=232 from Mon_Jun__5_18_30_00_2023
+[setup] actions: deltas shape=(232, 7), worldgym shape=(232, 10), wv range=(-0.441, 0.463), gripper range=(1.0, 1.0)
+[setup] will generate 19 frames (cap = max_frames-1 = 19)
+[setup] gt frames shape=(20, 256, 256, 3), dtype=uint8
+[nudge] +x: max |delta| on axis x (post-rescale units) = 1.0500
+[nudge:+x] step 5/19: frame mean=105.1, elapsed=5.5s (0.92 fps)
+[nudge:+x] step 10/19: frame mean=102.1, elapsed=12.3s (0.81 fps)
+[nudge:+x] step 15/19: frame mean=97.4, elapsed=20.7s (0.72 fps)
+[nudge:+x] step 19/19: frame mean=100.6, elapsed=28.7s (0.66 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_comparison/worldgym_RPL_124cm/mag_0p03m/2023-06-05_Mon_Jun__5_18_30_00_2023/+x.mp4 ((20, 256, 256, 3))
+[nudge] -x: max |delta| on axis x (post-rescale units) = 1.1149
+[nudge:-x] step 5/19: frame mean=115.0, elapsed=5.3s (0.94 fps)
+[nudge:-x] step 10/19: frame mean=113.0, elapsed=11.9s (0.84 fps)
+[nudge:-x] step 15/19: frame mean=116.3, elapsed=20.2s (0.74 fps)
+[nudge:-x] step 19/19: frame mean=119.4, elapsed=28.3s (0.67 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_comparison/worldgym_RPL_124cm/mag_0p03m/2023-06-05_Mon_Jun__5_18_30_00_2023/-x.mp4 ((20, 256, 256, 3))
+[nudge] +y: max |delta| on axis y (post-rescale units) = 1.4914
+[nudge:+y] step 5/19: frame mean=103.9, elapsed=5.3s (0.95 fps)
+[nudge:+y] step 10/19: frame mean=106.3, elapsed=12.1s (0.83 fps)
+[nudge:+y] step 15/19: frame mean=109.2, elapsed=20.2s (0.74 fps)
+[nudge:+y] step 19/19: frame mean=110.3, elapsed=28.3s (0.67 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_comparison/worldgym_RPL_124cm/mag_0p03m/2023-06-05_Mon_Jun__5_18_30_00_2023/+y.mp4 ((20, 256, 256, 3))
+[nudge] -y: max |delta| on axis y (post-rescale units) = 1.0506
+[nudge:-y] step 5/19: frame mean=103.4, elapsed=5.3s (0.94 fps)
+[nudge:-y] step 10/19: frame mean=97.6, elapsed=12.1s (0.83 fps)
+[nudge:-y] step 15/19: frame mean=91.4, elapsed=20.5s (0.73 fps)
+[nudge:-y] step 19/19: frame mean=82.0, elapsed=28.3s (0.67 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_comparison/worldgym_RPL_124cm/mag_0p03m/2023-06-05_Mon_Jun__5_18_30_00_2023/-y.mp4 ((20, 256, 256, 3))
+[nudge] +z: max |delta| on axis z (post-rescale units) = 1.0984
+[nudge:+z] step 5/19: frame mean=104.2, elapsed=5.3s (0.95 fps)
+[nudge:+z] step 10/19: frame mean=108.1, elapsed=12.1s (0.83 fps)
+[nudge:+z] step 15/19: frame mean=110.9, elapsed=20.5s (0.73 fps)
+[nudge:+z] step 19/19: frame mean=115.2, elapsed=28.6s (0.67 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_comparison/worldgym_RPL_124cm/mag_0p03m/2023-06-05_Mon_Jun__5_18_30_00_2023/+z.mp4 ((20, 256, 256, 3))
+[nudge] -z: max |delta| on axis z (post-rescale units) = 1.0515
+[nudge:-z] step 5/19: frame mean=100.3, elapsed=5.1s (0.97 fps)
+[nudge:-z] step 10/19: frame mean=99.0, elapsed=11.8s (0.84 fps)
+[nudge:-z] step 15/19: frame mean=92.7, elapsed=20.2s (0.74 fps)
+[nudge:-z] step 19/19: frame mean=95.4, elapsed=28.2s (0.67 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_comparison/worldgym_RPL_124cm/mag_0p03m/2023-06-05_Mon_Jun__5_18_30_00_2023/-z.mp4 ((20, 256, 256, 3))
+[nudge] wrote seed_uv.json = {'u': 128.0, 'v': 128.0, 'method': 'image_center_placeholder'}
+[run_eval] OK in 190.0s; meta keys=['mode', 'episode_id', 'camera_name', 'start_frame', 'n_gen', 'nudge_magnitude_m', 'directions', 'direction_mp4s', 'seed_uv', 'resolution_hw', 'ckpt_path', 'default_cfg', 'use_pixel_rope']
+2026-05-19 17:31:56,601 INFO Using device: cuda
+2026-05-19 17:31:56,689 WARNING pyav plugin failed ('av.video.codeccontext.VideoCodecContext' object has no attribute 'close'), falling back to default reader
+2026-05-19 17:31:56,748 INFO Loading CoTracker3 (offline) from torch hub...
+Using cache found in /n/home01/haonan/.cache/torch/hub/facebookresearch_co-tracker_main
+2026-05-19 17:31:59,773 WARNING pyav plugin failed ('av.video.codeccontext.VideoCodecContext' object has no attribute 'close'), falling back to default reader
+2026-05-19 17:32:00,331 WARNING pyav plugin failed ('av.video.codeccontext.VideoCodecContext' object has no attribute 'close'), falling back to default reader
+2026-05-19 17:32:00,893 WARNING pyav plugin failed ('av.video.codeccontext.VideoCodecContext' object has no attribute 'close'), falling back to default reader
+{
+  "diracc": 1.0,
+  "n_passed": 1,
+  "n_testable": 1,
+  "d_sep_mean": 2.097832515835762
+}

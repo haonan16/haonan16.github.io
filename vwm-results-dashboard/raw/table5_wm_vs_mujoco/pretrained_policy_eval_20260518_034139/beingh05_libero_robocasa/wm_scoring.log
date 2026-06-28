@@ -1,0 +1,39 @@
+[OpenCabinet] WM eval Tue May 19 11:42:14 EDT 2026
+2026-05-19 11:42:26,044 INFO Loading checkpoint /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt with n_frames=13
+2026-05-19 11:44:07,608 INFO Detected proprio_head.* keys in /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt — enabling proprio_head and wiring source_ckpt_path so configure_model strict-loads the head.
+2026-05-19 11:44:34,433 INFO Building WanT2VActionProj model...
+2026-05-19 11:44:35,972 INFO Loading action_proj MoT backbone from T2V pretrained.
+2026-05-19 11:45:25,278 INFO Loaded proprio_head weights from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt (8 keys)
+2026-05-19 11:45:27,912 INFO Loading checkpoint from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt
+2026-05-19 11:45:31,876 INFO Checkpoint loaded. missing=0 unexpected=10
+2026-05-19 11:45:32,313 INFO Detected render params for epoch=0-step=15000.ckpt: version=v2 sigma=16.0 line_thickness=12 arrow_thickness=24 arrow_min_length=24.0
+2026-05-19 11:45:32,313 INFO Render kwargs: {'render_version': 'v2', 'render_sigma': 16.0, 'render_line_thickness': 12, 'render_arrow_thickness': 24, 'render_arrow_min_length': 24.0}
+2026-05-19 11:45:32,329 INFO [1/20] env=OpenCabinet policy=beingh05_libero_robocasa seed=41 steps=720
+2026-05-19 12:46:40,985 INFO   scores: frame_progress=0.7097 proprio_path=13.8909 action_iou=0.0000  inf_secs=3650.0  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/wm_scores/OpenCabinet_beingh05_libero_robocasa/wm_videos/rollout_0000_seed_41.mp4
+2026-05-19 12:46:40,986 INFO [2/20] env=OpenCabinet policy=beingh05_libero_robocasa seed=42 steps=720
+2026-05-19 13:47:42,403 INFO   scores: frame_progress=0.7839 proprio_path=5.9950 action_iou=0.0000  inf_secs=3644.1  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/wm_scores/OpenCabinet_beingh05_libero_robocasa/wm_videos/rollout_0001_seed_42.mp4
+2026-05-19 13:47:42,404 INFO [3/20] env=OpenCabinet policy=beingh05_libero_robocasa seed=43 steps=720
+2026-05-19 14:48:59,108 INFO   scores: frame_progress=0.7226 proprio_path=8.9755 action_iou=0.0000  inf_secs=3654.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/wm_scores/OpenCabinet_beingh05_libero_robocasa/wm_videos/rollout_0002_seed_43.mp4
+2026-05-19 14:48:59,109 INFO [4/20] env=OpenCabinet policy=beingh05_libero_robocasa seed=44 steps=720
+2026-05-19 15:50:08,875 INFO   scores: frame_progress=0.7516 proprio_path=10.2298 action_iou=0.0000  inf_secs=3644.9  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/wm_scores/OpenCabinet_beingh05_libero_robocasa/wm_videos/rollout_0003_seed_44.mp4
+2026-05-19 15:50:08,876 INFO [5/20] env=OpenCabinet policy=beingh05_libero_robocasa seed=45 steps=720
+2026-05-19 16:51:32,435 INFO   scores: frame_progress=0.7059 proprio_path=14.0405 action_iou=0.0000  inf_secs=3654.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/wm_scores/OpenCabinet_beingh05_libero_robocasa/wm_videos/rollout_0004_seed_45.mp4
+2026-05-19 16:51:32,436 INFO [6/20] env=OpenCabinet policy=beingh05_libero_robocasa seed=46 steps=720
+2026-05-19 17:52:36,305 INFO   scores: frame_progress=0.7403 proprio_path=7.3145 action_iou=0.0000  inf_secs=3633.2  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/wm_scores/OpenCabinet_beingh05_libero_robocasa/wm_videos/rollout_0005_seed_46.mp4
+2026-05-19 17:52:36,306 INFO [7/20] env=OpenCabinet policy=beingh05_libero_robocasa seed=47 steps=720
+2026-05-19 18:54:02,636 INFO   scores: frame_progress=0.6924 proprio_path=11.8182 action_iou=0.0000  inf_secs=3653.3  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/wm_scores/OpenCabinet_beingh05_libero_robocasa/wm_videos/rollout_0006_seed_47.mp4
+2026-05-19 18:54:02,637 INFO [8/20] env=OpenCabinet policy=beingh05_libero_robocasa seed=48 steps=720
+2026-05-19 19:55:25,377 INFO   scores: frame_progress=0.7602 proprio_path=6.2164 action_iou=0.0000  inf_secs=3644.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/wm_scores/OpenCabinet_beingh05_libero_robocasa/wm_videos/rollout_0007_seed_48.mp4
+2026-05-19 19:55:25,378 INFO [9/20] env=OpenCabinet policy=beingh05_libero_robocasa seed=49 steps=720
+2026-05-19 20:56:55,040 INFO   scores: frame_progress=0.7314 proprio_path=5.9416 action_iou=0.0000  inf_secs=3645.0  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/wm_scores/OpenCabinet_beingh05_libero_robocasa/wm_videos/rollout_0008_seed_49.mp4
+2026-05-19 20:56:55,041 INFO [10/20] env=OpenCabinet policy=beingh05_libero_robocasa seed=50 steps=720
+2026-05-19 21:58:17,733 INFO   scores: frame_progress=0.7082 proprio_path=6.3828 action_iou=0.0000  inf_secs=3633.5  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/wm_scores/OpenCabinet_beingh05_libero_robocasa/wm_videos/rollout_0009_seed_50.mp4
+2026-05-19 21:58:17,734 INFO [11/20] env=OpenCabinet policy=beingh05_libero_robocasa seed=51 steps=720
+2026-05-19 22:59:58,532 INFO   scores: frame_progress=0.7040 proprio_path=11.8635 action_iou=0.0000  inf_secs=3647.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/wm_scores/OpenCabinet_beingh05_libero_robocasa/wm_videos/rollout_0010_seed_51.mp4
+2026-05-19 22:59:58,533 INFO [12/20] env=OpenCabinet policy=beingh05_libero_robocasa seed=52 steps=720
+2026-05-20 00:01:41,777 INFO   scores: frame_progress=0.7156 proprio_path=9.9115 action_iou=0.0037  inf_secs=3645.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/wm_scores/OpenCabinet_beingh05_libero_robocasa/wm_videos/rollout_0011_seed_52.mp4
+2026-05-20 00:01:41,778 INFO [13/20] env=OpenCabinet policy=beingh05_libero_robocasa seed=53 steps=720
+2026-05-20 01:03:32,978 INFO   scores: frame_progress=0.6688 proprio_path=10.9008 action_iou=0.0000  inf_secs=3649.2  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/wm_scores/OpenCabinet_beingh05_libero_robocasa/wm_videos/rollout_0012_seed_53.mp4
+2026-05-20 01:03:32,979 INFO [14/20] env=OpenCabinet policy=beingh05_libero_robocasa seed=54 steps=720
+2026-05-20 02:05:07,975 INFO   scores: frame_progress=0.7551 proprio_path=10.0981 action_iou=0.0000  inf_secs=3629.0  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/wm_scores/OpenCabinet_beingh05_libero_robocasa/wm_videos/rollout_0013_seed_54.mp4
+2026-05-20 02:05:07,976 INFO [15/20] env=OpenCabinet policy=beingh05_libero_robocasa seed=55 steps=720

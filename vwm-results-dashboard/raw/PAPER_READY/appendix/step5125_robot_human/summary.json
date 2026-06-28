@@ -1,0 +1,101 @@
+{
+  "overall": {
+    "dir_acc": 0.525,
+    "d_sep_mean_px": 7.758043149020523,
+    "n_episodes": 20,
+    "n_trials": 80,
+    "n_correct": 42,
+    "dir_acc_trial_bootstrap_ci95": [
+      0.425,
+      0.6375
+    ],
+    "d_sep_episode_bootstrap_ci95": [
+      5.12008904311806,
+      10.600031168046149
+    ]
+  },
+  "per_axis": {
+    "x": {
+      "dir_acc": 0.625,
+      "d_sep_mean_px": 8.423141926527023,
+      "n_trials": 40,
+      "n_correct": 25,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.475,
+        0.775
+      ],
+      "d_sep_episode_bootstrap_ci95": [
+        5.340170396640898,
+        12.161841222196813
+      ]
+    },
+    "y": {
+      "dir_acc": 0.425,
+      "d_sep_mean_px": 5.541335741709918,
+      "n_trials": 40,
+      "n_correct": 17,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.275,
+        0.575
+      ],
+      "d_sep_episode_bootstrap_ci95": [
+        3.0976119866408416,
+        8.370968484692275
+      ]
+    }
+  },
+  "per_episode": {
+    "RPL": {
+      "dir_acc": 1.0,
+      "d_sep_px": 13.836501121520996
+    },
+    "IRIS": {
+      "dir_acc": 0.5,
+      "d_sep_px": 9.004602725617588
+    },
+    "CLVR": {
+      "dir_acc": 0.5,
+      "d_sep_px": 5.340936660766602
+    },
+    "RAIL": {
+      "dir_acc": 1.0,
+      "d_sep_px": 10.354559898376465
+    },
+    "AUTOLab": {
+      "dir_acc": 0.5,
+      "d_sep_px": 0.5286129415035248
+    },
+    "GuptaLab": {
+      "dir_acc": 0.0,
+      "d_sep_px": 5.253782033920288
+    },
+    "ILIAD": {
+      "dir_acc": 1.0,
+      "d_sep_px": 10.116389572620392
+    },
+    "IPRL": {
+      "dir_acc": 0.0,
+      "d_sep_px": 0.0
+    },
+    "PennPAL": {
+      "dir_acc": 0.0,
+      "d_sep_px": 0.0
+    },
+    "RAD": {
+      "dir_acc": 0.5,
+      "d_sep_px": 10.5870943069458
+    },
+    "REAL": {
+      "dir_acc": 1.0,
+      "d_sep_px": 3.808800458908081
+    },
+    "TRI": {
+      "dir_acc": 0.0,
+      "d_sep_px": 8.799245357513428
+    },
+    "WEIRD": {
+      "dir_acc": 0.5,
+      "d_sep_px": 8.610034942626953
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "status": "partial_merge_available_12step_outputs",
+  "items": [
+    {
+      "lab": "RPL",
+      "action": "plusx",
+      "video": "results/PAPER_READY/qualitative/multiview_consistency_selected/merged_12step_available/videos/RPL_plusx_12step_ext1_ext2_side_by_side.mp4",
+      "ext1_source": "results/eval_multiview_CP_step30000_ext1_10labs_long_12step/individual_videos/RPL_plusx_12step.mp4",
+      "ext2_source": "results/eval_multiview_CP_step30000_ext2_10labs_long_12step/individual_videos/RPL_plusx_12step.mp4"
+    },
+    {
+      "lab": "RPL",
+      "action": "minusx",
+      "video": "results/PAPER_READY/qualitative/multiview_consistency_selected/merged_12step_available/videos/RPL_minusx_12step_ext1_ext2_side_by_side.mp4",
+      "ext1_source": "results/eval_multiview_CP_step30000_ext1_10labs_long_12step/individual_videos/RPL_minusx_12step.mp4",
+      "ext2_source": "results/eval_multiview_CP_step30000_ext2_10labs_long_12step/individual_videos/RPL_minusx_12step.mp4"
+    },
+    {
+      "lab": "RPL",
+      "action": "minusy",
+      "video": "results/PAPER_READY/qualitative/multiview_consistency_selected/merged_12step_available/videos/RPL_minusy_12step_ext1_ext2_side_by_side.mp4",
+      "ext1_source": "results/eval_multiview_CP_step30000_ext1_10labs_long_12step/individual_videos/RPL_minusy_12step.mp4",
+      "ext2_source": "results/eval_multiview_CP_step30000_ext2_10labs_long_12step/individual_videos/RPL_minusy_12step.mp4"
+    },
+    {
+      "lab": "RPL",
+      "action": "plusy",
+      "video": "results/PAPER_READY/qualitative/multiview_consistency_selected/merged_12step_available/videos/RPL_plusy_12step_ext1_ext2_side_by_side.mp4",
+      "ext1_source": "results/eval_multiview_CP_step30000_ext1_10labs_long_12step/individual_videos/RPL_plusy_12step.mp4",
+      "ext2_source": "results/eval_multiview_CP_step30000_ext2_10labs_long_12step/individual_videos/RPL_plusy_12step.mp4"
+    },
+    {
+      "lab": "CLVR",
+      "action": "plusx",
+      "video": "results/PAPER_READY/qualitative/multiview_consistency_selected/merged_12step_available/videos/CLVR_plusx_12step_ext1_ext2_side_by_side.mp4",
+      "ext1_source": "results/eval_multiview_CP_step30000_ext1_10labs_long_12step/individual_videos/CLVR_plusx_12step.mp4",
+      "ext2_source": "results/eval_multiview_CP_step30000_ext2_10labs_long_12step/individual_videos/CLVR_plusx_12step.mp4"
+    },
+    {
+      "lab": "CLVR",
+      "action": "minusx",
+      "video": "results/PAPER_READY/qualitative/multiview_consistency_selected/merged_12step_available/videos/CLVR_minusx_12step_ext1_ext2_side_by_side.mp4",
+      "ext1_source": "results/eval_multiview_CP_step30000_ext1_10labs_long_12step/individual_videos/CLVR_minusx_12step.mp4",
+      "ext2_source": "results/eval_multiview_CP_step30000_ext2_10labs_long_12step/individual_videos/CLVR_minusx_12step.mp4"
+    },
+    {
+      "lab": "CLVR",
+      "action": "minusy",
+      "video": "results/PAPER_READY/qualitative/multiview_consistency_selected/merged_12step_available/videos/CLVR_minusy_12step_ext1_ext2_side_by_side.mp4",
+      "ext1_source": "results/eval_multiview_CP_step30000_ext1_10labs_long_12step/individual_videos/CLVR_minusy_12step.mp4",
+      "ext2_source": "results/eval_multiview_CP_step30000_ext2_10labs_long_12step/individual_videos/CLVR_minusy_12step.mp4"
+    },
+    {
+      "lab": "CLVR",
+      "action": "plusy",
+      "video": "results/PAPER_READY/qualitative/multiview_consistency_selected/merged_12step_available/videos/CLVR_plusy_12step_ext1_ext2_side_by_side.mp4",
+      "ext1_source": "results/eval_multiview_CP_step30000_ext1_10labs_long_12step/individual_videos/CLVR_plusy_12step.mp4",
+      "ext2_source": "results/eval_multiview_CP_step30000_ext2_10labs_long_12step/individual_videos/CLVR_plusy_12step.mp4"
+    },
+    {
+      "lab": "RPL",
+      "action": "four_action_grid",
+      "video": "results/PAPER_READY/qualitative/multiview_consistency_selected/merged_12step_available/videos/RPL_four_action_grid_12step_ext1_ext2_side_by_side.mp4",
+      "ext1_source": "results/eval_multiview_CP_step30000_ext1_10labs_long_12step/direction_grid_RPL__plusx_minusx_minusy_plusy.mp4",
+      "ext2_source": "results/eval_multiview_CP_step30000_ext2_10labs_long_12step/direction_grid_RPL__plusx_minusx_minusy_plusy.mp4"
+    },
+    {
+      "lab": "CLVR",
+      "action": "four_action_grid",
+      "video": "results/PAPER_READY/qualitative/multiview_consistency_selected/merged_12step_available/videos/CLVR_four_action_grid_12step_ext1_ext2_side_by_side.mp4",
+      "ext1_source": "results/eval_multiview_CP_step30000_ext1_10labs_long_12step/direction_grid_CLVR__plusx_minusx_minusy_plusy.mp4",
+      "ext2_source": "results/eval_multiview_CP_step30000_ext2_10labs_long_12step/direction_grid_CLVR__plusx_minusx_minusy_plusy.mp4"
+    }
+  ]
+}

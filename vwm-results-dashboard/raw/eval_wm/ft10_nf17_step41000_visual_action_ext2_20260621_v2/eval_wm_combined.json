@@ -1,0 +1,580 @@
+{
+  "visual": {
+    "model_type": "action_proj",
+    "visual_quality_action_replay": {
+      "lpips_mean": 0.0686072989159988,
+      "lpips_std": 0.04626840470002438,
+      "lpips_sem": 0.010905567572690256,
+      "lpips_episode_bootstrap_ci95": [
+        0.047734998473768234,
+        0.09025579417033845
+      ],
+      "psnr_mean": 33.75589771292289,
+      "psnr_std": 3.423008438293991,
+      "psnr_sem": 0.8068108262588184,
+      "psnr_episode_bootstrap_ci95": [
+        32.23913978455861,
+        35.295672582554026
+      ],
+      "ssim_mean": 0.934616609579987,
+      "ssim_std": 0.03088557977973327,
+      "ssim_sem": 0.007279800967709171,
+      "ssim_episode_bootstrap_ci95": [
+        0.9199852062182294,
+        0.9495169469051891
+      ]
+    },
+    "visual_quality_moving_only": {
+      "n_episodes": 17,
+      "model": {
+        "mean": 0.06577086399364121,
+        "sem": 0.011169010526472853
+      },
+      "copy_last": {
+        "mean": 0.07086726038388032,
+        "sem": 0.009882593432270366
+      },
+      "vae_oracle": {
+        "mean": 0.03463022068471593,
+        "sem": 0.008131861679326316
+      },
+      "model_psnr": {
+        "mean": 33.609654384222196,
+        "sem": 0.8415765995744829
+      },
+      "copy_last_psnr": {
+        "mean": 29.972241181119706,
+        "sem": 1.554246753447761
+      },
+      "model_ssim": {
+        "mean": 0.9362440784187878,
+        "sem": 0.007525968590269013
+      },
+      "copy_last_ssim": {
+        "mean": 0.9204908179886201,
+        "sem": 0.010466179369672968
+      }
+    },
+    "baselines": {
+      "copy_last_frame": {
+        "lpips_mean": 0.07261020091310558,
+        "psnr_mean": 30.321600070532245,
+        "ssim_mean": 0.9189064916637208
+      },
+      "vae_oracle": {
+        "lpips_mean": 0.03738134682902859,
+        "psnr_mean": 41.56247011898092,
+        "ssim_mean": 0.9622195065021515
+      }
+    },
+    "controllability_diagnostics": {
+      "action_sensitivity_mean": 0.012253788765039846,
+      "action_sensitivity_moving_only": 0.012974216396875871,
+      "negated_action_sensitivity_mean": 0.014771218078155672,
+      "negated_action_sensitivity_moving_only": 0.015640014343850508,
+      "n_moving_episodes": 17,
+      "motion_direction_diagnostic_mean": 0.38446442539700204
+    },
+    "per_episode": {
+      "franka_box_droid_layout__franka_box__episode_20260515_223329": {
+        "real_delta_norm_m": 0.010367625219472898,
+        "lpips": 0.12542413175106049,
+        "psnr": 32.33315180233945,
+        "ssim": 0.8919262140989304,
+        "copy_last_lpips": 0.11630750261247158,
+        "vae_oracle_lpips": 0.08431898057460785,
+        "action_sensitivity": 0.0012531529209809378,
+        "negated_action_sensitivity": 0.006146958912722766,
+        "motion_diag": 0.35050374269485474
+      },
+      "franka_box_droid_layout__franka_box__episode_20260515_224959": {
+        "real_delta_norm_m": 0.0023734488198466817,
+        "lpips": 0.11469853110611439,
+        "psnr": 35.1957897959914,
+        "ssim": 0.9032174646854401,
+        "copy_last_lpips": 0.10551394708454609,
+        "vae_oracle_lpips": 0.08289343118667603,
+        "action_sensitivity": 0.0004200556068099104,
+        "negated_action_sensitivity": 0.0004650048940675333,
+        "motion_diag": 0.034615833312273026
+      },
+      "franka_box_droid_layout__franka_box__episode_20260515_225049": {
+        "real_delta_norm_m": 2.016387855507599e-05,
+        "lpips": 0.11682669259607792,
+        "psnr": 36.24203430083471,
+        "ssim": 0.9069496393203735,
+        "copy_last_lpips": 0.102240189909935,
+        "vae_oracle_lpips": 0.08415049128234386,
+        "action_sensitivity": 6.519023827422643e-06,
+        "negated_action_sensitivity": 1.6815613435028354e-06,
+        "motion_diag": 0.0648844912648201
+      },
+      "franka_box_droid_layout__franka_box__episode_20260515_225144": {
+        "real_delta_norm_m": 0.022586587017145,
+        "lpips": 0.12313376180827618,
+        "psnr": 32.50060925549843,
+        "ssim": 0.8877049088478088,
+        "copy_last_lpips": 0.11202790588140488,
+        "vae_oracle_lpips": 0.08689483627676964,
+        "action_sensitivity": 0.00834568776190281,
+        "negated_action_sensitivity": 0.013903660175856203,
+        "motion_diag": 0.3979656398296356
+      },
+      "franka_box_droid_layout__franka_box__episode_20260515_225340": {
+        "real_delta_norm_m": 0.0686464553773186,
+        "lpips": 0.11786171235144138,
+        "psnr": 34.85832316058668,
+        "ssim": 0.900934025645256,
+        "copy_last_lpips": 0.1095286775380373,
+        "vae_oracle_lpips": 0.08307182416319847,
+        "action_sensitivity": 0.00865098531357944,
+        "negated_action_sensitivity": 0.004295890073990449,
+        "motion_diag": 0.31653234362602234
+      },
+      "franka_box_droid_layout__franka_box__episode_20260515_225441": {
+        "real_delta_norm_m": 0.041301397904713336,
+        "lpips": 0.1377636268734932,
+        "psnr": 31.21752362975195,
+        "ssim": 0.8859191238880157,
+        "copy_last_lpips": 0.14497140794992447,
+        "vae_oracle_lpips": 0.08721099235117435,
+        "action_sensitivity": 0.05034323828294873,
+        "negated_action_sensitivity": 0.04322355194017291,
+        "motion_diag": 0.7223602533340454
+      },
+      "franka_success_mustard_droid_layout__franka_box__episode_20260516_001615": {
+        "real_delta_norm_m": 0.06012399215262512,
+        "lpips": 0.02255857503041625,
+        "psnr": 34.46319470385923,
+        "ssim": 0.9620794057846069,
+        "copy_last_lpips": 0.037633550353348255,
+        "vae_oracle_lpips": 0.011461022775620222,
+        "action_sensitivity": 0.007261212274897844,
+        "negated_action_sensitivity": 0.014374093647347763,
+        "motion_diag": 0.6777379512786865
+      },
+      "franka_success_mustard_droid_layout__franka_box__episode_20260516_001826": {
+        "real_delta_norm_m": 0.06432393085992433,
+        "lpips": 0.11705397255718708,
+        "psnr": 34.62305718501136,
+        "ssim": 0.9422949552536011,
+        "copy_last_lpips": 0.07264657504856586,
+        "vae_oracle_lpips": 0.013756162021309137,
+        "action_sensitivity": 0.004994319315301254,
+        "negated_action_sensitivity": 0.0007138417495298199,
+        "motion_diag": -0.01163200568407774
+      },
+      "franka_success_mustard_droid_layout__franka_box__episode_20260516_003717": {
+        "real_delta_norm_m": 0.0358725964877815,
+        "lpips": 0.08182970527559519,
+        "psnr": 27.969797841582604,
+        "ssim": 0.9270374625921249,
+        "copy_last_lpips": 0.07500986196100712,
+        "vae_oracle_lpips": 0.016500506782904267,
+        "action_sensitivity": 0.008368916402105242,
+        "negated_action_sensitivity": 0.017887743189930916,
+        "motion_diag": 0.4641581177711487
+      },
+      "franka_success_mustard_droid_layout__franka_box__episode_20260516_003802": {
+        "real_delta_norm_m": 0.03854576398975893,
+        "lpips": 0.05170899163931608,
+        "psnr": 36.0502340696632,
+        "ssim": 0.9534037113189697,
+        "copy_last_lpips": 0.11657836101949215,
+        "vae_oracle_lpips": 0.018717197235673666,
+        "action_sensitivity": 0.00023937441255839076,
+        "negated_action_sensitivity": 0.00043959380127489567,
+        "motion_diag": 0.2902108132839203
+      },
+      "franka_success_mustard_droid_layout__franka_box__episode_20260516_004051": {
+        "real_delta_norm_m": 0.03624818873485987,
+        "lpips": 0.021102792117744684,
+        "psnr": 36.07472560486826,
+        "ssim": 0.9687739610671997,
+        "copy_last_lpips": 0.0243097678758204,
+        "vae_oracle_lpips": 0.011563447304069996,
+        "action_sensitivity": 0.00625236303312704,
+        "negated_action_sensitivity": 0.008741313067730516,
+        "motion_diag": 0.5721375942230225
+      },
+      "franka_success_mustard_droid_layout__franka_box__episode_20260516_004137": {
+        "real_delta_norm_m": 0.026893920545723576,
+        "lpips": 0.04462782759219408,
+        "psnr": 29.73837121195005,
+        "ssim": 0.9410491734743118,
+        "copy_last_lpips": 0.07389996573328972,
+        "vae_oracle_lpips": 0.018558545503765345,
+        "action_sensitivity": 0.03764899936504662,
+        "negated_action_sensitivity": 0.034517457941547036,
+        "motion_diag": 0.6306442618370056
+      },
+      "franka_success_rope_droid_layout__franka_box__episode_20260516_012540": {
+        "real_delta_norm_m": 0.03991103140387279,
+        "lpips": 0.03064006380736828,
+        "psnr": 29.7536366111814,
+        "ssim": 0.9438959658145905,
+        "copy_last_lpips": 0.05450704600661993,
+        "vae_oracle_lpips": 0.012231777189299464,
+        "action_sensitivity": 0.03483975608833134,
+        "negated_action_sensitivity": 0.03708928031846881,
+        "motion_diag": 0.603515625
+      },
+      "franka_success_rope_droid_layout__franka_box__episode_20260516_012650": {
+        "real_delta_norm_m": 0.031075561639621253,
+        "lpips": 0.021410143934190273,
+        "psnr": 37.94344114269458,
+        "ssim": 0.9692912697792053,
+        "copy_last_lpips": 0.020630727522075176,
+        "vae_oracle_lpips": 0.011465942254289985,
+        "action_sensitivity": 0.006134708353783935,
+        "negated_action_sensitivity": 0.004856724408455193,
+        "motion_diag": 0.16534559428691864
+      },
+      "franka_success_rope_droid_layout__franka_box__episode_20260516_012808": {
+        "real_delta_norm_m": 0.04860510373271556,
+        "lpips": 0.037363683339208364,
+        "psnr": 27.900451044508173,
+        "ssim": 0.9391476958990097,
+        "copy_last_lpips": 0.05853992002084851,
+        "vae_oracle_lpips": 0.013332233764231205,
+        "action_sensitivity": 0.01355324184987694,
+        "negated_action_sensitivity": 0.04209272307343781,
+        "motion_diag": 0.47511765360832214
+      },
+      "franka_success_rope_droid_layout__franka_box__episode_20260516_012913": {
+        "real_delta_norm_m": 0.011899661364615925,
+        "lpips": 0.019724906887859106,
+        "psnr": 38.78528746404092,
+        "ssim": 0.9716730564832687,
+        "copy_last_lpips": 0.015906973043456674,
+        "vae_oracle_lpips": 0.010793411172926426,
+        "action_sensitivity": 0.0005391581908043008,
+        "negated_action_sensitivity": 0.0018983058107551187,
+        "motion_diag": 0.126252219080925
+      },
+      "franka_success_rope_droid_layout__franka_box__episode_20260516_013130": {
+        "real_delta_norm_m": 0.011649952640485569,
+        "lpips": 0.0211191033013165,
+        "psnr": 38.73061487450609,
+        "ssim": 0.9712221920490265,
+        "copy_last_lpips": 0.018337260000407696,
+        "vae_oracle_lpips": 0.011902185855433345,
+        "action_sensitivity": 0.00022738784718967509,
+        "negated_action_sensitivity": 0.0016912811697693542,
+        "motion_diag": 0.2525162398815155
+      },
+      "franka_success_rope_droid_layout__franka_box__episode_20260516_013401": {
+        "real_delta_norm_m": 0.042532234543018646,
+        "lpips": 0.030083158519119024,
+        "psnr": 33.22591513374344,
+        "ssim": 0.9565787464380264,
+        "copy_last_lpips": 0.048393976874649525,
+        "vae_oracle_lpips": 0.014041255228221416,
+        "action_sensitivity": 0.0314891217276454,
+        "negated_action_sensitivity": 0.033542819670401514,
+        "motion_diag": 0.7874932885169983
+      }
+    },
+    "n_episodes": 18,
+    "per_horizon": {
+      "t+1": {
+        "lpips": 0.05787933504001962,
+        "psnr": 36.98110516455236,
+        "ssim": 0.9480690062046051
+      },
+      "t+2": {
+        "lpips": 0.0693434536870983,
+        "psnr": 34.358614004745505,
+        "ssim": 0.9363324344158173
+      },
+      "t+3": {
+        "lpips": 0.07349804788827896,
+        "psnr": 32.39058289684393,
+        "ssim": 0.9296540684170194
+      },
+      "t+4": {
+        "lpips": 0.07370835904859835,
+        "psnr": 31.29328878554975,
+        "ssim": 0.9244109292825063
+      }
+    }
+  },
+  "action_dir": {
+    "overall": {
+      "dir_acc": 0.875,
+      "d_sep_mean_px": 2.312178781036184,
+      "n_episodes": 18,
+      "n_trials": 72,
+      "n_correct": 63,
+      "n_testable_trials": 72,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.7916666666666666,
+        0.9444444444444444
+      ],
+      "d_sep_episode_bootstrap_ci95": [
+        1.254645937292824,
+        3.470306791409449
+      ],
+      "signed_proj_mean_px": 1.0465094066892544,
+      "signed_proj_trial_bootstrap_ci95": [
+        0.7282270552145786,
+        1.4455020631741218
+      ],
+      "perp_proj_mean_px": 0.4663277237714802,
+      "cosine_align_mean": 0.6561016673086387,
+      "cosine_align_trial_bootstrap_ci95": [
+        0.5266253763750128,
+        0.762855758302943
+      ],
+      "signed_separation_mean_px": 2.0930188133785093,
+      "signed_separation_trial_bootstrap_ci95": [
+        1.289779962525916,
+        3.171302903344376
+      ],
+      "d_sep_correct_only_mean_px": 2.566245179041289,
+      "d_sep_correct_only_episode_bootstrap_ci95": [
+        1.409786829404766,
+        3.721756153888418
+      ],
+      "n_axes_correct_only": 16
+    },
+    "per_axis": {
+      "x": {
+        "dir_acc": 0.8888888888888888,
+        "d_sep_mean_px": 3.0608294108468623,
+        "signed_proj_mean_px": 1.397611344042828,
+        "cosine_align_mean": 0.6752778720881648,
+        "signed_separation_mean_px": 2.795222688085656,
+        "n_trials": 36,
+        "n_correct": 32,
+        "dir_acc_trial_bootstrap_ci95": [
+          0.7777777777777778,
+          0.9722222222222222
+        ],
+        "d_sep_episode_bootstrap_ci95": [
+          1.5198620810923686,
+          4.885579299202396
+        ]
+      },
+      "y": {
+        "dir_acc": 0.8611111111111112,
+        "d_sep_mean_px": 1.5635281512255057,
+        "signed_proj_mean_px": 0.6954074693356811,
+        "cosine_align_mean": 0.636925462529113,
+        "signed_separation_mean_px": 1.3908149386713622,
+        "n_trials": 36,
+        "n_correct": 31,
+        "dir_acc_trial_bootstrap_ci95": [
+          0.75,
+          0.9722222222222222
+        ],
+        "d_sep_episode_bootstrap_ci95": [
+          0.8497436269464541,
+          2.3546256374173224
+        ]
+      }
+    },
+    "per_direction": {
+      "+x": {
+        "dir_acc": 0.8333333333333334,
+        "n_trials": 18,
+        "n_correct": 15,
+        "dir_acc_trial_bootstrap_ci95": [
+          0.6666666666666666,
+          1.0
+        ]
+      },
+      "-x": {
+        "dir_acc": 0.9444444444444444,
+        "n_trials": 18,
+        "n_correct": 17,
+        "dir_acc_trial_bootstrap_ci95": [
+          0.8333333333333334,
+          1.0
+        ]
+      },
+      "+y": {
+        "dir_acc": 0.8888888888888888,
+        "n_trials": 18,
+        "n_correct": 16,
+        "dir_acc_trial_bootstrap_ci95": [
+          0.7222222222222222,
+          1.0
+        ]
+      },
+      "-y": {
+        "dir_acc": 0.8333333333333334,
+        "n_trials": 18,
+        "n_correct": 15,
+        "dir_acc_trial_bootstrap_ci95": [
+          0.6111111111111112,
+          1.0
+        ]
+      }
+    },
+    "per_episode": {
+      "franka_box_droid_layout__franka_box__episode_20260515_223329": {
+        "dir_acc": 0.75,
+        "d_sep_px": 0.3983401954174042,
+        "signed_proj_mean_px": 0.17001580490001345,
+        "perp_proj_mean_px": 0.12962940590908487,
+        "cosine_align_mean": 0.3817444365948387,
+        "signed_separation_mean_px": 0.3400316098000269,
+        "d_sep_correct_only_mean_px": 0.4952628016471863
+      },
+      "franka_box_droid_layout__franka_box__episode_20260515_224959": {
+        "dir_acc": 1.0,
+        "d_sep_px": 7.079164266586304,
+        "signed_proj_mean_px": 3.070074443534956,
+        "perp_proj_mean_px": 1.7413226972534834,
+        "cosine_align_mean": 0.8632590917826111,
+        "signed_separation_mean_px": 6.140148887069913,
+        "d_sep_correct_only_mean_px": 7.079164266586304
+      },
+      "franka_box_droid_layout__franka_box__episode_20260515_225049": {
+        "dir_acc": 0.75,
+        "d_sep_px": 0.005793522810563445,
+        "signed_proj_mean_px": 0.00048828125,
+        "perp_proj_mean_px": 0.006426222622394562,
+        "cosine_align_mean": 0.053688932350184015,
+        "signed_separation_mean_px": 0.0009765625,
+        "d_sep_correct_only_mean_px": 0.004442600533366203
+      },
+      "franka_box_droid_layout__franka_box__episode_20260515_225144": {
+        "dir_acc": 0.75,
+        "d_sep_px": 0.13981814309954643,
+        "signed_proj_mean_px": 0.0619902773409671,
+        "perp_proj_mean_px": 0.031174344256078772,
+        "cosine_align_mean": 0.529953311317944,
+        "signed_separation_mean_px": 0.1239805546819342,
+        "d_sep_correct_only_mean_px": 0.11724793165922165
+      },
+      "franka_box_droid_layout__franka_box__episode_20260515_225340": {
+        "dir_acc": 0.5,
+        "d_sep_px": 0.3541165739297867,
+        "signed_proj_mean_px": 0.058077230878976496,
+        "perp_proj_mean_px": 0.2741096864966964,
+        "cosine_align_mean": 0.1085791774627448,
+        "signed_separation_mean_px": 0.11615446175795303,
+        "d_sep_correct_only_mean_px": 0.0
+      },
+      "franka_box_droid_layout__franka_box__episode_20260515_225441": {
+        "dir_acc": 0.75,
+        "d_sep_px": 0.11894349753856659,
+        "signed_proj_mean_px": 0.040284343517902804,
+        "perp_proj_mean_px": 0.0724776947278308,
+        "cosine_align_mean": 0.4060731335186117,
+        "signed_separation_mean_px": 0.08056868703580561,
+        "d_sep_correct_only_mean_px": 0.16548645496368408
+      },
+      "franka_success_mustard_droid_layout__franka_box__episode_20260516_001615": {
+        "dir_acc": 1.0,
+        "d_sep_px": 4.979394435882568,
+        "signed_proj_mean_px": 2.343780007320469,
+        "perp_proj_mean_px": 0.8700880493200639,
+        "cosine_align_mean": 0.9195591455278963,
+        "signed_separation_mean_px": 4.687560014640938,
+        "d_sep_correct_only_mean_px": 4.979394435882568
+      },
+      "franka_success_mustard_droid_layout__franka_box__episode_20260516_001826": {
+        "dir_acc": 1.0,
+        "d_sep_px": 4.368273019790649,
+        "signed_proj_mean_px": 1.9894261078857634,
+        "perp_proj_mean_px": 1.1072789317562566,
+        "cosine_align_mean": 0.836897827926224,
+        "signed_separation_mean_px": 3.9788522157715267,
+        "d_sep_correct_only_mean_px": 4.368273019790649
+      },
+      "franka_success_mustard_droid_layout__franka_box__episode_20260516_003717": {
+        "dir_acc": 0.5,
+        "d_sep_px": 0.35795558989048004,
+        "signed_proj_mean_px": 0.07770424120247982,
+        "perp_proj_mean_px": 0.2015862411262089,
+        "cosine_align_mean": -0.08497499170661807,
+        "signed_separation_mean_px": 0.1554084824049596,
+        "d_sep_correct_only_mean_px": 0.0
+      },
+      "franka_success_mustard_droid_layout__franka_box__episode_20260516_003802": {
+        "dir_acc": 1.0,
+        "d_sep_px": 6.810886085033417,
+        "signed_proj_mean_px": 3.3374432139859866,
+        "perp_proj_mean_px": 0.6846934128947426,
+        "cosine_align_mean": 0.9076042917843615,
+        "signed_separation_mean_px": 6.674886427971973,
+        "d_sep_correct_only_mean_px": 6.810886085033417
+      },
+      "franka_success_mustard_droid_layout__franka_box__episode_20260516_004051": {
+        "dir_acc": 1.0,
+        "d_sep_px": 4.931747913360596,
+        "signed_proj_mean_px": 2.273808077051871,
+        "perp_proj_mean_px": 0.8516761726058282,
+        "cosine_align_mean": 0.9241627668098252,
+        "signed_separation_mean_px": 4.547616154103743,
+        "d_sep_correct_only_mean_px": 4.931747913360596
+      },
+      "franka_success_mustard_droid_layout__franka_box__episode_20260516_004137": {
+        "dir_acc": 1.0,
+        "d_sep_px": 1.1261835396289825,
+        "signed_proj_mean_px": 0.5627593595380526,
+        "perp_proj_mean_px": 0.11336942618243978,
+        "cosine_align_mean": 0.927805141535079,
+        "signed_separation_mean_px": 1.125518719076105,
+        "d_sep_correct_only_mean_px": 1.1261835396289825
+      },
+      "franka_success_rope_droid_layout__franka_box__episode_20260516_012540": {
+        "dir_acc": 1.0,
+        "d_sep_px": 0.8058291077613831,
+        "signed_proj_mean_px": 0.3715933004503805,
+        "perp_proj_mean_px": 0.2121697134928558,
+        "cosine_align_mean": 0.8467837900579636,
+        "signed_separation_mean_px": 0.743186600900761,
+        "d_sep_correct_only_mean_px": 0.8058291077613831
+      },
+      "franka_success_rope_droid_layout__franka_box__episode_20260516_012650": {
+        "dir_acc": 1.0,
+        "d_sep_px": 3.739890694618225,
+        "signed_proj_mean_px": 1.607883808405047,
+        "perp_proj_mean_px": 0.9070014744290331,
+        "cosine_align_mean": 0.8786405409683729,
+        "signed_separation_mean_px": 3.215767616810094,
+        "d_sep_correct_only_mean_px": 3.739890694618225
+      },
+      "franka_success_rope_droid_layout__franka_box__episode_20260516_012808": {
+        "dir_acc": 0.75,
+        "d_sep_px": 0.3223651945590973,
+        "signed_proj_mean_px": 0.11729728182602417,
+        "perp_proj_mean_px": 0.08485895931159494,
+        "cosine_align_mean": 0.6653879103266078,
+        "signed_separation_mean_px": 0.23459456365204834,
+        "d_sep_correct_only_mean_px": 0.35559773445129395
+      },
+      "franka_success_rope_droid_layout__franka_box__episode_20260516_012913": {
+        "dir_acc": 1.0,
+        "d_sep_px": 2.1178696751594543,
+        "signed_proj_mean_px": 0.9361006222757128,
+        "perp_proj_mean_px": 0.47181272379060135,
+        "cosine_align_mean": 0.8694377740661584,
+        "signed_separation_mean_px": 1.8722012445514256,
+        "d_sep_correct_only_mean_px": 2.1178696751594543
+      },
+      "franka_success_rope_droid_layout__franka_box__episode_20260516_013130": {
+        "dir_acc": 1.0,
+        "d_sep_px": 2.9388601779937744,
+        "signed_proj_mean_px": 1.3248643415874,
+        "perp_proj_mean_px": 0.5128616804382385,
+        "cosine_align_mean": 0.8806276142352301,
+        "signed_separation_mean_px": 2.6497286831748,
+        "d_sep_correct_only_mean_px": 2.9388601779937744
+      },
+      "franka_success_rope_droid_layout__franka_box__episode_20260516_013401": {
+        "dir_acc": 1.0,
+        "d_sep_px": 1.0237864255905151,
+        "signed_proj_mean_px": 0.49357857745457867,
+        "perp_proj_mean_px": 0.12136219127321209,
+        "cosine_align_mean": 0.8946001169974637,
+        "signed_separation_mean_px": 0.9871571549091573,
+        "d_sep_correct_only_mean_px": 1.0237864255905151
+      }
+    }
+  }
+}

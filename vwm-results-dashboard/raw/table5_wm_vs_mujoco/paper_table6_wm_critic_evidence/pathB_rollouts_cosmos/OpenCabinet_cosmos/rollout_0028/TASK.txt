@@ -1,0 +1,4 @@
+task_description: open_the_microwave_door
+success: True
+num_steps: 205
+source_hdf5: 2026_05_14-23_30_49--episode_data--task=open_the_microwave_door--ep=28--success=True.hdf5

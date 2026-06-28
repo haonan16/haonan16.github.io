@@ -1,0 +1,77 @@
+2026-05-19 16:59:34,285 INFO Building WanT2VActionProj model...
+2026-05-19 16:59:35,109 INFO Loading action_proj MoT backbone from T2V pretrained.
+2026-05-19 17:00:03,444 INFO Loading checkpoint from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt
+2026-05-19 17:00:12,999 INFO Checkpoint loaded. missing=0 unexpected=2
+2026-05-19 17:00:13,435 INFO Detected render params for epoch=0-step=25750.ckpt: version=v2 sigma=16.0 line_thickness=12 arrow_thickness=24 arrow_min_length=24.0
+2026-05-19 17:00:13,435 INFO Model type: action_proj
+2026-05-19 17:00:13,435 INFO Render version: v2
+2026-05-19 17:00:13,436 INFO Mode: magnitude_sweep
+2026-05-19 17:00:13,436 INFO Axes: ['x', 'y'], magnitudes: ['0.005', '0.03', '0.05', '0.06']
+2026-05-19 17:00:13,437 INFO Evaluating 1 episodes
+2026-05-19 17:00:13,441 INFO Evaluating 1 episodes x 4 magnitudes
+2026-05-19 17:00:14,389 INFO Episode RPL__Mon_Jun__5_18_30_00_2023: seed_uv=(197.0, 140.0) [model-frame]
+2026-05-19 17:00:14,389 INFO   Generating zero-motion rollout...
+2026-05-19 17:01:27,950 INFO Loading CoTracker3 (offline) from torch hub...
+Using cache found in /n/home01/haonan/.cache/torch/hub/facebookresearch_co-tracker_main
+2026-05-19 17:01:29,220 INFO CoTracker3 loaded.
+2026-05-19 17:01:29,957 INFO   Saved seed debug image to /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_comparison/ours_A25750_RPL_extra/mag_0p005m/debug/RPL__Mon_Jun__5_18_30_00_2023_seed_debug.png
+2026-05-19 17:01:30,586 INFO   Generating +x rollout...
+2026-05-19 17:02:44,905 INFO     +x: net_disp=(0.1, -0.0) px, expected_sign=(1.0, 0.0), correct=True
+2026-05-19 17:02:44,906 INFO   Generating -x rollout...
+2026-05-19 17:03:59,233 INFO     -x: net_disp=(-0.0, -0.1) px, expected_sign=(-1.0, -0.0), correct=True
+2026-05-19 17:03:59,884 INFO   Generating +y rollout...
+2026-05-19 17:05:14,148 INFO     +y: net_disp=(-0.0, -0.1) px, expected_sign=(-1.0, 0.0), correct=True
+2026-05-19 17:05:14,149 INFO   Generating -y rollout...
+2026-05-19 17:06:28,304 INFO     -y: net_disp=(0.1, -0.0) px, expected_sign=(1.0, -0.0), correct=True
+2026-05-19 17:06:28,305 INFO   Episode RPL__Mon_Jun__5_18_30_00_2023: DirAcc=1.000, D_sep=0.1 px, D_sep_signed=0.1 px, cos_align=0.562
+2026-05-19 17:06:28,527 INFO Episode RPL__Mon_Jun__5_18_30_00_2023: seed_uv=(197.0, 140.0) [model-frame]
+2026-05-19 17:06:28,527 INFO   Generating zero-motion rollout...
+2026-05-19 17:07:42,939 INFO   Saved seed debug image to /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_comparison/ours_A25750_RPL_extra/mag_0p030m/debug/RPL__Mon_Jun__5_18_30_00_2023_seed_debug.png
+2026-05-19 17:07:43,557 INFO   Generating +x rollout...
+2026-05-19 17:08:57,670 INFO     +x: net_disp=(11.1, 5.5) px, expected_sign=(4.0, 0.0), correct=True
+2026-05-19 17:08:57,670 INFO   Generating -x rollout...
+2026-05-19 17:10:11,962 INFO     -x: net_disp=(-15.6, -2.4) px, expected_sign=(-4.0, -0.0), correct=True
+2026-05-19 17:10:12,602 INFO   Generating +y rollout...
+2026-05-19 17:11:26,914 INFO     +y: net_disp=(-12.6, -1.0) px, expected_sign=(-4.0, -1.0), correct=True
+2026-05-19 17:11:26,914 INFO   Generating -y rollout...
+2026-05-19 17:12:41,230 INFO     -y: net_disp=(6.0, -0.2) px, expected_sign=(4.0, 1.0), correct=True
+2026-05-19 17:12:41,231 INFO   Episode RPL__Mon_Jun__5_18_30_00_2023: DirAcc=1.000, D_sep=23.2 px, D_sep_signed=22.4 px, cos_align=0.958
+2026-05-19 17:12:41,449 INFO Episode RPL__Mon_Jun__5_18_30_00_2023: seed_uv=(197.0, 140.0) [model-frame]
+2026-05-19 17:12:41,449 INFO   Generating zero-motion rollout...
+2026-05-19 17:13:55,644 INFO   Saved seed debug image to /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_comparison/ours_A25750_RPL_extra/mag_0p050m/debug/RPL__Mon_Jun__5_18_30_00_2023_seed_debug.png
+2026-05-19 17:13:56,260 INFO   Generating +x rollout...
+2026-05-19 17:15:10,531 INFO     +x: net_disp=(28.2, 12.5) px, expected_sign=(7.0, 1.0), correct=True
+2026-05-19 17:15:10,532 INFO   Generating -x rollout...
+2026-05-19 17:16:24,620 INFO     -x: net_disp=(-35.4, -6.2) px, expected_sign=(-7.0, -1.0), correct=True
+2026-05-19 17:16:25,276 INFO   Generating +y rollout...
+2026-05-19 17:17:39,565 INFO     +y: net_disp=(-18.5, -1.4) px, expected_sign=(-7.0, -1.0), correct=True
+2026-05-19 17:17:39,565 INFO   Generating -y rollout...
+2026-05-19 17:18:50,300 INFO     -y: net_disp=(19.4, 1.9) px, expected_sign=(7.0, 1.0), correct=True
+2026-05-19 17:18:50,300 INFO   Episode RPL__Mon_Jun__5_18_30_00_2023: DirAcc=1.000, D_sep=52.2 px, D_sep_signed=51.8 px, cos_align=0.990
+2026-05-19 17:18:50,521 INFO Episode RPL__Mon_Jun__5_18_30_00_2023: seed_uv=(197.0, 140.0) [model-frame]
+2026-05-19 17:18:50,521 INFO   Generating zero-motion rollout...
+2026-05-19 17:20:03,206 INFO   Saved seed debug image to /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_comparison/ours_A25750_RPL_extra/mag_0p060m/debug/RPL__Mon_Jun__5_18_30_00_2023_seed_debug.png
+2026-05-19 17:20:03,828 INFO   Generating +x rollout...
+2026-05-19 17:21:18,027 INFO     +x: net_disp=(32.8, 12.5) px, expected_sign=(8.0, 1.0), correct=True
+2026-05-19 17:21:18,028 INFO   Generating -x rollout...
+2026-05-19 17:22:32,236 INFO     -x: net_disp=(-42.7, -7.1) px, expected_sign=(-8.0, -1.0), correct=True
+2026-05-19 17:22:32,880 INFO   Generating +y rollout...
+2026-05-19 17:23:47,175 INFO     +y: net_disp=(-34.5, -1.8) px, expected_sign=(-8.0, -1.0), correct=True
+2026-05-19 17:23:47,175 INFO   Generating -y rollout...
+2026-05-19 17:25:01,486 INFO     -y: net_disp=(27.8, 4.0) px, expected_sign=(8.0, 1.0), correct=True
+2026-05-19 17:25:01,486 INFO   Episode RPL__Mon_Jun__5_18_30_00_2023: DirAcc=1.000, D_sep=70.3 px, D_sep_signed=69.9 px, cos_align=0.992
+
+========================================================================
+LONG-MOTION SWEEP SUMMARY
+========================================================================
+Checkpoint: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt
+Episodes:   1
+Axes:       ['x', 'y']
+Magnitudes: [0.005, 0.03, 0.05, 0.06]
+
+0.005m: response=0.1px, projected=1.0px, nop_drift=0.5px, DirAcc=1.000, D_sep=0.1px
+0.030m: response=11.7px, projected=4.1px, nop_drift=0.5px, DirAcc=1.000, D_sep=23.2px
+0.050m: response=26.2px, projected=7.1px, nop_drift=0.5px, DirAcc=1.000, D_sep=52.2px
+0.060m: response=35.3px, projected=8.1px, nop_drift=0.5px, DirAcc=1.000, D_sep=70.3px
+Monotonic response: True
+Results saved to /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_comparison/ours_A25750_RPL_extra

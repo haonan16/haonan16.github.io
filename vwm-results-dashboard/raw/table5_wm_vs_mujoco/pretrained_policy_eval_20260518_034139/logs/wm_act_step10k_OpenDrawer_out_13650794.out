@@ -1,0 +1,7 @@
+=== WM eval OpenDrawer_act_step10k ===
+manifest: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/pathB_rollouts/OpenDrawer_act_step10k/manifest.jsonl
+out_dir: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_step10k
+Tue May 19 02:26:38 EDT 2026
+GPU 0: NVIDIA H100 80GB HBM3 (UUID: GPU-7d08c420-e480-f8d2-77f5-8a2295959ec2)
+Tue May 19 04:10:49 EDT 2026
+30 /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_step10k/world_model_scores.jsonl

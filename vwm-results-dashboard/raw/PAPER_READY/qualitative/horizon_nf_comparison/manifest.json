@@ -1,0 +1,26 @@
+{
+  "scene": "RPL",
+  "magnitude_m": 0.02,
+  "horizon_steps": 10,
+  "fps": 12,
+  "checkpoints": {
+    "nf5": "A@25750 (DROID-only, 30K target)",
+    "nf13": "A@28625 (DROID-only, 30K target)"
+  },
+  "metrics_single_step_18ep": {
+    "nf5": {
+      "DirAcc": 0.931,
+      "LPIPS": 0.042
+    },
+    "nf13": {
+      "DirAcc": 0.806,
+      "LPIPS": 0.035
+    }
+  },
+  "files": {
+    "RPL_nf5_vs_nf13_horizon_grid.mp4": "Stacked grid: nf5 (top) above nf13 (bottom). Each grid: top row [+x, +y, nop], bottom row [-x, -y, nop].",
+    "nf5_grid.mp4": "nf5 grid only (3x2 layout).",
+    "nf13_grid.mp4": "nf13 grid only (3x2 layout)."
+  },
+  "interpretation": "nf5 streams cleanly across 10 steps; nf13 visual quality degrades despite better single-step LPIPS. This shows the streaming-vs-clip quality gap that favors nf5 for teleop deployment."
+}

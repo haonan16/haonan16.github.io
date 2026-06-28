@@ -1,0 +1,33 @@
+[load] instantiating WorldModel(default_cfg=3.0, use_pixel_rope=False)
+[run_eval] WorldGym model loaded in 13.9s (device=cuda:0)
+[setup] camera: 16787047.mp4  (1 of 3 base views)
+[setup] episode T=173 from Tue_May__9_01_17_11_2023
+[setup] actions: deltas shape=(173, 7), worldgym shape=(173, 10), wv range=(-0.577, 0.560), gripper range=(-1.0, 1.0)
+[setup] will generate 19 frames (cap = max_frames-1 = 19)
+[setup] gt frames shape=(20, 256, 256, 3), dtype=uint8
+[nudge] +x: max |delta| on axis x (post-rescale units) = 0.7027
+[nudge:+x] step 5/19: frame mean=106.6, elapsed=2.4s (2.07 fps)
+[nudge:+x] step 10/19: frame mean=112.0, elapsed=4.7s (2.12 fps)
+[nudge:+x] step 15/19: frame mean=117.5, elapsed=7.3s (2.05 fps)
+[nudge:+x] step 19/19: frame mean=127.2, elapsed=9.8s (1.93 fps)
+[nudge] saved /n/home01/haonan/.config/superpowers/worktrees/video_world_model/external-wm-baselines/results/baselines_external/worldgym/full_eval/2023-05-09_Tue_May__9_01_17_11_2023/+x.mp4 ((20, 256, 256, 3))
+[nudge] -x: max |delta| on axis x (post-rescale units) = 0.7445
+[nudge:-x] step 5/19: frame mean=80.8, elapsed=2.2s (2.24 fps)
+[nudge:-x] step 10/19: frame mean=56.3, elapsed=4.5s (2.22 fps)
+[nudge:-x] step 15/19: frame mean=70.9, elapsed=7.1s (2.11 fps)
+[nudge:-x] step 19/19: frame mean=74.4, elapsed=9.6s (1.97 fps)
+[nudge] saved /n/home01/haonan/.config/superpowers/worktrees/video_world_model/external-wm-baselines/results/baselines_external/worldgym/full_eval/2023-05-09_Tue_May__9_01_17_11_2023/-x.mp4 ((20, 256, 256, 3))
+[nudge] +y: max |delta| on axis y (post-rescale units) = 0.7100
+[nudge:+y] step 5/19: frame mean=79.0, elapsed=2.2s (2.24 fps)
+[nudge:+y] step 10/19: frame mean=112.2, elapsed=4.5s (2.22 fps)
+[nudge:+y] step 15/19: frame mean=134.1, elapsed=7.1s (2.11 fps)
+[nudge:+y] step 19/19: frame mean=143.4, elapsed=9.6s (1.97 fps)
+[nudge] saved /n/home01/haonan/.config/superpowers/worktrees/video_world_model/external-wm-baselines/results/baselines_external/worldgym/full_eval/2023-05-09_Tue_May__9_01_17_11_2023/+y.mp4 ((20, 256, 256, 3))
+[nudge] -y: max |delta| on axis y (post-rescale units) = 0.7018
+[nudge:-y] step 5/19: frame mean=86.7, elapsed=2.2s (2.25 fps)
+[nudge:-y] step 10/19: frame mean=89.8, elapsed=4.5s (2.22 fps)
+[nudge:-y] step 15/19: frame mean=103.6, elapsed=7.1s (2.11 fps)
+[nudge:-y] step 19/19: frame mean=110.7, elapsed=9.6s (1.98 fps)
+[nudge] saved /n/home01/haonan/.config/superpowers/worktrees/video_world_model/external-wm-baselines/results/baselines_external/worldgym/full_eval/2023-05-09_Tue_May__9_01_17_11_2023/-y.mp4 ((20, 256, 256, 3))
+[nudge] wrote seed_uv.json = {'u': 128.0, 'v': 128.0, 'method': 'image_center_placeholder'}
+[run_eval] OK in 53.8s; meta keys=['mode', 'episode_id', 'camera_name', 'start_frame', 'n_gen', 'nudge_magnitude_m', 'directions', 'direction_mp4s', 'seed_uv', 'resolution_hw', 'ckpt_path', 'default_cfg', 'use_pixel_rope']

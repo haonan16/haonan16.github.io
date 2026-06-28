@@ -1,0 +1,36 @@
+baseline,magnitude_m,magnitude_cm,mean_response_px,d_sep_px,dir_acc,n_trials,source
+adaLN (raw-vec),0.005,0.5,0.0,0.0,0.0,4,results/baselines_comparison/raw_vector_adaln_RPL_124cm/mag_0p005m/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+Cross-attention (raw-vec),0.005,0.5,0.0,0.0,0.0,4,results/baselines_comparison/raw_vector_crossattn_RPL_124cm/mag_0p005m/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+WorldGym,0.005,0.5,0.8174,1.2915,0.0,4,results/baselines_comparison/worldgym_RPL_124cm/mag_0p005m/2023-06-05_Mon_Jun__5_18_30_00_2023/am.json
+Ctrl-World,0.005,0.5,1.3615,0.2772,0.0,4,results/baselines_comparison/ctrl_world_RPL_124cm/mag_0p005m/2023-06-05_Mon_Jun__5_18_30_00_2023/am.json
+Ours (action-img proj),0.005,0.5,0.0833,0.1056,1.0,4,results/baselines_comparison/ours_A25750_RPL_extra/trial_records.json
+Ours (action-img proj),0.01,1.0,0.5987,0.8882,1.0,4,results/baselines_comparison/ours_A25750_RPL_124cm/trial_records.json
+Ours (action-img proj),0.02,2.0,6.8577,13.6995,1.0,4,results/baselines_comparison/ours_A25750_RPL_124cm/trial_records.json
+Ours (action-img proj),0.03,3.0,11.6837,23.1926,1.0,4,results/baselines_comparison/ours_A25750_RPL_extra/trial_records.json
+Ours (action-img proj),0.04,4.0,16.9961,33.8874,1.0,4,results/baselines_comparison/ours_A25750_RPL_124cm/trial_records.json
+Ours (action-img proj),0.05,5.0,26.2122,52.1771,1.0,4,results/baselines_comparison/ours_A25750_RPL_extra/trial_records.json
+Ours (action-img proj),0.06,6.0,35.2538,70.2829,1.0,4,results/baselines_comparison/ours_A25750_RPL_extra/trial_records.json
+adaLN (raw-vec),0.01,1.0,0.0,0.0,0.0,4,results/baselines_comparison/raw_vector_adaln_RPL_124cm/mag_0p01m/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+Cross-attention (raw-vec),0.01,1.0,0.0,0.0,0.0,4,results/baselines_comparison/raw_vector_crossattn_RPL_124cm/mag_0p01m/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+WorldGym,0.01,1.0,0.9084,1.1084,0.0,4,results/baselines_comparison/worldgym_RPL_124cm/mag_0p01m/2023-06-05_Mon_Jun__5_18_30_00_2023/am.json
+Ctrl-World,0.01,1.0,2.0234,4.0272,0.0,4,results/baselines_comparison/ctrl_world_RPL_124cm/mag_0p01m/2023-06-05_Mon_Jun__5_18_30_00_2023/am.json
+adaLN (raw-vec),0.02,2.0,0.0,0.0,0.0,4,results/baselines_comparison/raw_vector_adaln_RPL_124cm/mag_0p02m/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+Cross-attention (raw-vec),0.02,2.0,0.0,0.0,0.0,4,results/baselines_comparison/raw_vector_crossattn_RPL_124cm/mag_0p02m/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+WorldGym,0.02,2.0,2.3216,4.4069,0.0,4,results/baselines_comparison/worldgym_RPL_124cm/mag_0p02m/2023-06-05_Mon_Jun__5_18_30_00_2023/am.json
+Ctrl-World,0.02,2.0,2.5459,4.0812,0.0,4,results/baselines_comparison/ctrl_world_RPL_124cm/mag_0p02m/2023-06-05_Mon_Jun__5_18_30_00_2023/am.json
+adaLN (raw-vec),0.03,3.0,0.0,0.0,0.0,4,results/baselines_comparison/raw_vector_adaln_RPL_124cm/mag_0p03m/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+Cross-attention (raw-vec),0.03,3.0,0.0,0.0,0.0,4,results/baselines_comparison/raw_vector_crossattn_RPL_124cm/mag_0p03m/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+WorldGym,0.03,3.0,1.6688,2.0978,0.0,4,results/baselines_comparison/worldgym_RPL_124cm/mag_0p03m/2023-06-05_Mon_Jun__5_18_30_00_2023/am.json
+Ctrl-World,0.03,3.0,3.2191,4.3058,0.0,4,results/baselines_comparison/ctrl_world_RPL_124cm/mag_0p03m/2023-06-05_Mon_Jun__5_18_30_00_2023/am.json
+adaLN (raw-vec),0.04,4.0,0.0,0.0,0.0,4,results/baselines_comparison/raw_vector_adaln_RPL_124cm/mag_0p04m/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+Cross-attention (raw-vec),0.04,4.0,0.0,0.0,0.0,4,results/baselines_comparison/raw_vector_crossattn_RPL_124cm/mag_0p04m/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+WorldGym,0.04,4.0,1.0222,1.4506,0.0,4,results/baselines_comparison/worldgym_RPL_124cm/mag_0p04m/2023-06-05_Mon_Jun__5_18_30_00_2023/am.json
+Ctrl-World,0.04,4.0,1.3227,2.5458,0.0,4,results/baselines_comparison/ctrl_world_RPL_124cm/mag_0p04m/2023-06-05_Mon_Jun__5_18_30_00_2023/am.json
+adaLN (raw-vec),0.05,5.0,0.0,0.0,0.0,4,results/baselines_comparison/raw_vector_adaln_RPL_124cm/mag_0p05m/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+Cross-attention (raw-vec),0.05,5.0,0.0,0.0,0.0,4,results/baselines_comparison/raw_vector_crossattn_RPL_124cm/mag_0p05m/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+WorldGym,0.05,5.0,3.2771,4.7847,0.0,4,results/baselines_comparison/worldgym_RPL_124cm/mag_0p05m/2023-06-05_Mon_Jun__5_18_30_00_2023/am.json
+Ctrl-World,0.05,5.0,2.6684,1.3078,0.0,4,results/baselines_comparison/ctrl_world_RPL_124cm/mag_0p05m/2023-06-05_Mon_Jun__5_18_30_00_2023/am.json
+adaLN (raw-vec),0.06,6.0,0.0,0.0,0.0,4,results/baselines_comparison/raw_vector_adaln_RPL_124cm/mag_0p06m/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+Cross-attention (raw-vec),0.06,6.0,0.0,0.0,0.0,4,results/baselines_comparison/raw_vector_crossattn_RPL_124cm/mag_0p06m/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+WorldGym,0.06,6.0,3.5405,4.8227,0.0,4,results/baselines_comparison/worldgym_RPL_124cm/mag_0p06m/2023-06-05_Mon_Jun__5_18_30_00_2023/am.json
+Ctrl-World,0.06,6.0,1.5353,2.7689,0.0,4,results/baselines_comparison/ctrl_world_RPL_124cm/mag_0p06m/2023-06-05_Mon_Jun__5_18_30_00_2023/am.json

@@ -1,0 +1,300 @@
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:30)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly (e.g. pip install mink==0.0.5), otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:40)
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+2026-05-19 10:14:40,863 [INFO] Logging to: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/robocasa_eval/EVAL-ROBOCASA-single-41.txt
+tasks_to_run ['OpenCabinet', 'OpenDrawer', 'PickPlaceCounterToCabinet', 'TurnOnMicrowave']
+2026-05-19 10:14:40,865 [INFO] Created 80 trials to run.
+  0%|          | 0/80 [00:00<?, ?it/s][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:14:40,917 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+  1%|▏         | 1/80 [01:53<2:29:12, 113.32s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:16:34,232 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+  2%|▎         | 2/80 [03:04<1:54:49, 88.33s/it] [robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:17:45,063 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+  4%|▍         | 3/80 [04:11<1:41:08, 78.81s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:18:52,542 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+  5%|▌         | 4/80 [05:12<1:30:57, 71.81s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:19:53,635 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+  6%|▋         | 5/80 [06:24<1:29:54, 71.93s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:21:05,774 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+  8%|▊         | 6/80 [07:31<1:26:38, 70.25s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:22:12,759 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+  9%|▉         | 7/80 [08:34<1:22:33, 67.86s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:23:15,708 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 10%|█         | 8/80 [09:41<1:20:50, 67.37s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:24:22,025 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 11%|█▏        | 9/80 [10:55<1:22:08, 69.42s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:25:35,945 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+2026-05-19 10:26:41,876 [INFO]   Intermediate rate @ 10 eps: 0.00%
+ 12%|█▎        | 10/80 [12:00<1:19:43, 68.34s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:26:41,879 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 14%|█▍        | 11/80 [13:15<1:20:47, 70.25s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:27:56,449 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 15%|█▌        | 12/80 [14:28<1:20:25, 70.97s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:29:09,067 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 16%|█▋        | 13/80 [15:45<1:21:18, 72.81s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:30:26,129 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 18%|█▊        | 14/80 [16:58<1:20:09, 72.88s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:31:39,144 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 19%|█▉        | 15/80 [18:14<1:20:01, 73.87s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:32:55,321 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 20%|██        | 16/80 [19:24<1:17:31, 72.68s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:34:05,245 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 21%|██▏       | 17/80 [20:30<1:14:22, 70.84s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:35:11,785 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 22%|██▎       | 18/80 [21:39<1:12:28, 70.13s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:36:20,271 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 24%|██▍       | 19/80 [22:45<1:10:03, 68.91s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:37:26,336 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+2026-05-19 10:38:35,988 [INFO]   Intermediate rate @ 20 eps: 0.00%
+ 25%|██▌       | 20/80 [23:55<1:09:08, 69.13s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:38:35,994 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 26%|██▋       | 21/80 [25:03<1:07:45, 68.90s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:39:44,361 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 28%|██▊       | 22/80 [26:10<1:05:59, 68.27s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:40:51,147 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 29%|██▉       | 23/80 [27:31<1:08:30, 72.12s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:42:12,251 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 30%|███       | 24/80 [28:40<1:06:25, 71.17s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:43:21,208 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 31%|███▏      | 25/80 [29:43<1:03:04, 68.81s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:44:24,527 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 32%|███▎      | 26/80 [30:08<50:09, 55.73s/it]  [robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:44:49,722 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 34%|███▍      | 27/80 [31:14<51:56, 58.81s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:45:55,724 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 35%|███▌      | 28/80 [32:26<54:11, 62.53s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:47:06,920 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 36%|███▋      | 29/80 [33:34<54:32, 64.17s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:48:14,920 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+2026-05-19 10:49:25,231 [INFO]   Intermediate rate @ 30 eps: 3.33%
+ 38%|███▊      | 30/80 [34:44<55:00, 66.01s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:49:25,236 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 39%|███▉      | 31/80 [35:48<53:30, 65.53s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:50:29,628 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 40%|████      | 32/80 [36:53<52:20, 65.42s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:51:34,792 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 41%|████▏     | 33/80 [38:00<51:33, 65.83s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:52:41,581 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 42%|████▎     | 34/80 [39:12<51:56, 67.76s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:53:53,844 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 44%|████▍     | 35/80 [40:17<50:01, 66.71s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:54:58,094 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 45%|████▌     | 36/80 [41:22<48:35, 66.26s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:56:03,301 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 46%|████▋     | 37/80 [42:29<47:44, 66.61s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:57:10,723 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 48%|████▊     | 38/80 [43:48<49:08, 70.20s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:58:29,297 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 49%|████▉     | 39/80 [45:06<49:38, 72.66s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 10:59:47,695 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+2026-05-19 11:00:28,986 [INFO]   Intermediate rate @ 40 eps: 5.00%
+ 50%|█████     | 40/80 [45:48<42:09, 63.25s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:00:28,991 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 51%|█████▏    | 41/80 [47:03<43:26, 66.83s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:01:44,166 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 52%|█████▎    | 42/80 [47:38<36:16, 57.27s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:02:19,141 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 54%|█████▍    | 43/80 [48:46<37:21, 60.58s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:03:27,448 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 55%|█████▌    | 44/80 [49:46<36:12, 60.36s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:04:27,288 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 56%|█████▋    | 45/80 [50:20<30:35, 52.46s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:05:01,306 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 57%|█████▊    | 46/80 [51:22<31:21, 55.35s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:06:03,401 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 59%|█████▉    | 47/80 [52:22<31:15, 56.82s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:07:03,662 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 60%|██████    | 48/80 [52:54<26:14, 49.22s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:07:35,135 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 61%|██████▏   | 49/80 [53:54<27:09, 52.56s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:08:35,487 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+2026-05-19 11:09:33,343 [INFO]   Intermediate rate @ 50 eps: 10.00%
+ 62%|██████▎   | 50/80 [54:52<27:04, 54.15s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:09:33,347 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 64%|██████▍   | 51/80 [56:00<28:07, 58.19s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:10:40,968 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 65%|██████▌   | 52/80 [57:06<28:19, 60.68s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:11:47,458 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 66%|██████▋   | 53/80 [57:33<22:42, 50.46s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:12:14,064 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 68%|██████▊   | 54/80 [58:41<24:10, 55.78s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:13:22,254 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 69%|██████▉   | 55/80 [59:47<24:34, 58.97s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:14:28,659 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 70%|███████   | 56/80 [1:00:11<19:19, 48.30s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:14:52,076 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 71%|███████▏  | 57/80 [1:01:21<21:04, 54.96s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:16:02,567 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 72%|███████▎  | 58/80 [1:02:34<22:09, 60.44s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:17:15,810 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 74%|███████▍  | 59/80 [1:03:43<21:59, 62.81s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:18:24,146 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+2026-05-19 11:19:32,667 [INFO]   Intermediate rate @ 60 eps: 11.67%
+ 75%|███████▌  | 60/80 [1:04:51<21:30, 64.53s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:19:32,671 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 76%|███████▋  | 61/80 [1:06:02<21:01, 66.40s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:20:43,445 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 78%|███████▊  | 62/80 [1:07:11<20:09, 67.21s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:21:52,533 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 79%|███████▉  | 63/80 [1:08:18<19:00, 67.08s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:22:59,331 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 80%|████████  | 64/80 [1:09:30<18:18, 68.67s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:24:11,687 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 81%|████████▏ | 65/80 [1:10:41<17:19, 69.31s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:25:22,490 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 82%|████████▎ | 66/80 [1:11:46<15:53, 68.07s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:26:27,684 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 84%|████████▍ | 67/80 [1:13:00<15:06, 69.73s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:27:41,285 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 85%|████████▌ | 68/80 [1:14:00<13:23, 66.93s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:28:41,680 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 86%|████████▋ | 69/80 [1:15:02<12:00, 65.47s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:29:43,737 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+2026-05-19 11:30:44,931 [INFO]   Intermediate rate @ 70 eps: 10.00%
+ 88%|████████▊ | 70/80 [1:16:04<10:41, 64.19s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:30:44,936 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 89%|████████▉ | 71/80 [1:17:28<10:33, 70.35s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:32:09,653 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 90%|█████████ | 72/80 [1:18:35<09:13, 69.17s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:33:16,076 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 91%|█████████▏| 73/80 [1:19:47<08:11, 70.27s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:34:28,898 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 92%|█████████▎| 74/80 [1:20:57<07:00, 70.10s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:35:38,607 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 94%|█████████▍| 75/80 [1:22:04<05:44, 68.98s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:36:44,978 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 95%|█████████▌| 76/80 [1:23:23<04:48, 72.04s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:38:04,146 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 96%|█████████▋| 77/80 [1:23:49<02:55, 58.42s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:38:30,806 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+ 98%|█████████▊| 78/80 [1:25:07<02:08, 64.03s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:39:47,920 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+ 99%|█████████▉| 79/80 [1:26:19<01:06, 66.61s/it][robosuite INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:121)
+2026-05-19 11:41:00,552 [INFO] Loading controller configuration from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/robosuite/robosuite/controllers/config/robots/default_pandaomron.json
+WARNING: OpenGL error 0x501 in or before mjr_makeContext
+
+2026-05-19 11:42:11,297 [INFO]   Intermediate rate @ 80 eps: 10.00%
+100%|██████████| 80/80 [1:27:30<00:00, 67.85s/it]100%|██████████| 80/80 [1:27:30<00:00, 65.63s/it]
+2026-05-19 11:42:11,298 [INFO] 
+======================================================================
+2026-05-19 11:42:11,300 [INFO] Task Name                                     | Success Rate | Count
+2026-05-19 11:42:11,301 [INFO] ----------------------------------------------------------------------
+2026-05-19 11:42:11,302 [INFO] OpenCabinet                                   |      0.00%   | 0/20
+2026-05-19 11:42:11,302 [INFO] OpenDrawer                                    |     10.00%   | 2/20
+2026-05-19 11:42:11,302 [INFO] PickPlaceCounterToCabinet                     |     25.00%   | 5/20
+2026-05-19 11:42:11,302 [INFO] TurnOnMicrowave                               |      5.00%   | 1/20
+2026-05-19 11:42:11,302 [INFO] ======================================================================
+
+2026-05-19 11:42:11,302 [INFO] FINAL AGGREGATE RATE: 10.00% (8/80)

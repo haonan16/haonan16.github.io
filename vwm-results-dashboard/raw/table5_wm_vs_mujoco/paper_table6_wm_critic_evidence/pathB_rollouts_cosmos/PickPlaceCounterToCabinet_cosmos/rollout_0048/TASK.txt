@@ -1,0 +1,4 @@
+task_description: pick_the_soap_dispenser_from_the_co
+success: False
+num_steps: 500
+source_hdf5: 2026_05_15-00_35_08--episode_data--task=pick_the_soap_dispenser_from_the_co--ep=48--success=False.hdf5

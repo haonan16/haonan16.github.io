@@ -1,0 +1,107 @@
+[orchestrate] A_pi0: 40 scores ready
+[orchestrate] B_beingh05_robocasa: 40 scores ready
+[orchestrate] C_beingh05_libero: 40 scores ready
+[orchestrate] D_cosmos_scripted: 40 scores ready
+/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/bin/python
+python: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/bin/python
+
+===================================================
+[orchestrate] STEP C: cross-policy aggregator
+===================================================
+Found 4 new + 28 existing JSONLs.
+Loaded 804 score rows.
+Finite-path records: 804
+  Records with sim_path computed: 804 / 804
+Wrote /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/table5/summary.json
+Wrote /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/table5/table5_3vla.csv
+Wrote /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/table5/table5_3vla.md
+[orchestrate] STEP C done.
+
+===================================================
+[orchestrate] STEP D: multi-signal classifier
+===================================================
+Loaded 160 rollouts across 5 policies and 4 tasks.
+  positive rate overall = 0.163  (26/160)
+  per-policy positive rates:
+    beingh05_libero_robocasa       n=40 succ=4 rate=0.100
+    beingh05_robocasa              n=40 succ=4 rate=0.100
+    cosmos                         n=20 succ=18 rate=0.900
+    pi0_robocasa                   n=40 succ=0 rate=0.000
+    scripted-noisy                 n=20 succ=0 rate=0.000
+
+=== feature_set=scalars: X.shape=(160, 7), pca=None ===
+  pooled logreg   AUROC = 0.885 ± 0.053
+  pooled rf       AUROC = 0.886 ± 0.079
+  pooled mlp      AUROC = 0.481 ± 0.128
+  LOPO held-out beingh05_libero_robocasa       n_test=40:  logreg=0.646 rf=0.674 mlp=0.306
+  LOPO held-out beingh05_robocasa              n_test=40:  logreg=0.729 rf=0.812 mlp=0.583
+  LOPO held-out cosmos                         n_test=20:  logreg=0.889 rf=1.000 mlp=0.111
+  LOPO held-out pi0_robocasa                   — single-class test set
+  LOPO held-out scripted-noisy                 — single-class test set
+
+=== feature_set=scalars_lpips: X.shape=(160, 11), pca=None ===
+  pooled logreg   AUROC = 0.876 ± 0.050
+  pooled rf       AUROC = 0.881 ± 0.071
+  pooled mlp      AUROC = 0.631 ± 0.111
+  LOPO held-out beingh05_libero_robocasa       n_test=40:  logreg=0.653 rf=0.625 mlp=0.521
+  LOPO held-out beingh05_robocasa              n_test=40:  logreg=0.722 rf=0.757 mlp=0.451
+  LOPO held-out cosmos                         n_test=20:  logreg=0.889 rf=1.000 mlp=0.278
+  LOPO held-out pi0_robocasa                   — single-class test set
+  LOPO held-out scripted-noisy                 — single-class test set
+
+=== feature_set=hidden_action: X.shape=(160, 64), pca=64 ===
+  pooled logreg   AUROC = 0.909 ± 0.067
+  pooled rf       AUROC = 0.916 ± 0.061
+  pooled mlp      AUROC = 0.708 ± 0.130
+  LOPO held-out beingh05_libero_robocasa       n_test=40:  logreg=0.785 rf=0.785 mlp=0.569
+  LOPO held-out beingh05_robocasa              n_test=40:  logreg=0.764 rf=0.910 mlp=0.639
+  LOPO held-out cosmos                         n_test=20:  logreg=0.500 rf=0.556 mlp=0.389
+  LOPO held-out pi0_robocasa                   — single-class test set
+  LOPO held-out scripted-noisy                 — single-class test set
+
+=== feature_set=hidden_rgb: X.shape=(160, 64), pca=64 ===
+  pooled logreg   AUROC = 0.929 ± 0.072
+  pooled rf       AUROC = 0.947 ± 0.047
+  pooled mlp      AUROC = 0.467 ± 0.066
+  LOPO held-out beingh05_libero_robocasa       n_test=40:  logreg=0.812 rf=0.903 mlp=0.396
+  LOPO held-out beingh05_robocasa              n_test=40:  logreg=0.833 rf=0.806 mlp=0.424
+  LOPO held-out cosmos                         n_test=20:  logreg=0.972 rf=0.472 mlp=0.139
+  LOPO held-out pi0_robocasa                   — single-class test set
+  LOPO held-out scripted-noisy                 — single-class test set
+
+=== feature_set=hidden_both: X.shape=(160, 64), pca=64 ===
+  pooled logreg   AUROC = 0.918 ± 0.074
+  pooled rf       AUROC = 0.933 ± 0.068
+  pooled mlp      AUROC = 0.681 ± 0.108
+  LOPO held-out beingh05_libero_robocasa       n_test=40:  logreg=0.882 rf=0.833 mlp=0.500
+  LOPO held-out beingh05_robocasa              n_test=40:  logreg=0.764 rf=0.889 mlp=0.757
+  LOPO held-out cosmos                         n_test=20:  logreg=0.694 rf=0.694 mlp=1.000
+  LOPO held-out pi0_robocasa                   — single-class test set
+  LOPO held-out scripted-noisy                 — single-class test set
+
+=== feature_set=combined: X.shape=(160, 64), pca=64 ===
+  pooled logreg   AUROC = 0.937 ± 0.054
+  pooled rf       AUROC = 0.927 ± 0.070
+  pooled mlp      AUROC = 0.661 ± 0.075
+  LOPO held-out beingh05_libero_robocasa       n_test=40:  logreg=0.951 rf=0.778 mlp=0.514
+  LOPO held-out beingh05_robocasa              n_test=40:  logreg=0.812 rf=0.903 mlp=0.479
+  LOPO held-out cosmos                         n_test=20:  logreg=0.806 rf=0.889 mlp=0.833
+  LOPO held-out pi0_robocasa                   — single-class test set
+  LOPO held-out scripted-noisy                 — single-class test set
+
+Wrote /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/classifier/summary.json
+[orchestrate] STEP D done.
+
+===================================================
+[orchestrate] STEP E: paper assets
+===================================================
+Wrote /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/paper_assets/table_classifier.tex
+Wrote /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/paper_assets/table5_3vla.tex
+Wrote /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/paper_assets/appendix_classifier.md
+Wrote /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/paper_assets/FINAL_REPORT.md
+[orchestrate] STEP E done.
+
+[orchestrate] ALL POST-SCORE STEPS COMPLETE.
+  Table 5: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/table5/table5_3vla.{csv,md}
+  Classifier: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/classifier/summary.json
+  Paper assets: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/paper_assets/

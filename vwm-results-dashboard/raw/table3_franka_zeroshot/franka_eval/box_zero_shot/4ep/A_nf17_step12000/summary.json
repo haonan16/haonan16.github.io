@@ -1,0 +1,152 @@
+{
+  "overall": {
+    "dir_acc": 0.5,
+    "d_sep_mean_px": 0.29752756701782346,
+    "n_episodes": 4,
+    "n_trials": 16,
+    "n_correct": 8,
+    "n_testable_trials": 14,
+    "dir_acc_trial_bootstrap_ci95": [
+      0.25,
+      0.75
+    ],
+    "d_sep_episode_bootstrap_ci95": [
+      0.08880222868174314,
+      0.6420241785235703
+    ],
+    "signed_proj_mean_px": 0.05205535888671875,
+    "signed_proj_trial_bootstrap_ci95": [
+      -0.14493307386125828,
+      0.2780468532017299
+    ],
+    "perp_proj_mean_px": 0.07073647635323661,
+    "cosine_align_mean": 0.0645252376079231,
+    "cosine_align_trial_bootstrap_ci95": [
+      -0.33138414570047364,
+      0.4722690298333973
+    ],
+    "signed_separation_mean_px": 0.1041107177734375,
+    "signed_separation_trial_bootstrap_ci95": [
+      0.02419259207589286,
+      0.19487337384905126
+    ],
+    "d_sep_correct_only_mean_px": 0.031478773802518845,
+    "d_sep_correct_only_episode_bootstrap_ci95": [
+      0.031478773802518845,
+      0.031478773802518845
+    ],
+    "n_axes_correct_only": 1
+  },
+  "per_axis": {
+    "x": {
+      "dir_acc": 0.5,
+      "d_sep_mean_px": 0.41563406959176064,
+      "signed_proj_mean_px": 0.02036285400390625,
+      "cosine_align_mean": 0.2105887448695306,
+      "signed_separation_mean_px": 0.0407257080078125,
+      "n_trials": 8,
+      "n_correct": 4,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.125,
+        0.875
+      ],
+      "d_sep_episode_bootstrap_ci95": [
+        0.0352172926068306,
+        0.9696891317144036
+      ]
+    },
+    "y": {
+      "dir_acc": 0.5,
+      "d_sep_mean_px": 0.17942106444388628,
+      "signed_proj_mean_px": 0.07582473754882812,
+      "cosine_align_mean": -0.04502239283828252,
+      "signed_separation_mean_px": 0.15164947509765625,
+      "n_trials": 8,
+      "n_correct": 4,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.125,
+        0.875
+      ],
+      "d_sep_episode_bootstrap_ci95": [
+        0.06375447567552328,
+        0.28898821771144867
+      ]
+    }
+  },
+  "per_direction": {
+    "+x": {
+      "dir_acc": 0.25,
+      "n_trials": 4,
+      "n_correct": 1,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.0,
+        0.75
+      ]
+    },
+    "-x": {
+      "dir_acc": 0.75,
+      "n_trials": 4,
+      "n_correct": 3,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.25,
+        1.0
+      ]
+    },
+    "+y": {
+      "dir_acc": 0.75,
+      "n_trials": 4,
+      "n_correct": 3,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.25,
+        1.0
+      ]
+    },
+    "-y": {
+      "dir_acc": 0.25,
+      "n_trials": 4,
+      "n_correct": 1,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.0,
+        0.75
+      ]
+    }
+  },
+  "per_episode": {
+    "data__episode_20260515_223329": {
+      "dir_acc": 0.75,
+      "d_sep_px": 0.05676577799022198,
+      "signed_proj_mean_px": 0.0054168701171875,
+      "perp_proj_mean_px": 0.0323638916015625,
+      "cosine_align_mean": 0.23307944161301747,
+      "signed_separation_mean_px": 0.010833740234375,
+      "d_sep_correct_only_mean_px": 0.031478773802518845
+    },
+    "data__episode_20260515_233731": {
+      "dir_acc": 0.25,
+      "d_sep_px": 0.809831902384758,
+      "signed_proj_mean_px": 0.1695404052734375,
+      "perp_proj_mean_px": 0.13531494140625,
+      "cosine_align_mean": 0.004991450980681267,
+      "signed_separation_mean_px": 0.1695404052734375,
+      "d_sep_correct_only_mean_px": 0.0
+    },
+    "data__episode_20260516_145620": {
+      "dir_acc": 0.5,
+      "d_sep_px": 0.1386010069400072,
+      "signed_proj_mean_px": 0.06713485717773438,
+      "perp_proj_mean_px": 0.013469696044921875,
+      "cosine_align_mean": -0.03312945778014925,
+      "signed_separation_mean_px": 0.13426971435546875,
+      "d_sep_correct_only_mean_px": 0.0
+    },
+    "data__episode_20260516_155653": {
+      "dir_acc": 0.5,
+      "d_sep_px": 0.18491158075630665,
+      "signed_proj_mean_px": 0.024871826171875,
+      "perp_proj_mean_px": 0.13408660888671875,
+      "cosine_align_mean": 0.023392622304521993,
+      "signed_separation_mean_px": 0.04974365234375,
+      "d_sep_correct_only_mean_px": 0.0
+    }
+  }
+}

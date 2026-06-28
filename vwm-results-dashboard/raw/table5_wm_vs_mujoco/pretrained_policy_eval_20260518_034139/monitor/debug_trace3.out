@@ -1,0 +1,92 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/n/sw/helmod-rocky8/apps/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ set -u -o pipefail
++ ROOT=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model
++ OUT_ROOT=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139
++ ROBOCASA_PY=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/venvs/robocasa/bin/python
++ WORKER_PY=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/bin/python
++ EI_PY=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/bin/python
++ CKPT_WM=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt
++ CAMS=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pathB_cam_params
++ LOG=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/logs/orchestrator.log
++ RUN_MANIFEST=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/run_manifest.tsv
++ N_SEEDS=30
++ MAX_STEPS=300
++ CHUNK=8
++ SAMPLE_STEPS=20
++ MAX_SIM_STEPS=40
+++ date +%s
++ START_TS=1779090699
++ DEADLINE_TS=1779133899
++ mkdir -p /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/logs /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/slurm /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/rollouts /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/pathB_rollouts /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/issues
++ main
++ touch /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/logs/orchestrator.log
++ touch /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/run_manifest.tsv
++ log '12h ACT policy-eval orchestrator start out_root=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139'
++ tee -a /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/logs/orchestrator.log
+++ date '+%Y-%m-%d %H:%M:%S'
++ echo '[2026-05-18 03:51:41] 12h ACT policy-eval orchestrator start out_root=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139'
+[2026-05-18 03:51:41] 12h ACT policy-eval orchestrator start out_root=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139
++ log 'draft/table guard: this script writes only under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139'
++ tee -a /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/logs/orchestrator.log
+++ date '+%Y-%m-%d %H:%M:%S'
++ echo '[2026-05-18 03:51:41] draft/table guard: this script writes only under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139'
+[2026-05-18 03:51:41] draft/table guard: this script writes only under /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139
++ rollout_jobs=()
++ local rollout_jobs
++ local jid
++ grep -q '	ROLLOUT	[0-9]' /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/run_manifest.tsv
++ mapfile -t rollout_jobs
+++ awk -F '\t' '$2 == "ROLLOUT" && $3 ~ /^[0-9]+$/ {print $3}' /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/run_manifest.tsv
+++ sort -u
++ log 'resuming existing rollout jobs: 13627957 13627958 13627959 13627960'
++ tee -a /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/logs/orchestrator.log
+++ date '+%Y-%m-%d %H:%M:%S'
++ echo '[2026-05-18 03:51:42] resuming existing rollout jobs: 13627957 13627958 13627959 13627960'
+[2026-05-18 03:51:42] resuming existing rollout jobs: 13627957 13627958 13627959 13627960
++ wait_for_jobs_until_deadline rollouts 13627957 13627958 13627959 13627960
++ local label=rollouts
++ shift
++ jobs=("$@")
++ local jobs
++ true
++ local active=0
++ for jid in "${jobs[@]}"
++ job_is_active 13627957
++ local jobid=13627957
++ grep -q 13627957
++ squeue -j 13627957 -h
++ active=1
++ for jid in "${jobs[@]}"
++ job_is_active 13627958
++ local jobid=13627958
++ grep -q 13627958
++ squeue -j 13627958 -h
++ active=2
++ for jid in "${jobs[@]}"
++ job_is_active 13627959
++ local jobid=13627959
++ grep -q 13627959
++ squeue -j 13627959 -h
++ active=3
++ for jid in "${jobs[@]}"
++ job_is_active 13627960
++ local jobid=13627960
++ grep -q 13627960
++ squeue -j 13627960 -h
++ active=4
++ log 'rollouts active_jobs=4 jobs=13627957 13627958 13627959 13627960'
++ tee -a /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/logs/orchestrator.log
+++ date '+%Y-%m-%d %H:%M:%S'
++ echo '[2026-05-18 03:51:43] rollouts active_jobs=4 jobs=13627957 13627958 13627959 13627960'
+[2026-05-18 03:51:43] rollouts active_jobs=4 jobs=13627957 13627958 13627959 13627960
++ [[ 4 -eq 0 ]]
+++ date +%s
++ [[ 1779090703 -ge 1779133899 ]]
++ sleep 60

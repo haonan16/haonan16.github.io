@@ -1,0 +1,12 @@
+start=Tue May 19 10:10:02 EDT 2026
+model=Being-H05-2B_libero_robocasa
+model_path=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/checkpoints/beingh/Being-H05-2B_libero_robocasa
+policy=beingh05_libero_robocasa
+num_trials=20
+tasks=OpenCabinet OpenDrawer PickPlaceCounterToCabinet TurnOnMicrowave
+rollout_root=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/pathB_rollouts
+wm_root=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/beingh05_libero_robocasa/wm_scores
+GPU 0: NVIDIA H100 80GB HBM3 (UUID: GPU-c8252d7b-f149-cd47-f8be-66b3445e0d85)
+server_pid=4082654
+server_ready=Tue May 19 10:14:15 EDT 2026
+sim_eval_done=Tue May 19 11:42:14 EDT 2026

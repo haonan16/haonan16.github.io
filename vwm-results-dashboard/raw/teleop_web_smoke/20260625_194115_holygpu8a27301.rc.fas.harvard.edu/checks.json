@@ -1,0 +1,143 @@
+{
+  "ready": {
+    "status": 200,
+    "payload": {
+      "step": 0,
+      "ee": [
+        0.4617857336997986,
+        0.004412942565977573,
+        0.2018601894378662
+      ],
+      "ckpt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt",
+      "speculation": {
+        "anchor_id": 0,
+        "alive": true,
+        "idle": false,
+        "ready_count": 0,
+        "candidate_count": 7,
+        "ready_actions": [],
+        "last_error": "",
+        "last_error_anchor_id": null
+      }
+    },
+    "elapsed_ms": 42.63484803959727
+  },
+  "requests": [
+    {
+      "name": "frame",
+      "method": "GET",
+      "path": "/frame",
+      "status": 200,
+      "bytes": 429480,
+      "elapsed_ms": 1534.5647559734061,
+      "artifact": "frame.png"
+    },
+    {
+      "name": "step",
+      "method": "POST",
+      "path": "/step",
+      "status": 200,
+      "bytes": 376,
+      "elapsed_ms": 11213.429394993,
+      "artifact": "step.json",
+      "json": {
+        "step": 1,
+        "action": "+x",
+        "latency_s": 0.22532082500401884,
+        "cache_hit": true,
+        "ee": [
+          0.4817857336997986,
+          0.004412942565977573,
+          0.2018601894378662
+        ],
+        "timing_ms": {
+          "total": 225.32082500401884,
+          "parse_action": 0.03292399924248457,
+          "spec_lookup": 0.0073640840128064156,
+          "session_step": 0.0,
+          "commit": 0.21649501286447048,
+          "spec_kickoff": 0.0237500062212348,
+          "media": 225.0368760433048,
+          "mp4_encode": 0.0
+        }
+      }
+    },
+    {
+      "name": "status_after_step",
+      "method": "GET",
+      "path": "/status",
+      "status": 200,
+      "bytes": 362,
+      "elapsed_ms": 1.1604760074988008,
+      "artifact": "status_after_step.json",
+      "json": {
+        "step": 1,
+        "ee": [
+          0.4817857336997986,
+          0.004412942565977573,
+          0.2018601894378662
+        ],
+        "ckpt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt",
+        "speculation": {
+          "anchor_id": 1,
+          "alive": true,
+          "idle": false,
+          "ready_count": 0,
+          "candidate_count": 7,
+          "ready_actions": [],
+          "last_error": "",
+          "last_error_anchor_id": null
+        }
+      }
+    },
+    {
+      "name": "clip",
+      "method": "GET",
+      "path": "/clip",
+      "status": 200,
+      "bytes": 57188,
+      "elapsed_ms": 832.4195010354742,
+      "artifact": "clip.mp4"
+    },
+    {
+      "name": "rollout",
+      "method": "GET",
+      "path": "/rollout",
+      "status": 200,
+      "bytes": 57188,
+      "elapsed_ms": 470.0217000208795,
+      "artifact": "rollout.mp4"
+    }
+  ],
+  "speculation_ready": {
+    "status": 200,
+    "payload": {
+      "step": 1,
+      "ee": [
+        0.4817857336997986,
+        0.004412942565977573,
+        0.2018601894378662
+      ],
+      "ckpt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt",
+      "speculation": {
+        "anchor_id": 1,
+        "alive": true,
+        "idle": true,
+        "ready_count": 7,
+        "candidate_count": 7,
+        "ready_actions": [
+          "+x",
+          "-x",
+          "+y",
+          "-y",
+          "+z",
+          "-z",
+          "nop"
+        ],
+        "last_error": "",
+        "last_error_anchor_id": null
+      }
+    },
+    "elapsed_ms": 0.8698420133441687
+  }
+}

@@ -1,0 +1,15 @@
+[23:06:02] === Chain runner start ===
+[23:06:02] Waiting for orphan AdaLN PID=1078922 to exit...
+[23:06:02] PID=1087625  out_parent=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute
+[23:06:02] sample_steps=20  horizon=20
+[23:09:56] === Chain runner start ===
+[23:09:56] Waiting for orphan AdaLN PID=1078922 to exit...
+[23:09:57] PID=1094499  out_parent=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute
+[23:09:57] sample_steps=40  horizon=20
+[23:16:02] === Chain runner start ===
+[23:16:02] Waiting for orphan AdaLN PID=1078922 to exit...
+[23:16:02] PID=1108850  out_parent=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute
+[23:16:02] sample_steps=40  horizon=20
+[02:54:03] Orphan PID 1078922 exited at Fri May 22 02:54:03 EDT 2026
+[02:54:03]   SKIP baseline_raw_action_cross_attention_step26000 (already has 49 mp4s)
+[02:54:03]   START ours_A25750_robot_only

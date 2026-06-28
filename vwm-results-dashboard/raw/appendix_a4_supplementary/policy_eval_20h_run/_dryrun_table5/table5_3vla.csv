@@ -1,0 +1,4 @@
+policy,n,n_success,success_rate,wm_path_mean,sim_path_mean,rho_wm_vs_sim_motion,p_wm_vs_sim,ci_lo_sim,ci_hi_sim,rho_wm_vs_success,p_wm_vs_success,ci_lo_succ,ci_hi_succ
+beingh05_libero_robocasa,66,7,0.106,5.9744,2.0943,0.759,1.23e-20,0.631,0.841,-0.341,0.00368,-0.191,0.260
+beingh05_robocasa,65,7,0.108,6.3139,2.0528,0.839,1.5e-34,0.743,0.891,-0.121,0.333,-0.245,0.226
+cosmos,198,149,0.753,0.9445,1.6352,0.127,0.074,-0.051,0.291,-0.169,0.0164,-0.129,0.155

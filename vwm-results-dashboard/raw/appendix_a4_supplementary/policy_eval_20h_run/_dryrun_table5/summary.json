@@ -1,0 +1,230 @@
+{
+  "n_total_rows": 329,
+  "n_finite_rows": 329,
+  "policies": [
+    "beingh05_libero_robocasa",
+    "beingh05_robocasa",
+    "cosmos"
+  ],
+  "tasks": [
+    "OpenCabinet",
+    "OpenDrawer",
+    "PickPlaceCounterToCabinet",
+    "TurnOnMicrowave"
+  ],
+  "per_policy": {
+    "beingh05_libero_robocasa": {
+      "n": 66,
+      "n_success": 7,
+      "success_rate": 0.10606060606060606,
+      "wm_path_mean": 5.974449251637314,
+      "wm_path_median": 6.00693416595459,
+      "wm_path_std": 2.2171426750564973,
+      "sim_path_mean": 2.094286932638197,
+      "sim_path_median": 1.6003009676933289,
+      "n_with_sim_path": 66,
+      "within_policy_rho_vs_success": -0.34127961590648165,
+      "within_policy_p_success": 0.0036769294190706183,
+      "within_policy_rho_ci95_success": [
+        -0.19129527189228684,
+        0.2596868802838952
+      ],
+      "within_policy_rho_vs_sim_motion": 0.7586055735309467,
+      "within_policy_p_sim_motion": 1.2256226147986149e-20,
+      "within_policy_rho_ci95_sim_motion": [
+        0.631098006471141,
+        0.8409581463312806
+      ]
+    },
+    "beingh05_robocasa": {
+      "n": 65,
+      "n_success": 7,
+      "success_rate": 0.1076923076923077,
+      "wm_path_mean": 6.313884658079881,
+      "wm_path_median": 6.771663665771484,
+      "wm_path_std": 2.0884995163164506,
+      "sim_path_mean": 2.052785640037977,
+      "sim_path_median": 1.580797553062439,
+      "n_with_sim_path": 65,
+      "within_policy_rho_vs_success": -0.12106643356643357,
+      "within_policy_p_success": 0.3330165778991373,
+      "within_policy_rho_ci95_success": [
+        -0.24456293706293708,
+        0.2257036713286713
+      ],
+      "within_policy_rho_vs_sim_motion": 0.8394230769230768,
+      "within_policy_p_sim_motion": 1.4962524843576726e-34,
+      "within_policy_rho_ci95_sim_motion": [
+        0.7433358828671328,
+        0.8913614510489509
+      ]
+    },
+    "cosmos": {
+      "n": 198,
+      "n_success": 149,
+      "success_rate": 0.7525252525252525,
+      "wm_path_mean": 0.9445082445939382,
+      "wm_path_median": 0.7459834814071655,
+      "wm_path_std": 0.5336530396348713,
+      "sim_path_mean": 1.6351711018518968,
+      "sim_path_median": 1.4148040413856506,
+      "n_with_sim_path": 198,
+      "within_policy_rho_vs_success": -0.1690308178332054,
+      "within_policy_p_success": 0.016351243210661615,
+      "within_policy_rho_ci95_success": [
+        -0.1293591863331424,
+        0.1546012248598785
+      ],
+      "within_policy_rho_vs_sim_motion": 0.12658508663916415,
+      "within_policy_p_sim_motion": 0.07400818430311658,
+      "within_policy_rho_ci95_sim_motion": [
+        -0.050674654614404124,
+        0.29050857270508823
+      ]
+    }
+  },
+  "per_task_policy": {
+    "OpenCabinet": {
+      "beingh05_libero_robocasa": {
+        "n": 20,
+        "n_success": 0,
+        "wm_path_mean": 4.496554136276245,
+        "within_rho": -0.13984962406015036,
+        "within_p": 0.5490259265541445
+      },
+      "beingh05_robocasa": {
+        "n": 20,
+        "n_success": 1,
+        "wm_path_mean": 4.144247996807098,
+        "within_rho": 0.13684210526315788,
+        "within_p": 0.5578182194164251
+      },
+      "cosmos": {
+        "n": 48,
+        "n_success": 32,
+        "wm_path_mean": 1.3336799784253042,
+        "within_rho": -0.7013677811550151,
+        "within_p": 2.4967861823611275e-11
+      }
+    },
+    "OpenDrawer": {
+      "beingh05_libero_robocasa": {
+        "n": 20,
+        "n_success": 2,
+        "wm_path_mean": 7.08674681186676,
+        "within_rho": -0.31127819548872177,
+        "within_p": 0.16462528399437076
+      },
+      "beingh05_robocasa": {
+        "n": 20,
+        "n_success": 2,
+        "wm_path_mean": 7.6755917310714725,
+        "within_rho": -0.2421052631578947,
+        "within_p": 0.28975428162662886
+      },
+      "cosmos": {
+        "n": 50,
+        "n_success": 47,
+        "wm_path_mean": 1.2536115968227386,
+        "within_rho": -0.07063625450180072,
+        "within_p": 0.6237038713114005
+      }
+    },
+    "PickPlaceCounterToCabinet": {
+      "beingh05_libero_robocasa": {
+        "n": 20,
+        "n_success": 5,
+        "wm_path_mean": 6.778938364982605,
+        "within_rho": 0.018045112781954885,
+        "within_p": 0.9389645135939828
+      },
+      "beingh05_robocasa": {
+        "n": 20,
+        "n_success": 4,
+        "wm_path_mean": 7.234841847419739,
+        "within_rho": 0.193984962406015,
+        "within_p": 0.40150036186313826
+      },
+      "cosmos": {
+        "n": 50,
+        "n_success": 32,
+        "wm_path_mean": 0.7522882723808288,
+        "within_rho": 0.0041776710684273705,
+        "within_p": 0.9769092479818962
+      }
+    },
+    "TurnOnMicrowave": {
+      "beingh05_libero_robocasa": {
+        "n": 6,
+        "n_success": 0,
+        "wm_path_mean": 4.51147739092509,
+        "within_rho": -0.08571428571428573,
+        "within_p": 0.863388943688625
+      },
+      "beingh05_robocasa": {
+        "n": 5,
+        "n_success": 0,
+        "wm_path_mean": 5.861774253845215,
+        "within_rho": 0.49999999999999994,
+        "within_p": 0.3173105078629142
+      },
+      "cosmos": {
+        "n": 50,
+        "n_success": 38,
+        "wm_path_mean": 0.4540200001001358,
+        "within_rho": -0.08427370948379351,
+        "within_p": 0.5579092374691351
+      }
+    }
+  },
+  "pooled_rho_vs_success": {
+    "rho": -0.4624552665808505,
+    "p": 4.030756809781192e-21,
+    "ci95": [
+      -0.5379243103808491,
+      -0.36251755639275113
+    ],
+    "n": 329
+  },
+  "pooled_rho_vs_sim_motion": {
+    "rho": 0.24294610423307883,
+    "p": 5.928705549011019e-06,
+    "ci95": [
+      0.12038961881398312,
+      0.3543158651156835
+    ],
+    "n": 329
+  },
+  "vla_only_rho_vs_success": {
+    "rho": -0.4624552665808505,
+    "p": 4.030756809781192e-21,
+    "ci95": [
+      -0.5379243103808491,
+      -0.36251755639275113
+    ],
+    "n": 329
+  },
+  "cross_policy_ordering": {
+    "rho": -0.5,
+    "p": 0.5637028616507731,
+    "ci95": [
+      -0.5,
+      1.0
+    ],
+    "policies": [
+      "beingh05_libero_robocasa",
+      "beingh05_robocasa",
+      "cosmos"
+    ],
+    "wm_path_means": [
+      5.974449251637314,
+      6.313884658079881,
+      0.9445082445939382
+    ],
+    "success_rates": [
+      0.10606060606060606,
+      0.1076923076923077,
+      0.7525252525252525
+    ]
+  }
+}

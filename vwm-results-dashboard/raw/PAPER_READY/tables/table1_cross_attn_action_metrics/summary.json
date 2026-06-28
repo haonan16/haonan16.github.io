@@ -1,0 +1,93 @@
+{
+  "overall": {
+    "dir_acc": 0.0,
+    "d_sep_mean_px": 0.0,
+    "n_episodes": 18,
+    "n_trials": 72,
+    "n_correct": 0,
+    "dir_acc_trial_bootstrap_ci95": [
+      0.0,
+      0.0
+    ],
+    "d_sep_episode_bootstrap_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "per_axis": {
+    "x": {
+      "dir_acc": 0.0,
+      "d_sep_mean_px": 0.0,
+      "n_trials": 36,
+      "n_correct": 0,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "d_sep_episode_bootstrap_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "y": {
+      "dir_acc": 0.0,
+      "d_sep_mean_px": 0.0,
+      "n_trials": 36,
+      "n_correct": 0,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "d_sep_episode_bootstrap_ci95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "per_episode": {
+    "RPL": {
+      "dir_acc": 0.0,
+      "d_sep_px": 0.0
+    },
+    "IRIS": {
+      "dir_acc": 0.0,
+      "d_sep_px": 0.0
+    },
+    "CLVR": {
+      "dir_acc": 0.0,
+      "d_sep_px": 0.0
+    },
+    "RAIL": {
+      "dir_acc": 0.0,
+      "d_sep_px": 0.0
+    },
+    "AUTOLab": {
+      "dir_acc": 0.0,
+      "d_sep_px": 0.0
+    },
+    "GuptaLab": {
+      "dir_acc": 0.0,
+      "d_sep_px": 0.0
+    },
+    "ILIAD": {
+      "dir_acc": 0.0,
+      "d_sep_px": 0.0
+    },
+    "RAD": {
+      "dir_acc": 0.0,
+      "d_sep_px": 0.0
+    },
+    "REAL": {
+      "dir_acc": 0.0,
+      "d_sep_px": 0.0
+    },
+    "TRI": {
+      "dir_acc": 0.0,
+      "d_sep_px": 0.0
+    },
+    "WEIRD": {
+      "dir_acc": 0.0,
+      "d_sep_px": 0.0
+    }
+  }
+}

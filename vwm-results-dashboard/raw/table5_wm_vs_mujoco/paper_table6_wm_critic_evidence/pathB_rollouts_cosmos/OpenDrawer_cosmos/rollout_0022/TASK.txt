@@ -1,0 +1,4 @@
+task_description: open_the_left_drawer
+success: True
+num_steps: 200
+source_hdf5: 2026_05_14-23_07_14--episode_data--task=open_the_left_drawer--ep=22--success=True.hdf5

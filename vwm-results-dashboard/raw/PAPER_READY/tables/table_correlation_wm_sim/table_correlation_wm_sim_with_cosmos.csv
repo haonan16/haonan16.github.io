@@ -1,0 +1,7 @@
+subset,n_rollouts,spearman_rho,spearman_p,ci_low,ci_high
+task:OpenCabinet,108,0.642840,6.351774e-14,0.492342,0.764608
+task:OpenDrawer,54,0.492662,1.540715e-04,0.190660,0.727615
+task:PickPlaceCounterToCabinet,110,0.455249,5.825048e-07,0.260270,0.630208
+task:TurnOnMicrowave,110,0.553267,3.652758e-10,0.363790,0.709811
+grand_pool_with_cosmos_all4,382,0.627457,3.332932e-43,0.553206,0.697044
+cosmos_only,187,0.171910,1.864183e-02,0.006172,0.323860

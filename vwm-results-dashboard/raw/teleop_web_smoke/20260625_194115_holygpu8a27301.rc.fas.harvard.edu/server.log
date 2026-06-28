@@ -1,0 +1,32 @@
+2026-06-25 19:41:26,266 INFO Loading model from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt...
+2026-06-25 19:43:23,014 INFO Building WanT2VActionProj model...
+2026-06-25 19:43:24,133 INFO Loading action_proj MoT backbone from T2V pretrained.
+2026-06-25 19:43:59,146 INFO Loading checkpoint from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt
+2026-06-25 19:44:07,152 INFO Checkpoint loaded. missing=0 unexpected=2
+2026-06-25 19:44:07,425 INFO Detected render params for epoch=0-step=25750.ckpt: version=v2 sigma=16.0 line_thickness=12 arrow_thickness=24 arrow_min_length=24.0
+2026-06-25 19:44:10,584 INFO Session bootstrapped. T_lat=2 use_real_history=True inference_precision=bf16 initial_ee=[0.4617857336997986, 0.004412942565977573, 0.2018601894378662]
+2026-06-25 19:44:10,584 INFO Speculation runner started. Anchor 0 speculation kicked off in background; first keypress should be instant once it completes (~0.3s at sample_steps=1, mp4_mode=lazy).
+2026-06-25 19:44:10,587 INFO Starting server on http://127.0.0.1:51123
+2026-06-25 19:44:10,587 INFO From your laptop: ssh -L 51123:$(hostname):51123 <cluster> then open http://localhost:51123
+INFO:     Started server process [3069892]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:51123 (Press CTRL+C to quit)
+INFO:     127.0.0.1:36072 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36078 - "GET /frame HTTP/1.1" 200 OK
+2026-06-25 19:44:24,387 INFO step 1: +x (cache hit, 0.23s) timing_ms={'total': 225.32082500401884, 'parse_action': 0.03292399924248457, 'spec_lookup': 0.0073640840128064156, 'session_step': 0.0, 'commit': 0.21649501286447048, 'spec_kickoff': 0.0237500062212348, 'media': 225.0368760433048, 'mp4_encode': 0.0} ee=[0.4817857336997986, 0.004412942565977573, 0.2018601894378662]
+INFO:     127.0.0.1:36082 - "POST /step HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58232 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58236 - "GET /clip HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58248 - "GET /rollout HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58258 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49446 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49448 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49462 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49466 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49482 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45332 - "GET /status HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3069892]

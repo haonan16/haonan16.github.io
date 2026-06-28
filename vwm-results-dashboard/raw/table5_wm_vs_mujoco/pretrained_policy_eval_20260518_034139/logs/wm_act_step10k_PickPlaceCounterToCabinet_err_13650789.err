@@ -1,0 +1,71 @@
+2026-05-19 02:26:55,383 INFO Detected n_frames=13 from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/.hydra/config.yaml
+2026-05-19 02:26:55,383 INFO Loading checkpoint /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt with n_frames=13
+2026-05-19 02:27:15,426 INFO Detected proprio_head.* keys in /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt — enabling proprio_head and wiring source_ckpt_path so configure_model strict-loads the head.
+2026-05-19 02:27:32,342 INFO Building WanT2VActionProj model...
+2026-05-19 02:27:33,239 INFO Loading action_proj MoT backbone from T2V pretrained.
+2026-05-19 02:28:07,347 INFO Loaded proprio_head weights from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt (8 keys)
+2026-05-19 02:28:10,700 INFO Loading checkpoint from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt
+2026-05-19 02:28:15,818 INFO Checkpoint loaded. missing=0 unexpected=10
+2026-05-19 02:28:16,251 INFO Detected render params for epoch=0-step=15000.ckpt: version=v2 sigma=16.0 line_thickness=12 arrow_thickness=24 arrow_min_length=24.0
+2026-05-19 02:28:16,251 INFO Render kwargs: {'render_version': 'v2', 'render_sigma': 16.0, 'render_line_thickness': 12, 'render_arrow_thickness': 24, 'render_arrow_min_length': 24.0}
+2026-05-19 02:28:16,277 INFO [1/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=0 steps=300
+2026-05-19 02:31:42,288 INFO   scores: frame_progress=0.0991 proprio_path=0.3668 action_iou=0.0000  inf_secs=204.2  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0000.mp4
+2026-05-19 02:31:42,288 INFO [2/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=1 steps=300
+2026-05-19 02:35:07,094 INFO   scores: frame_progress=0.0692 proprio_path=0.4041 action_iou=0.0000  inf_secs=203.2  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0001.mp4
+2026-05-19 02:35:07,095 INFO [3/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=2 steps=300
+2026-05-19 02:38:31,996 INFO   scores: frame_progress=0.0859 proprio_path=0.2871 action_iou=0.0000  inf_secs=203.3  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0002.mp4
+2026-05-19 02:38:31,997 INFO [4/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=3 steps=300
+2026-05-19 02:41:56,934 INFO   scores: frame_progress=0.0854 proprio_path=0.3157 action_iou=0.0000  inf_secs=203.4  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0003.mp4
+2026-05-19 02:41:56,934 INFO [5/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=4 steps=300
+2026-05-19 02:45:21,887 INFO   scores: frame_progress=0.0839 proprio_path=0.7556 action_iou=0.0000  inf_secs=203.4  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0004.mp4
+2026-05-19 02:45:21,888 INFO [6/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=5 steps=300
+2026-05-19 02:48:47,262 INFO   scores: frame_progress=0.0819 proprio_path=0.9408 action_iou=0.0000  inf_secs=203.8  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0005.mp4
+2026-05-19 02:48:47,262 INFO [7/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=6 steps=300
+2026-05-19 02:52:12,456 INFO   scores: frame_progress=0.0727 proprio_path=0.5140 action_iou=0.0000  inf_secs=203.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0006.mp4
+2026-05-19 02:52:12,457 INFO [8/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=7 steps=300
+2026-05-19 02:55:37,591 INFO   scores: frame_progress=0.1006 proprio_path=0.2439 action_iou=0.0000  inf_secs=203.5  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0007.mp4
+2026-05-19 02:55:37,592 INFO [9/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=8 steps=300
+2026-05-19 02:59:02,695 INFO   scores: frame_progress=0.0986 proprio_path=0.2424 action_iou=0.0000  inf_secs=203.5  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0008.mp4
+2026-05-19 02:59:02,695 INFO [10/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=9 steps=300
+2026-05-19 03:02:27,796 INFO   scores: frame_progress=0.1042 proprio_path=0.5713 action_iou=0.0000  inf_secs=203.4  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0009.mp4
+2026-05-19 03:02:27,796 INFO [11/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=10 steps=300
+2026-05-19 03:05:52,889 INFO   scores: frame_progress=0.1013 proprio_path=0.2714 action_iou=0.0000  inf_secs=203.4  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0010.mp4
+2026-05-19 03:05:52,890 INFO [12/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=11 steps=300
+2026-05-19 03:09:18,007 INFO   scores: frame_progress=0.1012 proprio_path=0.6601 action_iou=0.0000  inf_secs=203.5  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0011.mp4
+2026-05-19 03:09:18,007 INFO [13/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=12 steps=300
+2026-05-19 03:12:43,313 INFO   scores: frame_progress=0.1039 proprio_path=1.1357 action_iou=0.0000  inf_secs=203.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0012.mp4
+2026-05-19 03:12:43,313 INFO [14/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=13 steps=300
+2026-05-19 03:16:08,357 INFO   scores: frame_progress=0.1045 proprio_path=0.4584 action_iou=0.0000  inf_secs=203.4  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0013.mp4
+2026-05-19 03:16:08,358 INFO [15/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=14 steps=300
+2026-05-19 03:19:33,651 INFO   scores: frame_progress=0.0989 proprio_path=0.4235 action_iou=0.0000  inf_secs=203.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0014.mp4
+2026-05-19 03:19:33,652 INFO [16/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=15 steps=300
+2026-05-19 03:22:59,008 INFO   scores: frame_progress=0.1043 proprio_path=0.2701 action_iou=0.0000  inf_secs=203.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0015.mp4
+2026-05-19 03:22:59,009 INFO [17/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=16 steps=300
+2026-05-19 03:26:24,160 INFO   scores: frame_progress=0.1013 proprio_path=0.2809 action_iou=0.0000  inf_secs=203.5  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0016.mp4
+2026-05-19 03:26:24,161 INFO [18/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=17 steps=300
+2026-05-19 03:29:49,534 INFO   scores: frame_progress=0.1057 proprio_path=0.3135 action_iou=0.0000  inf_secs=203.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0017.mp4
+2026-05-19 03:29:49,535 INFO [19/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=18 steps=300
+2026-05-19 03:33:14,969 INFO   scores: frame_progress=0.1052 proprio_path=0.3354 action_iou=0.0000  inf_secs=203.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0018.mp4
+2026-05-19 03:33:14,970 INFO [20/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=19 steps=300
+2026-05-19 03:36:40,309 INFO   scores: frame_progress=0.1014 proprio_path=0.3111 action_iou=0.0000  inf_secs=203.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0019.mp4
+2026-05-19 03:36:40,310 INFO [21/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=20 steps=300
+2026-05-19 03:40:05,666 INFO   scores: frame_progress=0.1007 proprio_path=0.3907 action_iou=0.0000  inf_secs=203.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0020.mp4
+2026-05-19 03:40:05,667 INFO [22/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=21 steps=300
+2026-05-19 03:43:31,056 INFO   scores: frame_progress=0.1066 proprio_path=0.2615 action_iou=0.0000  inf_secs=203.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0021.mp4
+2026-05-19 03:43:31,057 INFO [23/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=22 steps=300
+2026-05-19 03:46:56,178 INFO   scores: frame_progress=0.1061 proprio_path=1.0054 action_iou=0.0000  inf_secs=203.3  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0022.mp4
+2026-05-19 03:46:56,179 INFO [24/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=23 steps=300
+2026-05-19 03:50:21,072 INFO   scores: frame_progress=0.1086 proprio_path=0.3363 action_iou=0.0000  inf_secs=203.1  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0023.mp4
+2026-05-19 03:50:21,073 INFO [25/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=24 steps=300
+2026-05-19 03:53:46,489 INFO   scores: frame_progress=0.1034 proprio_path=0.5625 action_iou=0.0000  inf_secs=203.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0024.mp4
+2026-05-19 03:53:46,490 INFO [26/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=25 steps=300
+2026-05-19 03:57:11,534 INFO   scores: frame_progress=0.0995 proprio_path=0.3481 action_iou=0.0000  inf_secs=203.2  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0025.mp4
+2026-05-19 03:57:11,534 INFO [27/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=26 steps=300
+2026-05-19 04:00:36,725 INFO   scores: frame_progress=0.1007 proprio_path=0.6781 action_iou=0.0000  inf_secs=203.4  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0026.mp4
+2026-05-19 04:00:36,725 INFO [28/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=27 steps=300
+2026-05-19 04:04:02,325 INFO   scores: frame_progress=0.1011 proprio_path=0.2471 action_iou=0.0000  inf_secs=203.8  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0027.mp4
+2026-05-19 04:04:02,326 INFO [29/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=28 steps=300
+2026-05-19 04:07:27,717 INFO   scores: frame_progress=0.1079 proprio_path=0.8903 action_iou=0.0000  inf_secs=203.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0028.mp4
+2026-05-19 04:07:27,718 INFO [30/30] env=PickPlaceCounterToCabinet policy=act_step10k seed=29 steps=300
+2026-05-19 04:10:52,831 INFO   scores: frame_progress=0.0989 proprio_path=0.2521 action_iou=0.0000  inf_secs=203.3  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/wm_videos/rollout_0029.mp4
+2026-05-19 04:10:52,833 INFO Wrote /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/PickPlaceCounterToCabinet_act_step10k/world_model_scores.jsonl

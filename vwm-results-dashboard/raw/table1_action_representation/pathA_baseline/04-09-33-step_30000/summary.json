@@ -1,0 +1,98 @@
+{
+  "overall": {
+    "n_items": 8,
+    "lpips_mean": 0.019101976722595282,
+    "psnr_mean": 31.57327225816386,
+    "ssim_mean": 0.9633944053202868,
+    "copy_last_lpips_mean": 0.012215774069773033,
+    "vae_oracle_lpips_mean": 0.006375796685460955
+  },
+  "per_item": [
+    {
+      "idx": 0,
+      "task": "idx0",
+      "prompt": "Turn on the sink faucet.",
+      "lpips": 0.026835467433556914,
+      "psnr": 28.34732691121892,
+      "ssim": 0.9460850954055786,
+      "copy_last_lpips": 0.033920768648386,
+      "vae_oracle_lpips": 0.007459302665665746
+    },
+    {
+      "idx": 1,
+      "task": "idx1",
+      "prompt": "Turn on the sink faucet.",
+      "lpips": 0.011959955329075456,
+      "psnr": 34.796562302460295,
+      "ssim": 0.9784599542617798,
+      "copy_last_lpips": 0.0022530178539454937,
+      "vae_oracle_lpips": 0.005252335453405976
+    },
+    {
+      "idx": 2,
+      "task": "idx2",
+      "prompt": "Turn on the sink faucet.",
+      "lpips": 0.037319366820156574,
+      "psnr": 24.63381995880684,
+      "ssim": 0.9353673458099365,
+      "copy_last_lpips": 0.03882026579231024,
+      "vae_oracle_lpips": 0.006328529794700444
+    },
+    {
+      "idx": 3,
+      "task": "idx3",
+      "prompt": "Turn on the sink faucet.",
+      "lpips": 0.018832137808203697,
+      "psnr": 33.63000072703825,
+      "ssim": 0.9571034014225006,
+      "copy_last_lpips": 0.0020980859990231693,
+      "vae_oracle_lpips": 0.010851577389985323
+    },
+    {
+      "idx": 4,
+      "task": "idx4",
+      "prompt": "Turn on the sink faucet.",
+      "lpips": 0.015346325002610683,
+      "psnr": 31.044148164442543,
+      "ssim": 0.9754580855369568,
+      "copy_last_lpips": 0.004321156244259328,
+      "vae_oracle_lpips": 0.0048792039742693305
+    },
+    {
+      "idx": 5,
+      "task": "idx5",
+      "prompt": "Turn on the sink faucet.",
+      "lpips": 0.011328687774948776,
+      "psnr": 34.09427430212607,
+      "ssim": 0.9793078899383545,
+      "copy_last_lpips": 0.004019794607302174,
+      "vae_oracle_lpips": 0.0037932019913569093
+    },
+    {
+      "idx": 6,
+      "task": "idx6",
+      "prompt": "Turn on the sink faucet.",
+      "lpips": 0.010735973250120878,
+      "psnr": 35.21388928488127,
+      "ssim": 0.9775942862033844,
+      "copy_last_lpips": 0.003472167329164222,
+      "vae_oracle_lpips": 0.004501309711486101
+    },
+    {
+      "idx": 7,
+      "task": "idx7",
+      "prompt": "Turn on the sink faucet.",
+      "lpips": 0.020457900362089276,
+      "psnr": 30.826156414336722,
+      "ssim": 0.9577791839838028,
+      "copy_last_lpips": 0.00882093608379364,
+      "vae_oracle_lpips": 0.00794091250281781
+    }
+  ],
+  "eval_config": {
+    "ckpt_path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-05-01/04-09-33/checkpoints/step_30000.ckpt",
+    "n_frames": 17,
+    "sample_steps": 40,
+    "has_trained_proprio_head": false
+  }
+}

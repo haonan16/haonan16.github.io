@@ -1,0 +1,91 @@
+2026-05-21 17:17:03,562 INFO Detected n_frames=13 from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/.hydra/config.yaml
+2026-05-21 17:17:03,563 INFO Loading checkpoint /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt with n_frames=13
+2026-05-21 17:17:09,872 INFO Detected proprio_head.* keys in /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt — enabling proprio_head and wiring source_ckpt_path so configure_model strict-loads the head.
+2026-05-21 17:17:18,160 INFO Building WanT2VActionProj model...
+2026-05-21 17:17:18,899 INFO Loading action_proj MoT backbone from T2V pretrained.
+2026-05-21 17:17:46,853 INFO Loaded proprio_head weights from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt (8 keys)
+2026-05-21 17:17:49,595 INFO Loading checkpoint from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt
+2026-05-21 17:17:55,910 INFO Checkpoint loaded. missing=0 unexpected=10
+2026-05-21 17:17:56,269 INFO Detected render params for epoch=0-step=15000.ckpt: version=v2 sigma=16.0 line_thickness=12 arrow_thickness=24 arrow_min_length=24.0
+2026-05-21 17:17:56,270 INFO Render kwargs: {'render_version': 'v2', 'render_sigma': 16.0, 'render_line_thickness': 12, 'render_arrow_thickness': 24, 'render_arrow_min_length': 24.0}
+2026-05-21 17:17:56,318 INFO [1/40] env=OpenCabinet policy=pi0_robocasa seed=1000 steps=720
+2026-05-21 17:34:41,985 INFO   scores: frame_progress=0.5797 proprio_path=2.9994 action_iou=0.0000  inf_secs=996.5  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenCabinet_pi0_robocasa__rollout_0000_seed_1000.mp4
+2026-05-21 17:34:41,985 INFO [2/40] env=OpenCabinet policy=pi0_robocasa seed=1001 steps=720
+2026-05-21 17:51:19,445 INFO   scores: frame_progress=0.6563 proprio_path=4.5544 action_iou=0.0000  inf_secs=984.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenCabinet_pi0_robocasa__rollout_0001_seed_1001.mp4
+2026-05-21 17:51:19,445 INFO [3/40] env=OpenCabinet policy=pi0_robocasa seed=1002 steps=720
+2026-05-21 18:08:21,400 INFO   scores: frame_progress=0.6815 proprio_path=3.8532 action_iou=0.0000  inf_secs=1005.5  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenCabinet_pi0_robocasa__rollout_0002_seed_1002.mp4
+2026-05-21 18:08:21,401 INFO [4/40] env=OpenCabinet policy=pi0_robocasa seed=1003 steps=720
+2026-05-21 18:25:22,332 INFO   scores: frame_progress=0.6736 proprio_path=7.6402 action_iou=0.0000  inf_secs=1000.9  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenCabinet_pi0_robocasa__rollout_0003_seed_1003.mp4
+2026-05-21 18:25:22,332 INFO [5/40] env=OpenCabinet policy=pi0_robocasa seed=1004 steps=720
+2026-05-21 18:42:30,545 INFO   scores: frame_progress=0.6963 proprio_path=5.2156 action_iou=0.0000  inf_secs=1004.2  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenCabinet_pi0_robocasa__rollout_0004_seed_1004.mp4
+2026-05-21 18:42:30,546 INFO [6/40] env=OpenCabinet policy=pi0_robocasa seed=1005 steps=720
+2026-05-21 18:59:33,797 INFO   scores: frame_progress=0.6431 proprio_path=4.4051 action_iou=0.0000  inf_secs=995.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenCabinet_pi0_robocasa__rollout_0005_seed_1005.mp4
+2026-05-21 18:59:33,797 INFO [7/40] env=OpenCabinet policy=pi0_robocasa seed=1006 steps=720
+2026-05-21 19:16:50,315 INFO   scores: frame_progress=0.6703 proprio_path=2.5744 action_iou=0.0000  inf_secs=1004.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenCabinet_pi0_robocasa__rollout_0006_seed_1006.mp4
+2026-05-21 19:16:50,315 INFO [8/40] env=OpenCabinet policy=pi0_robocasa seed=1007 steps=720
+2026-05-21 19:34:12,651 INFO   scores: frame_progress=0.6882 proprio_path=3.1925 action_iou=0.0000  inf_secs=1006.0  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenCabinet_pi0_robocasa__rollout_0007_seed_1007.mp4
+2026-05-21 19:34:12,651 INFO [9/40] env=OpenCabinet policy=pi0_robocasa seed=1008 steps=720
+2026-05-21 19:51:38,558 INFO   scores: frame_progress=0.6373 proprio_path=6.4257 action_iou=0.0000  inf_secs=1005.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenCabinet_pi0_robocasa__rollout_0008_seed_1008.mp4
+2026-05-21 19:51:38,558 INFO [10/40] env=OpenCabinet policy=pi0_robocasa seed=1009 steps=720
+2026-05-21 20:09:08,293 INFO   scores: frame_progress=0.6963 proprio_path=4.1392 action_iou=0.0000  inf_secs=1005.2  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenCabinet_pi0_robocasa__rollout_0009_seed_1009.mp4
+2026-05-21 20:09:08,293 INFO [11/40] env=OpenDrawer policy=pi0_robocasa seed=1000 steps=720
+2026-05-21 20:26:19,360 INFO   scores: frame_progress=0.7611 proprio_path=8.2403 action_iou=0.0000  inf_secs=982.3  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenDrawer_pi0_robocasa__rollout_0000_seed_1000.mp4
+2026-05-21 20:26:19,360 INFO [12/40] env=OpenDrawer policy=pi0_robocasa seed=1001 steps=720
+2026-05-21 20:43:57,147 INFO   scores: frame_progress=0.7444 proprio_path=10.2019 action_iou=0.0000  inf_secs=1004.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenDrawer_pi0_robocasa__rollout_0001_seed_1001.mp4
+2026-05-21 20:43:57,147 INFO [13/40] env=OpenDrawer policy=pi0_robocasa seed=1002 steps=720
+2026-05-21 21:01:38,901 INFO   scores: frame_progress=0.7796 proprio_path=5.8089 action_iou=0.0000  inf_secs=1004.4  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenDrawer_pi0_robocasa__rollout_0002_seed_1002.mp4
+2026-05-21 21:01:38,901 INFO [14/40] env=OpenDrawer policy=pi0_robocasa seed=1003 steps=720
+2026-05-21 21:19:05,587 INFO   scores: frame_progress=0.7622 proprio_path=5.6920 action_iou=0.0000  inf_secs=985.8  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenDrawer_pi0_robocasa__rollout_0003_seed_1003.mp4
+2026-05-21 21:19:05,587 INFO [15/40] env=OpenDrawer policy=pi0_robocasa seed=1004 steps=720
+2026-05-21 21:36:54,657 INFO   scores: frame_progress=0.7924 proprio_path=4.8019 action_iou=0.0000  inf_secs=1003.3  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenDrawer_pi0_robocasa__rollout_0004_seed_1004.mp4
+2026-05-21 21:36:54,657 INFO [16/40] env=OpenDrawer policy=pi0_robocasa seed=1005 steps=720
+2026-05-21 21:55:08,048 INFO   scores: frame_progress=0.8045 proprio_path=6.0700 action_iou=0.0000  inf_secs=1023.8  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenDrawer_pi0_robocasa__rollout_0005_seed_1005.mp4
+2026-05-21 21:55:08,048 INFO [17/40] env=OpenDrawer policy=pi0_robocasa seed=1006 steps=720
+2026-05-21 22:13:25,675 INFO   scores: frame_progress=0.6791 proprio_path=8.0488 action_iou=0.0000  inf_secs=1023.4  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenDrawer_pi0_robocasa__rollout_0006_seed_1006.mp4
+2026-05-21 22:13:25,675 INFO [18/40] env=OpenDrawer policy=pi0_robocasa seed=1007 steps=720
+2026-05-21 22:44:33,059 INFO   scores: frame_progress=0.7224 proprio_path=5.3185 action_iou=0.0000  inf_secs=1787.1  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenDrawer_pi0_robocasa__rollout_0007_seed_1007.mp4
+2026-05-21 22:44:33,059 INFO [19/40] env=OpenDrawer policy=pi0_robocasa seed=1008 steps=720
+2026-05-21 23:19:02,761 INFO   scores: frame_progress=0.6623 proprio_path=7.4383 action_iou=0.0000  inf_secs=1985.0  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenDrawer_pi0_robocasa__rollout_0008_seed_1008.mp4
+2026-05-21 23:19:02,762 INFO [20/40] env=OpenDrawer policy=pi0_robocasa seed=1009 steps=720
+2026-05-21 23:57:10,291 INFO   scores: frame_progress=0.8136 proprio_path=5.4217 action_iou=0.0000  inf_secs=2198.2  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/OpenDrawer_pi0_robocasa__rollout_0009_seed_1009.mp4
+2026-05-21 23:57:10,291 INFO [21/40] env=PickPlaceCounterToCabinet policy=pi0_robocasa seed=1000 steps=720
+2026-05-22 00:35:12,784 INFO   scores: frame_progress=0.6566 proprio_path=7.9845 action_iou=0.0000  inf_secs=2189.1  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/PickPlaceCounterToCabinet_pi0_robocasa__rollout_0000_seed_1000.mp4
+2026-05-22 00:35:12,785 INFO [22/40] env=PickPlaceCounterToCabinet policy=pi0_robocasa seed=1001 steps=720
+2026-05-22 01:13:29,555 INFO   scores: frame_progress=0.6788 proprio_path=7.3852 action_iou=0.0000  inf_secs=2199.4  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/PickPlaceCounterToCabinet_pi0_robocasa__rollout_0001_seed_1001.mp4
+2026-05-22 01:13:29,555 INFO [23/40] env=PickPlaceCounterToCabinet policy=pi0_robocasa seed=1002 steps=720
+2026-05-22 01:51:44,584 INFO   scores: frame_progress=0.7280 proprio_path=5.1228 action_iou=0.0000  inf_secs=2193.1  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/PickPlaceCounterToCabinet_pi0_robocasa__rollout_0002_seed_1002.mp4
+2026-05-22 01:51:44,585 INFO [24/40] env=PickPlaceCounterToCabinet policy=pi0_robocasa seed=1003 steps=720
+2026-05-22 02:30:11,899 INFO   scores: frame_progress=0.6300 proprio_path=7.9261 action_iou=0.0000  inf_secs=2199.9  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/PickPlaceCounterToCabinet_pi0_robocasa__rollout_0003_seed_1003.mp4
+2026-05-22 02:30:11,899 INFO [25/40] env=PickPlaceCounterToCabinet policy=pi0_robocasa seed=1004 steps=720
+2026-05-22 03:05:15,617 INFO   scores: frame_progress=0.6843 proprio_path=4.6288 action_iou=0.0000  inf_secs=1987.9  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/PickPlaceCounterToCabinet_pi0_robocasa__rollout_0004_seed_1004.mp4
+2026-05-22 03:05:15,617 INFO [26/40] env=PickPlaceCounterToCabinet policy=pi0_robocasa seed=1005 steps=720
+2026-05-22 03:39:16,593 INFO   scores: frame_progress=0.6427 proprio_path=6.2332 action_iou=0.0000  inf_secs=1924.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/PickPlaceCounterToCabinet_pi0_robocasa__rollout_0005_seed_1005.mp4
+2026-05-22 03:39:16,593 INFO [27/40] env=PickPlaceCounterToCabinet policy=pi0_robocasa seed=1006 steps=720
+2026-05-22 03:58:02,342 INFO   scores: frame_progress=0.6682 proprio_path=4.9336 action_iou=0.0000  inf_secs=1004.9  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/PickPlaceCounterToCabinet_pi0_robocasa__rollout_0006_seed_1006.mp4
+2026-05-22 03:58:02,342 INFO [28/40] env=PickPlaceCounterToCabinet policy=pi0_robocasa seed=1007 steps=720
+2026-05-22 04:16:53,474 INFO   scores: frame_progress=0.6747 proprio_path=6.6056 action_iou=0.0000  inf_secs=1006.1  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/PickPlaceCounterToCabinet_pi0_robocasa__rollout_0007_seed_1007.mp4
+2026-05-22 04:16:53,475 INFO [29/40] env=PickPlaceCounterToCabinet policy=pi0_robocasa seed=1008 steps=720
+2026-05-22 04:36:49,283 INFO   scores: frame_progress=0.5545 proprio_path=6.0677 action_iou=0.0000  inf_secs=1065.4  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/PickPlaceCounterToCabinet_pi0_robocasa__rollout_0008_seed_1008.mp4
+2026-05-22 04:36:49,284 INFO [30/40] env=PickPlaceCounterToCabinet policy=pi0_robocasa seed=1009 steps=720
+2026-05-22 04:55:50,136 INFO   scores: frame_progress=0.7171 proprio_path=7.1741 action_iou=0.0000  inf_secs=1006.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/PickPlaceCounterToCabinet_pi0_robocasa__rollout_0009_seed_1009.mp4
+2026-05-22 04:55:50,137 INFO [31/40] env=TurnOnMicrowave policy=pi0_robocasa seed=1000 steps=720
+2026-05-22 05:14:54,529 INFO   scores: frame_progress=0.5941 proprio_path=7.4802 action_iou=0.0000  inf_secs=1005.2  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/TurnOnMicrowave_pi0_robocasa__rollout_0000_seed_1000.mp4
+2026-05-22 05:14:54,529 INFO [32/40] env=TurnOnMicrowave policy=pi0_robocasa seed=1001 steps=720
+2026-05-22 05:33:49,404 INFO   scores: frame_progress=0.6451 proprio_path=6.7622 action_iou=0.0000  inf_secs=991.1  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/TurnOnMicrowave_pi0_robocasa__rollout_0001_seed_1001.mp4
+2026-05-22 05:33:49,404 INFO [33/40] env=TurnOnMicrowave policy=pi0_robocasa seed=1002 steps=720
+2026-05-22 05:53:02,895 INFO   scores: frame_progress=0.6636 proprio_path=6.1418 action_iou=0.0000  inf_secs=1005.5  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/TurnOnMicrowave_pi0_robocasa__rollout_0002_seed_1002.mp4
+2026-05-22 05:53:02,895 INFO [34/40] env=TurnOnMicrowave policy=pi0_robocasa seed=1003 steps=720
+2026-05-22 06:12:13,760 INFO   scores: frame_progress=0.5640 proprio_path=6.6150 action_iou=0.0000  inf_secs=996.9  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/TurnOnMicrowave_pi0_robocasa__rollout_0003_seed_1003.mp4
+2026-05-22 06:12:13,760 INFO [35/40] env=TurnOnMicrowave policy=pi0_robocasa seed=1004 steps=720
+2026-05-22 06:31:36,913 INFO   scores: frame_progress=0.6328 proprio_path=3.8268 action_iou=0.0000  inf_secs=1005.8  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/TurnOnMicrowave_pi0_robocasa__rollout_0004_seed_1004.mp4
+2026-05-22 06:31:36,913 INFO [36/40] env=TurnOnMicrowave policy=pi0_robocasa seed=1005 steps=720
+2026-05-22 06:50:49,256 INFO   scores: frame_progress=0.6710 proprio_path=5.7170 action_iou=0.0000  inf_secs=990.9  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/TurnOnMicrowave_pi0_robocasa__rollout_0005_seed_1005.mp4
+2026-05-22 06:50:49,256 INFO [37/40] env=TurnOnMicrowave policy=pi0_robocasa seed=1006 steps=720
+2026-05-22 07:10:18,024 INFO   scores: frame_progress=0.5927 proprio_path=7.3061 action_iou=0.0000  inf_secs=1001.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/TurnOnMicrowave_pi0_robocasa__rollout_0006_seed_1006.mp4
+2026-05-22 07:10:18,024 INFO [38/40] env=TurnOnMicrowave policy=pi0_robocasa seed=1007 steps=720
+2026-05-22 07:29:55,152 INFO   scores: frame_progress=0.5601 proprio_path=4.2687 action_iou=0.0000  inf_secs=1005.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/TurnOnMicrowave_pi0_robocasa__rollout_0007_seed_1007.mp4
+2026-05-22 07:29:55,153 INFO [39/40] env=TurnOnMicrowave policy=pi0_robocasa seed=1008 steps=720
+2026-05-22 07:49:24,914 INFO   scores: frame_progress=0.5995 proprio_path=5.1083 action_iou=0.0004  inf_secs=993.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/TurnOnMicrowave_pi0_robocasa__rollout_0008_seed_1008.mp4
+2026-05-22 07:49:24,915 INFO [40/40] env=TurnOnMicrowave policy=pi0_robocasa seed=1009 steps=720
+2026-05-22 08:09:13,093 INFO   scores: frame_progress=0.7047 proprio_path=7.3896 action_iou=0.0000  inf_secs=1006.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/wm_videos/TurnOnMicrowave_pi0_robocasa__rollout_0009_seed_1009.mp4
+2026-05-22 08:09:13,097 INFO Wrote /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/policy_eval_20h_run/tracks/A_pi0/scores/world_model_scores.jsonl

@@ -1,0 +1,21 @@
+{
+  "n_episodes": 1,
+  "success_rate": 0.0,
+  "config": {
+    "num_trial": 2,
+    "pred_horizon": 16,
+    "action_horizon": 8,
+    "obs_horizon": 2,
+    "wm_n_frames": 17,
+    "wm_sample_steps": 20,
+    "max_env_steps": 4,
+    "success_overlap": 0.95,
+    "workspace_size": 512.0,
+    "sigma_dst": 4.0,
+    "line_thickness_dst": 3.0,
+    "scorer": "t_iou",
+    "seed": 0
+  },
+  "wm_ckpt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-06-22/14-02-49/checkpoints/step_26125.ckpt",
+  "policy_ckpt": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/gpc_ckpts/lerobot_diffusion_pusht"
+}

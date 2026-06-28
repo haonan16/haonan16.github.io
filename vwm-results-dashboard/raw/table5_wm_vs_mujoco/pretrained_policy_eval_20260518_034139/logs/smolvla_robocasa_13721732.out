@@ -1,0 +1,4 @@
+SmolVLA probe failed rc=1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'huggingface_hub'

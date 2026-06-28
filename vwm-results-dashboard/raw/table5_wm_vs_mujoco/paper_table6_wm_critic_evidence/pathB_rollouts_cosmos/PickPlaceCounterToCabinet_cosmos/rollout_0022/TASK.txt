@@ -1,0 +1,4 @@
+task_description: pick_the_bell_pepper_from_the_count
+success: True
+num_steps: 263
+source_hdf5: 2026_05_15-00_35_08--episode_data--task=pick_the_bell_pepper_from_the_count--ep=22--success=True.hdf5

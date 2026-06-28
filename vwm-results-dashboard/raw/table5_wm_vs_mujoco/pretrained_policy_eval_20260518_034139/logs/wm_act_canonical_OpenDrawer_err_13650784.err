@@ -1,0 +1,71 @@
+2026-05-19 01:39:12,616 INFO Detected n_frames=13 from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/.hydra/config.yaml
+2026-05-19 01:39:12,617 INFO Loading checkpoint /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt with n_frames=13
+2026-05-19 01:40:53,042 INFO Detected proprio_head.* keys in /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt — enabling proprio_head and wiring source_ckpt_path so configure_model strict-loads the head.
+2026-05-19 01:41:32,397 INFO Building WanT2VActionProj model...
+2026-05-19 01:41:33,713 INFO Loading action_proj MoT backbone from T2V pretrained.
+2026-05-19 01:42:00,190 INFO Loaded proprio_head weights from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt (8 keys)
+2026-05-19 01:42:02,421 INFO Loading checkpoint from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/13-12-42/checkpoints/step_15000.ckpt
+2026-05-19 01:42:05,471 INFO Checkpoint loaded. missing=0 unexpected=10
+2026-05-19 01:42:05,518 INFO Detected render params for epoch=0-step=15000.ckpt: version=v2 sigma=16.0 line_thickness=12 arrow_thickness=24 arrow_min_length=24.0
+2026-05-19 01:42:05,518 INFO Render kwargs: {'render_version': 'v2', 'render_sigma': 16.0, 'render_line_thickness': 12, 'render_arrow_thickness': 24, 'render_arrow_min_length': 24.0}
+2026-05-19 01:42:05,540 INFO [1/30] env=OpenDrawer policy=act_canonical seed=0 steps=300
+2026-05-19 01:45:44,160 INFO   scores: frame_progress=0.0733 proprio_path=0.3975 action_iou=0.0000  inf_secs=213.8  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0000.mp4
+2026-05-19 01:45:44,161 INFO [2/30] env=OpenDrawer policy=act_canonical seed=1 steps=300
+2026-05-19 01:49:08,909 INFO   scores: frame_progress=0.0908 proprio_path=0.3299 action_iou=0.0000  inf_secs=202.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0001.mp4
+2026-05-19 01:49:08,944 INFO [3/30] env=OpenDrawer policy=act_canonical seed=2 steps=300
+2026-05-19 01:52:34,236 INFO   scores: frame_progress=0.0964 proprio_path=0.3683 action_iou=0.0000  inf_secs=203.2  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0002.mp4
+2026-05-19 01:52:34,236 INFO [4/30] env=OpenDrawer policy=act_canonical seed=3 steps=300
+2026-05-19 01:55:58,070 INFO   scores: frame_progress=0.0887 proprio_path=0.4496 action_iou=0.0000  inf_secs=202.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0003.mp4
+2026-05-19 01:55:58,071 INFO [5/30] env=OpenDrawer policy=act_canonical seed=4 steps=300
+2026-05-19 01:59:21,790 INFO   scores: frame_progress=0.0918 proprio_path=0.2935 action_iou=0.0000  inf_secs=202.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0004.mp4
+2026-05-19 01:59:21,791 INFO [6/30] env=OpenDrawer policy=act_canonical seed=5 steps=300
+2026-05-19 02:02:45,620 INFO   scores: frame_progress=0.0899 proprio_path=0.4245 action_iou=0.0000  inf_secs=202.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0005.mp4
+2026-05-19 02:02:45,620 INFO [7/30] env=OpenDrawer policy=act_canonical seed=6 steps=300
+2026-05-19 02:06:10,379 INFO   scores: frame_progress=0.0925 proprio_path=0.6009 action_iou=0.0000  inf_secs=202.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0006.mp4
+2026-05-19 02:06:10,419 INFO [8/30] env=OpenDrawer policy=act_canonical seed=7 steps=300
+2026-05-19 02:09:35,722 INFO   scores: frame_progress=0.1158 proprio_path=0.5039 action_iou=0.0000  inf_secs=203.1  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0007.mp4
+2026-05-19 02:09:35,722 INFO [9/30] env=OpenDrawer policy=act_canonical seed=8 steps=300
+2026-05-19 02:12:59,902 INFO   scores: frame_progress=0.0890 proprio_path=0.2882 action_iou=0.0000  inf_secs=203.0  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0008.mp4
+2026-05-19 02:12:59,903 INFO [10/30] env=OpenDrawer policy=act_canonical seed=9 steps=300
+2026-05-19 02:16:23,874 INFO   scores: frame_progress=0.0938 proprio_path=0.4481 action_iou=0.0000  inf_secs=202.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0009.mp4
+2026-05-19 02:16:23,875 INFO [11/30] env=OpenDrawer policy=act_canonical seed=10 steps=300
+2026-05-19 02:19:48,031 INFO   scores: frame_progress=0.1113 proprio_path=0.3349 action_iou=0.0000  inf_secs=202.9  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0010.mp4
+2026-05-19 02:19:48,031 INFO [12/30] env=OpenDrawer policy=act_canonical seed=11 steps=300
+2026-05-19 02:23:13,123 INFO   scores: frame_progress=0.0907 proprio_path=0.6566 action_iou=0.0000  inf_secs=202.9  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0011.mp4
+2026-05-19 02:23:13,163 INFO [13/30] env=OpenDrawer policy=act_canonical seed=12 steps=300
+2026-05-19 02:26:38,492 INFO   scores: frame_progress=0.0961 proprio_path=1.1180 action_iou=0.0000  inf_secs=203.1  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0012.mp4
+2026-05-19 02:26:38,493 INFO [14/30] env=OpenDrawer policy=act_canonical seed=13 steps=300
+2026-05-19 02:30:02,534 INFO   scores: frame_progress=0.1025 proprio_path=0.7560 action_iou=0.0000  inf_secs=202.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0013.mp4
+2026-05-19 02:30:02,534 INFO [15/30] env=OpenDrawer policy=act_canonical seed=14 steps=300
+2026-05-19 02:33:26,352 INFO   scores: frame_progress=0.0863 proprio_path=0.4535 action_iou=0.0000  inf_secs=202.5  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0014.mp4
+2026-05-19 02:33:26,353 INFO [16/30] env=OpenDrawer policy=act_canonical seed=15 steps=300
+2026-05-19 02:36:51,222 INFO   scores: frame_progress=0.0954 proprio_path=0.4712 action_iou=0.0000  inf_secs=202.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0015.mp4
+2026-05-19 02:36:51,261 INFO [17/30] env=OpenDrawer policy=act_canonical seed=16 steps=300
+2026-05-19 02:40:16,607 INFO   scores: frame_progress=0.0941 proprio_path=0.3676 action_iou=0.0000  inf_secs=203.1  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0016.mp4
+2026-05-19 02:40:16,608 INFO [18/30] env=OpenDrawer policy=act_canonical seed=17 steps=300
+2026-05-19 02:43:40,621 INFO   scores: frame_progress=0.0977 proprio_path=0.8601 action_iou=0.0000  inf_secs=202.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0017.mp4
+2026-05-19 02:43:40,621 INFO [19/30] env=OpenDrawer policy=act_canonical seed=18 steps=300
+2026-05-19 02:47:04,584 INFO   scores: frame_progress=0.0912 proprio_path=0.3787 action_iou=0.0000  inf_secs=202.6  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0018.mp4
+2026-05-19 02:47:04,585 INFO [20/30] env=OpenDrawer policy=act_canonical seed=19 steps=300
+2026-05-19 02:50:28,808 INFO   scores: frame_progress=0.1015 proprio_path=1.2924 action_iou=0.0000  inf_secs=202.9  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0019.mp4
+2026-05-19 02:50:28,809 INFO [21/30] env=OpenDrawer policy=act_canonical seed=20 steps=300
+2026-05-19 02:53:52,926 INFO   scores: frame_progress=0.1031 proprio_path=0.3315 action_iou=0.0000  inf_secs=202.8  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0020.mp4
+2026-05-19 02:53:52,926 INFO [22/30] env=OpenDrawer policy=act_canonical seed=21 steps=300
+2026-05-19 02:57:17,055 INFO   scores: frame_progress=0.0942 proprio_path=0.3825 action_iou=0.0000  inf_secs=202.8  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0021.mp4
+2026-05-19 02:57:17,055 INFO [23/30] env=OpenDrawer policy=act_canonical seed=22 steps=300
+2026-05-19 03:00:42,087 INFO   scores: frame_progress=0.1084 proprio_path=1.3887 action_iou=0.0000  inf_secs=202.7  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0022.mp4
+2026-05-19 03:00:42,122 INFO [24/30] env=OpenDrawer policy=act_canonical seed=23 steps=300
+2026-05-19 03:04:07,560 INFO   scores: frame_progress=0.0949 proprio_path=0.3359 action_iou=0.0000  inf_secs=203.1  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0023.mp4
+2026-05-19 03:04:07,560 INFO [25/30] env=OpenDrawer policy=act_canonical seed=24 steps=300
+2026-05-19 03:07:31,850 INFO   scores: frame_progress=0.1022 proprio_path=0.6498 action_iou=0.0000  inf_secs=202.9  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0024.mp4
+2026-05-19 03:07:31,850 INFO [26/30] env=OpenDrawer policy=act_canonical seed=25 steps=300
+2026-05-19 03:10:56,190 INFO   scores: frame_progress=0.0954 proprio_path=0.7393 action_iou=0.0000  inf_secs=202.9  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0025.mp4
+2026-05-19 03:10:56,191 INFO [27/30] env=OpenDrawer policy=act_canonical seed=26 steps=300
+2026-05-19 03:14:20,406 INFO   scores: frame_progress=0.0924 proprio_path=1.2424 action_iou=0.0000  inf_secs=202.8  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0026.mp4
+2026-05-19 03:14:20,407 INFO [28/30] env=OpenDrawer policy=act_canonical seed=27 steps=300
+2026-05-19 03:17:45,838 INFO   scores: frame_progress=0.1119 proprio_path=0.3112 action_iou=0.0000  inf_secs=203.0  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0027.mp4
+2026-05-19 03:17:45,873 INFO [29/30] env=OpenDrawer policy=act_canonical seed=28 steps=300
+2026-05-19 03:21:11,583 INFO   scores: frame_progress=0.1026 proprio_path=0.9431 action_iou=0.0000  inf_secs=203.3  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0028.mp4
+2026-05-19 03:21:11,583 INFO [30/30] env=OpenDrawer policy=act_canonical seed=29 steps=300
+2026-05-19 03:24:35,962 INFO   scores: frame_progress=0.1092 proprio_path=0.4513 action_iou=0.0000  inf_secs=203.0  video=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/wm_videos/rollout_0029.mp4
+2026-05-19 03:24:35,963 INFO Wrote /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/pretrained_policy_eval_20260518_034139/wm_scores/OpenDrawer_act_canonical/world_model_scores.jsonl

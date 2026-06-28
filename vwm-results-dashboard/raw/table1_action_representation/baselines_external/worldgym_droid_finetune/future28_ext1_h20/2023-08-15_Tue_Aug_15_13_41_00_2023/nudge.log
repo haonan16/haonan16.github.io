@@ -1,0 +1,45 @@
+[load] instantiating WorldModel(default_cfg=3.0, use_pixel_rope=False)
+[run_eval] WorldGym model loaded in 10.0s (device=cuda:0)
+[setup] camera: 20540549.mp4  (view=ext1)
+[setup] episode T=100 from Tue_Aug_15_13_41_00_2023
+[setup] actions: deltas shape=(100, 7), worldgym shape=(100, 10), wv range=(-0.523, 0.684), gripper range=(-1.0, 1.0)
+[setup] will generate 19 frames (cap = max_frames-1 = 19)
+[setup] gt frames shape=(20, 256, 256, 3), dtype=uint8
+[nudge] +x: max |delta| on axis x (post-rescale units) = 1.4309
+[nudge:+x] step 5/19: frame mean=105.0, elapsed=2.1s (2.37 fps)
+[nudge:+x] step 10/19: frame mean=109.8, elapsed=4.2s (2.39 fps)
+[nudge:+x] step 15/19: frame mean=110.9, elapsed=6.7s (2.25 fps)
+[nudge:+x] step 19/19: frame mean=113.5, elapsed=9.0s (2.11 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external/worldgym_droid_finetune/future28_ext1_h20/2023-08-15_Tue_Aug_15_13_41_00_2023/+x.mp4 ((20, 256, 256, 3))
+[nudge] -x: max |delta| on axis x (post-rescale units) = 1.4285
+[nudge:-x] step 5/19: frame mean=43.4, elapsed=2.0s (2.52 fps)
+[nudge:-x] step 10/19: frame mean=15.9, elapsed=4.1s (2.46 fps)
+[nudge:-x] step 15/19: frame mean=17.4, elapsed=6.5s (2.30 fps)
+[nudge:-x] step 19/19: frame mean=20.6, elapsed=8.9s (2.14 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external/worldgym_droid_finetune/future28_ext1_h20/2023-08-15_Tue_Aug_15_13_41_00_2023/-x.mp4 ((20, 256, 256, 3))
+[nudge] +y: max |delta| on axis y (post-rescale units) = 1.4514
+[nudge:+y] step 5/19: frame mean=103.4, elapsed=2.0s (2.52 fps)
+[nudge:+y] step 10/19: frame mean=119.1, elapsed=4.1s (2.46 fps)
+[nudge:+y] step 15/19: frame mean=122.3, elapsed=6.5s (2.30 fps)
+[nudge:+y] step 19/19: frame mean=126.5, elapsed=8.9s (2.14 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external/worldgym_droid_finetune/future28_ext1_h20/2023-08-15_Tue_Aug_15_13_41_00_2023/+y.mp4 ((20, 256, 256, 3))
+[nudge] -y: max |delta| on axis y (post-rescale units) = 1.4258
+[nudge:-y] step 5/19: frame mean=88.8, elapsed=2.0s (2.52 fps)
+[nudge:-y] step 10/19: frame mean=68.3, elapsed=4.1s (2.46 fps)
+[nudge:-y] step 15/19: frame mean=43.8, elapsed=6.5s (2.30 fps)
+[nudge:-y] step 19/19: frame mean=37.4, elapsed=8.9s (2.14 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external/worldgym_droid_finetune/future28_ext1_h20/2023-08-15_Tue_Aug_15_13_41_00_2023/-y.mp4 ((20, 256, 256, 3))
+[nudge] +z: max |delta| on axis z (post-rescale units) = 1.7114
+[nudge:+z] step 5/19: frame mean=103.4, elapsed=2.0s (2.53 fps)
+[nudge:+z] step 10/19: frame mean=119.1, elapsed=4.1s (2.47 fps)
+[nudge:+z] step 15/19: frame mean=126.3, elapsed=6.5s (2.30 fps)
+[nudge:+z] step 19/19: frame mean=126.4, elapsed=8.9s (2.14 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external/worldgym_droid_finetune/future28_ext1_h20/2023-08-15_Tue_Aug_15_13_41_00_2023/+z.mp4 ((20, 256, 256, 3))
+[nudge] -z: max |delta| on axis z (post-rescale units) = 1.2245
+[nudge:-z] step 5/19: frame mean=95.6, elapsed=2.0s (2.53 fps)
+[nudge:-z] step 10/19: frame mean=50.4, elapsed=4.1s (2.47 fps)
+[nudge:-z] step 15/19: frame mean=21.4, elapsed=6.5s (2.30 fps)
+[nudge:-z] step 19/19: frame mean=9.8, elapsed=8.9s (2.14 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external/worldgym_droid_finetune/future28_ext1_h20/2023-08-15_Tue_Aug_15_13_41_00_2023/-z.mp4 ((20, 256, 256, 3))
+[nudge] wrote seed_uv.json = {'u': 128.0, 'v': 128.0, 'method': 'image_center_placeholder'}
+[run_eval] OK in 64.7s; meta keys=['mode', 'episode_id', 'camera_name', 'start_frame', 'n_gen', 'nudge_magnitude_m', 'directions', 'direction_mp4s', 'seed_uv', 'resolution_hw', 'ckpt_path', 'default_cfg', 'use_pixel_rope']

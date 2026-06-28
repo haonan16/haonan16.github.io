@@ -1,0 +1,69 @@
+{
+  "magnitudes_m": [
+    0.01,
+    0.02,
+    0.04
+  ],
+  "per_magnitude": {
+    "0.010000": {
+      "magnitude_m": 0.01,
+      "n_trials": 4,
+      "n_correct": 4,
+      "dir_acc": 1.0,
+      "mean_response_px": 0.5987335352719609,
+      "median_response_px": 0.56790498636928,
+      "mean_projected_action_px": 1.5,
+      "mean_zero_drift_px": 0.5064262489621375,
+      "mean_d_sep_px": 0.8881793916225433
+    },
+    "0.020000": {
+      "magnitude_m": 0.02,
+      "n_trials": 4,
+      "n_correct": 4,
+      "dir_acc": 1.0,
+      "mean_response_px": 6.85773289158367,
+      "median_response_px": 6.656067742787915,
+      "mean_projected_action_px": 3.08113883008419,
+      "mean_zero_drift_px": 0.5064262489621375,
+      "mean_d_sep_px": 13.69948959350586
+    },
+    "0.040000": {
+      "magnitude_m": 0.04,
+      "n_trials": 4,
+      "n_correct": 4,
+      "dir_acc": 1.0,
+      "mean_response_px": 16.99610404156946,
+      "median_response_px": 19.11945949448522,
+      "mean_projected_action_px": 6.082762530298219,
+      "mean_zero_drift_px": 0.5064262489621375,
+      "mean_d_sep_px": 33.88740825653076
+    }
+  },
+  "monotonic_response": true,
+  "monotonic_tolerance_px": 1.0,
+  "n_episodes": 1,
+  "axes": [
+    "x",
+    "y"
+  ],
+  "per_episode": {
+    "0.010000": {
+      "RPL__Mon_Jun__5_18_30_00_2023": {
+        "dir_acc": 1.0,
+        "d_sep_px": 0.8881793916225433
+      }
+    },
+    "0.020000": {
+      "RPL__Mon_Jun__5_18_30_00_2023": {
+        "dir_acc": 1.0,
+        "d_sep_px": 13.69948959350586
+      }
+    },
+    "0.040000": {
+      "RPL__Mon_Jun__5_18_30_00_2023": {
+        "dir_acc": 1.0,
+        "d_sep_px": 33.88740825653076
+      }
+    }
+  }
+}

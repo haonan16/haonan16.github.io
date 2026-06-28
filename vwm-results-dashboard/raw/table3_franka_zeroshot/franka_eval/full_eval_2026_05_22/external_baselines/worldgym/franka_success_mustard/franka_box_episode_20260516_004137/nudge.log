@@ -1,0 +1,45 @@
+[load] instantiating WorldModel(default_cfg=3.0, use_pixel_rope=False)
+[run_eval] WorldGym model loaded in 10.1s (device=cuda:0)
+[setup] camera: 243322070263.mp4  (view=ext1)
+[setup] episode T=326 from episode_20260516_004137
+[setup] actions: deltas shape=(326, 7), worldgym shape=(326, 10), wv range=(-0.811, 0.745), gripper range=(-1.0, -1.0)
+[setup] will generate 19 frames (cap = max_frames-1 = 19)
+[setup] gt frames shape=(20, 256, 256, 3), dtype=uint8
+[nudge] +x: max |delta| on axis x (post-rescale units) = 1.1436
+[nudge:+x] step 5/19: frame mean=101.1, elapsed=2.2s (2.32 fps)
+[nudge:+x] step 10/19: frame mean=116.3, elapsed=4.3s (2.34 fps)
+[nudge:+x] step 15/19: frame mean=103.2, elapsed=6.8s (2.22 fps)
+[nudge:+x] step 19/19: frame mean=104.4, elapsed=9.1s (2.08 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_full_2026-05-22/worldgym/franka_success_mustard/franka_box_episode_20260516_004137/+x.mp4 ((20, 256, 256, 3))
+[nudge] -x: max |delta| on axis x (post-rescale units) = 1.6101
+[nudge:-x] step 5/19: frame mean=83.6, elapsed=2.0s (2.47 fps)
+[nudge:-x] step 10/19: frame mean=121.1, elapsed=4.1s (2.42 fps)
+[nudge:-x] step 15/19: frame mean=128.2, elapsed=6.6s (2.27 fps)
+[nudge:-x] step 19/19: frame mean=128.6, elapsed=9.0s (2.12 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_full_2026-05-22/worldgym/franka_success_mustard/franka_box_episode_20260516_004137/-x.mp4 ((20, 256, 256, 3))
+[nudge] +y: max |delta| on axis y (post-rescale units) = 1.0550
+[nudge:+y] step 5/19: frame mean=106.9, elapsed=2.0s (2.47 fps)
+[nudge:+y] step 10/19: frame mean=122.2, elapsed=4.1s (2.42 fps)
+[nudge:+y] step 15/19: frame mean=123.1, elapsed=6.6s (2.27 fps)
+[nudge:+y] step 19/19: frame mean=128.0, elapsed=9.0s (2.12 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_full_2026-05-22/worldgym/franka_success_mustard/franka_box_episode_20260516_004137/+y.mp4 ((20, 256, 256, 3))
+[nudge] -y: max |delta| on axis y (post-rescale units) = 1.4993
+[nudge:-y] step 5/19: frame mean=87.4, elapsed=2.0s (2.47 fps)
+[nudge:-y] step 10/19: frame mean=118.1, elapsed=4.1s (2.42 fps)
+[nudge:-y] step 15/19: frame mean=107.7, elapsed=6.6s (2.26 fps)
+[nudge:-y] step 19/19: frame mean=90.4, elapsed=9.0s (2.11 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_full_2026-05-22/worldgym/franka_success_mustard/franka_box_episode_20260516_004137/-y.mp4 ((20, 256, 256, 3))
+[nudge] +z: max |delta| on axis z (post-rescale units) = 1.5519
+[nudge:+z] step 5/19: frame mean=115.8, elapsed=2.0s (2.49 fps)
+[nudge:+z] step 10/19: frame mean=118.3, elapsed=4.1s (2.43 fps)
+[nudge:+z] step 15/19: frame mean=115.6, elapsed=6.6s (2.27 fps)
+[nudge:+z] step 19/19: frame mean=118.6, elapsed=9.0s (2.12 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_full_2026-05-22/worldgym/franka_success_mustard/franka_box_episode_20260516_004137/+z.mp4 ((20, 256, 256, 3))
+[nudge] -z: max |delta| on axis z (post-rescale units) = 0.9981
+[nudge:-z] step 5/19: frame mean=94.8, elapsed=2.0s (2.48 fps)
+[nudge:-z] step 10/19: frame mean=106.2, elapsed=4.1s (2.42 fps)
+[nudge:-z] step 15/19: frame mean=85.6, elapsed=6.6s (2.27 fps)
+[nudge:-z] step 19/19: frame mean=99.5, elapsed=9.0s (2.12 fps)
+[nudge] saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/baselines_external_franka_full_2026-05-22/worldgym/franka_success_mustard/franka_box_episode_20260516_004137/-z.mp4 ((20, 256, 256, 3))
+[nudge] wrote seed_uv.json = {'u': 128.0, 'v': 128.0, 'method': 'image_center_placeholder'}
+[run_eval] OK in 65.1s; meta keys=['mode', 'episode_id', 'camera_name', 'start_frame', 'n_gen', 'nudge_magnitude_m', 'directions', 'direction_mp4s', 'seed_uv', 'resolution_hw', 'ckpt_path', 'default_cfg', 'use_pixel_rope']

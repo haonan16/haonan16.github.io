@@ -1,0 +1,4 @@
+task_description: pick_the_squash_from_the_counter_an
+success: True
+num_steps: 213
+source_hdf5: 2026_05_15-00_35_08--episode_data--task=pick_the_squash_from_the_counter_an--ep=32--success=True.hdf5

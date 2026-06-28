@@ -1,0 +1,13 @@
+env,score,spearman_rho,auroc_failure_pred,n_policies,n_rollouts
+OpenCabinet,wm_frame_progress,-0.5,nan,3,60
+OpenCabinet,wm_proprio_path_length,-1.0,nan,3,60
+OpenCabinet,wm_action_iou,1.0,nan,3,60
+OpenDrawer,wm_frame_progress,1.0,nan,3,15
+OpenDrawer,wm_proprio_path_length,-1.0,nan,3,15
+OpenDrawer,wm_action_iou,1.0,nan,3,15
+PickPlaceCounterToCabinet,wm_frame_progress,-1.0,nan,3,60
+PickPlaceCounterToCabinet,wm_proprio_path_length,-1.0,nan,3,60
+PickPlaceCounterToCabinet,wm_action_iou,1.0,nan,3,60
+TurnOnMicrowave,wm_frame_progress,-1.0,nan,3,60
+TurnOnMicrowave,wm_proprio_path_length,-1.0,nan,3,60
+TurnOnMicrowave,wm_action_iou,1.0,nan,3,60

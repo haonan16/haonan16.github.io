@@ -1,0 +1,29 @@
+2026-05-18 03:59:40.868975: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-18 03:59:40.902046: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-05-18 03:59:40.902103: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-05-18 03:59:40.903324: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2026-05-18 03:59:40.908722: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-18 03:59:42.046773: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+petrel_client is not installed. If you read data locally instead of from ceph, ignore it.
+--- Random seed set to 42 for reproducibility ---
+Running policy on device: cuda
+--- 2. Initializing BeingHPolicy ---
+
+=== Loading model from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/checkpoints/beingh/Being-H05-2B_libero_robocasa ===
+Detected LLM version: qwen3
+Using Qwen3ForCausalLM
+Loading state dict...
+Found 1 .safetensors files, loading...
+Weights loaded from .safetensors files.
+MPG enabled: lambda=0.1, projections=32, refinement_iters=1
+RTC disabled
+[Metadata] Loading from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/checkpoints/beingh/Being-H05-2B_libero_robocasa/uni_posttrain_metadata.json
+Warning: Nested metadata detected, Keys: ['libero_spatial', 'libero_object', 'libero_goal', 'libero_10', 'CloseDoubleDoor', 'CloseDrawer', 'CloseSingleDoor', 'CoffeePressButton', 'CoffeeServeMug', 'CoffeeSetupMug', 'OpenDoubleDoor', 'OpenDrawer', 'OpenSingleDoor', 'PnPCabToCounter', 'PnPCounterToCab', 'PnPCounterToMicrowave', 'PnPCounterToSink', 'PnPCounterToStove', 'PnPMicrowaveToCounter', 'PnPSinkToCounter', 'PnPStoveToCounter', 'TurnOffMicrowave', 'TurnOffSinkFaucet', 'TurnOffStove', 'TurnOnMicrowave', 'TurnOnSinkFaucet', 'TurnOnStove', 'TurnSinkSpout']
+Using requested metadata_variant: OpenDrawer
+[Metadata] Embodiment tag: robocasa
+[Metadata] Stats level: unknown, Source: legacy:OpenDrawer
+✓ Metadata loaded for 'uni_posttrain'
+✓ BeingHPolicy initialized successfully
+--- 3. Starting Inference Server on 0.0.0.0:18992 ---
+Server is ready and listening on tcp://0.0.0.0:18992

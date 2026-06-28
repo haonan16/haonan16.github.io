@@ -1,0 +1,751 @@
+{
+  "purpose": "raw-vector dataset replay (60-ep)",
+  "model": "baseline_raw_action_adaln_step10000",
+  "model_type": "raw_vector",
+  "checkpoint": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-29/22-23-34/checkpoints/epoch=0-step=10000.ckpt",
+  "action_injection": "additive",
+  "episodes": [
+    {
+      "name": "data__episode_20260515_223329",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260515_223329",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_223329_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_223329_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_223329_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260515_224959",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260515_224959",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_224959_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_224959_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_224959_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260515_225049",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260515_225049",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_225049_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_225049_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_225049_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260515_225144",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260515_225144",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_225144_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_225144_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_225144_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260515_225340",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260515_225340",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_225340_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_225340_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_225340_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260515_225441",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260515_225441",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_225441_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_225441_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_225441_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_001615",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_mustard_droid_layout/franka_box/episode_20260516_001615",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_001615_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_001615_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_001615_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_001826",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_mustard_droid_layout/franka_box/episode_20260516_001826",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_001826_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_001826_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_001826_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_003717",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_mustard_droid_layout/franka_box/episode_20260516_003717",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_003717_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_003717_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_003717_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_003802",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_mustard_droid_layout/franka_box/episode_20260516_003802",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_003802_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_003802_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_003802_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_004051",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_mustard_droid_layout/franka_box/episode_20260516_004051",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_004051_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_004051_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_004051_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_004137",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_mustard_droid_layout/franka_box/episode_20260516_004137",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_004137_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_004137_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_004137_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_012540",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_rope_droid_layout/franka_box/episode_20260516_012540",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_012540_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_012540_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_012540_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_012650",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_rope_droid_layout/franka_box/episode_20260516_012650",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_012650_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_012650_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_012650_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_012808",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_rope_droid_layout/franka_box/episode_20260516_012808",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_012808_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_012808_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_012808_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_012913",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_rope_droid_layout/franka_box/episode_20260516_012913",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_012913_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_012913_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_012913_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_013130",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_rope_droid_layout/franka_box/episode_20260516_013130",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_013130_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_013130_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_013130_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_013401",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_success_rope_droid_layout/franka_box/episode_20260516_013401",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_013401_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_013401_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_013401_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_182633",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_rice_cooker_droid_layout/franka_box/episode_20260520_182633",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_182633_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_182633_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_182633_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_182724",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_rice_cooker_droid_layout/franka_box/episode_20260520_182724",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_182724_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_182724_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_182724_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_182833",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_rice_cooker_droid_layout/franka_box/episode_20260520_182833",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_182833_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_182833_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_182833_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_182921",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_rice_cooker_droid_layout/franka_box/episode_20260520_182921",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_182921_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_182921_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_182921_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_182958",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_rice_cooker_droid_layout/franka_box/episode_20260520_182958",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_182958_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_182958_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_182958_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_183033",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_rice_cooker_droid_layout/franka_box/episode_20260520_183033",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_183033_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_183033_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_183033_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_163712",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_whiteboard_droid_layout/franka_box/episode_20260520_163712",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_163712_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_163712_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_163712_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_163909",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_whiteboard_droid_layout/franka_box/episode_20260520_163909",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_163909_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_163909_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_163909_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_164248",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_whiteboard_droid_layout/franka_box/episode_20260520_164248",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_164248_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_164248_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_164248_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_164348",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_whiteboard_droid_layout/franka_box/episode_20260520_164348",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_164348_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_164348_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_164348_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_164523",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_whiteboard_droid_layout/franka_box/episode_20260520_164523",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_164523_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_164523_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_164523_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_164646",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_whiteboard_droid_layout/franka_box/episode_20260520_164646",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_164646_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_164646_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_164646_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260515_225303",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_box_droid_layout/franka_box/episode_20260515_225303",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_225303_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_225303_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_225303_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260515_230651",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_box_droid_layout/franka_box/episode_20260515_230651",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_230651_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_230651_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_230651_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260515_231115",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_box_droid_layout/franka_box/episode_20260515_231115",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_231115_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_231115_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_231115_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260515_233525",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_box_droid_layout/franka_box/episode_20260515_233525",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_233525_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_233525_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_233525_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260515_233614",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_box_droid_layout/franka_box/episode_20260515_233614",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_233614_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_233614_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_233614_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260515_233844",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_box_droid_layout/franka_box/episode_20260515_233844",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_233844_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_233844_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260515_233844_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_001505",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_mustard_droid_layout/franka_box/episode_20260516_001505",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_001505_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_001505_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_001505_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_001532",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_mustard_droid_layout/franka_box/episode_20260516_001532",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_001532_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_001532_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_001532_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_004008",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_mustard_droid_layout/franka_box/episode_20260516_004008",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_004008_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_004008_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_004008_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_005641",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_mustard_droid_layout/franka_box/episode_20260516_005641",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_005641_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_005641_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_005641_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_162734",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_mustard_droid_layout/franka_box/episode_20260516_162734",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_162734_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_162734_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_162734_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_163214",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_mustard_droid_layout/franka_box/episode_20260516_163214",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_163214_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_163214_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_163214_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_013028",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rope_droid_layout/franka_box/episode_20260516_013028",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_013028_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_013028_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_013028_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_013259",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rope_droid_layout/franka_box/episode_20260516_013259",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_013259_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_013259_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_013259_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_014306",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rope_droid_layout/franka_box/episode_20260516_014306",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_014306_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_014306_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_014306_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260517_205549",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rope_droid_layout/franka_box/episode_20260517_205549",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260517_205549_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260517_205549_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260517_205549_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260517_210450",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rope_droid_layout/franka_box/episode_20260517_210450",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260517_210450_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260517_210450_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260517_210450_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260517_210544",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rope_droid_layout/franka_box/episode_20260517_210544",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260517_210544_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260517_210544_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260517_210544_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_183514",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rice_cooker_droid_layout/franka_box/episode_20260520_183514",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_183514_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_183514_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_183514_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_183609",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rice_cooker_droid_layout/franka_box/episode_20260520_183609",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_183609_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_183609_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_183609_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_183754",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rice_cooker_droid_layout/franka_box/episode_20260520_183754",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_183754_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_183754_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_183754_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_184157",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rice_cooker_droid_layout/franka_box/episode_20260520_184157",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_184157_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_184157_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_184157_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_185113",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rice_cooker_droid_layout/franka_box/episode_20260520_185113",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_185113_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_185113_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_185113_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_185233",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_rice_cooker_droid_layout/franka_box/episode_20260520_185233",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_185233_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_185233_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_185233_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260516_000915",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_whiteboard_droid_layout/franka_box/episode_20260516_000915",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_000915_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_000915_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260516_000915_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_164039",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_whiteboard_droid_layout/franka_box/episode_20260520_164039",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_164039_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_164039_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_164039_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_170250",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_whiteboard_droid_layout/franka_box/episode_20260520_170250",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_170250_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_170250_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_170250_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_173026",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_whiteboard_droid_layout/franka_box/episode_20260520_173026",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_173026_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_173026_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_173026_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_174132",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_whiteboard_droid_layout/franka_box/episode_20260520_174132",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_174132_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_174132_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_174132_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    },
+    {
+      "name": "data__episode_20260520_174256",
+      "path": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_fail_whiteboard_droid_layout/franka_box/episode_20260520_174256",
+      "view": "ext1",
+      "start_frame": 30,
+      "individual_videos": {
+        "replay": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_174256_replay.mp4",
+        "gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_174256_gt.mp4",
+        "replay_vs_gt": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/franka_dataset_action_rollouts_20260522_114410/baseline_raw_action_adaln_step10000/dataset_replay/ext1/individual_videos/data__episode_20260520_174256_replay_vs_gt.mp4"
+      },
+      "replay_steps_done": 20
+    }
+  ],
+  "direction_order": [
+    "+x",
+    "-x",
+    "-y",
+    "+y",
+    "+z",
+    "-z"
+  ],
+  "horizon_steps": 20,
+  "long_rollout_mode": "exact",
+  "rollout_command_count": 20,
+  "future_frames_per_step": 4,
+  "generated_future_frames": 80,
+  "magnitude_m_per_step": 0.03,
+  "sample_steps": 40,
+  "n_frames": 5,
+  "fps": 8,
+  "labels_burned_in": false,
+  "rgb_export": "model [-1,1] converted with scripts.video_export_utils.video_tensor_to_uint8",
+  "mode": "replay",
+  "do_nudge": false,
+  "do_replay": true
+}

@@ -1,0 +1,92 @@
+2026-06-25 19:27:56,413 INFO Loading model from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt...
+2026-06-25 19:29:41,551 INFO Building WanT2VActionProj model...
+2026-06-25 19:29:42,109 INFO Loading action_proj MoT backbone from T2V pretrained.
+2026-06-25 19:30:06,552 INFO Loading checkpoint from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt
+2026-06-25 19:30:09,745 INFO Checkpoint loaded. missing=0 unexpected=2
+2026-06-25 19:30:09,793 INFO Detected render params for epoch=0-step=25750.ckpt: version=v2 sigma=16.0 line_thickness=12 arrow_thickness=24 arrow_min_length=24.0
+2026-06-25 19:30:10,551 INFO Session bootstrapped. T_lat=2 use_real_history=True inference_precision=bf16 initial_ee=[0.4617857336997986, 0.004412942565977573, 0.2018601894378662]
+2026-06-25 19:30:10,551 INFO Speculation runner started. Anchor 0 speculation kicked off in background; first keypress should be instant once it completes (~0.3s at sample_steps=1, mp4_mode=lazy).
+2026-06-25 19:30:10,551 INFO Starting server on http://127.0.0.1:44773
+2026-06-25 19:30:10,551 INFO From your laptop: ssh -L 44773:$(hostname):44773 <cluster> then open http://localhost:44773
+INFO:     Started server process [3296091]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:44773 (Press CTRL+C to quit)
+INFO:     127.0.0.1:45820 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "GET /frame HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45834 - "POST /step HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/fastapi/applications.py", line 1135, in __call__
+    await super().__call__(scope, receive, send)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/fastapi/routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/fastapi/routing.py", line 105, in app
+    response = await f(request)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/fastapi/routing.py", line 426, in app
+    raw_response = await run_endpoint_function(
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/fastapi/routing.py", line 312, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/teleop/teleop_web_demo.py", line 508, in step
+    result = _state["runtime"].step(req.action)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/teleop/web_runtime.py", line 185, in step
+    result = self.session.step(delta)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/inference_teleop_action_proj.py", line 350, in step
+    return run_streaming_prediction(self, delta)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/inference_teleop_action_proj.py", line 587, in run_streaming_prediction
+    action_proj_lat = encode_action_projection(session, action_proj_tensor)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/inference_teleop_action_proj.py", line 465, in encode_action_projection
+    return session.lm.encode_video(
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/algorithms/wan/wan_t2v_action_proj.py", line 681, in encode_video
+    return self.vae.encode(videos, self.vae_scale)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/algorithms/wan/modules/vae.py", line 612, in encode
+    out_ = self.encoder(
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/algorithms/wan/modules/vae.py", line 373, in forward
+    x = self.conv1(x, feat_cache[idx])
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/algorithms/wan/modules/vae.py", line 38, in forward
+    x = torch.cat([cache_x, x], dim=2)
+RuntimeError: Sizes of tensors must match except in dimension 2. Expected size 7 but got size 1 for tensor number 1 in the list.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3296091]

@@ -1,0 +1,53 @@
+2026-06-25 19:11:21,282 INFO Loading model from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt...
+2026-06-25 19:13:17,387 INFO Building WanT2VActionProj model...
+2026-06-25 19:13:18,318 INFO Loading action_proj MoT backbone from T2V pretrained.
+2026-06-25 19:13:59,649 INFO Loading checkpoint from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt
+2026-06-25 19:14:02,796 INFO Checkpoint loaded. missing=0 unexpected=2
+2026-06-25 19:14:02,844 INFO Detected render params for epoch=0-step=25750.ckpt: version=v2 sigma=16.0 line_thickness=12 arrow_thickness=24 arrow_min_length=24.0
+2026-06-25 19:14:04,588 INFO Session bootstrapped. T_lat=2 use_real_history=True inference_precision=bf16 initial_ee=[0.4617857336997986, 0.004412942565977573, 0.2018601894378662]
+2026-06-25 19:14:04,588 INFO Speculation runner started. Anchor 0 speculation kicked off in background; first keypress should be instant once it completes (~0.3s at sample_steps=1, mp4_mode=lazy).
+2026-06-25 19:14:04,591 INFO Starting server on http://127.0.0.1:36249
+2026-06-25 19:14:04,591 INFO From your laptop: ssh -L 36249:$(hostname):36249 <cluster> then open http://localhost:36249
+INFO:     Started server process [2853375]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:36249 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58412 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58416 - "GET /frame HTTP/1.1" 200 OK
+2026-06-25 19:14:09,216 ERROR Speculation failed for anchor_id=0; cache will not be populated. Synchronous fallback will handle the next /step.
+Traceback (most recent call last):
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/teleop/teleop_speculation.py", line 187, in _run
+    self._speculate(anchor_id)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/teleop/teleop_speculation.py", line 214, in _speculate
+    results = session.step_batch(deltas)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/scripts/inference_teleop_action_proj.py", line 398, in step_batch
+    action_proj_lat = self.lm.encode_video(
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/algorithms/wan/wan_t2v_action_proj.py", line 681, in encode_video
+    return self.vae.encode(videos, self.vae_scale)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/algorithms/wan/modules/vae.py", line 612, in encode
+    out_ = self.encoder(
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/algorithms/wan/modules/vae.py", line 373, in forward
+    x = self.conv1(x, feat_cache[idx])
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/miniforge3/envs/ei_world_model/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/algorithms/wan/modules/vae.py", line 38, in forward
+    x = torch.cat([cache_x, x], dim=2)
+RuntimeError: Sizes of tensors must match except in dimension 2. Expected size 1 but got size 7 for tensor number 1 in the list.
+2026-06-25 19:14:10,155 INFO step 1: +x (sync, 2.01s) timing_ms={'total': 2011.0050940420479, 'parse_action': 0.02410006709396839, 'spec_lookup': 0.004030065611004829, 'session_step': 1773.3380300924182, 'commit': 0.15674892347306013, 'spec_kickoff': 0.030190101824700832, 'media': 237.44775506202132, 'mp4_encode': 0.0} ee=[0.4817857336997986, 0.004412942565977573, 0.2018601894378662]
+INFO:     127.0.0.1:58430 - "POST /step HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57052 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57062 - "GET /clip HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57078 - "GET /rollout HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57084 - "GET /status HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2853375]

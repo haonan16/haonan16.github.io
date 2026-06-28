@@ -1,0 +1,61 @@
+{
+  "purpose": "Preliminary long-context nf13 qualitative rollouts.",
+  "status": "resubmitted_preliminary_not_paper_claim",
+  "slurm_jobs": [
+    {
+      "job_id": 9748840,
+      "status": "failed_before_inference",
+      "reason": "/etc/bashrc failed under unsafe shell startup"
+    },
+    {
+      "job_id": 9749406,
+      "status": "failed_before_inference",
+      "reason": "repo root was not on PYTHONPATH",
+      "launcher": "scripts/launch_nf13_long_rollouts.sbatch"
+    },
+    {
+      "job_id": 9755016,
+      "status": "submitted",
+      "launcher": "scripts/launch_nf13_long_rollouts.sbatch",
+      "fix": "launcher now cd's to PROJECT and exports PYTHONPATH"
+    }
+  ],
+  "checkpoint": "outputs/2026-05-01/04-09-33/checkpoints/epoch=0-step=28375.ckpt",
+  "model": "A nf13 DROID-only visual action projection",
+  "episode": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/RPL/success/2023-06-05/Mon_Jun__5_18_30_00_2023",
+  "view": "ext1",
+  "bootstrap": "real 13-frame history",
+  "start_frame": 0,
+  "n_frames": 13,
+  "sample_steps": 12,
+  "step_m": 0.01,
+  "comparison_control": {
+    "same_episode": true,
+    "same_camera_view": true,
+    "same_start_frame": true,
+    "same_visual_history": true,
+    "same_checkpoint": true,
+    "same_sampling_protocol": true,
+    "same_seed_path": true
+  },
+  "commands": {
+    "plusx": {
+      "action": "+x",
+      "repeat": 50
+    },
+    "minusx": {
+      "action": "-x",
+      "repeat": 50
+    },
+    "nop": {
+      "action": "nop",
+      "repeat": 50
+    }
+  },
+  "intended_outputs": [
+    "A_nf13_step28375_RPL_50step_plusx.mp4",
+    "A_nf13_step28375_RPL_50step_minusx.mp4",
+    "A_nf13_step28375_RPL_50step_nop.mp4"
+  ],
+  "caveat": "Use for slides only until nf13/nf17 30K checkpoints pass standard 18-episode DirAcc + LPIPS."
+}

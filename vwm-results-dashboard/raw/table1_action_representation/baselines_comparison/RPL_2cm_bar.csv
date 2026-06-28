@@ -1,0 +1,6 @@
+baseline,category,mean_response_px,d_sep_px,dir_acc,source
+WorldGym,external video WM,,12.675,0.0,results/baselines_external/worldgym/summary_signed.json
+Ctrl-World,external video WM,,1.74,0.0,results/baselines_external/ctrl_world/summary_signed.json
+adaLN (raw-vec),internal raw-vector,0.0,0.0,0.0,results/autonomous_12h_2026-05-18/phase_a_per_direction/raw_vector_adaln_step17000_18ep/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+Cross-attention (raw-vec),internal raw-vector,0.0,0.0,0.0,results/autonomous_12h_2026-05-18/phase_a_per_direction/raw_vector_crossattn_step14000_18ep/per_episode/RPL__Mon_Jun__5_18_30_00_2023.json
+Ours (action-img proj),ours,6.858,13.7,1.0,results/eval_long_motion/A25750_xyz_mag_sweep_20260512/trial_records.json

@@ -1,0 +1,189 @@
+{
+  "created": "2026-05-07",
+  "description": "Paper-ready obvious-motion assets: colored trajectory-tail videos plus selected stills/long clean videos. Existing source artifacts were copied/read; none were moved or deleted.",
+  "entries": [
+    {
+      "kind": "A_step25750_trace",
+      "episode": "ILIAD",
+      "video": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/motion_trace_videos/A_step25750_ILIAD_six_direction_motion_trace__plusx_minusx_plusy_minusy_plusz_minusz.mp4",
+      "title": "A_step25750 six-direction motion trace grid",
+      "actions": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "frames": 13,
+      "shape": [
+        960,
+        2496,
+        3
+      ]
+    },
+    {
+      "kind": "A_step25750_trace",
+      "episode": "IRIS",
+      "video": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/motion_trace_videos/A_step25750_IRIS_six_direction_motion_trace__plusx_minusx_plusy_minusy_plusz_minusz.mp4",
+      "title": "A_step25750 six-direction motion trace grid",
+      "actions": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "frames": 13,
+      "shape": [
+        960,
+        2496,
+        3
+      ]
+    },
+    {
+      "kind": "A_step25750_trace",
+      "episode": "RAIL",
+      "video": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/motion_trace_videos/A_step25750_RAIL_six_direction_motion_trace__plusx_minusx_plusy_minusy_plusz_minusz.mp4",
+      "title": "A_step25750 six-direction motion trace grid",
+      "actions": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "frames": 13,
+      "shape": [
+        960,
+        2496,
+        3
+      ]
+    },
+    {
+      "kind": "CP_step30000_interaction_trace",
+      "episode": "ILIAD",
+      "video": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/motion_trace_videos/CP_step30000_ILIAD_interaction_six_direction_motion_trace__plusx_minusx_plusy_minusy_plusz_minusz.mp4",
+      "title": "CP_step30000 interaction six-direction motion trace grid",
+      "actions": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "frames": 13,
+      "shape": [
+        960,
+        2496,
+        3
+      ]
+    },
+    {
+      "kind": "CP_step30000_interaction_trace",
+      "episode": "IRIS",
+      "video": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/motion_trace_videos/CP_step30000_IRIS_interaction_six_direction_motion_trace__plusx_minusx_plusy_minusy_plusz_minusz.mp4",
+      "title": "CP_step30000 interaction six-direction motion trace grid",
+      "actions": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "frames": 13,
+      "shape": [
+        960,
+        2496,
+        3
+      ]
+    },
+    {
+      "kind": "CP_step30000_interaction_trace",
+      "episode": "REAL",
+      "video": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/motion_trace_videos/CP_step30000_REAL_interaction_six_direction_motion_trace__plusx_minusx_plusy_minusy_plusz_minusz.mp4",
+      "title": "CP_step30000 interaction six-direction motion trace grid",
+      "actions": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "frames": 13,
+      "shape": [
+        960,
+        2496,
+        3
+      ]
+    },
+    {
+      "kind": "CP_step30000_interaction_trace",
+      "episode": "AUTOLab",
+      "video": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/motion_trace_videos/CP_step30000_AUTOLab_interaction_six_direction_motion_trace__plusx_minusx_plusy_minusy_plusz_minusz.mp4",
+      "title": "CP_step30000 interaction six-direction motion trace grid",
+      "actions": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "frames": 13,
+      "shape": [
+        960,
+        2496,
+        3
+      ]
+    }
+  ],
+  "copied_assets": [
+    {
+      "kind": "A_step25750_tail_panel",
+      "episode": "ILIAD",
+      "file": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/motion_tail_stills/ILIAD_six_direction_tail_panel.png"
+    },
+    {
+      "kind": "A_step25750_tail_panel",
+      "episode": "IRIS",
+      "file": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/motion_tail_stills/IRIS_six_direction_tail_panel.png"
+    },
+    {
+      "kind": "A_step25750_tail_panel",
+      "episode": "RAIL",
+      "file": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/motion_tail_stills/RAIL_six_direction_tail_panel.png"
+    },
+    {
+      "kind": "clean_video_copy",
+      "file": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/long_clean_videos/six_direction_A_step25750_ILIAD_15step__plusx_plusy_plusz_minusx_minusy_minusz.mp4",
+      "source": "results/PAPER_READY/qualitative/long_six_direction_A_step25750_2026-05-06/six_direction_A_step25750_ILIAD_15step__plusx_plusy_plusz_minusx_minusy_minusz.mp4"
+    },
+    {
+      "kind": "clean_video_copy",
+      "file": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/long_clean_videos/six_direction_A_step25750_IRIS_15step__plusx_plusy_plusz_minusx_minusy_minusz.mp4",
+      "source": "results/PAPER_READY/qualitative/long_six_direction_A_step25750_2026-05-06/six_direction_A_step25750_IRIS_15step__plusx_plusy_plusz_minusx_minusy_minusz.mp4"
+    },
+    {
+      "kind": "clean_video_copy",
+      "file": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/long_clean_videos/six_direction_robot_human_ILIAD__plusx_minusx_plusy_minusy_plusz_minusz.mp4",
+      "source": "results/PAPER_READY/qualitative/six_direction_robot_human_bright_2026-05-06/six_direction_robot_human_ILIAD__plusx_minusx_plusy_minusy_plusz_minusz.mp4"
+    },
+    {
+      "kind": "clean_video_copy",
+      "file": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/long_clean_videos/six_direction_robot_human_REAL__plusx_minusx_plusy_minusy_plusz_minusz.mp4",
+      "source": "results/PAPER_READY/qualitative/six_direction_robot_human_bright_2026-05-06/six_direction_robot_human_REAL__plusx_minusx_plusy_minusy_plusz_minusz.mp4"
+    }
+  ],
+  "figure_frame_exports": {
+    "folder": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/figure_frames",
+    "first_and_final_png_per_trace_video": true,
+    "contact_sheet": "results/PAPER_READY/qualitative/figure_obvious_motion_2026-05-07/figure_frames/motion_trace_final_contact_sheet.png",
+    "count_png": 15
+  }
+}

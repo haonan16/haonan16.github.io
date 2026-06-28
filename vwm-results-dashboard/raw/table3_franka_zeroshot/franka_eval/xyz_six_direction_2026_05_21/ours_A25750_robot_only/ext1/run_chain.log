@@ -1,0 +1,27 @@
+2026-05-22 02:54:11,882 INFO Detected render params for epoch=0-step=25750.ckpt: version=v2 sigma=16.0 line_thickness=12 arrow_thickness=24 arrow_min_length=24.0
+2026-05-22 02:58:52,296 INFO Building WanT2VActionProj model...
+2026-05-22 02:58:53,156 INFO Loading action_proj MoT backbone from T2V pretrained.
+2026-05-22 02:59:22,482 INFO Loading checkpoint from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt
+2026-05-22 02:59:32,320 INFO Checkpoint loaded. missing=0 unexpected=2
+2026-05-22 03:00:49,281 INFO data__episode_20260515_223329 +x command 1/20
+2026-05-22 03:02:04,776 INFO data__episode_20260515_223329 +x command 2/20
+2026-05-22 03:03:20,076 INFO data__episode_20260515_223329 +x command 3/20
+2026-05-22 03:04:26,104 INFO data__episode_20260515_223329 +x command 4/20
+2026-05-22 03:05:34,390 INFO data__episode_20260515_223329 +x command 5/20
+2026-05-22 03:06:49,986 INFO data__episode_20260515_223329 +x command 6/20
+2026-05-22 03:08:05,603 INFO data__episode_20260515_223329 +x command 7/20
+2026-05-22 03:09:21,239 INFO data__episode_20260515_223329 +x command 8/20
+2026-05-22 03:10:36,683 INFO data__episode_20260515_223329 +x command 9/20
+2026-05-22 03:11:52,287 INFO data__episode_20260515_223329 +x command 10/20
+2026-05-22 03:13:07,899 INFO data__episode_20260515_223329 +x command 11/20
+2026-05-22 03:14:23,445 INFO data__episode_20260515_223329 +x command 12/20
+2026-05-22 03:15:37,589 INFO data__episode_20260515_223329 +x command 13/20
+2026-05-22 03:16:52,787 INFO data__episode_20260515_223329 +x command 14/20
+2026-05-22 03:18:07,951 INFO data__episode_20260515_223329 +x command 15/20
+2026-05-22 03:19:22,981 INFO data__episode_20260515_223329 +x command 16/20
+2026-05-22 03:20:38,198 INFO data__episode_20260515_223329 +x command 17/20
+2026-05-22 03:21:53,404 INFO data__episode_20260515_223329 +x command 18/20
+2026-05-22 03:23:08,598 INFO data__episode_20260515_223329 +x command 19/20
+2026-05-22 03:24:23,767 INFO data__episode_20260515_223329 +x command 20/20
+2026-05-22 03:24:25,162 INFO saved /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_franka_multiview_six_direction_20260521_221404_compute/ours_A25750_robot_only/ext1/individual_videos/data__episode_20260515_223329_plusx_20step.mp4
+2026-05-22 03:25:41,037 INFO data__episode_20260515_223329 -x command 1/20

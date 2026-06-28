@@ -1,0 +1,278 @@
+{
+  "overall": {
+    "dir_acc": 0.875,
+    "d_sep_mean_px": 2.312178781036184,
+    "n_episodes": 18,
+    "n_trials": 72,
+    "n_correct": 63,
+    "n_testable_trials": 72,
+    "dir_acc_trial_bootstrap_ci95": [
+      0.7916666666666666,
+      0.9444444444444444
+    ],
+    "d_sep_episode_bootstrap_ci95": [
+      1.254645937292824,
+      3.470306791409449
+    ],
+    "signed_proj_mean_px": 1.0465094066892544,
+    "signed_proj_trial_bootstrap_ci95": [
+      0.7282270552145786,
+      1.4455020631741218
+    ],
+    "perp_proj_mean_px": 0.4663277237714802,
+    "cosine_align_mean": 0.6561016673086387,
+    "cosine_align_trial_bootstrap_ci95": [
+      0.5266253763750128,
+      0.762855758302943
+    ],
+    "signed_separation_mean_px": 2.0930188133785093,
+    "signed_separation_trial_bootstrap_ci95": [
+      1.289779962525916,
+      3.171302903344376
+    ],
+    "d_sep_correct_only_mean_px": 2.566245179041289,
+    "d_sep_correct_only_episode_bootstrap_ci95": [
+      1.409786829404766,
+      3.721756153888418
+    ],
+    "n_axes_correct_only": 16
+  },
+  "per_axis": {
+    "x": {
+      "dir_acc": 0.8888888888888888,
+      "d_sep_mean_px": 3.0608294108468623,
+      "signed_proj_mean_px": 1.397611344042828,
+      "cosine_align_mean": 0.6752778720881648,
+      "signed_separation_mean_px": 2.795222688085656,
+      "n_trials": 36,
+      "n_correct": 32,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.7777777777777778,
+        0.9722222222222222
+      ],
+      "d_sep_episode_bootstrap_ci95": [
+        1.5198620810923686,
+        4.885579299202396
+      ]
+    },
+    "y": {
+      "dir_acc": 0.8611111111111112,
+      "d_sep_mean_px": 1.5635281512255057,
+      "signed_proj_mean_px": 0.6954074693356811,
+      "cosine_align_mean": 0.636925462529113,
+      "signed_separation_mean_px": 1.3908149386713622,
+      "n_trials": 36,
+      "n_correct": 31,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.75,
+        0.9722222222222222
+      ],
+      "d_sep_episode_bootstrap_ci95": [
+        0.8497436269464541,
+        2.3546256374173224
+      ]
+    }
+  },
+  "per_direction": {
+    "+x": {
+      "dir_acc": 0.8333333333333334,
+      "n_trials": 18,
+      "n_correct": 15,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    "-x": {
+      "dir_acc": 0.9444444444444444,
+      "n_trials": 18,
+      "n_correct": 17,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.8333333333333334,
+        1.0
+      ]
+    },
+    "+y": {
+      "dir_acc": 0.8888888888888888,
+      "n_trials": 18,
+      "n_correct": 16,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.7222222222222222,
+        1.0
+      ]
+    },
+    "-y": {
+      "dir_acc": 0.8333333333333334,
+      "n_trials": 18,
+      "n_correct": 15,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.6111111111111112,
+        1.0
+      ]
+    }
+  },
+  "per_episode": {
+    "franka_box_droid_layout__franka_box__episode_20260515_223329": {
+      "dir_acc": 0.75,
+      "d_sep_px": 0.3983401954174042,
+      "signed_proj_mean_px": 0.17001580490001345,
+      "perp_proj_mean_px": 0.12962940590908487,
+      "cosine_align_mean": 0.3817444365948387,
+      "signed_separation_mean_px": 0.3400316098000269,
+      "d_sep_correct_only_mean_px": 0.4952628016471863
+    },
+    "franka_box_droid_layout__franka_box__episode_20260515_224959": {
+      "dir_acc": 1.0,
+      "d_sep_px": 7.079164266586304,
+      "signed_proj_mean_px": 3.070074443534956,
+      "perp_proj_mean_px": 1.7413226972534834,
+      "cosine_align_mean": 0.8632590917826111,
+      "signed_separation_mean_px": 6.140148887069913,
+      "d_sep_correct_only_mean_px": 7.079164266586304
+    },
+    "franka_box_droid_layout__franka_box__episode_20260515_225049": {
+      "dir_acc": 0.75,
+      "d_sep_px": 0.005793522810563445,
+      "signed_proj_mean_px": 0.00048828125,
+      "perp_proj_mean_px": 0.006426222622394562,
+      "cosine_align_mean": 0.053688932350184015,
+      "signed_separation_mean_px": 0.0009765625,
+      "d_sep_correct_only_mean_px": 0.004442600533366203
+    },
+    "franka_box_droid_layout__franka_box__episode_20260515_225144": {
+      "dir_acc": 0.75,
+      "d_sep_px": 0.13981814309954643,
+      "signed_proj_mean_px": 0.0619902773409671,
+      "perp_proj_mean_px": 0.031174344256078772,
+      "cosine_align_mean": 0.529953311317944,
+      "signed_separation_mean_px": 0.1239805546819342,
+      "d_sep_correct_only_mean_px": 0.11724793165922165
+    },
+    "franka_box_droid_layout__franka_box__episode_20260515_225340": {
+      "dir_acc": 0.5,
+      "d_sep_px": 0.3541165739297867,
+      "signed_proj_mean_px": 0.058077230878976496,
+      "perp_proj_mean_px": 0.2741096864966964,
+      "cosine_align_mean": 0.1085791774627448,
+      "signed_separation_mean_px": 0.11615446175795303,
+      "d_sep_correct_only_mean_px": 0.0
+    },
+    "franka_box_droid_layout__franka_box__episode_20260515_225441": {
+      "dir_acc": 0.75,
+      "d_sep_px": 0.11894349753856659,
+      "signed_proj_mean_px": 0.040284343517902804,
+      "perp_proj_mean_px": 0.0724776947278308,
+      "cosine_align_mean": 0.4060731335186117,
+      "signed_separation_mean_px": 0.08056868703580561,
+      "d_sep_correct_only_mean_px": 0.16548645496368408
+    },
+    "franka_success_mustard_droid_layout__franka_box__episode_20260516_001615": {
+      "dir_acc": 1.0,
+      "d_sep_px": 4.979394435882568,
+      "signed_proj_mean_px": 2.343780007320469,
+      "perp_proj_mean_px": 0.8700880493200639,
+      "cosine_align_mean": 0.9195591455278963,
+      "signed_separation_mean_px": 4.687560014640938,
+      "d_sep_correct_only_mean_px": 4.979394435882568
+    },
+    "franka_success_mustard_droid_layout__franka_box__episode_20260516_001826": {
+      "dir_acc": 1.0,
+      "d_sep_px": 4.368273019790649,
+      "signed_proj_mean_px": 1.9894261078857634,
+      "perp_proj_mean_px": 1.1072789317562566,
+      "cosine_align_mean": 0.836897827926224,
+      "signed_separation_mean_px": 3.9788522157715267,
+      "d_sep_correct_only_mean_px": 4.368273019790649
+    },
+    "franka_success_mustard_droid_layout__franka_box__episode_20260516_003717": {
+      "dir_acc": 0.5,
+      "d_sep_px": 0.35795558989048004,
+      "signed_proj_mean_px": 0.07770424120247982,
+      "perp_proj_mean_px": 0.2015862411262089,
+      "cosine_align_mean": -0.08497499170661807,
+      "signed_separation_mean_px": 0.1554084824049596,
+      "d_sep_correct_only_mean_px": 0.0
+    },
+    "franka_success_mustard_droid_layout__franka_box__episode_20260516_003802": {
+      "dir_acc": 1.0,
+      "d_sep_px": 6.810886085033417,
+      "signed_proj_mean_px": 3.3374432139859866,
+      "perp_proj_mean_px": 0.6846934128947426,
+      "cosine_align_mean": 0.9076042917843615,
+      "signed_separation_mean_px": 6.674886427971973,
+      "d_sep_correct_only_mean_px": 6.810886085033417
+    },
+    "franka_success_mustard_droid_layout__franka_box__episode_20260516_004051": {
+      "dir_acc": 1.0,
+      "d_sep_px": 4.931747913360596,
+      "signed_proj_mean_px": 2.273808077051871,
+      "perp_proj_mean_px": 0.8516761726058282,
+      "cosine_align_mean": 0.9241627668098252,
+      "signed_separation_mean_px": 4.547616154103743,
+      "d_sep_correct_only_mean_px": 4.931747913360596
+    },
+    "franka_success_mustard_droid_layout__franka_box__episode_20260516_004137": {
+      "dir_acc": 1.0,
+      "d_sep_px": 1.1261835396289825,
+      "signed_proj_mean_px": 0.5627593595380526,
+      "perp_proj_mean_px": 0.11336942618243978,
+      "cosine_align_mean": 0.927805141535079,
+      "signed_separation_mean_px": 1.125518719076105,
+      "d_sep_correct_only_mean_px": 1.1261835396289825
+    },
+    "franka_success_rope_droid_layout__franka_box__episode_20260516_012540": {
+      "dir_acc": 1.0,
+      "d_sep_px": 0.8058291077613831,
+      "signed_proj_mean_px": 0.3715933004503805,
+      "perp_proj_mean_px": 0.2121697134928558,
+      "cosine_align_mean": 0.8467837900579636,
+      "signed_separation_mean_px": 0.743186600900761,
+      "d_sep_correct_only_mean_px": 0.8058291077613831
+    },
+    "franka_success_rope_droid_layout__franka_box__episode_20260516_012650": {
+      "dir_acc": 1.0,
+      "d_sep_px": 3.739890694618225,
+      "signed_proj_mean_px": 1.607883808405047,
+      "perp_proj_mean_px": 0.9070014744290331,
+      "cosine_align_mean": 0.8786405409683729,
+      "signed_separation_mean_px": 3.215767616810094,
+      "d_sep_correct_only_mean_px": 3.739890694618225
+    },
+    "franka_success_rope_droid_layout__franka_box__episode_20260516_012808": {
+      "dir_acc": 0.75,
+      "d_sep_px": 0.3223651945590973,
+      "signed_proj_mean_px": 0.11729728182602417,
+      "perp_proj_mean_px": 0.08485895931159494,
+      "cosine_align_mean": 0.6653879103266078,
+      "signed_separation_mean_px": 0.23459456365204834,
+      "d_sep_correct_only_mean_px": 0.35559773445129395
+    },
+    "franka_success_rope_droid_layout__franka_box__episode_20260516_012913": {
+      "dir_acc": 1.0,
+      "d_sep_px": 2.1178696751594543,
+      "signed_proj_mean_px": 0.9361006222757128,
+      "perp_proj_mean_px": 0.47181272379060135,
+      "cosine_align_mean": 0.8694377740661584,
+      "signed_separation_mean_px": 1.8722012445514256,
+      "d_sep_correct_only_mean_px": 2.1178696751594543
+    },
+    "franka_success_rope_droid_layout__franka_box__episode_20260516_013130": {
+      "dir_acc": 1.0,
+      "d_sep_px": 2.9388601779937744,
+      "signed_proj_mean_px": 1.3248643415874,
+      "perp_proj_mean_px": 0.5128616804382385,
+      "cosine_align_mean": 0.8806276142352301,
+      "signed_separation_mean_px": 2.6497286831748,
+      "d_sep_correct_only_mean_px": 2.9388601779937744
+    },
+    "franka_success_rope_droid_layout__franka_box__episode_20260516_013401": {
+      "dir_acc": 1.0,
+      "d_sep_px": 1.0237864255905151,
+      "signed_proj_mean_px": 0.49357857745457867,
+      "perp_proj_mean_px": 0.12136219127321209,
+      "cosine_align_mean": 0.8946001169974637,
+      "signed_separation_mean_px": 0.9871571549091573,
+      "d_sep_correct_only_mean_px": 1.0237864255905151
+    }
+  }
+}

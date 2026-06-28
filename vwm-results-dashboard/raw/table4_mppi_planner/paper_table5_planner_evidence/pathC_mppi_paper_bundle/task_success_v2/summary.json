@@ -1,0 +1,80 @@
+{
+  "additional_methods": [
+    {
+      "label": "Random uniform action",
+      "n": 200,
+      "median_cm": 34.9,
+      "ci": [
+        31.0,
+        39.8
+      ],
+      "reach_at_10cm": 0.01,
+      "env_success": 0.015
+    },
+    {
+      "label": "WM-shoot, unbiased (random init)",
+      "n": 18,
+      "median_cm": null,
+      "ci": null,
+      "reach_at_10cm": 0.0,
+      "env_success": 0.0
+    },
+    {
+      "label": "WM-shoot, goal-biased (random init)",
+      "n": 20,
+      "median_cm": 0.7,
+      "ci": [
+        0.4,
+        2.4
+      ],
+      "reach_at_10cm": 1.0,
+      "env_success": 0.0
+    }
+  ],
+  "mppi_variants": {
+    "argmin+full": {
+      "n": 1,
+      "median_cm": 9.648065484646555,
+      "reach_at_10cm": 1.0,
+      "env_success": 0.0,
+      "ci": [
+        9.648065484646555,
+        9.648065484646555
+      ],
+      "label": "WM-shoot, argmin"
+    },
+    "mean+early-term": {
+      "n": 6,
+      "median_cm": 4.223166566874706,
+      "reach_at_10cm": 1.0,
+      "env_success": 0.0,
+      "ci": [
+        0.11507650108578327,
+        8.002696330119262
+      ],
+      "label": "MPPI mean"
+    },
+    "priming+full": {
+      "n": 3,
+      "median_cm": 0.08433583022668613,
+      "reach_at_10cm": 1.0,
+      "env_success": 0.0,
+      "ci": [
+        0.05474826882554752,
+        1.8861676321888126
+      ],
+      "label": "MPPI + expert priming"
+    }
+  },
+  "replay_expert_ceiling": {
+    "label": "Replay-expert (ceiling)",
+    "n": 14,
+    "median_cm": 0.0,
+    "ci": [
+      0.0,
+      0.0
+    ],
+    "reach_at_10cm": 1.0,
+    "env_success": 1.0
+  }
+}

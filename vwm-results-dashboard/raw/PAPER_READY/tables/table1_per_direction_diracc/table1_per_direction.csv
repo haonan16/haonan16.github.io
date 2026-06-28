@@ -1,0 +1,5 @@
+method,n_episodes,passed_+x,passed_-x,passed_+y,passed_-y,passed_all_72,testable_+x,testable_-x,testable_+y,testable_-y,testable_all_72,diracc_overall
+Ours (A+P@20K),18,18,17,15,16,66,18,18,18,18,72,0.917
+Ctrl-World,18,1,2,0,1,4,4,5,2,3,14,0.056
+WorldGym (zero-shot),18,5,4,5,0,14,6,8,11,11,36,0.194
+WorldGym (DROID-finetune),18,15,5,2,10,32,18,16,18,18,70,0.444

@@ -1,0 +1,426 @@
+{
+  "purpose": "annotation-free paper xyz six-direction multi-step multiview sweep",
+  "model": "ours_A25750_robot_only",
+  "model_type": "action_proj",
+  "checkpoint": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt",
+  "action_injection": null,
+  "episodes": [
+    {
+      "name": "RPL",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/RPL/success/2023-06-05/Mon_Jun__5_18_30_00_2023",
+      "view": "ext1",
+      "start_frame": 0,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_RPL__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RPL_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RPL_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RPL_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RPL_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RPL_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RPL_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/RPL_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/RPL_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/RPL_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "IRIS",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/IRIS/success/2023-03-02/Thu_Mar__2_14_57_27_2023",
+      "view": "ext1",
+      "start_frame": 0,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_IRIS__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IRIS_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IRIS_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IRIS_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IRIS_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IRIS_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IRIS_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/IRIS_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/IRIS_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/IRIS_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "CLVR",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/CLVR/success/2023-05-09/Tue_May__9_01_17_11_2023",
+      "view": "ext1",
+      "start_frame": 60,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_CLVR__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/CLVR_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/CLVR_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/CLVR_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/CLVR_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/CLVR_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/CLVR_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/CLVR_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/CLVR_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/CLVR_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "RAIL",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/RAIL/success/2023-04-05/Wed_Apr__5_15_08_50_2023",
+      "view": "ext1",
+      "start_frame": 50,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_RAIL__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAIL_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAIL_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAIL_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAIL_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAIL_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAIL_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/RAIL_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/RAIL_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/RAIL_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "AUTOLab",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/AUTOLab/success/2023-07-14/Fri_Jul_14_14_59_36_2023",
+      "view": "ext1",
+      "start_frame": 50,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_AUTOLab__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/AUTOLab_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/AUTOLab_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/AUTOLab_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/AUTOLab_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/AUTOLab_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/AUTOLab_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/AUTOLab_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/AUTOLab_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/AUTOLab_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "AUTOLab",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/AUTOLab/success/2023-07-14/Fri_Jul_14_15_15_22_2023",
+      "view": "ext1",
+      "start_frame": 50,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_AUTOLab__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/AUTOLab_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/AUTOLab_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/AUTOLab_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/AUTOLab_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/AUTOLab_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/AUTOLab_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/AUTOLab_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/AUTOLab_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/AUTOLab_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "CLVR",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/CLVR/success/2023-06-05/Mon_Jun__5_23_38_32_2023",
+      "view": "ext1",
+      "start_frame": 60,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_CLVR__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/CLVR_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/CLVR_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/CLVR_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/CLVR_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/CLVR_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/CLVR_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/CLVR_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/CLVR_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/CLVR_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "GuptaLab",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/GuptaLab/success/2023-04-30/Sun_Apr_30_14_37_20_2023",
+      "view": "ext1",
+      "start_frame": 50,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_GuptaLab__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/GuptaLab_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/GuptaLab_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/GuptaLab_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/GuptaLab_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/GuptaLab_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/GuptaLab_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/GuptaLab_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/GuptaLab_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/GuptaLab_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "GuptaLab",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/GuptaLab/success/2023-04-30/Sun_Apr_30_15_35_08_2023",
+      "view": "ext1",
+      "start_frame": 50,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_GuptaLab__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/GuptaLab_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/GuptaLab_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/GuptaLab_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/GuptaLab_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/GuptaLab_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/GuptaLab_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/GuptaLab_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/GuptaLab_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/GuptaLab_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "ILIAD",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/ILIAD/success/2023-08-15/Tue_Aug_15_22_39_22_2023",
+      "view": "ext1",
+      "start_frame": 50,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_ILIAD__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/ILIAD_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/ILIAD_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/ILIAD_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/ILIAD_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/ILIAD_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/ILIAD_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/ILIAD_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/ILIAD_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/ILIAD_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "ILIAD",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/ILIAD/success/2023-08-15/Tue_Aug_15_23_35_07_2023",
+      "view": "ext1",
+      "start_frame": 50,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_ILIAD__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/ILIAD_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/ILIAD_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/ILIAD_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/ILIAD_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/ILIAD_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/ILIAD_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/ILIAD_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/ILIAD_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/ILIAD_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "IPRL",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/IPRL/success/2024-01-02/Tue_Jan__2_21_04_12_2024",
+      "view": "ext1",
+      "start_frame": 50,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_IPRL__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IPRL_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IPRL_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IPRL_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IPRL_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IPRL_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IPRL_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/IPRL_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/IPRL_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/IPRL_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "IRIS",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/IRIS/success/2023-07-14/Fri_Jul_14_17_11_07_2023",
+      "view": "ext1",
+      "start_frame": 0,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_IRIS__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IRIS_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IRIS_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IRIS_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IRIS_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IRIS_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/IRIS_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/IRIS_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/IRIS_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/IRIS_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "PennPAL",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/PennPAL/success/2023-07-14/Fri_Jul_14_16_46_48_2023",
+      "view": "ext1",
+      "start_frame": 50,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_PennPAL__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/PennPAL_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/PennPAL_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/PennPAL_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/PennPAL_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/PennPAL_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/PennPAL_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/PennPAL_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/PennPAL_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/PennPAL_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "RAD",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/RAD/success/2023-09-29/Fri_Sep_29_17_37_03_2023",
+      "view": "ext1",
+      "start_frame": 50,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_RAD__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAD_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAD_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAD_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAD_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAD_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAD_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/RAD_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/RAD_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/RAD_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "RAIL",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/RAIL/success/2023-07-14/Fri_Jul_14_13_17_09_2023",
+      "view": "ext1",
+      "start_frame": 50,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_RAIL__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAIL_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAIL_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAIL_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAIL_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAIL_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RAIL_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/RAIL_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/RAIL_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/RAIL_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "REAL",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/REAL/success/2023-08-15/Tue_Aug_15_13_41_00_2023",
+      "view": "ext1",
+      "start_frame": 50,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_REAL__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/REAL_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/REAL_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/REAL_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/REAL_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/REAL_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/REAL_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/REAL_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/REAL_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/REAL_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "RPL",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/RPL/success/2023-06-05/Mon_Jun__5_17_54_17_2023",
+      "view": "ext1",
+      "start_frame": 0,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_RPL__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RPL_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RPL_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RPL_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RPL_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RPL_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/RPL_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/RPL_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/RPL_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/RPL_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "TRI",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/TRI/success/2024-01-02/Tue_Jan__2_16_35_19_2024",
+      "view": "ext1",
+      "start_frame": 50,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_TRI__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/TRI_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/TRI_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/TRI_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/TRI_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/TRI_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/TRI_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/TRI_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/TRI_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/TRI_six_direction_frame20.png"
+      ]
+    },
+    {
+      "name": "WEIRD",
+      "path": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/WEIRD/success/2024-01-15/Mon_Jan_15_20_45_49_2024",
+      "view": "ext1",
+      "start_frame": 50,
+      "grid_video": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/direction_grid_WEIRD__plusx_minusx_minusy_plusy_plusz_minusz.mp4",
+      "individual_videos": {
+        "+x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/WEIRD_plusx_5step.mp4",
+        "-x": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/WEIRD_minusx_5step.mp4",
+        "-y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/WEIRD_minusy_5step.mp4",
+        "+y": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/WEIRD_plusy_5step.mp4",
+        "+z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/WEIRD_plusz_5step.mp4",
+        "-z": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/individual_videos/WEIRD_minusz_5step.mp4"
+      },
+      "frames": [
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/WEIRD_six_direction_frame00.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/WEIRD_six_direction_frame10.png",
+        "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/results/paper_xyz_multiview_six_direction_20260511_024800/ours_A25750_robot_only/ext1/frames/WEIRD_six_direction_frame20.png"
+      ]
+    }
+  ],
+  "direction_order": [
+    "+x",
+    "-x",
+    "-y",
+    "+y",
+    "+z",
+    "-z"
+  ],
+  "horizon_steps": 5,
+  "future_frames_per_step": 4,
+  "generated_future_frames": 20,
+  "magnitude_m_per_step": 0.03,
+  "sample_steps": 40,
+  "n_frames": 5,
+  "fps": 8,
+  "labels_burned_in": false,
+  "rgb_export": "model [-1,1] converted with scripts.video_export_utils.video_tensor_to_uint8"
+}

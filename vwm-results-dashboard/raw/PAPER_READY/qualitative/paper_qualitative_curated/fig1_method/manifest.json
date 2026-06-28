@@ -1,0 +1,35 @@
+{
+  "figure": "Fig 1: Method rendering visualization",
+  "generated_by": "scripts/render_fig1_method.py",
+  "commit": "8530125613c80631f98d5087c749a83f2af56561",
+  "droid": {
+    "episode": "/n/holylfs06/LABS/kempner_shared/Everyone/testbed/multimodal/eiwm_data/droid/droid_raw/1.0.1/RPL/success/2023-06-05/Mon_Jun__5_18_30_00_2023",
+    "view": "ext1",
+    "serial": "24013089",
+    "frame_idx": 30,
+    "render_version": "v2",
+    "sigma": 16.0,
+    "arrow_thickness": 24,
+    "arrow_min_length": 24.0,
+    "tcp_offset_m": 0.08,
+    "depth_range": [
+      0.3,
+      1.5
+    ]
+  },
+  "ssv2": {
+    "clip_id": "114180",
+    "template": "Pulling something from right to left",
+    "frame_idx": 20,
+    "cache_root": "/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/ssv2_action_proj_cache/full_subset_v1",
+    "render_version": "v2",
+    "sigma": 16.0,
+    "arrow_thickness": 6,
+    "arrow_min_length": 24.0,
+    "depth_range": [
+      0.0,
+      10.0
+    ]
+  },
+  "note": "Checkpoint-independent. Shows the rendering pipeline only."
+}

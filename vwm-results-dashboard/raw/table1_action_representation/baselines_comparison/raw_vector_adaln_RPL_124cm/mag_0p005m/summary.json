@@ -1,0 +1,125 @@
+{
+  "overall": {
+    "dir_acc": 0.0,
+    "d_sep_mean_px": 0.0,
+    "n_episodes": 1,
+    "n_trials": 4,
+    "n_correct": 0,
+    "n_testable_trials": 4,
+    "dir_acc_trial_bootstrap_ci95": [
+      0.0,
+      0.0
+    ],
+    "d_sep_episode_bootstrap_ci95": [
+      0.0,
+      0.0
+    ],
+    "signed_proj_mean_px": 0.0,
+    "signed_proj_trial_bootstrap_ci95": [
+      0.0,
+      0.0
+    ],
+    "perp_proj_mean_px": 0.0,
+    "cosine_align_mean": 0.0,
+    "cosine_align_trial_bootstrap_ci95": [
+      0.0,
+      0.0
+    ],
+    "signed_separation_mean_px": 0.0,
+    "signed_separation_trial_bootstrap_ci95": [
+      0.0,
+      0.0
+    ],
+    "d_sep_correct_only_mean_px": 0.0,
+    "d_sep_correct_only_episode_bootstrap_ci95": [
+      0.0,
+      0.0
+    ],
+    "n_axes_correct_only": 0
+  },
+  "per_axis": {
+    "x": {
+      "dir_acc": 0.0,
+      "d_sep_mean_px": 0.0,
+      "signed_proj_mean_px": 0.0,
+      "cosine_align_mean": 0.0,
+      "signed_separation_mean_px": 0.0,
+      "n_trials": 2,
+      "n_correct": 0,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "d_sep_episode_bootstrap_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "y": {
+      "dir_acc": 0.0,
+      "d_sep_mean_px": 0.0,
+      "signed_proj_mean_px": 0.0,
+      "cosine_align_mean": 0.0,
+      "signed_separation_mean_px": 0.0,
+      "n_trials": 2,
+      "n_correct": 0,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "d_sep_episode_bootstrap_ci95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "per_direction": {
+    "+x": {
+      "dir_acc": 0.0,
+      "n_trials": 1,
+      "n_correct": 0,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "-x": {
+      "dir_acc": 0.0,
+      "n_trials": 1,
+      "n_correct": 0,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "+y": {
+      "dir_acc": 0.0,
+      "n_trials": 1,
+      "n_correct": 0,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "-y": {
+      "dir_acc": 0.0,
+      "n_trials": 1,
+      "n_correct": 0,
+      "dir_acc_trial_bootstrap_ci95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "per_episode": {
+    "RPL__Mon_Jun__5_18_30_00_2023": {
+      "dir_acc": 0.0,
+      "d_sep_px": 0.0,
+      "signed_proj_mean_px": 0.0,
+      "perp_proj_mean_px": 0.0,
+      "cosine_align_mean": 0.0,
+      "signed_separation_mean_px": 0.0,
+      "d_sep_correct_only_mean_px": 0.0
+    }
+  }
+}

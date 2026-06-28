@@ -1,0 +1,3 @@
+watcher started at $(date)
+Detected Sim eval done at $(date) — killing robocasa runner pid=1922826 and any descendants
+done killing at $(date)

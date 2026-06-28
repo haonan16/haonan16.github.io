@@ -1,0 +1,22 @@
+petrel_client is not installed. If you read data locally instead of from ceph, ignore it.
+--- Random seed set to 42 for reproducibility ---
+Running policy on device: cuda
+--- 2. Initializing BeingHPolicy ---
+
+=== Loading model from /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/checkpoints/beingh/Being-H05-2B_libero_robocasa ===
+Detected LLM version: qwen3
+Using Qwen3ForCausalLM
+Loading state dict...
+Found 1 .safetensors files, loading...
+Weights loaded from .safetensors files.
+MPG enabled: lambda=0.1, projections=32, refinement_iters=1
+RTC disabled
+[Metadata] Loading from: /net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/checkpoints/beingh/Being-H05-2B_libero_robocasa/uni_posttrain_metadata.json
+Warning: Nested metadata detected, Keys: ['libero_spatial', 'libero_object', 'libero_goal', 'libero_10', 'CloseDoubleDoor', 'CloseDrawer', 'CloseSingleDoor', 'CoffeePressButton', 'CoffeeServeMug', 'CoffeeSetupMug', 'OpenDoubleDoor', 'OpenDrawer', 'OpenSingleDoor', 'PnPCabToCounter', 'PnPCounterToCab', 'PnPCounterToMicrowave', 'PnPCounterToSink', 'PnPCounterToStove', 'PnPMicrowaveToCounter', 'PnPSinkToCounter', 'PnPStoveToCounter', 'TurnOffMicrowave', 'TurnOffSinkFaucet', 'TurnOffStove', 'TurnOnMicrowave', 'TurnOnSinkFaucet', 'TurnOnStove', 'TurnSinkSpout']
+Using requested metadata_variant: OpenDrawer
+[Metadata] Embodiment tag: robocasa
+[Metadata] Stats level: unknown, Source: legacy:OpenDrawer
+✓ Metadata loaded for 'uni_posttrain'
+✓ BeingHPolicy initialized successfully
+--- 3. Starting Inference Server on 0.0.0.0:18914 ---
+Server is ready and listening on tcp://0.0.0.0:18914

@@ -1,0 +1,8 @@
+checkpoint=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/outputs/2026-04-15/04-58-25/checkpoints/step_25750.ckpt
+episode=/net/holy-isilon/ifs/rc_labs/ydu_lab/Lab/haonan/video_world_model/data/franka_box_droid_layout/franka_box/episode_20260515_223329
+start_frame=30
+actions=+x,+y,-z,nop
+sample_steps=1
+n_frames=5
+view=ext1
+use_real_history=1
