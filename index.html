@@ -38,16 +38,16 @@
           }
         }
         document.getElementById('selected-link').style.fontWeight = 'bold';
-        document.getElementById('date-link').style.fontWeight = 'normal';
+        document.getElementById('all-link').style.fontWeight = 'normal';
       }
 
-      function showByDate() {
+      function showAll() {
         var allPubs = document.querySelectorAll('.pub-item');
         for (var i = 0; i < allPubs.length; i++) {
           allPubs[i].style.display = 'table-row';
         }
         document.getElementById('selected-link').style.fontWeight = 'normal';
-        document.getElementById('date-link').style.fontWeight = 'bold';
+        document.getElementById('all-link').style.fontWeight = 'bold';
       }
 
       function toggleNews() {
@@ -145,12 +145,14 @@
                 <div id="news" style="position: relative; top: -80px;"></div>
                 <h2>News</h2>
                   <ul>
-                    <li>To junior PhD/master/undergraduate students: If you'd like to chat about life, career plans, or research ideas in ML/robotics, please feel free to email me to schedule a meeting. I dedicate 30 minutes each week for these conversations and encourage students from underrepresented groups or anyone in need to reach out.</li>
+                    <li>[2026/09] I am co-organizing the <a href="https://compogen-robotics.github.io/corl2026/" target="_blank" rel="noopener noreferrer">CoRL 2026 Workshop on Compositional Generalization for Real-World Robot Learning</a></li>
+                    <li>[2026/09] I am co-organizing the <a href="https://bimanual-tool.github.io/" target="_blank" rel="noopener noreferrer">CoRL 2026 Workshop on Bimanual Dexterous Tool Use: From Contact-Rich Execution to Generalist Robot Intelligence</a></li>
+                    <li>[2026/09] I am co-organizing the <a href="https://compositional-robotics.github.io/" target="_blank" rel="noopener noreferrer">IROS 2026 Workshop on Compositional and Modular Learning in the Era of Scaling in Robotics</a></li>
                     <li>[2026/07] I gave a talk at <a href="https://zackory.com/" target="_blank" rel="noopener noreferrer">Professor Zackory Erickson's Group at CMU</a></li>
                     <li>[2026/04] I gave a talk at <a href="https://pliang279.github.io/" target="_blank" rel="noopener noreferrer">Professor Paul Liang's Group at MIT</a></li>
-                    <li>[2025/10] I gave a talk at <a href="https://computationalrobotics.seas.harvard.edu" target="_blank" rel="noopener noreferrer">Computational Robotics Lab at Harvard</a></li>
-                    <li>[2025/05] Co-organizing the <a href="https://contact-rich.github.io" target="_blank" rel="noopener noreferrer">ICRA 2025 Workshop on Learning Meets Model-Based Methods for Contact-Rich Manipulation</a></li>
+                    <li class="more-news" style="display:none;">[2025/10] I gave a talk at <a href="https://computationalrobotics.seas.harvard.edu" target="_blank" rel="noopener noreferrer">Computational Robotics Lab at Harvard</a></li>
                     <li class="more-news" style="display:none;">[2025/06] I gave a talk at <a href="https://www.tactasystems.com/" target="_blank" rel="noopener noreferrer">Tacta Systems</a></li>
+                    <li class="more-news" style="display:none;">[2025/05] Co-organizing the <a href="https://contact-rich.github.io" target="_blank" rel="noopener noreferrer">ICRA 2025 Workshop on Learning Meets Model-Based Methods for Contact-Rich Manipulation</a></li>
                     <li class="more-news" style="display:none;">[2025/05] I gave an outreach talk to Grade 5 Students at St. Matthew Catholic School</li>
                   </ul>
                   <p>
@@ -168,13 +170,193 @@
               <div id="research" style="position: relative; top: -80px;"></div>
               <h2>Publications</h2>
               <p style="margin-top: 12px; font-size: 15px;">
-                <a href="javascript:showSelected()" id="selected-link" style="font-weight: bold;">Show selected</a> /
-                <a href="javascript:showByDate()" id="date-link">Show by date</a>
+                <a href="javascript:showSelected()" id="selected-link" style="font-weight: bold;">Representative works</a> /
+                <a href="javascript:showAll()" id="all-link">All publications</a>
               </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr class="pub-item">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
+                <div class="one">
+                  <img src="images/argus_teaser.png" alt="ARGUS overview" width="100%" style="display: block;">
+                </div>
+              </td>
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
+                <span class="papertitle">ARGUS: Aligning Robot Scene Geometry Under Shifting Views with Large 3D Vision Models</span>
+                <br>
+                <a href="https://rsathua.github.io/">Rishik Sathua</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
+                <br>
+                <strong>2026 Preprint</strong>, <a href="https://rsathua.github.io/ARGUS/">[Project]</a> <a href="https://arxiv.org/abs/2608.05579">[Paper]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-argus', this)">[BibTeX]</a>
+                <span id="bib-argus" style="display:none;">@misc{sathua2026argusaligningrobotscene,
+    title={ARGUS: Aligning Robot Scene Geometry Under Shifting Views with Large 3D Vision Models},
+    author={Rishik Sathua and Haonan Chen and Katherine Driggs-Campbell},
+    year={2026},
+    eprint={2608.05579},
+    archivePrefix={arXiv},
+    primaryClass={cs.RO},
+    url={https://arxiv.org/abs/2608.05579}
+}</span>
+              </td>
+            </tr>
+
+            <tr class="pub-item selected-pub">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
+                <div class="one">
+                  <img src="images/masked_visual_actions_teaser.png" alt="Masked Visual Actions for Unified World Modeling overview" width="100%" style="display: block;">
+                </div>
+              </td>
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
+                <span class="papertitle">Masked Visual Actions for Unified World Modeling</span>
+                <br>
+                <a href="https://hadizayer.github.io">Hadi Alzayer</a>,
+                <a href="https://wenlonghuang.com">Wenlong Huang</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
+                <a href="https://www.linkedin.com/in/christopher-luey/">Christopher Luey</a>,
+                <a href="https://lllyasviel.github.io/lvmin_zhang/">Lvmin Zhang</a>,
+                <a href="https://graphics.stanford.edu/~maneesh/">Maneesh Agrawala</a>,
+                <a href="https://stanford.edu/~gordonwz/">Gordon Wetzstein</a>,
+                <a href="https://profiles.stanford.edu/fei-fei-li">Li Fei-Fei</a>,
+                <a href="https://yilundu.github.io/">Yilun Du</a>,
+                <a href="https://jiajunwu.com">Jiajun Wu</a>,
+                <a href="https://jbhuang0604.github.io">Jia-Bin Huang</a>
+                <br>
+                <strong>2026 Preprint</strong>, <a href="https://masked-visual-actions.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2607.19343">[Paper]</a> <a href="https://github.com/HadiZayer/masked-visual-actions">[Code]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-masked-visual-actions', this)">[BibTeX]</a>
+                <span id="bib-masked-visual-actions" style="display:none;">@misc{maskedvisualactions2026,
+    title={Masked Visual Actions for Unified World Modeling},
+    author={Hadi Alzayer and Wenlong Huang and Haonan Chen and Christopher Luey and Lvmin Zhang and Maneesh Agrawala and Gordon Wetzstein and Li Fei-Fei and Yilun Du and Jiajun Wu and Jia-Bin Huang},
+    year={2026},
+    eprint={2607.19343},
+    archivePrefix={arXiv},
+    url={https://arxiv.org/abs/2607.19343}
+}</span>
+              </td>
+            </tr>
+
+            <tr class="pub-item selected-pub">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
+                <div class="one">
+                  <img src="images/driftworld_teaser.png" alt="DriftWorld: Fast World Modeling through Drifting overview" width="100%" style="display: block;">
+                </div>
+              </td>
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
+                <span class="papertitle">DriftWorld: Fast World Modeling through Drifting</span>
+                <br>
+                <a href="https://susie-lu.github.io/">Susie Lu</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
+                <a href="https://yewr.github.io/">Weirui Ye</a>,
+                <a href="https://yilundu.github.io/">Yilun Du</a>
+                <br>
+                <strong>2026 Preprint</strong>, <a href="https://susie-lu.github.io/driftworld/">[Project]</a> <a href="https://arxiv.org/abs/2607.15065">[Paper]</a> <a href="https://github.com/Susie-Lu/driftworld">[Code]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-driftworld', this)">[BibTeX]</a>
+                <span id="bib-driftworld" style="display:none;">@misc{driftworld2026,
+    title={DriftWorld: Fast World Modeling through Drifting},
+    author={Susie Lu and Haonan Chen and Weirui Ye and Yilun Du},
+    year={2026},
+    eprint={2607.15065},
+    archivePrefix={arXiv},
+    url={https://arxiv.org/abs/2607.15065}
+}</span>
+              </td>
+            </tr>
+
+            <tr class="pub-item">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
+                <div class="one">
+                  <img src="images/bspline_policy_teaser.svg" alt="B-spline Policy inference overview" width="100%" style="display: block;">
+                </div>
+              </td>
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
+                <span class="papertitle">B-spline Policy: Accelerating Manipulation Policies via B-spline Action Representations</span>
+                <br>
+                <a href="https://xshan.site/">Xiaoshen Han</a><sup>*</sup>,
+                <a href="https://haoyu-x.github.io/">Haoyu Xiong</a><sup>*</sup>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
+                <a href="https://chaoqi-liu.com/">Chaoqi Liu</a>,
+                <a href="https://groups.csail.mit.edu/vision/torralbalab/">Antonio Torralba</a>,
+                <a href="https://yukezhu.me/">Yuke Zhu</a>,
+                <a href="https://yilundu.github.io/">Yilun Du</a>
+                <br>
+                <em><sup>*</sup> Equal contribution</em>
+                <br>
+                <strong>2026 Preprint</strong>, <a href="https://b-spline-policy.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2607.09648">[Paper]</a> <a href="https://github.com/B-spline-policy/bspline-policy">[Code]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-bspline-policy', this)">[BibTeX]</a>
+                <span id="bib-bspline-policy" style="display:none;">@article{han2026b,
+    title={B-spline Policy: Accelerating Manipulation Policies via B-spline Action Representations},
+    author={Han, Xiaoshen and Xiong, Haoyu and Chen, Haonan and Liu, Chaoqi and Torralba, Antonio and Zhu, Yuke and Du, Yilun},
+    journal={arXiv preprint arXiv:2607.09648},
+    year={2026}
+}</span>
+              </td>
+            </tr>
+
+            <tr class="pub-item">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
+                <div class="one">
+                  <img src="images/yoto_teaser.jpg" alt="You Only Touch Once overview" width="100%" style="display: block;">
+                </div>
+              </td>
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
+                <span class="papertitle">You Only Touch Once: 6-DoF Object Pose Estimation from Single Tactile Contact</span>
+                <br>
+                Pengfei Ye,
+                <a href="https://yuxiang-ma.github.io/">Yuxiang Ma</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
+                Guangming Wang,
+                Yixiong Jing,
+                Brian Sheil,
+                <a href="https://yilundu.github.io/">Yilun Du</a>,
+                <a href="https://persci.mit.edu/people/adelson/">Edward Adelson</a>
+                <br>
+                <strong>2026 Preprint</strong>, <a href="https://arxiv.org/abs/2606.28899">[Paper]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-yoto', this)">[BibTeX]</a>
+                <span id="bib-yoto" style="display:none;">@misc{ye2026youonlytouchonce,
+    title={You Only Touch Once: 6-DoF Object Pose Estimation from Single Tactile Contact},
+    author={Pengfei Ye and Yuxiang Ma and Haonan Chen and Guangming Wang and Yixiong Jing and Brian Sheil and Yilun Du and Edward Adelson},
+    year={2026},
+    eprint={2606.28899},
+    archivePrefix={arXiv},
+    primaryClass={cs.RO},
+    url={https://arxiv.org/abs/2606.28899}
+}</span>
+              </td>
+            </tr>
+
+            <tr class="pub-item">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
+                <div class="one">
+                  <img src="images/memobench_teaser.png" alt="MemoBench overview" width="100%" style="display: block;">
+                </div>
+              </td>
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
+                <span class="papertitle">MemoBench: Benchmarking World Modeling in Dynamically Changing Environments</span>
+                <br>
+                <a href="https://tonychy.com/">Haoyu Chen</a>,
+                <a href="https://kaichen-z.github.io/">Kaichen Zhou</a>,
+                <a href="https://hanghuacs.notion.site/">Hang Hua</a>,
+                <a href="https://www.linkedin.com/in/kaile-zhang-212505334">Kaile Zhang</a>,
+                <a href="https://www.linkedin.com/in/jingwen-qian-9998b3192">Jingwen Qian</a>,
+                <a href="https://wufeim.github.io/">Wufei Ma</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
+                <a href="https://chunjiangliu.com/">Chunjiang Liu</a>,
+                <a href="https://yizhou42.github.io/">Yizhou Zhao</a>,
+                <a href="https://www.linkedin.com/in/xiaoyuan-isaac-wang/">Xiaoyuan Wang</a>,
+                <a href="https://weiyueli7.github.io/">Weiyue Li</a>,
+                <a href="https://www.cs.jhu.edu/~ayuille1/">Alan Yuille</a>,
+                <a href="https://pliang279.github.io/">Paul Pu Liang</a>,
+                <a href="https://yilundu.github.io/">Yilun Du</a>
+                <br>
+                <strong>2026 European Conference on Computer Vision</strong>, <a href="https://memobench-team.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2606.27537">[Paper]</a> <a href="https://github.com/MemoBench-Team/MemoBench">[Code]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-memobench', this)">[BibTeX]</a>
+                <span id="bib-memobench" style="display:none;">@inproceedings{chen2026memobench,
+    title={MemoBench: Benchmarking World Modeling in Dynamically Changing Environments},
+    author={Haoyu Chen and Kaichen Zhou and Hang Hua and Kaile Zhang and Jingwen Qian and Wufei Ma and Haonan Chen and Chunjiang Liu and Yizhou Zhao and Xiaoyuan Wang and Weiyue Li and Alan Yuille and Paul Pu Liang and Yilun Du},
+    booktitle={European Conference on Computer Vision},
+    year={2026},
+    url={https://arxiv.org/abs/2606.27537}
+}</span>
+              </td>
+            </tr>
 
             <tr class="pub-item selected-pub">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
@@ -190,23 +372,24 @@
                   CoStream: Composing Simple Behaviors for Generalizable Complex Manipulation
                 </span>
                 <br>
-                <strong><a href="https://haonan16.github.io/">Haonan Chen*</a></strong>,
-                <a href="https://yuxiang-ma.github.io/">Yuxiang Ma*</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong><sup>*</sup>,
+                <a href="https://yuxiang-ma.github.io/">Yuxiang Ma</a><sup>*</sup>,
                 <a href="https://s-tian.github.io/">Stephen Tian</a>,
-                <a href="https://xiaoshan-han.github.io/">Xiaoshen Han</a>,
-                <a href="https://wenlong.page/">Wenlong Huang</a>,
-                <a href="">Feiyang Wu</a>,
+                <a href="https://xshan.site/">Xiaoshen Han</a>,
+                <a href="https://wenlonghuang.com">Wenlong Huang</a>,
+                Feiyang Wu,
                 <a href="https://yunzhuli.github.io/">Yunzhu Li</a>,
-                <a href="https://jiajunwu.com/">Jiajun Wu</a>,
+                <a href="https://jiajunwu.com">Jiajun Wu</a>,
                 <a href="https://persci.mit.edu/people/adelson/">Edward H. Adelson</a>,
                 <a href="https://yilundu.github.io/">Yilun Du</a>
                 <br>
-                <em>* Equal contribution</em>
+                <em><sup>*</sup> Equal contribution</em>
                 <br>
-                <strong>Preprint 2026</strong>, <a href="https://costream-simple.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2606.26423">[Paper]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-costream', this)">[BibTeX]</a>
-                <span id="bib-costream" style="display:none;">@misc{costream2026,
+                <strong>2026 Conference on Robot Learning</strong>, <a href="https://costream-simple.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2606.26423">[Paper]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-costream', this)">[BibTeX]</a>
+                <span id="bib-costream" style="display:none;">@inproceedings{costream2026,
     title={CoStream: Composing Simple Behaviors for Generalizable Complex Manipulation},
     author={Chen, Haonan and Ma, Yuxiang and Tian, Stephen and Han, Xiaoshen and Huang, Wenlong and Wu, Feiyang and Li, Yunzhu and Wu, Jiajun and Adelson, Edward H. and Du, Yilun},
+    booktitle={Conference on Robot Learning},
     year={2026}
 }</span>
               </td>
@@ -224,13 +407,13 @@
                 </span>
                 <br>
                 <a href="https://chaoqi-liu.com/">Chaoqi Liu</a>,
-                <a href="https://xshenhan.github.io/">Xiaoshen Han</a>,
+                <a href="https://xshan.site/">Xiaoshen Han</a>,
                 <a href="https://gao-jiawei.com/">Jiawei Gao</a>,
                 <a href="https://zhaoyue-zephyrus.github.io/">Yue Zhao</a>,
                 <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
                 <a href="https://yilundu.github.io/">Yilun Du</a>
                 <br>
-                <strong>RSS 2026</strong>, <a href="https://ordered-action-tokenization.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2602.04215">[Paper]</a> <a href="https://github.com/Chaoqi-LIU/oat">[Code]</a> <a href="https://x.com/liu730chaoqi/status/2020268786046390357?s=20">[Blog]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-oat', this)">[BibTeX]</a>
+                <strong>2026 Robotics: Science and Systems</strong>, <a href="https://ordered-action-tokenization.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2602.04215">[Paper]</a> <a href="https://github.com/Chaoqi-LIU/oat">[Code]</a> <a href="https://x.com/liu730chaoqi/status/2020268786046390357?s=20">[Blog]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-oat', this)">[BibTeX]</a>
                 <br>
                 <span class="award"><strong>Finalist - Best/Outstanding Paper Awards</strong></span>
                 <br>
@@ -260,11 +443,11 @@
                 <br>
                 <a href="https://gao-jiawei.com/">Jiawei Gao</a>,
                 <a href="https://chaoqi-liu.com/">Chaoqi Liu</a>,
-                <a href="">Peilin Wu</a>,
+                Peilin Wu,
                 <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
                 <a href="https://yilundu.github.io/">Yilun Du</a>
                 <br>
-                <strong>Preprint 2026</strong>, <a href="https://gao-jiawei.com/IMPACT/">[Project]</a> <a href="https://arxiv.org/abs/2406.14558v2">[Paper]</a> <a href="https://github.com/Winston-Gu/IMPACT">[Code]</a> <a href="https://www.youtube.com/watch?v=kboJsLPIrYI">[Video]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-impact', this)">[BibTeX]</a>
+                <strong>2026 Preprint</strong>, <a href="https://gao-jiawei.com/IMPACT/">[Project]</a> <a href="https://arxiv.org/abs/2406.14558v2">[Paper]</a> <a href="https://github.com/Winston-Gu/IMPACT">[Code]</a> <a href="https://www.youtube.com/watch?v=kboJsLPIrYI">[Video]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-impact', this)">[BibTeX]</a>
                 <span id="bib-impact" style="display:none;">@article{gao2024impact,
     title={Learning Internal-Model Predictive Control for Forceful Robotic Manipulation},
     author={Gao, Jiawei and Liu, Chaoqi and Wu, Peilin and Chen, Haonan and Du, Yilun},
@@ -285,17 +468,17 @@
                   SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models
                 </span>
                 <br>
-                <a href="">Haowen Liu*</a>,
-                <a href="https://shaoxiongyao.github.io/">Shaoxiong Yao*</a>,
+                <a href="https://hdacnw.github.io/">Haowen Liu</a><sup>*</sup>,
+                <a href="https://shaoxiongyao.github.io/">Shaoxiong Yao</a><sup>*</sup>,
                 <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
                 <a href="https://gao-jiawei.com/">Jiawei Gao</a>,
                 <a href="https://jiayuanm.com/">Jiayuan Mao</a>,
-                <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>,
+                <a href="https://jbhuang0604.github.io">Jia-Bin Huang</a>,
                 <a href="https://yilundu.github.io/">Yilun Du</a>
                 <br>
-                <em>* Equal contribution</em>
+                <em><sup>*</sup> Equal contribution</em>
                 <br>
-                <strong>CVPR 2026</strong>, <a href="https://simpact-bot.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2512.05955">[Paper]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-simpact', this)">[BibTeX]</a>
+                <strong>2026 IEEE/CVF Conference on Computer Vision and Pattern Recognition</strong>, <a href="https://simpact-bot.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2512.05955">[Paper]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-simpact', this)">[BibTeX]</a>
                 <span id="bib-simpact" style="display:none;">@article{simpact2025,
     title={SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models},
     author={Liu, Haowen and Yao, Shaoxiong and Chen, Haonan and Gao, Jiawei and Mao, Jiayuan and Huang, Jia-Bin and Du, Yilun},
@@ -320,19 +503,19 @@
                 </span>
                 <br>
                 <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
-                <a href="https://www.linkedin.com/in/jiaming-xu-7b4857264/">Jiaming Xu*</a>,
-                <a href="https://www.linkedin.com/in/hongyu-chen-91996b22b">Hongyu Chen*</a>,
+                <a href="https://www.linkedin.com/in/jiaming-xu-7b4857264/">Jiaming Xu</a><sup>*</sup>,
+                <a href="https://www.linkedin.com/in/hongyu-chen-91996b22b">Hongyu Chen</a><sup>*</sup>,
                 <a href="https://www.linkedin.com/in/kaiwen-hong-524520141/?locale=en_US">Kaiwen Hong</a>,
                 <a href="https://binghao-huang.github.io/">Binghao Huang</a>,
                 <a href="https://chaoqi-liu.com/">Chaoqi Liu</a>,
                 <a href="https://jiayuanm.com/">Jiayuan Mao</a>,
                 <a href="https://yunzhuli.github.io/">Yunzhu Li</a>,
-                <a href="https://yilundu.github.io/">Yilun Du<sup>+</sup></a>, and
-                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell<sup>+</sup></a>
+                <a href="https://yilundu.github.io/">Yilun Du</a><sup>+</sup>,
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a><sup>+</sup>
                 <br>
-                <em>* Equal contribution, <sup>+</sup> Equal advising</em>
+                <em><sup>*</sup> Equal contribution; <sup>+</sup> Equal advising</em>
                 <br>
-                <strong>ICRA 2026</strong>, <a href="https://policyconsensus.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2509.23468">[Paper]</a> <a href="https://github.com/policyconsensus/policyconsensus">[Code]</a> <a href="https://huggingface.co/datasets/haonan-chen/policy-consensus/tree/main">[Dataset]</a> <a href="https://www.youtube.com/watch?v=gT_zpOjZPxc">[Video]</a> <a href="https://policyconsensus.github.io/static/audio/audio.mp3">[Audio]</a> <a href="https://www.notion.so/Multi-Modal-Manipulation-via-Policy-Consensus-28645464339980d6a8a4ca588dec3905">[Blog]</a> <a href="https://deepwiki.com/policyconsensus/policyconsensus">[Deepwiki]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-policyconsensus', this)">[BibTeX]</a>
+                <strong>2026 IEEE International Conference on Robotics and Automation</strong>, <a href="https://policyconsensus.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2509.23468">[Paper]</a> <a href="https://github.com/policyconsensus/policyconsensus">[Code]</a> <a href="https://huggingface.co/datasets/haonan-chen/policy-consensus/tree/main">[Dataset]</a> <a href="https://www.youtube.com/watch?v=gT_zpOjZPxc">[Video]</a> <a href="https://policyconsensus.github.io/static/audio/audio.mp3">[Audio]</a> <a href="https://www.notion.so/Multi-Modal-Manipulation-via-Policy-Consensus-28645464339980d6a8a4ca588dec3905">[Blog]</a> <a href="https://deepwiki.com/policyconsensus/policyconsensus">[Deepwiki]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-policyconsensus', this)">[BibTeX]</a>
                 <span id="bib-policyconsensus" style="display:none;">@inproceedings{chen2026multimodal,
     title={Multi-Modal Manipulation via Multi-Modal Policy Consensus},
     author={Chen, Haonan and Xu, Jiaming and Chen, Hongyu and Hong, Kaiwen and Huang, Binghao and Liu, Chaoqi and Mao, Jiayuan and Li, Yunzhu and Du, Yilun and Driggs-Campbell, Katherine},
@@ -362,15 +545,15 @@
                 <br>
                 <a href="https://chaoqi-liu.com/">Chaoqi Liu</a>,
                 <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
-                <a href="https://sigmundhh.com/">Sigmund H. Høeg*</a>,
-                <a href="https://shaoxiongyao.github.io/">Shaoxiong Yao*</a>,
+                <a href="https://sigmundhh.com/">Sigmund H. Høeg</a><sup>*</sup>,
+                <a href="https://shaoxiongyao.github.io/">Shaoxiong Yao</a><sup>*</sup>,
                 <a href="https://yunzhuli.github.io/">Yunzhu Li</a>,
                 <a href="https://kkhauser.web.illinois.edu/">Kris Hauser</a>,
                 <a href="https://yilundu.github.io/">Yilun Du</a>
                 <br>
-                <em>* Equal contribution</em>
+                <em><sup>*</sup> Equal contribution</em>
                 <br>
-                <strong>RA-L 2026</strong>, <a href="https://factorized-diffusion-policy.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2512.21898">[Paper]</a>
+                <strong>2026 IEEE Robotics and Automation Letters</strong>, <a href="https://factorized-diffusion-policy.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2512.21898">[Paper]</a>
               </td>
             </tr>
 
@@ -388,12 +571,13 @@
                   Tool-as-Interface: Learning Robot Policies from Observing Human Tool Use
                 </span>
                 <br>
-                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, Cheng Zhu,
-                <a href="https://shuijing725.github.io/">Shuijing Liu</a>, 
-                <a href="https://yunzhuli.github.io/">Yunzhu Li</a>, and
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
+                Cheng Zhu,
+                <a href="https://shuijing725.github.io/">Shuijing Liu</a>,
+                <a href="https://yunzhuli.github.io/">Yunzhu Li</a>,
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <strong>CoRL 2025</strong>, <a href="https://tool-as-interface.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2504.04612">[Paper]</a> <a href="https://github.com/Tool-as-Interface/Tool_as_Interface">[Code]</a>
+                <strong>2025 Conference on Robot Learning</strong>, <a href="https://tool-as-interface.github.io/">[Project]</a> <a href="https://arxiv.org/abs/2504.04612">[Paper]</a> <a href="https://github.com/Tool-as-Interface/Tool_as_Interface">[Code]</a>
                 <br>
                 <span class="award"><strong>Best Paper Award</strong></span> at <strong>ICRA 2025</strong> Workshop on Foundation Models and Neuro-Symbolic AI for Robotics <a href="https://sairlab.org/icra25/">[Link]</a>
                 <br>
@@ -416,11 +600,11 @@
                   Towards Uncertainty Unification: A Case Study for Preference Learning
                 </span>
                 <br>
-                <a href="https://shaotingpeng.github.io/">Shaoting Peng</a>, 
-                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, and
+                <a href="https://shaotingpeng.github.io/">Shaoting Peng</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <strong>RSS 2025</strong>, <a href="https://sites.google.com/view/uupl-rss25/home">[Project]</a> <a href="https://arxiv.org/abs/2503.19317">[Paper]</a> <a href="https://github.com/capy8ra/UUPL">[Code]</a> <a href="https://youtu.be/xiC8xkcsrmc">[Video]</a>
+                <strong>2025 Robotics: Science and Systems</strong>, <a href="https://sites.google.com/view/uupl-rss25/home">[Project]</a> <a href="https://arxiv.org/abs/2503.19317">[Paper]</a> <a href="https://github.com/capy8ra/UUPL">[Code]</a> <a href="https://youtu.be/xiC8xkcsrmc">[Video]</a>
                 <br>
                 <span class="award"><strong>Best Paper Award</strong></span> at <strong>ICRA 2026</strong> Workshop on Uncertainty in Open-World Robotics
               </td>
@@ -442,13 +626,17 @@
                   Learning Coordinated Bimanual Manipulation Policies using State Diffusion and Inverse Dynamics Models
                 </span>
                 <br>
-                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, Jiaming Xu*, Lily Sheng*, 
-                <a href="https://tianchenji.github.io/">Tianchen Ji</a>, 
-                <a href="https://shuijing725.github.io/">Shuijing Liu</a>, 
-                <a href="https://yunzhuli.github.io/">Yunzhu Li</a>, and
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
+                <a href="https://www.linkedin.com/in/jiaming-xu-7b4857264/">Jiaming Xu</a><sup>*</sup>,
+                Lily Sheng<sup>*</sup>,
+                <a href="https://tianchenji.github.io/">Tianchen Ji</a>,
+                <a href="https://shuijing725.github.io/">Shuijing Liu</a>,
+                <a href="https://yunzhuli.github.io/">Yunzhu Li</a>,
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <strong>ICRA 2025</strong>, <a href="http://haonan16.github.io/coord_bimanual_page/">[Project]</a> <a href="https://arxiv.org/abs/2503.23271">[Paper]</a>
+                <em><sup>*</sup> Equal contribution</em>
+                <br>
+                <strong>2025 IEEE International Conference on Robotics and Automation</strong>, <a href="http://haonan16.github.io/coord_bimanual_page/">[Project]</a> <a href="https://arxiv.org/abs/2503.23271">[Paper]</a>
               </td>
             </tr>
             
@@ -463,12 +651,12 @@
                 <br>
                 <a href="https://aamzhas.github.io/">Aamir Hasan</a>,
                 <a href="https://theneeloy.github.io/">Neeloy Chakraborty</a>,
-                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, 
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
                 <a href="https://www.junghooncho.com/">Jung-Hoon Cho</a>,
-                <a href="http://www.wucathy.com/blog/">Cathy Wu</a>, and
+                <a href="http://www.wucathy.com/blog/">Cathy Wu</a>,
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <strong>JATS 2024</strong>, <a href="https://arxiv.org/abs/2407.00553">[Paper]</a>
+                <strong>2024 ACM Journal on Autonomous Transportation Systems</strong>, <a href="https://arxiv.org/abs/2407.00553">[Paper]</a>
               </td>
             </tr>
             
@@ -484,12 +672,12 @@
                 <br>
                 <a href="https://aamzhas.github.io/">Aamir Hasan</a>,
                 <a href="https://theneeloy.github.io/">Neeloy Chakraborty</a>,
-                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, 
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
                 <a href="https://www.junghooncho.com/">Jung-Hoon Cho</a>,
-                <a href="http://www.wucathy.com/blog/">Cathy Wu</a>, and
+                <a href="http://www.wucathy.com/blog/">Cathy Wu</a>,
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <strong>ITSM 2024</strong>, <a href="https://arxiv.org/abs/2407.13775">[Paper]</a>
+                <strong>2024 IEEE Intelligent Transportation Systems Magazine</strong>, <a href="https://arxiv.org/abs/2407.13775">[Paper]</a>
               </td>
             </tr>
 
@@ -506,14 +694,17 @@
               <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">Predicting Object Interactions with Behavior Primitives: An Application in Stowing Tasks</span>
                 <br>
-                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, 
-                Yilong Niu*, Kaiwen Hong*, 
-                <a href="https://shuijing725.github.io/">Shuijing Liu</a>, 
-                <a href="https://wangYiqing12.github.io/">Yiqing Wang</a>, 
-                <a href="https://yunzhuli.github.io/">Yunzhu Li</a>, and
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
+                Yilong Niu<sup>*</sup>,
+                <a href="https://www.linkedin.com/in/kaiwen-hong-524520141/?locale=en_US">Kaiwen Hong</a><sup>*</sup>,
+                <a href="https://shuijing725.github.io/">Shuijing Liu</a>,
+                <a href="https://wangYiqing12.github.io/">Yiqing Wang</a>,
+                <a href="https://yunzhuli.github.io/">Yunzhu Li</a>,
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <strong>CoRL 2023</strong>, <a href="https://haonan16.github.io/stow_page/">[Project]</a> <a href="https://arxiv.org/abs/2309.16873">[Paper]</a>
+                <em><sup>*</sup> Equal contribution</em>
+                <br>
+                <strong>2023 Conference on Robot Learning</strong>, <a href="https://haonan16.github.io/stow_page/">[Project]</a> <a href="https://arxiv.org/abs/2309.16873">[Paper]</a>
                 <br>
                 <span class="award"><strong>Finalist - Best Paper/Best Student Paper Awards</strong></span>
               </td>
@@ -528,14 +719,18 @@
               <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">Towards Safety of Multi-Level Human-Robot Interaction in Industrial Tasks</span>
                 <br>
-                <a href="https://tedhuang96.github.io/">Zhe Huang</a>, 
-                <a href="https://yejimun.github.io/">Yeji Mun</a>, 
-                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, 
-                Yiqing Xie, Yilong Niu, Xiang Li, Ninghan Zhong, Haoyuan You, 
-                <a href="https://scholar.google.com/citations?user=83a8tp0AAAAJ&hl=en">Daniel L. McPherson</a>, and
+                <a href="https://tedhuang96.github.io/">Zhe Huang</a>,
+                <a href="https://yejimun.github.io/">Yeji Mun</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
+                Yiqing Xie,
+                Yilong Niu,
+                Xiang Li,
+                Ninghan Zhong,
+                Haoyuan You,
+                <a href="https://scholar.google.com/citations?user=83a8tp0AAAAJ&amp;hl=en">Daniel L. McPherson</a>,
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <strong>CASE 2023</strong> (Special Session), <a href="https://arxiv.org/abs/2308.03222">[Paper]</a>
+                <strong>2023 IEEE International Conference on Automation Science and Engineering</strong> (Special Session), <a href="https://arxiv.org/abs/2308.03222">[Paper]</a>
               </td>
             </tr>
 
@@ -549,14 +744,17 @@
               <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">Learning Task Skills and Goals Simultaneously from Physical Interaction</span>
                 <br>
-                <strong><a href="https://haonan16.github.io/">Haonan Chen*</a></strong>,
-                <a href="https://yejimun.github.io/">Yeji Mun*</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong><sup>*</sup>,
+                <a href="https://yejimun.github.io/">Yeji Mun</a><sup>*</sup>,
                 <a href="https://tedhuang96.github.io/">Zhe Huang</a>,
-                Yilong Niu, Yiqing Xie,
-                <a href="https://scholar.google.com/citations?user=83a8tp0AAAAJ&hl=en">D. Livingston McPherson</a>, and
+                Yilong Niu,
+                Yiqing Xie,
+                <a href="https://scholar.google.com/citations?user=83a8tp0AAAAJ&amp;hl=en">D. Livingston McPherson</a>,
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <strong>CASE 2023</strong> (Special Session), <a href="https://arxiv.org/abs/2309.04596">[Paper]</a>
+                <em><sup>*</sup> Equal contribution</em>
+                <br>
+                <strong>2023 IEEE International Conference on Automation Science and Engineering</strong> (Special Session), <a href="https://arxiv.org/abs/2309.04596">[Paper]</a>
               </td>
             </tr>
 
@@ -571,14 +769,16 @@
               <td style="padding:2px 16px;width:75%;vertical-align:top;">
                 <span class="papertitle">PeRP: Personalized Residual Policies For Congestion Mitigation Through Co-operative Advisory Systems</span>
                 <br>
-                Aamir Hasan, 
-                <a href="https://theneeloy.github.io/">Neeloy Chakraborty*</a>, 
-                <strong><a href="https://haonan16.github.io/">Haonan Chen*</a></strong>, 
-                <a href="https://www.junghooncho.com/">Jung-Hoon Cho</a>, 
-                <a href="http://www.wucathy.com/blog/">Cathy Wu</a>, and
+                <a href="https://aamzhas.github.io/">Aamir Hasan</a>,
+                <a href="https://theneeloy.github.io/">Neeloy Chakraborty</a><sup>*</sup>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong><sup>*</sup>,
+                <a href="https://www.junghooncho.com/">Jung-Hoon Cho</a>,
+                <a href="http://www.wucathy.com/blog/">Cathy Wu</a>,
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <strong>ITSC 2023</strong>, <a href="https://arxiv.org/pdf/2308.00864.pdf">[Paper]</a> <a href="https://sites.google.com/illinois.edu/perp">[Website]</a>
+                <em><sup>*</sup> Equal contribution</em>
+                <br>
+                <strong>2023 IEEE International Conference on Intelligent Transportation Systems</strong>, <a href="https://arxiv.org/pdf/2308.00864.pdf">[Paper]</a> <a href="https://sites.google.com/illinois.edu/perp">[Website]</a>
                 <p class="award">
                   <strong>Best Presentation Award at  
                       <a href="https://publish.illinois.edu/csl-student-conference-2024/" class="award" style="text-decoration: none;">
@@ -600,10 +800,10 @@
                 <br>
                 <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
                 <a href="https://tianchenji.github.io/">Tianchen Ji</a>,
-                <a href="https://shuijing725.github.io/">Shuijing Liu</a>, and
+                <a href="https://shuijing725.github.io/">Shuijing Liu</a>,
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <strong>ITSC 2022</strong>, <a href="https://ieeexplore.ieee.org/document/9922261">[Paper]</a>
+                <strong>2022 IEEE International Conference on Intelligent Transportation Systems</strong>, <a href="https://ieeexplore.ieee.org/document/9922261">[Paper]</a>
               </td>
             </tr>
 
@@ -621,10 +821,10 @@
                 <a href="https://shuijing725.github.io/">Shuijing Liu</a>,
                 <a href="https://sites.google.com/site/changpeixin/home">Peixin Chang</a>,
                 <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
-                <a href="https://theneeloy.github.io/">Neeloy Chakraborty</a>, and
+                <a href="https://theneeloy.github.io/">Neeloy Chakraborty</a>,
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <strong>ICRA 2022</strong>, <a href="https://arxiv.org/abs/2109.06783">[Paper]</a> <a href="https://sites.google.com/illinois.edu/vae-trait-inference/home">[Website]</a> <a href="https://www.youtube.com/watch?v=wqbgsjSvkAo&feature=youtu.be&ab_channel=ShuijingLiu">[Video]</a>
+                <strong>2022 IEEE International Conference on Robotics and Automation</strong>, <a href="https://arxiv.org/abs/2109.06783">[Paper]</a> <a href="https://sites.google.com/illinois.edu/vae-trait-inference/home">[Website]</a> <a href="https://www.youtube.com/watch?v=wqbgsjSvkAo&feature=youtu.be&ab_channel=ShuijingLiu">[Video]</a>
               </td>
             </tr>
             
@@ -639,10 +839,10 @@
                 <br>
                 <a href="https://sites.google.com/site/changpeixin/home">Peixin Chang</a>,
                 <a href="https://shuijing725.github.io/">Shuijing Liu</a>,
-                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>, and
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong>,
                 <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
                 <br>
-                <strong>IROS 2020</strong>, <a href="https://arxiv.org/abs/1909.09172">[Paper]</a> <a href="https://www.youtube.com/watch?v=0ONGQwhGn_Y&ab_channel=PeixinChang">[Video]</a>
+                <strong>2020 IEEE/RSJ International Conference on Intelligent Robots and Systems</strong>, <a href="https://arxiv.org/abs/1909.09172">[Paper]</a> <a href="https://www.youtube.com/watch?v=0ONGQwhGn_Y&ab_channel=PeixinChang">[Video]</a>
               </td>
             </tr>
 
@@ -720,6 +920,18 @@
                   <td style="padding:20px; width:100%; vertical-align:middle;">
                     <h2>Service and Leadership</h2>
                     <ul>
+                      <li>
+                        <a href="https://compositional-robotics.github.io/" style="color:black;"><strong>IROS 2026 Workshop on Compositional and Modular Learning in the Era of Scaling in Robotics</strong></a> <br>
+                        Co-organizer <span style="float:right;">2026</span>
+                      </li>
+                      <li>
+                        <a href="https://bimanual-tool.github.io/" style="color:black;"><strong>CoRL 2026 Workshop on Bimanual Dexterous Tool Use: From Contact-Rich Execution to Generalist Robot Intelligence</strong></a> <br>
+                        Co-organizer <span style="float:right;">2026</span>
+                      </li>
+                      <li>
+                        <a href="https://compogen-robotics.github.io/corl2026/" style="color:black;"><strong>CoRL Workshop on Compositional Generalization for Real-World Robot Learning</strong></a> <br>
+                        Co-organizer <span style="float:right;">2026</span>
+                      </li>
                       <li>
                         <a href="https://robotics.illinois.edu/robotics-seminar-series/" style="color:black;"><strong>Robotics Seminar @ Illinois</strong></a> <br>
                         Organizer <span style="float:right;">August 2023 - May 2025</span>
@@ -851,5 +1063,3 @@
     </table>
   </body>
 </html>
-
-
