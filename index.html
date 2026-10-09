@@ -17,15 +17,38 @@
   <body>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        const videos = document.querySelectorAll('video[autoplay]');
-        videos.forEach(video => {
-          video.play().catch(e => {
-            console.log('Video autoplay failed:', e);
-          });
-        });
-
         // Initialize: show selected publications by default
         showSelected();
+
+        // Load and play publication demos only while their entries are in view.
+        const videos = document.querySelectorAll('.pub-item video');
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        function showVideo(video) {
+          const source = video.querySelector('source[data-src]');
+          if (source) {
+            source.src = source.dataset.src;
+            source.removeAttribute('data-src');
+            video.load();
+          }
+          video.controls = reducedMotion.matches;
+          if (!reducedMotion.matches) {
+            video.play().catch(() => { /* Keep the poster if autoplay is unavailable. */ });
+          }
+        }
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                showVideo(entry.target);
+              } else {
+                entry.target.pause();
+              }
+            });
+          }, { threshold: 0.1 });
+          videos.forEach(video => observer.observe(video));
+        } else {
+          videos.forEach(showVideo);
+        }
       });
 
       function showSelected() {
@@ -181,7 +204,11 @@
             <tr class="pub-item selected-pub">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <img src="images/glowtact_teaser.jpg" alt="GlowTact tactile sensors and corresponding contact images" width="100%" style="display: block;">
+                  <!-- Demo source: https://glowtact.github.io/design/assets/video/mms-contact-720.mp4 -->
+                  <video width="100%" playsinline loop preload="none" muted poster="images/glowtact_teaser.jpg" aria-label="GlowTact detecting the contact of a candy resting on the tactile sensor" style="display: block;">
+                    <source data-src="images/glowtact_demo.mp4" type="video/mp4">
+                    <img src="images/glowtact_teaser.jpg" alt="GlowTact tactile sensors and corresponding contact images" width="100%" style="display: block;">
+                  </video>
                 </div>
               </td>
               <td style="padding:2px 16px;width:75%;vertical-align:top;">
@@ -209,7 +236,11 @@
             <tr class="pub-item">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <img src="images/argus_teaser.png" alt="ARGUS overview" width="100%" style="display: block;">
+                  <!-- Demo source: https://rsathua.github.io/ARGUS/videos/Div/stack_blocks_argus_div.mp4 -->
+                  <video width="100%" playsinline loop preload="none" muted poster="images/argus_teaser.png" aria-label="ARGUS robot stacking blocks under a shifted camera view" style="display: block;">
+                    <source data-src="images/argus_demo.mp4" type="video/mp4">
+                    <img src="images/argus_teaser.png" alt="ARGUS overview" width="100%" style="display: block;">
+                  </video>
                 </div>
               </td>
               <td style="padding:2px 16px;width:75%;vertical-align:top;">
@@ -235,7 +266,11 @@
             <tr class="pub-item selected-pub">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <img src="images/masked_visual_actions_teaser.png" alt="Masked Visual Actions for Unified World Modeling overview" width="100%" style="display: block;">
+                  <!-- Demo source: https://masked-visual-actions.github.io/assets/cup_vids/cup2_output.mp4 -->
+                  <video width="100%" playsinline loop preload="none" muted poster="images/masked_visual_actions_teaser.png" aria-label="Masked Visual Actions world-model prediction of a robot moving a cup" style="display: block;">
+                    <source data-src="images/masked_visual_actions_demo.mp4" type="video/mp4">
+                    <img src="images/masked_visual_actions_teaser.png" alt="Masked Visual Actions for Unified World Modeling overview" width="100%" style="display: block;">
+                  </video>
                 </div>
               </td>
               <td style="padding:2px 16px;width:75%;vertical-align:top;">
@@ -268,7 +303,11 @@
             <tr class="pub-item selected-pub">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <img src="images/driftworld_teaser.png" alt="DriftWorld: Fast World Modeling through Drifting overview" width="100%" style="display: block;">
+                  <!-- Demo source: https://susie-lu.github.io/driftworld/videos/Demo_Bridge/scene_2/bottle.mp4 -->
+                  <video width="100%" playsinline loop preload="none" muted poster="images/driftworld_teaser.png" aria-label="DriftWorld generated rollout of a robot manipulating objects" style="display: block;">
+                    <source data-src="images/driftworld_demo.mp4" type="video/mp4">
+                    <img src="images/driftworld_teaser.png" alt="DriftWorld: Fast World Modeling through Drifting overview" width="100%" style="display: block;">
+                  </video>
                 </div>
               </td>
               <td style="padding:2px 16px;width:75%;vertical-align:top;">
@@ -294,7 +333,11 @@
             <tr class="pub-item">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <img src="images/bspline_policy_teaser.svg" alt="B-spline Policy inference overview" width="100%" style="display: block;">
+                  <!-- Demo source: https://b-spline-policy.github.io/assets/real-experiments/videos/dp-bspline-speed-stacking-2x.mp4 -->
+                  <video width="100%" playsinline loop preload="none" muted poster="images/bspline_policy_teaser.svg" aria-label="B-spline Policy robot performing speed stacking with cups" style="display: block;">
+                    <source data-src="images/bspline_policy_demo.mp4" type="video/mp4">
+                    <img src="images/bspline_policy_teaser.svg" alt="B-spline Policy inference overview" width="100%" style="display: block;">
+                  </video>
                 </div>
               </td>
               <td style="padding:2px 16px;width:75%;vertical-align:top;">
@@ -354,7 +397,11 @@
             <tr class="pub-item">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <img src="images/memobench_teaser.png" alt="MemoBench overview" width="100%" style="display: block;">
+                  <!-- Demo source: https://memobench-team.github.io/videos/Nordic_005_gt.mp4, https://memobench-team.github.io/videos/Nordic_005_lingbot.mp4 -->
+                  <video width="100%" playsinline loop preload="none" muted poster="images/memobench_teaser.png" aria-label="MemoBench comparison: reference video on the left and LingBot-World prediction on the right" style="display: block;">
+                    <source data-src="images/memobench_demo.mp4" type="video/mp4">
+                    <img src="images/memobench_teaser.png" alt="MemoBench overview" width="100%" style="display: block;">
+                  </video>
                 </div>
               </td>
               <td style="padding:2px 16px;width:75%;vertical-align:top;">
@@ -389,8 +436,8 @@
             <tr class="pub-item selected-pub">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
-                    <source src="images/costream_assembly.mp4" type="video/mp4">
+                  <video width="100%" playsinline="" loop="" preload="none" muted="" style="display: block;">
+                    <source data-src="images/costream_assembly.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -426,7 +473,11 @@
             <tr class="pub-item selected-pub">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <img src="images/oat_teaser.png" width="100%" style="display: block;">
+                  <!-- Demo source: https://ordered-action-tokenization.github.io/media/video/real_iphone/stack_cups/oat4/success_1.mp4 -->
+                  <video width="100%" playsinline loop preload="none" muted poster="images/oat_teaser.png" aria-label="OAT robot successfully stacking cups using four action tokens" style="display: block;">
+                    <source data-src="images/oat_demo.mp4" type="video/mp4">
+                    <img src="images/oat_teaser.png" width="100%" style="display: block;">
+                  </video>
                 </div>
               </td>
               <td style="padding:2px 16px;width:75%;vertical-align:top;">
@@ -461,7 +512,11 @@
             <tr class="pub-item">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <img src="images/impact_teaser.svg" width="100%" style="display: block;">
+                  <!-- Demo source: https://gao-jiawei.com/IMPACT/resources/IMPACT_Teaser_NoText.web.mp4 -->
+                  <video width="100%" playsinline loop preload="none" muted poster="images/impact_teaser.svg" aria-label="IMPACT robot manipulating a weighted object" style="display: block;">
+                    <source data-src="images/impact_demo.mp4" type="video/mp4">
+                    <img src="images/impact_teaser.svg" width="100%" style="display: block;">
+                  </video>
                 </div>
               </td>
               <td style="padding:2px 16px;width:75%;vertical-align:top;">
@@ -488,7 +543,11 @@
             <tr class="pub-item">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <img src="images/simpact_teaser.png" width="100%" style="display: block;">
+                  <!-- Demo source: https://simpact-bot.github.io/assets/rope.mp4 -->
+                  <video width="100%" playsinline loop preload="none" muted poster="images/simpact_teaser.png" aria-label="SIMPACT real-world and simulated rope shaping" style="display: block;">
+                    <source data-src="images/simpact_demo.mp4" type="video/mp4">
+                    <img src="images/simpact_teaser.png" width="100%" style="display: block;">
+                  </video>
                 </div>
               </td>
               <td style="padding:2px 16px;width:75%;vertical-align:top;">
@@ -516,11 +575,48 @@
               </td>
             </tr>
 
+            <tr class="pub-item">
+              <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
+                <div class="one">
+                  <!-- Demo source: https://jerrywrx.github.io/images/spa_vid.mp4 -->
+                  <video width="100%" playsinline loop preload="none" muted poster="images/gotta_scoop_teaser.png" aria-label="Gotta Scoop Em All robot transferring granular objects between containers" style="display: block;">
+                    <source data-src="images/gotta_scoop_demo.mp4" type="video/mp4">
+                    <img src="images/gotta_scoop_teaser.png" alt="Gotta Scoop 'Em All: simulation and real-world co-training for long-horizon robotic scooping" width="100%" style="display: block;">
+                  </video>
+                </div>
+              </td>
+              <td style="padding:2px 16px;width:75%;vertical-align:top;">
+                <span class="papertitle">Gotta Scoop &rsquo;Em All: Sim-and-Real Co-Training of Graph-based Neural Dynamics for Long-Horizon Scooping</span>
+                <br>
+                <a href="https://www.linkedin.com/in/kaiwen-hong-524520141/?locale=en_US">Kaiwen Hong</a>,
+                <strong><a href="https://haonan16.github.io/">Haonan Chen</a></strong><sup>*</sup>,
+                <a href="https://www.linkedin.com/in/jiaming-xu-7b4857264/">Jiaming Xu</a><sup>*</sup>,
+                <a href="https://jerrywrx.github.io/">Runxuan Wang</a><sup>*</sup>,
+                <a href="https://www.linkedin.com/in/kaylanwang/">Kaylan Wang</a>,
+                <a href="https://robo-alex.github.io/">Mingtong Zhang</a>,
+                <a href="https://shuijing725.github.io/">Shuijing Liu</a>,
+                <a href="https://yifanzhu95.github.io/">Yifan Zhu</a>,
+                <a href="https://yunzhuli.github.io/">Yunzhu Li</a>,
+                <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>
+                <br>
+                <em><sup>*</sup> Equal contribution</em>
+                <br>
+                <strong>2026 IEEE International Conference on Robotics and Automation</strong>, <a href="https://scoopthemall.github.io/">[Project]</a> <a href="https://jerrywrx.github.io/data/ICRA26_4643_FI.pdf">[Paper]</a> <a href="javascript:void(0)" onclick="copyBibtex('bib-gotta-scoop', this)">[BibTeX]</a>
+                <span id="bib-gotta-scoop" style="display:none;">@inproceedings{hong2026gottascoop,
+    title={Gotta Scoop 'Em All: Sim-and-Real Co-Training of Graph-based Neural Dynamics for Long-Horizon Scooping},
+    author={Hong, Kaiwen and Chen, Haonan and Xu, Jiaming and Wang, Runxuan and Wang, Kaylan and Zhang, Mingtong and Liu, Shuijing and Zhu, Yifan and Li, Yunzhu and Driggs-Campbell, Katherine},
+    booktitle={2026 IEEE International Conference on Robotics and Automation (ICRA)},
+    year={2026},
+    url={https://jerrywrx.github.io/data/ICRA26_4643_FI.pdf}
+}</span>
+              </td>
+            </tr>
+
             <tr class="pub-item selected-pub">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
-                    <source src="images/policyconsensus.mp4" type="video/mp4">
+                  <video width="100%" playsinline="" loop="" preload="none" muted="" style="display: block;">
+                    <source data-src="images/policyconsensus.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -560,8 +656,8 @@
             <tr class="pub-item">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
-                    <source src="images/fdp_26.mp4" type="video/mp4">
+                  <video width="100%" playsinline="" loop="" preload="none" muted="" style="display: block;">
+                    <source data-src="images/fdp_26.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -588,8 +684,8 @@
             <tr class="pub-item selected-pub">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
-                    <source src="images/corl25_egg_flip.mp4" type="video/mp4">
+                  <video width="100%" playsinline="" loop="" preload="none" muted="" style="display: block;">
+                    <source data-src="images/corl25_egg_flip.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -643,8 +739,8 @@
             <tr class="pub-item">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
-                    <source src="images/bimanual24.mp4" type="video/mp4">
+                  <video width="100%" playsinline="" loop="" preload="none" muted="" style="display: block;">
+                    <source data-src="images/bimanual24.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -713,8 +809,8 @@
             <tr class="pub-item selected-pub">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="display: block;">
-                    <source src="images/stow23.mp4" type="video/mp4">
+                  <video width="100%" playsinline="" loop="" preload="none" muted="" style="display: block;">
+                    <source data-src="images/stow23.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -859,7 +955,11 @@
             <tr class="pub-item">
               <td style="padding:2px 16px;width:25%;vertical-align:top; text-align: center;">
                 <div class="one">
-                  <img src="images/sound.png" width="100%" style="display: block;">
+                  <!-- Demo source: https://www.youtube.com/watch?v=0ONGQwhGn_Y (50-80 seconds) -->
+                  <video width="100%" playsinline loop preload="none" muted poster="images/sound.png" aria-label="Robot Sound Interpretation: a real robot navigating to objects in response to spoken commands" style="display: block;">
+                    <source data-src="images/robot_sound_demo.mp4" type="video/mp4">
+                    <img src="images/sound.png" alt="Robot Sound Interpretation overview" width="100%" style="display: block;">
+                  </video>
                 </div>
               </td>
               <td style="padding:2px 16px;width:75%;vertical-align:top;">
