@@ -30,80 +30,107 @@
   #notes { position: fixed; left: 16px; right: 16px; bottom: 52px; max-height: 30vh; overflow: auto; display: none;
            background: #f7f6f2; color: #1e2633; font: 16px/1.5 system-ui, sans-serif; padding: 16px 20px; border-radius: 10px; }
   #notes.show { display: block; }
+
+  .story { background:#F7F6F2; color:#1E2633; font-family:'IBM Plex Sans',Arial,sans-serif; padding:76px 112px; display:flex; flex-direction:column; gap:36px; }
+  .story, .story * { box-sizing:border-box; }
+  .story header { flex:none; }
+  .story .chapter { font-size:26px; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB; font-weight:600; margin-bottom:18px; }
+  .story h2 { font-family:'Source Serif 4',Georgia,serif; font-size:64px; line-height:1.12; max-width:1660px; }
+  .story .content { flex:1; min-height:0; display:flex; flex-direction:column; justify-content:center; gap:24px; }
+  .story .takeaway { flex:none; background:#17202E; color:#F3F1EA; border-radius:14px; padding:24px 32px; font-size:36px; line-height:1.3; }
+  .story .pair { display:grid; grid-template-columns:1.05fr 1fr; gap:64px; align-items:center; min-height:0; height:100%; }
+  .story .media { height:100%; min-height:0; display:flex; align-items:center; justify-content:center; background:white; border-radius:18px; padding:18px; }
+  .story .media img, .story .media video { width:100%; height:100%; max-height:580px; object-fit:contain; }
+  .story .media svg { max-height:100%; width:100%; }
+  .story .explain { display:flex; flex-direction:column; gap:34px; }
+  .story .lead { font-size:44px; line-height:1.35; }
+  .story .muted { font-size:28px; line-height:1.4; color:#4A5160; }
+  .story .big { font-family:'Source Serif 4',Georgia,serif; font-size:80px; font-weight:600; line-height:1.1; }
+  .story .green { color:#14866D; } .story .orange { color:#B64219; }
+  .story table { font-size:36px; line-height:1.35; }
+  .story th { background:#E6EEF9; text-align:left; font-size:30px; color:#34465E; }
+  .story td, .story th { padding:26px 22px; border-bottom:2px solid #DCDDD6; }
+  .story tbody tr:nth-child(even) { background:white; }
+  .story td:first-child { font-weight:600; }
+  .story .content > video { width:100%; height:460px; object-fit:contain; background:white; border-radius:18px; }
+  .story .captions { width:1100px; max-width:100%; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:24px; text-align:center; }
+  .story .captions p { font-size:30px; line-height:1.45; }
+  .story .captions b { font-size:38px; }
+  .story .flow { display:flex; gap:16px; align-items:center; justify-content:center; }
+  .story .flow div { flex:1; padding:52px 20px; border:2px solid #CBD5E1; border-radius:18px; background:white; font-size:36px; line-height:1.7; text-align:center; }
+  .story .flow strong { font-size:36px; color:#1C5CAB; }
+  .story .flow span { font-size:40px; color:#1C5CAB; }
+  .story .centered { text-align:center; margin-top:30px; }
+  .story.dark { background:#17202E; color:#F3F1EA; }
+  .story.dark .chapter { color:#91BEF5; } .story.dark .muted { color:#C9CED8; }
+  .story.dark .takeaway { background:#2A3546; }
+  .story.dark th { background:#2A3546; color:#CFE0F7; }
+  .story.dark td, .story.dark th { border-color:#41516A; }
+  .story.dark tbody tr:nth-child(even) { background:#202D40; }
+
 </style>
 </head>
 <body>
 <div id="stage"><div id="holder">
-<section id="cover" data-transition="fade" style="background:#17202E;color:#F3F1EA;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:grid;grid-template-columns:1fr 720px;gap:64px;align-items:center">
-<div style="display:flex;flex-direction:column;gap:36px">
-<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#7FB0EE">Lab meeting · Milestone M0</p>
-<h1 style="font-family:'Source Serif 4', Georgia, serif;font-size:88px;font-weight:600;line-height:1.05;color:#F3F1EA">Zero Gripper: which simulator, and can search beat the Fin-Ray?</h1>
-<p style="font-size:28px;color:#C9CED8">Haonan Chen · October 29, 2026 · simulation results, not yet on the bench</p>
-</div>
-<div style="background:#F7F6F2;border-radius:24px;padding:24px;display:flex;align-items:center;justify-content:center">
-<img src="img/full_gripper_fin_ray.png" alt="CAD render of the test gripper: a palm with two Fin-Ray fingers driven by one servo" style="width:672px;height:540px;object-fit:contain">
-</div>
-<p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#2A3546;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Bottom line:</b> 2D FEM is the simulator, and search found a finger whose tip curls in.</p>
-<aside>Today: where M0 stands, as three questions. One, which simulator can score soft 3D-printed fingers accurately and fast enough for an optimization loop. Two, does a standard Fin-Ray really curl its tip around an object. Three, can a search find a finger that does. Everything is simulation; nothing has been tested on the bench yet.</aside>
-</section>
+<section id="cover" class="story dark"><header><p class="chapter">Zero Gripper · Milestone M0</p><h2>Can simulation help us design<br>a better gripper?</h2></header><div class="content"><div class="pair"><div class="media"><img src="img/full_gripper_fin_ray.png" alt="CAD render of a two-finger gripper"></div><div class="explain"><p class="lead">Start with a Fin-Ray.<br>Test its response.<br>Search for a better finger.</p><p class="muted">Haonan Chen · October 29, 2026<br>Simulation results; physical tests next</p></div></div></div><p class="takeaway"><b>Takeaway:</b> Search found a finger whose tip moves toward the object in simulation.</p><aside>Today: where M0 stands, as three questions. One, which simulator can score soft 3D-printed fingers accurately and fast enough for an optimization loop. Two, does a standard Fin-Ray really curl its tip around an object. Three, can a search find a finger that does. Everything is simulation; nothing has been tested on the bench yet.</aside></section>
 
-<section id="roadmap" data-transition="fade" style="background:#F7F6F2;color:#1E2633;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;gap:48px">
-<div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Today</p>
-<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#17202E">Three questions, with the answers up front</h2>
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px">
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:44px;display:flex;flex-direction:column;gap:20px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:96px;font-weight:600;line-height:1;color:#1C5CAB">1</p>
-<h3 style="font-size:36px;font-weight:600;line-height:1.25;color:#17202E">Which simulator can score soft fingers?</h3>
-<p style="font-size:30px;line-height:1.4;color:#4A5160">→ 2D finite elements. The 3D options are too stiff or too slow.</p>
-</div>
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:44px;display:flex;flex-direction:column;gap:20px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:96px;font-weight:600;line-height:1;color:#1C5CAB">2</p>
-<h3 style="font-size:36px;font-weight:600;line-height:1.25;color:#17202E">Does a Fin-Ray’s tip curl around objects?</h3>
-<p style="font-size:30px;line-height:1.4;color:#4A5160">→ No. In every model, the tip moves away.</p>
-</div>
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:44px;display:flex;flex-direction:column;gap:20px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:96px;font-weight:600;line-height:1;color:#1C5CAB">3</p>
-<h3 style="font-size:36px;font-weight:600;line-height:1.25;color:#17202E">Can a search find a finger that does?</h3>
-<p style="font-size:30px;line-height:1.4;color:#4A5160">→ Yes, in 264 tries, for contacts low on the face.</p>
-</div>
-</div>
-<p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#17202E;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Takeaway:</b> the rest of the talk is the evidence for these three answers.</p>
-<aside>Giving the answers first so the evidence is easy to follow. Each following slide is labeled with the question it belongs to.</aside>
-</section>
+<section id="roadmap" class="story "><header><p class="chapter">The story</p><h2>Build a simulator, then use it to improve the finger</h2></header><div class="content"><table><thead><tr><th>Step</th><th>What we learned</th></tr></thead><tbody><tr><td>1 · Choose a model</td><td>2D FEM makes design search practical.</td></tr><tr><td>2 · Test the baseline</td><td>The simulated Fin-Ray tip moves away from the object.</td></tr><tr><td>3 · Improve the design</td><td>Search finds inward tip motion at low and middle contacts.</td></tr></tbody></table></div><p class="takeaway"><b>Takeaway:</b> The next test is whether printed fingers behave as predicted.</p><aside>The talk follows one design loop. First we need a useful simulator. Then we use it to identify a baseline limitation. Finally we redesign the finger and check the prediction. All results shown here are simulations.</aside></section>
 
-<section id="goal" data-transition="fade" style="background:#F7F6F2;color:#1E2633;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;gap:48px">
+<section id="goal" class="story "><header><p class="chapter">1 · Build the evaluation loop</p><h2>The full method: generate, evaluate, refine, and test</h2></header><div class="content"><div class="flow"><div>AI proposes<br><strong>CAD designs</strong></div><span>→</span><div>Simulation<br><strong>scores designs</strong></div><span>→</span><div>Search<br><strong>refines designs</strong></div><span>→</span><div>Print and test<br><strong>on the robot</strong></div></div><p class="lead centered">M0: establish the simulator and test finger optimization.</p></div><p class="takeaway"><b>Takeaway:</b> Physical measurements feed back into simulation and the next design search.</p><aside>Search is quality-diversity (MOME) on the outside and CMA-ES on each design's parameters inside. Benchmarks are YCB household objects and NIST assembly boards. Target venue CoRL 2027. If the simulator ranks designs wrongly, the agent optimizes the wrong thing, which is why M0 tests simulators first.</aside></section>
+
+<section id="scorecard" class="story "><header><p class="chapter">1 · Choose a model</p><h2>Use fast FEM to search; check finalists at large deformation</h2></header><div class="content"><table><thead><tr><th>Model</th><th>Evidence so far</th><th>Role</th></tr></thead><tbody><tr><td>3D soft-body models</td><td>Too stiff in our benchmarks</td><td>Set aside for M0</td></tr><tr><td>2D · small deformation</td><td>1.2% beam error · ~0.1 s / evaluation</td><td>Screen designs</td></tr><tr><td>2D · large deformation</td><td>Contact and large motion · ~1 min / push</td><td>Check finalists</td></tr></tbody></table></div><p class="takeaway"><b>Takeaway:</b> 2D FEM supports fast screening; full grasp evaluation still needs work.</p><aside>The test is a TPU beam bending under a known load, where beam theory gives the exact answer. Bars below zero mean too stiff; the labels give mesh size and speed. MuJoCo flex and Genesis use linear tetrahedra, which lock in bending, and the problem gets worse on thin walls, which is exactly what compliant fingers have. Our fingers are flat outlines extruded to a thickness, so a 2D model with quadratic elements is both exact and fast. "Time per design" means one grasp trial or one 15 mm push. MuJoCo soft bodies with contact ran at 1.8 steps per second; a grasp needs about 20,000 steps. Genesis ran 5 to 37 steps per second on the GPU without contact. The 2D small-deformation model uses scikit-fem; the large-deformation model is PolyFEM with IPC contact, which also handles ribs touching each other. Convex decomposition for rigid collision shapes (CoACD) takes 4 to 17 seconds per body, so it is only used for rigid parts. The 2D restriction gives up fully 3D soft structures for version 1. In return, stiffness is computed in under a second. Large-deformation behavior is kept by precomputing push curves at about 20 points along each finger face with the 2D large-deformation model, then using those curves inside a fast rigid-body grasp simulation. At 20 points times 300 designs that is about a day per generation today, so it must get roughly 25 times cheaper: fewer points, coarser meshes or fewer steps.</aside></section>
+
+<section id="explainer" class="story "><header><p class="chapter">2 · Define the behavior</p><h2>When the object presses the face, where does the tip go?</h2></header><div class="content"><div class="pair"><div class="media"><svg aria-label="Diagram of a Fin-Ray finger: a triangle with horizontal ribs, an object pressing on its flat face from the right. A green arrow at the tip points toward the object (the promised curl); an orange arrow points away." width="640" height="560" viewBox="0 0 640 560" xmlns="http://www.w3.org/2000/svg">
+<polygon points="360,60 360,500 120,500" fill="none" stroke="#2a78d6" stroke-width="10" stroke-linejoin="round"/>
+<line x1="360" y1="170" x2="300" y2="170" stroke="#2a78d6" stroke-width="7"/>
+<line x1="360" y1="280" x2="240" y2="280" stroke="#2a78d6" stroke-width="7"/>
+<line x1="360" y1="390" x2="180" y2="390" stroke="#2a78d6" stroke-width="7"/>
+<circle cx="450" cy="300" r="85" fill="#F2F1EC" stroke="#1f1f1e" stroke-width="5"/>
+<line x1="620" y1="300" x2="560" y2="300" stroke="#1f1f1e" stroke-width="8"/>
+<polygon points="545,300 572,284 572,316" fill="#1f1f1e"/>
+<line x1="370" y1="40" x2="450" y2="40" stroke="#14866D" stroke-width="9"/>
+<polygon points="470,40 444,24 444,56" fill="#14866D"/>
+<line x1="350" y1="40" x2="280" y2="40" stroke="#C14A17" stroke-width="9" stroke-dasharray="14 10"/>
+<polygon points="260,40 286,24 286,56" fill="#C14A17"/>
+</svg></div><div class="explain"><p class="lead green">Toward the object<br><b>The behavior we want</b></p><p class="lead orange">Away from the object<br><b>The baseline response</b></p></div></div></div><p class="takeaway"><b>Takeaway:</b> We compare tip motion under the same push.</p><aside>The Fin-Ray Effect, from fish fins and Festo's grippers, is sold as: push the flat face and the whole finger wraps around the object, tip included. That wrapping is why Fin-Ray fingers are popular for delicate objects. The number is the sideways movement of the tip divided by the movement of the face where it is pushed. In the diagram, green is toward the object and orange is away. The face can wrap around an object even if the tip moves away. Inward tip motion alone is not a measure of grasp quality.</aside></section>
+
+<section id="nocurl" class="story "><header><p class="chapter">2 · Test the baseline</p><h2>The face bends around the object; the tip moves away</h2></header><div class="content"><div class="pair"><div class="media"><video src="video/finray_push.mp4" poster="video/finray_push_still.png" aria-label="Standard Fin-Ray under a 15 mm push" muted loop playsinline preload="auto"></video></div><div class="explain"><p class="big orange">6 mm away</p><p class="lead">Tip motion after a<br>15 mm push at mid-height</p><p class="muted">Standard Fin-Ray · simulation</p></div></div></div><p class="takeaway"><b>Takeaway:</b> In these simulations, the Fin-Ray’s tip moves away from the object.</p><aside>The animation is the large-deformation simulation: grey is the finger at rest, blue is deformed, the circle is a 20 mm cylinder pushing 15 mm into mid-height. The face does wrap the object, but the tip follows the push outward at about 0.4 times its movement. Same answer in MuJoCo, the 2D small-deformation model and PolyFEM with large deformation, friction 0.5 and self-contact. The grid sweep varied rib angle, rib count, rib and wall thickness and push height. A printed finger on the bench will confirm or refute this.</aside></section>
+
+<section id="verify" class="story "><header><p class="chapter">3 · Search and check</p><h2>The first design works low on the finger, but is too stiff</h2></header><div class="content"><video src="video/compare_push.mp4" poster="video/compare_push_still.png" aria-label="Comparison of the baseline and first searched design at low and middle contact heights" muted loop playsinline preload="auto"></video><div class="captions"><p>Baseline<br><b>6 mm away</b></p><p>First design · low contact<br><b class="green">9.1 mm toward</b></p><p>First design · middle contact<br><b class="orange">8.1 mm away</b></p></div></div><p class="takeaway"><b>Takeaway:</b> The first search needs to reward both a wider contact range and lower force.</p><aside>The optimizer is CMA-ES. It varies base width, tip width, a bowed back beam, wall thicknesses and six ribs; each rib joins any point on the front to any point on the back, so ribs never cross. Rules: 80 mm long, nothing thinner than 0.8 mm so it prints in TPU, and a minimum stiffness. It stopped at the first design below minus 0.1 that also held on a finer mesh. With the base pinned instead of clamped it took 168 designs. Left: the found design. Then the same finger pushed at 30, 50 and 70 percent of its height; grey is rest, blue is the tip curling in, orange is the tip moving away. Both base mountings converged on the same strut idea independently. The grid sweep could not express it: it only had evenly spaced, parallel ribs. These shapes come from the small-deformation model, scaled to an 8 mm push; the next slide checks it with large deformation. Large-deformation simulation (PolyFEM, Neo-Hookean TPU, contact with a rigid 20 mm cylinder, 30 steps to 15 mm). Pushed at 30 percent height, the tip ratio goes from minus 0.35 to minus 0.79 and ends at minus 0.65: the effect gets stronger with large deformation. Pushed at mid-height it curls for the first 7 mm, then reverses and ends 8 mm away. It is about 4.5 times stiffer than the standard Fin-Ray (11 N against 2.4 N at 15 mm) because the first search never penalized stiffness. Friction 0.5 changes the ratio by less than 0.07. The next slide fixes both problems with a second search.</aside></section>
+
+<section id="search2" class="story "><header><p class="chapter">3 · Improve the objective</p><h2>The second search improves both contact heights</h2></header><div class="content"><video src="video/compare_v2.mp4" poster="video/compare_v2_still.png" aria-label="Comparison of the baseline and second searched design at low and middle contact heights" muted loop playsinline preload="auto"></video><div class="captions"><p>Baseline<br><b>6 mm away</b></p><p>New design · low contact<br><b class="green">16.9 mm toward</b></p><p>New design · middle contact<br><b class="green">2 mm toward</b></p></div></div><p class="takeaway"><b>Takeaway:</b> The new design moves its tip toward the object at both tested heights.</p><aside>Second search: pushes at 20, 30, 40, 50 and 60 percent height, a score that mixes the average and the worst height, stiffness within plus or minus 50 percent of the standard Fin-Ray's 0.22 N per mm, and its 10 best distinct designs checked with large deformation. It plateaued after 12,480 designs in 87 seconds. This design (d2): tip ratio minus 1.2 to minus 1.8 at 30 percent height all the way to 15 mm, so the tip moves more than the face, like a lever; at mid-height it still curls at 15 mm (minus 0.14). Push force at 15 mm is 3.1 to 4.6 N against 2.4 N for the standard Fin-Ray. Simulation only; it is the next print. Low and middle contacts refer to 30% and 50% of finger height. These results are large-deformation simulations at a 15 mm push.</aside></section>
+
+<section id="summary" class="story "><header><p class="chapter">3 · Compare the results</p><h2>The second search improves motion and reduces force</h2></header><div class="content"><table><thead><tr><th>At a 15 mm push</th><th>Standard Fin-Ray</th><th>First search</th><th>Second search</th></tr></thead><tbody><tr><td>Tip · low contact</td><td>—</td><td>9.1 mm toward</td><td>16.9 mm toward</td></tr><tr><td>Tip · middle contact</td><td>6 mm away</td><td>8.1 mm away</td><td>2 mm toward</td></tr><tr><td>Push force</td><td>2.4 N</td><td>~11 N</td><td>3.1–4.6 N</td></tr></tbody></table></div><p class="takeaway"><b>Takeaway:</b> The second design uses much less force than the first, but more than the baseline.</p><aside>Large-deformation simulation (PolyFEM, Neo-Hookean TPU, contact with a rigid 20 mm cylinder, 30 steps to 15 mm). Pushed at 30 percent height, the tip ratio goes from minus 0.35 to minus 0.79 and ends at minus 0.65: the effect gets stronger with large deformation. Pushed at mid-height it curls for the first 7 mm, then reverses and ends 8 mm away. It is about 4.5 times stiffer than the standard Fin-Ray (11 N against 2.4 N at 15 mm) because the first search never penalized stiffness. Friction 0.5 changes the ratio by less than 0.07. The next slide fixes both problems with a second search. Second search: pushes at 20, 30, 40, 50 and 60 percent height, a score that mixes the average and the worst height, stiffness within plus or minus 50 percent of the standard Fin-Ray's 0.22 N per mm, and its 10 best distinct designs checked with large deformation. It plateaued after 12,480 designs in 87 seconds. This design (d2): tip ratio minus 1.2 to minus 1.8 at 30 percent height all the way to 15 mm, so the tip moves more than the face, like a lever; at mid-height it still curls at 15 mm (minus 0.14). Push force at 15 mm is 3.1 to 4.6 N against 2.4 N for the standard Fin-Ray. Simulation only; it is the next print. The dash means no low-contact baseline value is presented here. Force values for the searched designs refer to the reported contact tests, not a universal stiffness ratio.</aside></section>
+
+<section id="next" class="story dark"><header><p class="chapter">4 · Test the prediction</p><h2>Print the baseline and the new design; compare their motion</h2></header><div class="content"><table><thead><tr><th>Test</th><th>Prediction to check</th></tr></thead><tbody><tr><td>Fin-Ray · middle contact</td><td>Tip moves away from the object.</td></tr><tr><td>New design · low and middle contacts</td><td>Tip moves toward the object.</td></tr><tr><td>Both fingers · force vs. push depth</td><td>Measured force curves agree with simulation.</td></tr></tbody></table></div><p class="takeaway"><b>Takeaway:</b> Physical tests will show whether the simulator can guide the next design search.</p><aside>The two prints test opposite predictions: the standard Fin-Ray should NOT curl, and the second-search design SHOULD curl, strongly when pushed low and slightly at mid-height. If both hold, the 2D simulator is trustworthy for ranking designs. If the standard Fin-Ray curls on the bench, the simulator is missing something and has to be fixed before any search result means anything. The printed pair tests opposite predictions: the standard Fin-Ray should not curl, the searched finger should. The 25 times speed-up is what it takes to score 300 designs in under an hour.</aside></section>
+
+<section id="accuracy" data-transition="fade" style="background:#F7F6F2;color:#1E2633;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Background · the project</p>
-<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#17202E">An AI agent designs the gripper; simulation scores it</h2>
+<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Backup · supporting evidence</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#17202E">3D soft-body simulators make TPU far too stiff</h2>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:28px">
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:12px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:88px;font-weight:600;line-height:1;color:#1C5CAB">1</p>
-<p style="font-size:28px;line-height:1.4;color:#4A5160">servo drives everything (Dynamixel XM430)</p>
+<div style="display:flex;gap:40px;align-items:center">
+<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:16px">
+<img src="img/panel_E.png" alt="Bar chart of a TPU beam's bending error against the textbook answer: MuJoCo minus 59, 43 and 30 percent; Genesis minus 35, 15 and 30 percent; 2D finite elements plus 1.2 percent" style="width:1040px;height:540px;object-fit:contain">
 </div>
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:12px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:88px;font-weight:600;line-height:1;color:#1C5CAB">300</p>
-<p style="font-size:28px;line-height:1.4;color:#4A5160">candidate designs scored per generation</p>
+<div style="flex:1;display:flex;flex-direction:column;gap:28px">
+<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Source Serif 4', Georgia, serif;font-size:80px;font-weight:600;line-height:1;color:#C14A17">4.5–6.4×</p>
+<p style="font-size:28px;line-height:1.35;color:#4A5160">too stiff: MuJoCo on a Fin-Ray finger</p>
 </div>
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:12px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:88px;font-weight:600;line-height:1;color:#1C5CAB">3</p>
-<p style="font-size:28px;line-height:1.4;color:#4A5160">printable materials: PLA, TPU, silicone</p>
-</div>
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:12px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:88px;font-weight:600;line-height:1;color:#1C5CAB">4</p>
-<p style="font-size:28px;line-height:1.4;color:#4A5160">robot arms for real tests: YAM, ARX, Franka, UR5</p>
+<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Source Serif 4', Georgia, serif;font-size:80px;font-weight:600;line-height:1;color:#14866D">1.2%</p>
+<p style="font-size:28px;line-height:1.35;color:#4A5160">error: 2D finite elements</p>
 </div>
 </div>
-<p style="font-size:32px;line-height:1.45;color:#2B3443">The agent writes CAD code for every part. A search loop keeps the best and most diverse designs, then tunes each one’s dimensions.</p>
-<p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#17202E;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Takeaway:</b> every design is judged in simulation, so the simulator decides everything.</p>
-<aside>Search is quality-diversity (MOME) on the outside and CMA-ES on each design's parameters inside. Benchmarks are YCB household objects and NIST assembly boards. Target venue CoRL 2027. If the simulator ranks designs wrongly, the agent optimizes the wrong thing, which is why M0 tests simulators first.</aside>
+</div>
+<p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#17202E;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Takeaway:</b> a too-stiff simulator would punish exactly the soft designs we want.</p>
+<aside>The test is a TPU beam bending under a known load, where beam theory gives the exact answer. Bars below zero mean too stiff; the labels give mesh size and speed. MuJoCo flex and Genesis use linear tetrahedra, which lock in bending, and the problem gets worse on thin walls, which is exactly what compliant fingers have. Our fingers are flat outlines extruded to a thickness, so a 2D model with quadratic elements is both exact and fast.</aside>
 </section>
 
 <section id="testset" data-transition="fade" style="background:#F7F6F2;color:#1E2633;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Background · the test parts</p>
+<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Backup · supporting evidence</p>
 <h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#17202E">Seven test parts, all generated from code</h2>
 </div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
@@ -128,65 +155,32 @@
 <aside>Every body is a CadQuery program with bounded parameters, exported as STEP, STL and a multi-material Bambu 3MF (PLA plus TPU-95A). There is also a rack-and-pinion test jaw. The fingers and carriage adapters are printable now; the pinion and palm wait on the servo horn dimensions.</aside>
 </section>
 
-<section id="accuracy" data-transition="fade" style="background:#F7F6F2;color:#1E2633;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;gap:40px">
+<section id="curl" data-transition="fade" style="background:#F7F6F2;color:#1E2633;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;gap:32px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Question 1 of 3 · Which simulator?</p>
-<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#17202E">3D soft-body simulators make TPU far too stiff</h2>
+<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Backup · supporting evidence</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#17202E">The trick: a steep strut that levers the tip in</h2>
 </div>
-<div style="display:flex;gap:40px;align-items:center">
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:16px">
-<img src="img/panel_E.png" alt="Bar chart of a TPU beam's bending error against the textbook answer: MuJoCo minus 59, 43 and 30 percent; Genesis minus 35, 15 and 30 percent; 2D finite elements plus 1.2 percent" style="width:1040px;height:540px;object-fit:contain">
+<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:12px;display:flex;justify-content:center">
+<img src="img/curl_clamped.png" alt="The found design and its deformation under pushes at 30, 50 and 70 percent height: the tip moves toward the object for the 30 and 50 percent pushes and away for the 70 percent push" style="width:1500px;height:476px;object-fit:contain">
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:28px">
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:80px;font-weight:600;line-height:1;color:#C14A17">4.5–6.4×</p>
-<p style="font-size:28px;line-height:1.35;color:#4A5160">too stiff: MuJoCo on a Fin-Ray finger</p>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px">
+<p style="font-size:28px;line-height:1.35;color:#2B3443"><b>Shape:</b> a thick rib runs from low on the front up to the back.</p>
+<p style="font-size:28px;line-height:1.35;color:#2B3443"><b>How:</b> the stiff top triangle pivots and swings the tip in.</p>
+<p style="font-size:28px;line-height:1.35;color:#2B3443"><b>Limit:</b> pushed above the strut, the tip moves away again.</p>
 </div>
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:80px;font-weight:600;line-height:1;color:#14866D">1.2%</p>
-<p style="font-size:28px;line-height:1.35;color:#4A5160">error: 2D finite elements</p>
-</div>
-</div>
-</div>
-<p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#17202E;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Takeaway:</b> a too-stiff simulator would punish exactly the soft designs we want.</p>
-<aside>The test is a TPU beam bending under a known load, where beam theory gives the exact answer. Bars below zero mean too stiff; the labels give mesh size and speed. MuJoCo flex and Genesis use linear tetrahedra, which lock in bending, and the problem gets worse on thin walls, which is exactly what compliant fingers have. Our fingers are flat outlines extruded to a thickness, so a 2D model with quadratic elements is both exact and fast.</aside>
-</section>
-
-<section id="scorecard" data-transition="fade" style="background:#F7F6F2;color:#1E2633;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;gap:40px">
-<div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Question 1 of 3 · Which simulator?</p>
-<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#17202E">Only 2D finite elements are accurate and fast</h2>
-</div>
-<table style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:30px;color:#2B3443">
-<tr style="background:#E6EEF9"><th style="width:31%;text-align:left">Simulator</th><th style="width:23%;text-align:left">Accurate?</th><th style="width:24%;text-align:left">Time per design</th><th style="width:22%;text-align:left">Use it for</th></tr>
-<tr><td>MuJoCo soft body (CPU)</td><td>No: 4–6× too stiff</td><td>~3 hours</td><td>Nothing</td></tr>
-<tr style="background:#FFFFFF"><td>Genesis (RTX 5090)</td><td>No: 15–35% too stiff</td><td>≥9 minutes</td><td>Nothing</td></tr>
-<tr><td><b>2D, small deformation</b></td><td><b>Yes: 1.2% error</b></td><td><b>0.1 seconds</b></td><td><b>The search</b></td></tr>
-<tr style="background:#FFFFFF"><td><b>2D, large deformation</b></td><td><b>Yes: matches</b></td><td><b>~1 minute</b></td><td><b>Checking finalists</b></td></tr>
-</table>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:80px;font-weight:600;line-height:1;color:#14866D">≈100,000×</p>
-<p style="font-size:28px;line-height:1.35;color:#4A5160">faster per design: 2D model vs MuJoCo soft body</p>
-</div>
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:80px;font-weight:600;line-height:1;color:#1C5CAB">30 s</p>
-<p style="font-size:28px;line-height:1.35;color:#4A5160">to score a whole generation of 300 designs in 2D</p>
-</div>
-</div>
-<p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#17202E;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Takeaway:</b> 2D FEM is fast enough for the search loop; 3D options are not.</p>
-<aside>"Time per design" means one grasp trial or one 15 mm push. MuJoCo soft bodies with contact ran at 1.8 steps per second; a grasp needs about 20,000 steps. Genesis ran 5 to 37 steps per second on the GPU without contact. The 2D small-deformation model uses scikit-fem; the large-deformation model is PolyFEM with IPC contact, which also handles ribs touching each other. Convex decomposition for rigid collision shapes (CoACD) takes 4 to 17 seconds per body, so it is only used for rigid parts.</aside>
+<p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#17202E;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Takeaway:</b> pushing low on the face pivots the top of the finger, so the tip swings in.</p>
+<aside>Left: the found design. Then the same finger pushed at 30, 50 and 70 percent of its height; grey is rest, blue is the tip curling in, orange is the tip moving away. Both base mountings converged on the same strut idea independently. The grid sweep could not express it: it only had evenly spaced, parallel ribs. These shapes come from the small-deformation model, scaled to an 8 mm push; the next slide checks it with large deformation.</aside>
 </section>
 
 <section id="decisions" data-transition="fade" style="background:#EDF0F4;color:#1E2633;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Question 1 of 3 · Which simulator?</p>
+<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Backup · supporting evidence</p>
 <h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#17202E">Decided: soft parts are flat, extruded shapes</h2>
 </div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
 <div style="background:#FFFFFF;border:1px solid #D3D8E0;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:12px">
 <h3 style="font-size:34px;font-weight:600;color:#17202E">Soft parts: 2D outlines with a thickness</h3>
-<p style="font-size:28px;line-height:1.4;color:#4A5160">Like almost every compliant finger in the literature. Rigid parts stay 3D.</p>
+<p style="font-size:28px;line-height:1.4;color:#4A5160">This restriction enables 2D simulation. Rigid parts stay 3D.</p>
 </div>
 <div style="background:#FFFFFF;border:1px solid #D3D8E0;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:12px">
 <h3 style="font-size:34px;font-weight:600;color:#17202E">Keep large-deformation behavior</h3>
@@ -204,206 +198,11 @@
 <p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#17202E;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Takeaway:</b> going 2D buys an accurate simulator; the open problem is speed.</p>
 <aside>The 2D restriction gives up fully 3D soft structures for version 1. In return, stiffness is computed in under a second. Large-deformation behavior is kept by precomputing push curves at about 20 points along each finger face with the 2D large-deformation model, then using those curves inside a fast rigid-body grasp simulation. At 20 points times 300 designs that is about a day per generation today, so it must get roughly 25 times cheaper: fewer points, coarser meshes or fewer steps.</aside>
 </section>
-
-<section id="explainer" data-transition="fade" style="background:#F7F6F2;color:#1E2633;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;gap:32px">
-<div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Question 2 of 3 · Does a Fin-Ray curl?</p>
-<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#17202E">The Fin-Ray promise: press it, and the tip curls in</h2>
-</div>
-<div style="display:flex;gap:56px;align-items:center">
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:16px">
-<svg aria-label="Diagram of a Fin-Ray finger: a triangle with horizontal ribs, an object pressing on its flat face from the right. A green arrow at the tip points toward the object (the promised curl); an orange arrow points away." width="640" height="560" viewBox="0 0 640 560" xmlns="http://www.w3.org/2000/svg">
-<polygon points="360,60 360,500 120,500" fill="none" stroke="#2a78d6" stroke-width="10" stroke-linejoin="round"/>
-<line x1="360" y1="170" x2="300" y2="170" stroke="#2a78d6" stroke-width="7"/>
-<line x1="360" y1="280" x2="240" y2="280" stroke="#2a78d6" stroke-width="7"/>
-<line x1="360" y1="390" x2="180" y2="390" stroke="#2a78d6" stroke-width="7"/>
-<circle cx="450" cy="300" r="85" fill="#F2F1EC" stroke="#1f1f1e" stroke-width="5"/>
-<line x1="620" y1="300" x2="560" y2="300" stroke="#1f1f1e" stroke-width="8"/>
-<polygon points="545,300 572,284 572,316" fill="#1f1f1e"/>
-<line x1="370" y1="40" x2="450" y2="40" stroke="#14866D" stroke-width="9"/>
-<polygon points="470,40 444,24 444,56" fill="#14866D"/>
-<line x1="350" y1="40" x2="280" y2="40" stroke="#C14A17" stroke-width="9" stroke-dasharray="14 10"/>
-<polygon points="260,40 286,24 286,56" fill="#C14A17"/>
-</svg>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:28px">
-<p style="font-size:32px;line-height:1.4;color:#2B3443">We score every finger with one number:</p>
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:56px;font-weight:600;line-height:1.15;color:#17202E">tip movement ÷ push depth</p>
-<p style="font-size:32px;line-height:1.4;color:#2B3443"><span style="color:#14866D"><b>Below 0:</b></span> the tip curls toward the object. This is the Fin-Ray effect.</p>
-<p style="font-size:32px;line-height:1.4;color:#2B3443"><span style="color:#C14A17"><b>Above 0:</b></span> the tip moves away from the object.</p>
-</div>
-</div>
-<p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#17202E;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Takeaway:</b> one number per finger: below zero means the tip wraps the object.</p>
-<aside>The Fin-Ray Effect, from fish fins and Festo's grippers, is sold as: push the flat face and the whole finger wraps around the object, tip included. That wrapping is why Fin-Ray fingers are popular for delicate objects. The number is the sideways movement of the tip divided by the movement of the face where it is pushed.</aside>
-</section>
-
-<section id="nocurl" data-transition="fade" style="background:#F7F6F2;color:#1E2633;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;gap:32px">
-<div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Question 2 of 3 · Does a Fin-Ray curl?</p>
-<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#17202E">A standard Fin-Ray’s tip moves away instead</h2>
-</div>
-<div style="display:flex;gap:48px;align-items:center">
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:12px">
-<video src="video/finray_push.mp4" poster="video/finray_push_still.png" aria-label="Animation: a cylinder pushes 15 mm into the middle of a standard Fin-Ray finger; the face wraps the cylinder but the tip moves 6 mm away from it" style="width:440px;height:550px;object-fit:contain;display:block" muted loop playsinline preload="auto"></video>
-</div>
-<div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:28px">
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:88px;font-weight:600;line-height:1;color:#C14A17">+0.4</p>
-<p style="font-size:28px;line-height:1.35;color:#4A5160">tip ÷ push: the tip moves away</p>
-</div>
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:88px;font-weight:600;line-height:1;color:#C14A17">6 mm</p>
-<p style="font-size:28px;line-height:1.35;color:#4A5160">tip moves away at a 15 mm push</p>
-</div>
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:88px;font-weight:600;line-height:1;color:#1C5CAB">3</p>
-<p style="font-size:28px;line-height:1.35;color:#4A5160">simulators agree, with or without friction</p>
-</div>
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:88px;font-weight:600;line-height:1;color:#1C5CAB">0/408</p>
-<p style="font-size:28px;line-height:1.35;color:#4A5160">grid-sweep Fin-Ray shapes curl in</p>
-</div>
-</div>
-</div>
-<p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#17202E;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Takeaway:</b> every model agrees: a standard Fin-Ray’s tip never curls in.</p>
-<aside>The animation is the large-deformation simulation: grey is the finger at rest, blue is deformed, the circle is a 20 mm cylinder pushing 15 mm into mid-height. The face does wrap the object, but the tip follows the push outward at about 0.4 times its movement. Same answer in MuJoCo, the 2D small-deformation model and PolyFEM with large deformation, friction 0.5 and self-contact. The grid sweep varied rib angle, rib count, rib and wall thickness and push height. A printed finger on the bench will confirm or refute this.</aside>
-</section>
-
-<section id="statement" data-transition="fade" style="background:#1C5CAB;color:#F3F1EA;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;justify-content:center;gap:56px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#CFE0F7">Question 3 of 3 · Can search find curl?</p>
-<h1 style="font-family:'Source Serif 4', Georgia, serif;font-size:88px;font-weight:600;line-height:1.08;color:#FFFFFF">We let an optimizer redesign the finger’s outline and ribs</h1>
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px">
-<div style="background:#2B6CBC;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:96px;font-weight:600;line-height:1;color:#FFFFFF">264</p>
-<p style="font-size:28px;line-height:1.35;color:#E1EBF8">designs tried before the first success</p>
-</div>
-<div style="background:#2B6CBC;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:96px;font-weight:600;line-height:1;color:#FFFFFF">4 s</p>
-<p style="font-size:28px;line-height:1.35;color:#E1EBF8">of computing on one workstation</p>
-</div>
-<div style="background:#2B6CBC;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:96px;font-weight:600;line-height:1;color:#FFFFFF">−0.21</p>
-<p style="font-size:28px;line-height:1.35;color:#E1EBF8">tip ÷ push: the tip curls in</p>
-</div>
-</div>
-<p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#17202E;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Takeaway:</b> a free-form search found what the 408-shape grid could not.</p>
-<aside>The optimizer is CMA-ES. It varies base width, tip width, a bowed back beam, wall thicknesses and six ribs; each rib joins any point on the front to any point on the back, so ribs never cross. Rules: 80 mm long, nothing thinner than 0.8 mm so it prints in TPU, and a minimum stiffness. It stopped at the first design below minus 0.1 that also held on a finer mesh. With the base pinned instead of clamped it took 168 designs.</aside>
-</section>
-
-<section id="curl" data-transition="fade" style="background:#F7F6F2;color:#1E2633;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;gap:32px">
-<div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Question 3 of 3 · Can search find curl?</p>
-<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#17202E">The trick: a steep strut that levers the tip in</h2>
-</div>
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:12px;display:flex;justify-content:center">
-<img src="img/curl_clamped.png" alt="The found design and its deformation under pushes at 30, 50 and 70 percent height: the tip moves toward the object for the 30 and 50 percent pushes and away for the 70 percent push" style="width:1500px;height:476px;object-fit:contain">
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px">
-<p style="font-size:28px;line-height:1.35;color:#2B3443"><b>Shape:</b> a thick rib runs from low on the front up to the back.</p>
-<p style="font-size:28px;line-height:1.35;color:#2B3443"><b>How:</b> the stiff top triangle pivots and swings the tip in.</p>
-<p style="font-size:28px;line-height:1.35;color:#2B3443"><b>Limit:</b> pushed above the strut, the tip moves away again.</p>
-</div>
-<p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#17202E;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Takeaway:</b> pushing low on the face pivots the top of the finger, so the tip swings in.</p>
-<aside>Left: the found design. Then the same finger pushed at 30, 50 and 70 percent of its height; grey is rest, blue is the tip curling in, orange is the tip moving away. Both base mountings converged on the same strut idea independently. The grid sweep could not express it: it only had evenly spaced, parallel ribs. These shapes come from the small-deformation model, scaled to an 8 mm push; the next slide checks it with large deformation.</aside>
-</section>
-
-<section id="verify" data-transition="fade" style="background:#F7F6F2;color:#1E2633;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;gap:32px">
-<div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Question 3 of 3 · Can search find curl?</p>
-<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#17202E">Large-deformation check: it holds when pushed low</h2>
-</div>
-<div style="display:flex;gap:40px;align-items:center">
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:12px">
-<video src="video/compare_push.mp4" poster="video/compare_push_still.png" aria-label="Animation of three 15 mm pushes: the standard Fin-Ray's tip moves 6 mm away; the strut design pushed at 30 percent height curls its tip 9.1 mm toward the object; pushed at 50 percent its tip ends 8.1 mm away" style="width:1100px;height:513px;object-fit:contain;display:block" muted loop playsinline preload="auto"></video>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:24px">
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:72px;font-weight:600;line-height:1;color:#14866D">9.1 mm</p>
-<p style="font-size:26px;line-height:1.35;color:#4A5160">toward the object, pushed at 30% height</p>
-</div>
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:72px;font-weight:600;line-height:1;color:#C14A17">4.5×</p>
-<p style="font-size:26px;line-height:1.35;color:#4A5160">stiffer than the standard Fin-Ray</p>
-</div>
-</div>
-</div>
-<p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#17202E;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Takeaway:</b> it curls hard when pushed low, but not at mid-height, and it is too stiff.</p>
-<aside>Large-deformation simulation (PolyFEM, Neo-Hookean TPU, contact with a rigid 20 mm cylinder, 30 steps to 15 mm). Pushed at 30 percent height, the tip ratio goes from minus 0.35 to minus 0.79 and ends at minus 0.65: the effect gets stronger with large deformation. Pushed at mid-height it curls for the first 7 mm, then reverses and ends 8 mm away. It is about 4.5 times stiffer than the standard Fin-Ray (11 N against 2.4 N at 15 mm) because the first search never penalized stiffness. Friction 0.5 changes the ratio by less than 0.07. The next slide fixes both problems with a second search.</aside>
-</section>
-
-<section id="search2" data-transition="fade" style="background:#F7F6F2;color:#1E2633;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;gap:32px">
-<div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Question 3 of 3 · Can search find curl?</p>
-<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#17202E">Second search: curl reaches mid-height, softer</h2>
-</div>
-<div style="display:flex;gap:40px;align-items:center">
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:12px">
-<video src="video/compare_v2.mp4" poster="video/compare_v2_still.png" aria-label="Animation of three 15 mm pushes: the standard Fin-Ray's tip moves 6 mm away; the second-search design pushed at 30 percent height swings its tip 16.9 mm toward the object; pushed at 50 percent its tip ends 2 mm toward the object" style="width:1100px;height:513px;object-fit:contain;display:block" muted loop playsinline preload="auto"></video>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:24px">
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:72px;font-weight:600;line-height:1;color:#14866D">16.9 mm</p>
-<p style="font-size:26px;line-height:1.35;color:#4A5160">tip toward the object, pushed at 30%</p>
-</div>
-<div style="background:#FFFFFF;border:1px solid #DCDDD6;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px">
-<p style="font-family:'Source Serif 4', Georgia, serif;font-size:72px;font-weight:600;line-height:1;color:#1C5CAB">1.3–1.9×</p>
-<p style="font-size:26px;line-height:1.35;color:#4A5160">the Fin-Ray’s force (was 4.5×)</p>
-</div>
-</div>
-</div>
-<p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#17202E;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Takeaway:</b> scoring more of the face and stiffness gave a finger that curls almost everywhere.</p>
-<aside>Second search: pushes at 20, 30, 40, 50 and 60 percent height, a score that mixes the average and the worst height, stiffness within plus or minus 50 percent of the standard Fin-Ray's 0.22 N per mm, and its 10 best distinct designs checked with large deformation. It plateaued after 12,480 designs in 87 seconds. This design (d2): tip ratio minus 1.2 to minus 1.8 at 30 percent height all the way to 15 mm, so the tip moves more than the face, like a lever; at mid-height it still curls at 15 mm (minus 0.14). Push force at 15 mm is 3.1 to 4.6 N against 2.4 N for the standard Fin-Ray. Simulation only; it is the next print.</aside>
-</section>
-
-<section id="summary" data-transition="fade" style="background:#F7F6F2;color:#1E2633;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;gap:40px">
-<div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1C5CAB">Summary</p>
-<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#17202E">Three answers, all from simulation so far</h2>
-</div>
-<table style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:36px;color:#2B3443">
-<tr style="background:#E6EEF9"><th style="width:34%;text-align:left">Question</th><th style="width:40%;text-align:left">Answer</th><th style="width:26%;text-align:left">Bench test</th></tr>
-<tr><td>1. Which simulator?</td><td>2D FEM: fast for search, large-deformation for checks</td><td>Compare push curves</td></tr>
-<tr style="background:#FFFFFF"><td>2. Does a Fin-Ray curl?</td><td>No: its tip moves away (+0.4)</td><td>Print fin_ray_a</td></tr>
-<tr><td>3. Can search find curl?</td><td>Yes: up to mid-height, near Fin-Ray stiffness</td><td>Print the best design</td></tr>
-</table>
-<p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#17202E;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Takeaway:</b> two prints on the bench decide how far we can trust the simulator.</p>
-<aside>The two prints test opposite predictions: the standard Fin-Ray should NOT curl, and the second-search design SHOULD curl, strongly when pushed low and slightly at mid-height. If both hold, the 2D simulator is trustworthy for ranking designs. If the standard Fin-Ray curls on the bench, the simulator is missing something and has to be fixed before any search result means anything.</aside>
-</section>
-
-<section id="next" data-transition="fade" style="background:#17202E;color:#F3F1EA;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px 216px;display:flex;flex-direction:column;gap:48px">
-<div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#7FB0EE">Next, and questions for you</p>
-<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#F3F1EA">Next two weeks, and where I’d like help</h2>
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:56px">
-<div style="display:flex;flex-direction:column;gap:24px">
-<h3 style="font-size:36px;font-weight:600;color:#F3F1EA">Next</h3>
-<ol style="font-size:30px;line-height:1.5;color:#C9CED8">
-<li>Print the Fin-Ray and the best searched finger in TPU; film a push.</li>
-<li>Search more of the finger: curl up to 70% height.</li>
-<li>Make the large-deformation simulation 25× cheaper.</li>
-</ol>
-</div>
-<div style="display:flex;flex-direction:column;gap:24px">
-<h3 style="font-size:36px;font-weight:600;color:#F3F1EA">Questions for the lab</h3>
-<ul style="font-size:30px;line-height:1.5;color:#C9CED8">
-<li>Has anyone seen a printed Fin-Ray tip curl in?</li>
-<li>Would reviewers reject “2D soft parts only”?</li>
-<li>Which force sensor and motion capture can I borrow?</li>
-</ul>
-</div>
-</div>
-<p style="position:absolute;left:128px;width:1664px;bottom:64px;background:#2A3546;color:#F3F1EA;font-size:34px;line-height:1.35;padding:28px 40px;border-radius:16px"><b>Takeaway:</b> if the prints match the simulator, M0 is done and the agent loop starts.</p>
-<aside>The printed pair tests opposite predictions: the standard Fin-Ray should not curl, the searched finger should. The 25 times speed-up is what it takes to score 300 designs in under an hour.</aside>
-</section>
-
 </div></div>
 <div id="notes"></div>
 <div id="bar"><button id="prev" aria-label="Previous slide">←</button>
 <span><span id="count"></span> · arrows or swipe to move · N for notes</span>
-<button id="next" aria-label="Next slide">→</button></div>
+<button id="next-slide" aria-label="Next slide">→</button></div>
 <script>
   const slides = [...document.querySelectorAll('#holder > section')];
   const holder = document.getElementById('holder'), notes = document.getElementById('notes');
@@ -432,7 +231,7 @@
     else if (e.key.toLowerCase() === 'n') notes.classList.toggle('show');
   });
   document.getElementById('prev').onclick = () => show(i - 1);
-  document.getElementById('next').onclick = () => show(i + 1);
+  document.getElementById('next-slide').onclick = () => show(i + 1);
   let x0 = null;
   addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
   addEventListener('touchend', e => {
