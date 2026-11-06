@@ -1,0 +1,44 @@
+{
+  "updated_utc": "2026-11-06T04:38:12.848559+00:00",
+  "state": "computing",
+  "publish_at": "2026-11-06T08:00:00-05:00",
+  "targets": {
+    "small_part_mm": 2,
+    "large_tool_torque_Nm": 1
+  },
+  "manifest": {
+    "started_utc": "2026-11-06T04:38:12.611901+00:00",
+    "source_hash": "547e83cfae252e71cd5f1916b103eb295c9e0f95aff81930cb974d8d58f30ea2",
+    "engine_commit": "ca33a02519c75e581c3148172382b41d604b9f20",
+    "browser_cases": 264,
+    "engine_cases": 96
+  },
+  "browser_counts": {},
+  "engine_counts": {},
+  "browser_cases": [],
+  "engine_cases": [],
+  "legacy_search": {
+    "state": "running",
+    "updated": "2026-11-06T04:37:47.450468+00:00",
+    "searches": {
+      "paired": {
+        "evaluations": 798,
+        "score": 0.3452
+      },
+      "mirrored": {
+        "evaluations": 938,
+        "score": 0.4
+      }
+    }
+  },
+  "ui_candidate_eligible": false,
+  "notes": [
+    "Scheduled overnight run is active. This is a startup snapshot; the saved report is scheduled to be replaced at 08:00 America/New_York on November 6, 2026.",
+    "Small-part capture and large-tool torque are separate objectives.",
+    "Browser results use a segmented linear FEM approximation. Adjacent sections remain a discretization limitation.",
+    "SuperDex tests are free-space closure/retention at 20 N per jaw with controlled friction 0.5; not tabletop acquisition or calibrated hardware.",
+    "Solver failures, timeouts and invalid contact runs are retained. A load ceiling is not a demonstrated capacity.",
+    "The interactive repair is published only if every planned browser diagnostic completes without a numerical error; otherwise only this report is updated.",
+    "No new LLM agent is launched in this run. The separate numerical geometry search retains its frozen scorer."
+  ]
+}
