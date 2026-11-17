@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Restored from haonan16/coord_bimanual_page at 7240d1e99fbaf581ee5b5d5d7fde0e4892f1e6d4; published as part of the main personal site. -->
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Learning Coordinated Bimanual Manipulation Policies using State Diffusion and Inverse Dynamics Models">
+  <meta name="keywords" content="Robotic Manipulation, Language Models">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Coordinated Bimanual Manipulation Policies using State Diffusion and Inverse Dynamics Models</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FV4ZJ9PVSV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FV4ZJ9PVSV');
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-fullhd">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Learning Coordinated Bimanual Manipulation Policies using State Diffusion and Inverse Dynamics Models</h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a target="_blank" href="https://haonan16.github.io/">Haonan Chen</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="">Jiaming Xu</a><sup>*</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="">Lily Sheng</a><sup>*</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://tianchenji.github.io/">Tianchen Ji</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://shuijing725.github.io/">Shuijing Liu</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://yunzhuli.github.io/">Yunzhu Li</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a><sup></sup>,
+            </span>
+          </div>
+
+          <div style="display: flex; justify-content: center; align-items: center; gap: 30px; margin-top: 20px;">
+            <div>
+              <a href="https://illinois.edu" target="_blank" rel="noopener noreferrer">
+                <img src="media/figures/illinois.png" alt="University of Illinois" width="60" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.utexas.edu" target="_blank" rel="noopener noreferrer">
+                <img src="media/figures/ut_austin.png" alt="UT Austin" width="260" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.columbia.edu" target="_blank" rel="noopener noreferrer">
+                <img src="media/figures/columbia.png" alt="Columbia University" width="100" />
+              </a>
+            </div>
+          </div>
+
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <span class="link-block">
+                <a target="_blank" href="bimanual.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+
+
+
+
+
+
+
+
+
+            <span class="link-block">
+              <a target="_blank" href="https://github.com/haonan16/state_diff"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+                </a>
+            </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="section">
+
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            When doing laundry, humans naturally envision the future states of clothes as a result of their actions, so that they can sort the clothes more effectively. In this work, we infuse the predictive nature of human manipulation strategies into robot imitation learning by disentangling task-related state transitions from agent-specific inverse dynamics modeling. Using a demonstration dataset, we train a diffusion model to predict future states given historical observations, thereby envisioning scene evolution. Then, we use an inverse dynamics model to predict robot actions to achieve predicted states. Our key insight is that modeling object movement can help learning policies for bimanual coordination manipulation tasks. Evaluating our framework across diverse simulation and real-world manipulation setups, including multimodal goal configurations, bimanual manipulation, deformable objects, and multi-object setups, we find that it consistently outperforms state-of-the-art state-to-action mapping policies. Our method demonstrates a remarkable capacity to navigate multimodal goal configurations and action distributions, maintain stability across different control modes, and synthesize a broader range of behaviors than those present in the demonstration dataset.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+
+  <div class="container is-max-widescreen">
+    <div class="rows has-text-centered">
+      <h2 class="title is-3">Introduction Video</h2>
+      <div class="publication-video">
+        <video playsinline preload="metadata" controls width="70%">
+          <source src="media/videos/supp_video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+
+
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <div class="rows is-centered">
+      <div class="row is-full-width">
+        <h2 class="title is-3">Qualitative Results</h2>
+
+
+        <h3 class="title is-4">Policy Rollout</h3>
+        <div id="tabBox1" class="container tabcontent" style="display: block;">
+          <h2 class="subtitle is-5" style="text-align:center;">Our method can solve various bimanual coordination tasks effectively.</h2>
+          <div class="video_grid_container">
+
+            <div class="video_grid">
+              <p><strong>Push-L</strong></p>
+              <div class="video_grid_item">
+                <video playsinline preload="metadata" class="grid-video training" autoplay muted loop playsinline height="100%">
+                  <source src="media/videos/push_L.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="video_grid">
+              <p><strong>Fruit Holding</strong></p>
+              <div class="video_grid_item">
+                <video playsinline preload="metadata" class="grid-video training" autoplay muted loop playsinline height="100%">
+                  <source src="media/videos/fruits.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="video_grid">
+              <p><strong>Laundry Cleanup</strong></p>
+              <div class="video_grid_item">
+                <video playsinline preload="metadata" class="grid-video training" autoplay muted loop playsinline height="100%">
+                  <source src="media/videos/pillow.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="video_grid">
+              <p><strong>Cluttered Shelf Picking</strong></p>
+              <div class="video_grid_item">
+                <video playsinline preload="metadata" class="grid-video training" autoplay muted loop playsinline height="100%">
+                  <source src="media/videos/shelf.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+
+        <h3 class="title is-4">Robustness Testing</h3>
+        <div id="robustness" class="container tabcontent" style="display: block;">
+          <h2 class="subtitle is-5" style="text-align:center;">Our method is robust to human perturbation.</h2>
+          <div class="video_grid_container">
+            <div class="video_grid">
+              <p><strong>Push-L</strong></p>
+              <div class="video_grid_item">
+                <video playsinline preload="metadata" class="grid-video training" autoplay muted loop playsinline height="100%">
+                  <source src="media/videos/push_L_human.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="video_grid">
+              <p><strong>Laundry Cleanup</strong></p>
+              <div class="video_grid_item">
+                <video playsinline preload="metadata" class="grid-video training" autoplay muted loop playsinline height="100%">
+                  <source src="media/videos/pillow_human.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+
+        <h3 class="title is-4">Emergent Behavior</h3>
+        <div class="container tabcontent" style="display: block;">
+          <h2 class="subtitle is-5" style="text-align: center;">Our method can generate behaviors beyond those in the demonstration dataset.</h2>
+
+          <div class="video_grid_container" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <p><strong>Laundry Cleanup</strong></p>
+            <div class="video_grid_item" style="display: flex; justify-content: center;">
+              <video playsinline preload="metadata" class="grid-video training" autoplay muted loop playsinline style="width: 50%; height: auto;">
+                <source src="media/videos/pillow_emergent.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+
+        <h3 class="title is-4">Policy Rollout in Push-L Simulated Benchmark</h3>
+        <div class="container tabcontent" style="display: block;">
+          <h2 class="subtitle is-5" style="text-align: center;">
+            Our policy successfully handles multi-object, contact-rich manipulation tasks.
+          </h2>
+          <div class="video_grid_container" style="display: flex; justify-content: center; gap: 20px; flex-wrap: nowrap; overflow-x: auto;">
+            <div class="video_grid">
+              <div class="video_grid_item">
+                <video playsinline preload="metadata" class="grid-video training" autoplay muted loop playsinline height="100%">
+                  <source src="media/videos/sim_video_0.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="video_grid">
+              <div class="video_grid_item">
+                <video playsinline preload="metadata" class="grid-video training" autoplay muted loop playsinline height="100%">
+                  <source src="media/videos/sim_video_1.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="video_grid">
+              <div class="video_grid_item">
+                <video playsinline preload="metadata" class="grid-video training" autoplay muted loop playsinline height="100%">
+                  <source src="media/videos/sim_video_2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-widescreen content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{chen2025learning,
+    title={{Learning Coordinated Bimanual Manipulation Policies Using State Diffusion and Inverse Dynamics Models}},
+    author={Chen, Haonan and Xu, Jiaming and Sheng, Lily and Ji, Tianchen and Liu, Shuijing and Li, Yunzhu and Driggs-Campbell, Katherine},
+    booktitle={2025 IEEE International Conference on Robotics and Automation (ICRA)},
+    year={2025},
+    pages={5644--5651},
+    doi={10.1109/icra55743.2025.11127387},
+    url={https://doi.org/10.1109/icra55743.2025.11127387}
+}</code></pre>
+  </div>
+</section>
+
+
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>, <a href="https://peract.github.io/">PerAct</a>, and <a href="https://voxposer.github.io/">VoxPoser</a>, and <a href="https://robopil.github.io/d3fields/">D3Fields</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

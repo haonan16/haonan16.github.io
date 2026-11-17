@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Restored from haonan16/stow_page at 7f5c3c896c1007a707f074f56438216407901252; published as part of the main personal site. -->
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Predicting Object Interactions with Behavior Primitives: An Application in Stowing Tasks
+        ">
+  <meta name="keywords" content="Robotic Manipulation, Language Models">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stow</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FV4ZJ9PVSV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FV4ZJ9PVSV');
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-fullhd">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Predicting Object Interactions with Behavior Primitives: <br> An Application in Stowing Tasks</h1>
+          <h3 class="title is-4 conference-authors">
+            <a target="_blank" href="https://www.corl2023.org/" style="color: rgba(0, 0, 0, 0.764) !important;">CoRL 2023 (Oral)</a>
+          </h3>
+          <h3 class="title is-4" style="margin-top: 10px; color: rgba(154, 5, 5, 0.764) !important;">Finalist - Best Paper/Best Student Paper Awards</h3>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a target="_blank" href="https://haonan16.github.io/">Haonan Chen</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://haonan16.github.io/stow_page/">Yilong Niu</a><sup>*</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://haonan16.github.io/stow_page/">Kaiwen Hong</a><sup>*</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://shuijing725.github.io/">Shuijing Liu</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://wangyixuan12.github.io/">Yixuan Wang</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://yunzhuli.github.io/">Yunzhu Li</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a><sup></sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup></sup>University of Illinois Urbana-Champaign,</span>
+            <br>
+            <small>(* indicate equal contribution)</small>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <span class="link-block">
+                <a target="_blank" href="stow.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+
+            <span class="link-block">
+              <a target="_blank" href="https://arxiv.org/abs/2309.16873"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-file"></i>
+                </span>
+                <span>ArXiv</span>
+              </a>
+            </span>
+
+
+            <span class="link-block">
+              <a target="_blank" href="https://youtu.be/yUnVHUU6UHA/"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                </span>
+                <span>Video</span>
+              </a>
+            </span>
+
+
+            <span class="link-block">
+              <a target="_blank" href="https://github.com/haonan16/Stow/"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+                </a>
+            </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-fullhd">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered  is-centered">
+          <video playsinline preload="metadata" id="teaser" autoplay muted loop height="60%" width="60%">
+            <source src="media/videos/teaser.mp4"
+                    type="video/mp4">
+          </video>
+          </br>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <video playsinline preload="metadata" poster="" autoplay muted loop height="100%">
+            <source src="media/videos/2_skill/nominal.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video playsinline preload="metadata" poster="" autoplay muted loop height="100%">
+            <source src="media/videos/2_skill/tiny.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video playsinline preload="metadata" poster="" autoplay muted loop height="100%">
+            <source src="media/videos/2_skill/heavy.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video playsinline preload="metadata" poster="" autoplay muted loop height="100%">
+            <source src="media/videos/2_skill/bottle.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+           <video playsinline preload="metadata" poster="" autoplay muted loop height="100%">
+             <source src="media/videos/2_skill/roller.mp4"
+                     type="video/mp4">
+           </video>
+         </div>
+         <div class="item">
+            <video playsinline preload="metadata" poster="" autoplay muted loop height="100%">
+              <source src="media/videos/2_skill/small_shelf.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video playsinline preload="metadata" poster="" autoplay muted loop height="100%">
+              <source src="media/videos/2_skill/deformable.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Stowing, the task of placing objects in cluttered shelves or bins, is a common task in warehouse and manufacturing operations. However, this task is still predominantly carried out by human workers as stowing is challenging to automate due to the complex multi-object interactions and long-horizon nature of the task. Previous works typically involve extensive data collection and costly human labeling of semantic priors across diverse object categories. This paper presents a method to learn a generalizable robot stowing policy from predictive model of object interactions and a single demonstration with behavior primitives. We propose a novel framework that utilizes Graph Neural Networks to predict object interactions within the parameter space of behavioral primitives. We further employ primitive-augmented trajectory optimization to search the parameters of a predefined library of heterogeneous behavioral primitives to instantiate the control action. Our framework enables robots to proficiently execute long-horizon stowing tasks with a few keyframes (3-4) from a single demonstration. Despite being solely trained in a simulation, our framework demonstrates remarkable generalization capabilities. It efficiently adapts to a broad spectrum of real-world conditions, including various shelf widths, fluctuating quantities of objects, and objects with diverse attributes such as sizes and shapes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+      <h2 class="title is-3">Video</h2>
+      <div class="publication-video">
+        <iframe src="https://www.youtube.com/embed/yUnVHUU6UHA"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="rows">
+      <div class="rows is-centered">
+        <div class="row is-full-width">
+          <h2 class="title is-3">Qualitititave Results </h2>
+
+          <div id="tabBox1">
+            <div class="tabs is-boxed">
+              <ul>
+                <li id="clickDefault" class="tablinks is-active" onclick="openTab(event, '3_skill', 'tabBox1')"><a>3 Skill Set</a></li>
+                <li class="tablinks" onclick="openTab(event, '2_skill', 'tabBox1')"><a>2 Skill Set</a></li>
+              </ul>
+            </div>
+            <div id="3_skill" class="container tabcontent" style="display: block;">
+
+              <h2 class="subtitle is-5" style="text-align:center;">The stowing task can be accomplished by 3 skills: (sweeping, pushing, transporting).</h2>
+              <div class="video_grid_container">
+
+              <div class="video_grid">
+                <p><strong>Nominal setup</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/3_skill/nominal.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="video_grid">
+                <p><strong>With heavy and trapezoid objects</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/3_skill/heavy.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="video_grid">
+                <p><strong>With tiny object</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/3_skill/tiny.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="video_grid">
+                <p><strong>With tiny object 2</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/3_skill/tiny2.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="video_grid">
+                <p><strong>With bottle to be grasped</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/3_skill/bottle.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="video_grid">
+                <p><strong>With slippery roller</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/3_skill/roller.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="video_grid">
+                <p><strong>Small shelf setup</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/3_skill/small_shelf.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="video_grid">
+                <p><strong>With deformable objects</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/3_skill/deformable.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+
+
+              </div>
+
+            </div>
+
+
+            <div id="2_skill" class="container tabcontent" style="display: none;">
+
+              <h2 class="subtitle is-5" style="text-align:center;">We can even achieve the task using 2 skills: (pushing, transporting).</h2>
+              <div class="video_grid_container">
+
+              <div class="video_grid">
+                <p><strong>Nominal setup</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/2_skill/nominal.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="video_grid">
+                <p><strong>With heavy and trapezoid objects</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/2_skill/heavy.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="video_grid">
+                <p><strong>With tiny object</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/2_skill/tiny.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="video_grid">
+                <p><strong>With tiny object 2</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/2_skill/tiny2.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="video_grid">
+                <p><strong>With bottle to be grasped</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/2_skill/bottle.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="video_grid">
+                <p><strong>With slippery roller</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/2_skill/roller.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="video_grid">
+                <p><strong>Small shelf setup</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/2_skill/small_shelf.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="video_grid">
+                <p><strong>With deformable objects</strong></p>
+                <div class="video_grid_item"><div class="vsc-controller"></div>
+                  <video playsinline preload="metadata" class="grid-video training" autoplay="" muted="" loop="" playsinline="" height="100%">
+                    <source src="media/videos/2_skill/deformable.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+
+
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+      <div class="rows">
+          <div class="rows is-centered">
+              <div class="row is-full-width">
+                  <h2 class="title is-3">Method Overview </h2>
+                  <div class="content has-text-justified"></div>
+
+                  <img src="media/figures/overview.png" class="interpolation-image" style="width: 100%; height: auto;" />
+                  </br>
+                  </br>
+                  <p class="content has-text-justified">
+                      <b>Overview of the proposed framework.</b>
+                      (a) A particle-based representation characterizes the object state. The object state's predicted outcome following the executed robot actions is computed alongside the ground truth object state using the MSE loss function to train the GNN. (b) For each skill, we apply random shooting to sample parameters within the action parameter space, utilizing the GNN to predict object movement. We then select the action that brings us closest to the desired state. Each skill is executed in sequence.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-widescreen content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{chen2023predicting,
+    title={{Predicting Object Interactions with Behavior Primitives: An Application in Stowing Tasks}},
+    author={Chen, Haonan and Niu, Yilong and Hong, Kaiwen and Liu, Shuijing and Wang, Yixuan and Li, Yunzhu and Driggs-Campbell, Katherine Rose},
+    booktitle={Proceedings of The 7th Conference on Robot Learning},
+    pages={358--373},
+    year={2023},
+    editor={Tan, Jie and Toussaint, Marc and Darvish, Kourosh},
+    volume={229},
+    series={Proceedings of Machine Learning Research},
+    month={06--09 Nov},
+    publisher={PMLR},
+    pdf={https://proceedings.mlr.press/v229/chen23a/chen23a.pdf},
+    url={https://proceedings.mlr.press/v229/chen23a.html}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>, <a href="https://peract.github.io/">PerAct</a>, and <a href="https://voxposer.github.io/">VoxPoser</a>, and <a href="https://robopil.github.io/d3fields/">D3Fields</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
